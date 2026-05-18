@@ -1,0 +1,338 @@
+ 
+  /* Membership container */
+  .membership-container {
+    padding: 30px 75px 0;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+
+  .membership-header {
+    margin-left: 75px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+  
+  .membership-title {
+    color: #c6b682;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  /* Diamond divider */
+  .diamond-divider {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .diamond-line {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Introduction section */
+  .intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro-heading {
+    color: #112f19;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text {
+    color: #000;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .highlight {
+    font-weight: 700;
+  }
+  
+  /* Pricing cards section */
+  .pricing-cards {
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Individual pricing card */
+  .pricing-card {
+    width: 552px;
+    border: 1px solid #c6b682;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Card header */
+  .card-header {
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    color: #112f19;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 28px;
+    margin-top: 0;
+  }
+  
+  /* Price container */
+  .price-container {
+    display: flex;
+    align-items: baseline;
+    border-top: 1px solid #c6b682;
+    border-bottom: 1px solid #c6b682;
+    padding: 20px 0;
+    font-variant-numeric: lining-nums proportional-nums;
+  }
+  
+  .currency {
+    font-size: 35px;
+    color: #112f19;
+    margin-right: 10px;
+  }
+  
+  .price-amount {
+    font-size: 34px;
+    font-weight: 800;
+    color: #112f19;
+    font-variant-numeric: lining-nums proportional-nums;
+  }
+  
+  .price-period {
+    font-size: 20px;
+    font-weight: 800;
+    color: #112f19;
+    margin-left: auto;
+  }
+  
+  /* Feature list */
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: auto;
+    list-style: none;
+    padding: 0 25px;
+    color: #000;
+  }
+  .feature-list li {
+    list-style: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .feature-list li::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 18px;
+    height: 12px;
+    background-image: url(../images/check-mark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ 
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #000;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
+  .feature-item i {
+    color: #000;
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  
+  /* Unlock button */
+  .unlock-button {
+    color: #112f19;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #c6b682;
+    border: none;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .unlock-button i {
+    font-size: 24px;
+  }
+  #jewelleryNetworkingFAQ .accordion-item{
+      margin-bottom: 15px;
+      border: 1px solid #c6b682;
+  }
+  #jewelleryNetworkingFAQ .accordion-item{
+      margin-bottom: 15px;
+      border: 1px solid #c6b682;
+  }
+  #jewelleryNetworkingFAQ .accordion-item .accordion-button {
+      background: #254b5a;
+      color: #fff;
+      font-size: 19px;
+      font-weight: 600;
+  }
+  #jewelleryNetworkingFAQ .accordion-item .accordion-button svg{
+    min-width: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+  .accordion-button::after {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='52' height='4' viewBox='0 0 52 4' fill='none'%3e%3cpath d='M52 3.24268H0V0.757324H52V3.24268Z' fill='%23C6B682'/%3e%3c/svg%3e");
+    transform: unset; 
+  }
+  .accordion-button.collapsed::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52' fill='none'%3e%3cpath d='M27.7432 25.2568H52V27.7432H27.7432V52H25.2568V27.7432H0V25.2568H25.2568V0H27.7432V25.2568Z' fill='%23C6B682'/%3e%3c/svg%3e");
+  }
+  
+  #jewelleryNetworkingFAQ .accordion-item .accordion-button.collapsed{
+    background: #fff;
+    color: #254b5a;
+  }
+  #jewelleryNetworkingFAQ .accordion-body {
+      color: #000;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      padding: 15px;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .membership-header {
+      margin-left: 15px;
+    }
+      
+    .membership-title {
+      font-size: 150px;
+    }
+  
+    .intro-heading {
+      font-size: 44px;
+    }
+  
+    .intro-text {
+      font-size: 22px;
+    }
+  
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-card {
+      width: 100%;
+      max-width: 600px;
+    }
+    .content-wrapper,
+    .faq-content,
+    .faq-header,
+    .faq-title,
+    .faq-description,
+    .faq-list,
+    .faq-item,
+    .faq-question,
+    .question-content,
+    .question-text,
+    .faq-answer {
+      max-width: 100%;
+    }
+
+    .faq-title {
+      font-size: 40px;
+    }
+
+    .question-content {
+      padding-left: 20px;
+    }
+
+    .faq-answer {
+      padding-left: 20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    #jewelleryNetworkingFAQ .accordion-item .accordion-button svg{
+      min-width: 25px;
+      width: 25px;
+    }
+    .membership-title {
+      font-size: 80px;
+    }
+    .feature-list{
+      padding: unset;
+    }
+    .intro-heading {
+      font-size: 32px;
+    }
+  
+    .intro-text {
+      font-size: 18px;
+    }
+  
+    .pricing-card {
+      padding: 20px;
+    }
+  
+    .card-title {
+      font-size: 24px;
+    }
+  
+    .price-amount {
+      font-size: 34px;
+    }
+  
+    .price-period {
+      font-size: 17px;
+    }
+  
+    .feature-item {
+      font-size: 18px;
+    }
+  
+    .unlock-button {
+      font-size: 32px;
+    }
+    .pricing-card .card-header {
+      padding: unset;
+    }
+  }
+
+   @media (max-width: 640px) {
+    .price-amount {
+      font-size: 20px;
+    }
+  }
+
+  .price-amount {
+    unicode-bidi: plaintext;
+    speak: none;
+  }
+  

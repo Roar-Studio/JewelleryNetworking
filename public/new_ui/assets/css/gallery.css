@@ -1,0 +1,146 @@
+.gallery-section h3{
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+.folder-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.folder-box{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 5px -1px #000000bd;
+}
+.folder-box img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+.folder-box .description{
+    /* font-family: Lato; */
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #666666;
+    margin: 0;
+    line-height: 14px;
+}
+.folder-box .description span.load-more{
+    color: #0087E7;
+    /* font-family: Lato; */
+    font-family: "Playfair Display", sans-serif;
+}
+.folder-box .folder-content{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.75);
+}
+.folder-box .folder-content > div h5{
+    /* font-family: Lato; */
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000;
+    margin: 0;
+}
+.folder-box .folder-content > div p{
+    /* font-family: Lato; */
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    color: #666666;
+    margin: 0;
+}
+.folder-box .folder-content > label{
+    background: #e2e2e2;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 20px;
+    font-size: 12px;
+    /* font-family: Lato; */
+    font-family: "Playfair Display", sans-serif;
+}
+.folder-box .social-media{
+    position: absolute;
+    right: calc(50% - 50px);
+    top: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+.folder-box:hover .social-media{
+    top: 40%;
+}
+
+.folder-box .social-media a{
+    padding: 7px 10px;
+    background: #c6b682;
+    border-radius: 3px;
+    display: inline-block;
+    color: #fff;
+    /* font-family: 'Lato'; */
+    font-family: "Playfair Display", sans-serif;
+    font-size: 12px;
+    box-shadow: 0 2px 5px -1px #000;
+}
+.folder-box .social-media a img{
+    width: 11px;
+    height: 11px;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .gallery-section{
+        padding: 0 15px;
+    }
+    .folder-list{
+        grid-template-columns: repeat( 4, 1fr);
+    }
+}
+@media screen and (max-width: 991px) {
+    .folder-list{
+        grid-template-columns: repeat( 3, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallery-section h3{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+}
+@media screen and (max-width: 660px) {
+    .folder-list{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+    .folder-box img {
+        width: 100%;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .folder-list{
+        grid-template-columns: repeat( 1, 1fr);
+    }
+}

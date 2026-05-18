@@ -1,0 +1,125 @@
+.founder-box{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+.founder-section h3{
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+.founder-section p{
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+    line-height: 23px;
+}
+.founder-box img{
+    width: 55%;
+}
+.founder-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.mission-vision .container > img {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: #264c5a;
+}
+.mission-vision-box{
+    border: 1px solid #c6b682;
+    padding-bottom: 50px;
+}
+.mission-vision-box a.btn{
+    display: block;
+    margin: 0 auto;
+    width: calc(45%);
+
+}
+.mission-vision-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 30px; */
+}
+.mission-vision-flex > div{
+    padding: 45px;
+}
+.mission-vision-flex > div:first-child{
+    border-right: 1px solid #c6b682;
+
+}
+.mission-vision-box h3{
+    font-weight: 800;
+    font-size: 38px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.mission-vision-box h3 img{
+    height: 40px;
+}
+.mission-vision-box p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #000;
+}
+@media screen and (max-width: 768px) {
+    .founder-section h3{
+        font-size: 22px;
+    }
+    .founder-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .founder-box img{
+        width: 100%;
+    }
+    .founder-section{
+        padding: 0 15px;
+    }
+    .founder-btns{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mission-vision{
+        padding: 0 15px;
+    }
+    .mission-vision .container > img{
+        padding: 5px;
+    }
+    .mission-vision-box p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .mission-vision-box h3{
+        font-size: 22px;
+    }
+    .mission-vision-box h3 img{
+        height: 30px;   
+    }
+    .mission-vision-flex{
+        flex-direction: column;
+    }
+    .mission-vision-flex > div{
+        padding: 20px;
+    }
+    .mission-vision-flex > div:first-child{
+        border-right: none;
+        border-bottom: 1px solid #c6b682;
+    }
+    .mission-vision-box a.btn{
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+}

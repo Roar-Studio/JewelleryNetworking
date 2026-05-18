@@ -1,0 +1,625 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;600;700&display=swap');
+
+
+  .profile-container{
+      padding-bottom: 75px;
+  }
+  
+  .profile-container form .form-control, .modal form .form-control  {
+      border: unset;
+      color: #222;
+      border-radius: 0;
+      border-bottom: 1.4px solid #C6B682;
+      font-size: 15px;
+      /* font-family: 'Lato'; */
+      font-family: "Playfair Display", sans-serif;
+  }
+  .select2-container *{
+      /* font-family: 'Lato'; */
+      font-family: "Playfair Display", sans-serif;
+      font-size: 15px;
+  }
+  .profile-container form .form-control:focus, .modal form .form-control:focus {
+      box-shadow: unset;
+  }
+  .input-group-text {
+      border: unset;
+      border-bottom: 1.4px solid #C6B682;
+      border-radius: unset;
+  }
+  .select2:disabled+span+span.clear-selection {
+    display: none !important;
+  }
+  .profile-container form .form-label, .modal form .form-label {
+      color: #000;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 44px;
+  }
+
+  .contact-form-area{
+      display: flex;
+      align-items: flex-end;
+  }
+  .contact-form-area .area-left{
+      width: calc(66%);
+  }
+  .contact-form-area .area-left form{
+      padding: 34px;
+  }
+  .contact-form-area .area-right{
+      width: calc(37%);
+  }
+/* Profile Card Container */
+.profile-card {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -10%;
+    z-index: 99;
+    position: relative;
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 210px;
+    height: 208px;
+    background: #fff;
+    border-radius: 300px;
+    border: 2px solid #C6B682;
+  }
+  .benefits{
+    color: #000;
+  }
+  
+  /* Profile Details Section */
+  .profile-details {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  /* Profile Info Container */
+  .profile-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Profile Name */
+  .profile-name {
+    width: 100%;
+    padding-top: 10px;
+    font-family: 'Playfair Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgba(17, 47, 25, 1);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  /* Profile Phone */
+  .profile-phone {
+    /* font-family: 'Lato', -apple-system, Roboto, Helvetica, sans-serif; */
+    font-family: "Playfair Display", sans-serif;
+    font-size: 20px;
+    color: rgba(153, 153, 153, 1);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+  }
+
+
+/* Profile Container */
+.profile-container {
+  padding: 20px;
+  border: 1px solid #C6B682;
+}
+
+/* Section Headers */
+.profile-header,
+.subscription-header,
+.payment-header {
+  margin-bottom: 30px;
+}
+
+.profile-title,
+.section-title {
+  color: #112f19;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.profile-username,
+.subscription-plan,
+.payment-date {
+  color: #666;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Form Elements */
+.label-text {
+  color: #112f19;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.field-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.field-value {
+  color: #112f19;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Playfair Display", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+}
+
+.form-control.readonly,
+.form-control.placeholder {
+  color: #999999;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #c6b682;
+}
+
+.field-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #dddad1;
+}
+
+/* Buttons */
+.save-button {
+  width: 100%;
+  max-width: 540px;
+  height: 50px;
+  color: #112f19;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #c6b682;
+  border: none;
+}
+
+.change-password-button {
+  color: #09f;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Playfair Display", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.dropdown-arrow {
+  width: 52px;
+  height: 52px;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    /* font-family: "Lato", sans-serif; */
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.active-status {
+  width: 90px;
+  color: #fff;
+  background-color: #00b783;
+}
+
+.successful {
+  height: 32px;
+  padding: 7px 17px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #00b783;
+}
+
+.failed {
+  height: 32px;
+  padding: 7px 29px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #e66161;
+}
+
+/* Membership Section */
+.membership-title {
+  color: #112f19;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  color: #666;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.upgrade-button {
+    height: 50px;
+    color: #112f19;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: #c6b682;
+    border: none;
+    width: 100%;
+}
+
+/* Media Upload Section */
+.media-title {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.78px;
+}
+
+.upload-container {
+  padding: 32px 38px;
+  border: 1.35px solid #d1d1d1;
+  margin: 0;
+}
+
+div.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.upload-box {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    padding: 2px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.upload-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+}
+
+.upload-box input[type="file"] {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.select2-container .clear-selection{
+    position: absolute;
+    z-index: 1;
+    width: 9px;
+    height: 100%;
+    font-size: 18px;
+    align-content: center;
+    right: 23px;
+    color: #5e5d61;
+    cursor: pointer;
+}
+.upload-box .remove-image-btn,.upload-box .remove-video-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    margin-bottom: unset;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+}
+.company_video-wrapper .upload-box{
+    width: 250px;
+    height: 140px;
+}
+.company_video-wrapper .upload-box video{
+    width: 100%;
+    height: 100%;
+}
+
+.upload-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.upload-text {
+  color: #999;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Table Styles */
+
+.table thead th {
+  color: #112f19;
+  font-family: "Playfair Display", serif;
+  background-color: #f3f3f3;
+}
+
+.table tbody td {
+  color: #000;
+  font-family: "Playfair Display", serif;
+}
+
+.table tbody tr {
+  background-color: #f3f3f3;
+}
+
+.active-membership-btn {
+    background-color: #254B5A;
+    color: white;
+    min-width: 100%;
+}
+.inactive-membership-btn {
+    background-color: white;
+    color: #112F19;
+    border: 1px solid #C6B682;
+    min-width: 100%;
+}
+.sort-by-label {
+    min-width: 100px;
+    color: #666666;
+    font-weight: 500;
+    margin: 0;
+}
+.sort-by-select {
+    background: #80808050;
+    color: black;
+    min-width: 140px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    font-weight: 500;
+}
+.directory-box {
+    border: 1px solid #C6B682;
+    margin: 0;
+}
+.directory-header {
+    margin-bottom: 15px;
+}
+.directory-title {
+    color: #112f19;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-transform: capitalize;
+}
+.directory-box img {
+    height: 126px;
+    width: 167px;
+    object-fit: cover;
+    object-position: center;
+}
+.directory-username {
+    color: #666;
+    /* font-family: "Lato", sans-serif; */
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.directory-icon {
+    background: #264C5A;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px !important;
+    height: 30px;
+    margin: 5px;
+}
+.added-by-section {
+    color: #264C5A;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.added-by-value {
+    font-weight: 500;
+}
+.membership-chip {
+    background: #254B5A;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.load-more-btn {
+    min-width: 150px;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .save-button {
+    max-width: 100%;
+  }
+
+  .upgrade-button {
+    padding: 0 50px;
+  }
+
+  .profile-card {
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-title,
+  .section-title {
+    font-size: 28px;
+  }
+
+  .profile-username,
+  .subscription-plan,
+  .payment-date {
+    font-size: 20px;
+  }
+
+  .label-text,
+  .media-title {
+    font-size: 20px;
+  }
+
+  .field-value,
+  .form-control {
+    font-size: 18px;
+  }
+
+  .save-button,
+  .upgrade-button {
+    font-size: 24px;
+    height: 60px;
+  }
+
+  .upgrade-button {
+    padding: 0 20px;
+  }
+
+  .change-password-button {
+    font-size: 18px;
+  }
+
+  .upload-text {
+    font-size: 18px;
+  }
+
+  .status-badge.successful,
+  .status-badge.failed {
+    font-size: 10px;
+    height: 24px;
+    padding: 4px 12px;
+  }
+  .added-by-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .directory-filter {
+    display: block !important;
+  }
+  .directory-info {
+    text-align: center;
+  }
+  .directory-title {
+      font-size: 14px;
+  }
+  .directory-username{
+    font-size: 10px;
+  }
+  .mt-1{
+    margin-top: 0rem !important;
+  }
+  .directory-box img{
+    height: 87px;
+    width: 130px;
+  }
+  .directory-header{
+    margin-bottom: 0px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .profile-name {
+      font-size: 20px;
+    }  
+    .profile-phone {
+      font-size: 18px;
+    }
+    .profile-card {
+        margin-top: -20%;
+    }
+    .form-select{
+        width: 50%;
+    }
+    .table > :not(caption) > * > *{
+      padding: 0.32rem 1rem;
+    }
+    .membership-mobile-view{
+      padding: 0px !important;
+    }
+  }

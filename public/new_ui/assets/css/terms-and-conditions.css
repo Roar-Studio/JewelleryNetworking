@@ -1,0 +1,127 @@
+/* Base styles */
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  /* Main title */
+  .main-title {
+    color: #c6b682;
+    font-family: "Playfair Display", serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  /* Section styles */
+  
+  .section-title {
+    color: #112f19;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 1.4rem 0;
+  }
+  
+  .section-text {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+  }
+  
+  /* Subsection styles */
+  
+  .subsection-title {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 1rem 0;
+  }
+  
+  .subsection-text {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+  }
+  .empty_space {
+    height: 15px;
+    background-color: #F5F5F5;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .main-title {
+      font-size: 70px;
+    }
+  
+    .section-title {
+      font-size: 30px;
+    }
+  
+    .subsection-title {
+      font-size: 18px;
+    }
+  
+    .section-text,
+    .subsection-text {
+      font-size: 16px;
+      line-height: 34px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .main-title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  
+    .content-wrapper {
+      gap: 40px;
+    }
+  
+    .section {
+      gap: 30px;
+    }
+  
+    .section-title {
+      font-size: 20px;
+    }
+  
+    .subsection {
+      gap: 20px;
+    }
+  
+    .subsection-title {
+      font-size: 15px;
+    }
+  
+    .section-text,
+    .subsection-text {
+      font-size: 12px;
+      line-height: 28px;
+    }
+  }
+  /* .text-decoration-underline {
+    color: #254b59;
+  } */
+  /* .text-decoration-underline:hover {
+    color: #254b59;
+  } */
+  .mobile-break {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .mobile-break {
+      display: inline;
+    }
+  }

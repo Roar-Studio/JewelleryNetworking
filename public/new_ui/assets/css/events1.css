@@ -1,0 +1,672 @@
+  /* Event Card Container */
+  .event-card {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px 0 0;
+    gap: 40px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #c6b682;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-detail-card-outer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #c6b682;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-detail-card {
+    display: flex;
+    padding: 0 10px 0 0;
+    gap: 40px;
+    position: relative;
+  }
+  
+  /* Date Display Section */
+  .date-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 20px;
+    justify-content: space-between;
+    width: 192px;
+    background-color: #fdf6ed;
+    box-sizing: border-box;
+  }
+  
+  .calendar-icon-container {
+    padding: 10px;
+  }
+  
+  .date-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+  }
+  
+  .month {
+    font-size: 26px;
+    color: #112f19;
+    font-weight: 400;
+    margin-bottom: -5px;
+  }
+  
+  .day {
+    font-size: 62px;
+    color: #112f19;
+    font-weight: 700;
+    margin-bottom: -5px;
+  }
+  
+  .year {
+    font-size: 26px;
+    color: #112f19;
+    font-weight: 400;
+  }
+  
+  /* Event Details Section */
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 630px;
+    padding: 25px 0 5px 0;
+  }
+  
+  .event-title {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #000;
+    max-width: 740px;
+    margin: 0 0 20px 0;
+  }
+  
+  .event-description {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .event-description p {
+    margin: 0 0 20px 0;
+  }
+  
+  /* Event Timing Section */
+  .event-timing {
+    display: flex;
+    gap: 30px;
+    position: relative;
+  }
+  
+  .start-time, .end-time {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .timing-title {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    margin: 0;
+  }
+  
+  .date-display-small, .time-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .timing-divider {
+    width: 1px;
+    height: 46px;
+    margin: 0 30px;
+    background-color: #666;
+  }
+  
+  /* Registration Actions */
+  .registration-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .register-button {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #254b5a;
+    border: none;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .seats-available {
+    border: 1px solid #c6b682;
+    padding: 14px 24px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background-color: rgba(198, 182, 130, 0.5);
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .action-links {
+    display: inline-flex;
+    gap: 33px;
+  }
+  
+  .know-more, .terms {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #0000e7;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .registration-info {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Event Image */
+  .event-image {
+    width: 478px;
+    height: 477px;
+    margin: 0;
+  }
+  
+  .event-image img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  /* Base styles */
+.event-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    gap: 10px;
+  }
+  
+  /* Search section styles */
+  .search-section {
+    width: 100%;
+    height: 48px;
+    position: relative;
+}
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .search-input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px 10px 55px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #666666;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .search-input:hover {
+    border-color: #254b5a;
+    box-shadow: 0 2px 4px rgba(37, 75, 90, 0.1);
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #254b5a;
+    box-shadow: 0 2px 4px rgba(37, 75, 90, 0.1);
+  }
+  
+  .search-input::placeholder {
+    color: #666666;
+    opacity: 0.7;
+  }
+  
+  /* Filter section styles */
+  .filter-section {
+    display: flex;
+    gap: 11px;
+  }
+  
+  .filter-day {
+    height: 48px;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    text-transform: capitalize;
+    width: 236px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 7px;
+  }
+  
+  .filter-month {
+    height: 48px;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    text-transform: capitalize;
+    width: 236px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .banner-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dddad1;
+  }
+  
+  .diamond-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .diamond-svg {
+    width: 1680px;
+    height: 147px;
+  }
+  
+  .banner-content {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-pattern-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #254b5a;
+  }
+  
+  .background-pattern {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .content-wrapper-events-banner {
+    display: flex;
+    align-items: flex-end;
+    gap: 120px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 70px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta-container {
+    display: flex;
+    width: 687px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  
+  .cta-button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .button-svg {
+    width: 100%;
+    height: 100px;
+  }
+
+
+  .section-title {
+    color: #112f19;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 10px 10px 0;
+  }
+
+  .organization-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 10px 10px 0;
+  }
+
+  .contact-label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon-container {
+    position: relative;
+    width: 19px;
+    height: 19px;
+  }
+
+  .clock-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .contact-value {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .venue-address {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    font-style: normal;
+  }
+
+  .google-map-link {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  .divider-line {
+    width: 100%;
+    height: 2px;
+    stroke-width: 1px;
+    stroke: #DDDAD1;
+    margin-bottom: 20px;
+  }
+
+  .map-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 503/246;
+  }
+  .event-logo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .event-logo-section .event-logo {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+  
+  .vertical-line-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto !important;
+    z-index: 1;
+  }
+
+  .upcoming-event-button {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #254B5A;
+    border: none;
+    display: inline-block;
+  }
+  .past-event-button {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    border: none;
+    display: inline-block;
+    float: right;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .event-card {
+      flex-direction: column;
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .date-display {
+      width: 100%;
+      padding: 20px;
+      height: auto;
+      /* gap: 220px; */
+    }
+  
+    .event-details {
+      padding: 20px 0;
+      max-width: 100%;
+    }
+  
+    .registration-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .register-button, .seats-available {
+      width: 100%;
+    }
+  
+    .action-links {
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .event-image {
+      width: 100%;
+      height: auto;
+    }
+    .event-search-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    
+      .search-section {
+        width: 100%;
+      }
+    
+      .filter-section {
+        width: 100%;
+        justify-content: space-between;
+      }
+    
+      .filter-day, .filter-month {
+        width: 48%;
+        font-size: 24px;
+      }
+
+      .content-wrapper-events-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+      }
+    
+      .cta-container {
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+      }
+      .event-detail-card-outer {
+        max-width: 90%;
+      }
+      .event-detail-card {
+        display: block;
+      }
+      .vertical-line {
+        display: none;
+      }
+      .event-search-container {
+        max-width: 90%;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 22px;
+    }
+
+    .organization-name,
+    .venue-address,
+    .contact-label {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .contact-value {
+      font-size: 20px;
+    }
+
+    .contact-detail {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .event-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .event-description {
+      font-size: 16px;
+    }
+  
+    .event-timing {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .timing-divider {
+      display: none;
+    }
+  
+    .action-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-section {
+        height: 48px;
+      }
+    
+      .filter-section {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .filter-day, .filter-month {
+        width: 100%;
+        font-size: 20px;
+        height: 48px;
+      }
+      .content-wrapper-events-banner {
+        padding: 20px;
+      }
+    
+      .cta-container {
+        padding: 5px;
+      }
+  }
+  
