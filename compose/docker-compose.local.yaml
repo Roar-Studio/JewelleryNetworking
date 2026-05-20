@@ -1,0 +1,39 @@
+volumes:
+  jewel-db-local:
+
+networks:
+  jewel-network-local:
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: jewel-mysql-local
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - jewel-db-local:/var/lib/mysql
+    networks:
+      - jewel-network-local
+
+  redis:
+    image: redis:7-alpine
+    container_name: jewel-redis-local
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - jewel-network-local
+
+  mailpit:
+    image: axllent/mailpit
+    container_name: jewel-mailpit-local
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - jewel-network-local
