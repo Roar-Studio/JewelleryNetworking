@@ -20,9 +20,6 @@ use Carbon\Carbon;
 |
 */
 
-Route::get('/', function () {
-    return view('coming-soon');
-});
 Route::get('/dashboard', function () {
     return view('welcome');
 });
