@@ -20,9 +20,6 @@ use Carbon\Carbon;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/dashboard', function () {
     return view('welcome');
 });
@@ -38,6 +35,10 @@ Route::get('/term-and-conditions', [CustomerAuthController::class, 'termAndCondi
 Route::get('/gallery', [CustomerAuthController::class, 'gallery'])->name('gallery');
 Route::get('/gallery/{id}', [CustomerAuthController::class, 'galleryDetail'])->name('galleryDetail');
 Route::get('/contact-us', [CustomerAuthController::class, 'contactUs'])->name('contactUs');
+Route::get('/deitiesdesignawards', function () {
+    return view('deitiesdesignawards.coming-soon');
+    });
+
 //Route::middleware(['auth', 'preventBackHistory'])->group(function () {
     Route::get('/dashboard', [CustomerAuthController::class, 'dashboard'])->name('dashboard');
     Route::get('/profile', [CustomerAuthController::class, 'profile'])->name('profile');
