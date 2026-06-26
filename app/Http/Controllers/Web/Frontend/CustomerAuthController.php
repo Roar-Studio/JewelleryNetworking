@@ -72,6 +72,9 @@ class CustomerAuthController extends Controller
     public function orderSummary(){
         return view('frontend.orderSummary');
     }
+    public function deitiesDesignAwards(){
+    return view('deitiesdesignawards.coming-soon');
+    }
 
     public function generateInvoice($order_id)
     {

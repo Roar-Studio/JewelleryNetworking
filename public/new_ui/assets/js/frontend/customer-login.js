@@ -172,12 +172,21 @@
                         // toastr.success('Logged In Successfully.', 'Success!');
 
                         // Redirect logic
-                        let point = getQueryParam('point');
-                        if (point === 'm') {
-                            window.location.href = "/membership"; 
-                        } else {
-                            window.location.href = "/dashboard"; 
-                        }
+let redirectPage = localStorage.getItem('redirectAfterLogin');
+
+if (redirectPage) {
+    localStorage.removeItem('redirectAfterLogin');
+    window.location.href = redirectPage;
+}
+else {
+    let point = getQueryParam('point');
+
+    if (point === 'm') {
+        window.location.href = "/membership";
+    } else {
+        window.location.href = "/dashboard";
+    }
+}
                     }
                 } catch (error) {
                     custSubmitButton.prop('disabled', false);
