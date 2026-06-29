@@ -220,6 +220,41 @@
     </a>
 </div>
   </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const token = localStorage.getItem('authToken');
+    const expiry = localStorage.getItem('tokenExpiry');
+
+    // User not logged in
+    if (!token || !expiry) {
+
+        localStorage.setItem(
+            'redirectAfterLogin',
+            window.location.pathname
+        );
+
+        window.location.href = "/login";
+        return;
+    }
+
+    // Token expired
+    if (new Date().getTime() > parseInt(expiry)) {
+
+        localStorage.removeItem('authToken');
+        localStorage.removeItem('tokenType');
+        localStorage.removeItem('tokenExpiry');
+        localStorage.removeItem('userData');
+
+        localStorage.setItem(
+            'redirectAfterLogin',
+            window.location.pathname
+        );
+
+        window.location.href = "/login";
+    }
+});
+</script>
 
 </body>
 </html>
