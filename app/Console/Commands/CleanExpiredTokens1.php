@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Laravel\Sanctum\PersonalAccessToken;
 use App\Models\Customer;
