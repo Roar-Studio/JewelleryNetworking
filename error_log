@@ -1,0 +1,1 @@
+[29-May-2026 15:47:37 Asia/Kolkata] PHP Fatal error:  Cannot declare class CleanExpiredTokens1, because the name is already in use in /home/gheos77crtpz/public_html/app/Console/Commands/CleanExpiredTokens1.php on line 8
