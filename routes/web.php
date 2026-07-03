@@ -35,9 +35,83 @@ Route::get('/term-and-conditions', [CustomerAuthController::class, 'termAndCondi
 Route::get('/gallery', [CustomerAuthController::class, 'gallery'])->name('gallery');
 Route::get('/gallery/{id}', [CustomerAuthController::class, 'galleryDetail'])->name('galleryDetail');
 Route::get('/contact-us', [CustomerAuthController::class, 'contactUs'])->name('contactUs');
-Route::get('/deitiesdesignawards', function () {
-    return view('deitiesdesignawards.coming-soon');
+
+
+// Route::get('/deitiesdesignawards', function () {
+//     return view('deitiesdesignawards.coming-soon');
+//     });
+Route::prefix('deitiesdesignawards')->group(function () {
+
+    Route::get('/', function () {
+        return view('deitiesdesignawards.sections.index');
     });
+    
+
+    Route::get('/about', function () {
+        return view('deitiesdesignawards.sections.about');
+    });
+
+    Route::get('/categories', function () {
+        return view('deitiesdesignawards.sections.categories');
+    });
+
+    Route::get('/design-category', function () {
+        return view('deitiesdesignawards.sections.design-category');
+    });
+
+    Route::get('/contact', function () {
+        return view('deitiesdesignawards.sections.contact');
+    });
+
+    Route::get('/faq', function () {
+        return view('deitiesdesignawards.sections.faq');
+    });
+
+    Route::get('/gallery', function () {
+        return view('deitiesdesignawards.sections.gallery');
+    });
+
+    Route::get('/inspiration', function () {
+        return view('deitiesdesignawards.sections.inspiration');
+    });
+
+    Route::get('/jury', function () {
+        return view('deitiesdesignawards.sections.jury');
+    });
+
+    Route::get('/participate', function () {
+        return view('deitiesdesignawards.sections.participate');
+    });
+
+    Route::get('/partners', function () {
+        return view('deitiesdesignawards.sections.partners');
+    });
+
+    Route::get('/press-kit', function () {
+        return view('deitiesdesignawards.sections.press-kit');
+    });
+
+    Route::get('/privacy', function () {
+        return view('deitiesdesignawards.sections.privacy');
+    });
+
+    Route::get('/sponsor-us', function () {
+        return view('deitiesdesignawards.sections.sponsor-us');
+    });
+
+    Route::get('/submit', function () {
+        return view('deitiesdesignawards.sections.submit');
+    });
+
+    Route::get('/terms', function () {
+        return view('deitiesdesignawards.sections.terms');
+    });
+
+    Route::get('/media-preview', function () {
+        return view('deitiesdesignawards.sections.media-preview');
+    });
+
+});
 
 //Route::middleware(['auth', 'preventBackHistory'])->group(function () {
     Route::get('/dashboard', [CustomerAuthController::class, 'dashboard'])->name('dashboard');
