@@ -9,7 +9,7 @@
         <div class="hero-media">
             <video autoplay muted loop playsinline
                 poster="{{ asset('deitiesdesignawards/images/Indias first awards platform dedicated to jewellery created for the divine.png') }}">
-                <source src="{{ asset('deitiesdesignawards/videos/16147614_3840_2160_24fps.mp4') }}" type="video/mp4">
+                <source src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/home.mp4" type="video/mp4">
             </video>
         </div>
         <div class="hero-vignette"></div>

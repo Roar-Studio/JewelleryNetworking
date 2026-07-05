@@ -55,7 +55,7 @@
         <h2 class="section-title" style="margin-bottom:3rem">Founder &amp; Visionary,<br> Deities Design Awards.</h2>
         <div class="founder-bio-grid">
             <div>
-                <img src="{{ asset('deitiesdesignawards/images/founder.webp') }}" alt="Prernaa Makhariaa" class="founder-profile-photo" style="width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(184,146,42,.2);display:block">
+                <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/founder.webp') }}" alt="Prernaa Makhariaa" class="founder-profile-photo" style="width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(184,146,42,.2);display:block">
                 <div class="founder-bio-meta" style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(184,146,42,.2)">
                     <span class="founder-bio-name" style="display:block;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;margin-bottom:.2rem">Prernaa Makhariaa</span>
                     <span style="font-size:.75rem;letter-spacing:.06em;opacity:.6">Founder &amp; Visionary, Deities Design Awards (DDA)</span>
@@ -104,7 +104,7 @@
         <div class="partner-full">
             <div class="partner-full-logo">
                 <div class="partner-logo-placeholder">
-                    <img src="{{ asset('deitiesdesignawards/images/partners/jab-logo.png') }}" alt="Jewellers Association Bengaluru logo" class="partner-logo-img">
+                    <img src="{{ asset('dda-assets/images/jab-logo.png') }}" alt="Jewellers Association Bengaluru logo" class="partner-logo-img">
                 </div>
             </div>
             <div class="partner-full-content">
@@ -120,7 +120,7 @@
         <div class="partner-full">
             <div class="partner-full-logo">
                 <div class="partner-logo-placeholder">
-                    <img src="{{ asset('deitiesdesignawards/images/partners/iskcon_logo.svg') }}" alt="ISKCON Chowpatty logo" class="partner-logo-img">
+                    <img src="{{ asset('dda-assets/images/iskcon_logo.svg') }}" alt="ISKCON Chowpatty logo" class="partner-logo-img">
                 </div>
             </div>
             <div class="partner-full-content">
@@ -136,7 +136,7 @@
         <div class="partner-full">
             <div class="partner-full-logo">
                 <div class="partner-logo-placeholder">
-                    <img src="{{ asset('deitiesdesignawards/images/partners/JN-Logo.svg') }}" alt="Jewellery Networking logo" class="partner-logo-img">
+                    <img src="{{ asset('dda-assets/images/JNLogo.svg') }}" alt="Jewellery Networking logo" class="partner-logo-img">
                 </div>
             </div>
             <div class="partner-full-content">
