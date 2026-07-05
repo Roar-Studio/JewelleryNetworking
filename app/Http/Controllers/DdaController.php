@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\DDA;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class DdaController extends Controller
 {
@@ -22,8 +23,9 @@ class DdaController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the form
+        // Validate Form
         $validated = $request->validate([
+            // Step 1
             'first_name'       => 'required|string|max:255',
             'last_name'        => 'required|string|max:255',
             'email'            => 'required|email|max:255',
@@ -33,22 +35,61 @@ class DdaController extends Controller
             'organisation'     => 'nullable|string|max:255',
             'participant_type' => 'required|string|max:255',
 
+            // Step 2
             'piece_name'       => 'required|string|max:255',
             'award_category'   => 'required|string|max:255',
             'materials'        => 'required|string|max:255',
             'year'             => 'required|string|max:10',
             'deity'            => 'required|string|max:255',
             'statement'        => 'required|string',
+
+            // Step 3
+            'images'           => 'required|array|min:1|max:10',
+            'images.*'         => 'image|mimes:jpg,jpeg,png|max:25600',
         ]);
 
-        // Generate Entry ID
-        $entryId = 'DDA' . str_pad((DDA::count() + 1), 6, '0', STR_PAD_LEFT);
+        /*
+        |--------------------------------------------------------------------------
+        | Generate Entry ID
+        |--------------------------------------------------------------------------
+        */
+        $entryId = 'DDA' . str_pad(DDA::count() + 1, 6, '0', STR_PAD_LEFT);
 
-        // Save data
+        /*
+        |--------------------------------------------------------------------------
+        | Upload Images to AWS S3
+        |--------------------------------------------------------------------------
+        */
+
+        $imageUrls = [];
+
+        if ($request->hasFile('images')) {
+
+            foreach ($request->file('images') as $image) {
+
+                $fileName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+
+                $path = Storage::disk('s3')->putFileAs(
+                    'submissions/' . $entryId,
+                    $image,
+                    $fileName
+                );
+
+                $imageUrls[] = Storage::disk('s3')->url($path);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | Save Submission
+        |--------------------------------------------------------------------------
+        */
+
         $submission = new DDA();
 
         $submission->entry_id = $entryId;
 
+        // Participant Information
         $submission->first_name = $validated['first_name'];
         $submission->last_name = $validated['last_name'];
         $submission->email = $validated['email'];
@@ -58,6 +99,7 @@ class DdaController extends Controller
         $submission->organisation = $validated['organisation'] ?? null;
         $submission->participant_type = $validated['participant_type'];
 
+        // Entry Details
         $submission->piece_name = $validated['piece_name'];
         $submission->award_category = $validated['award_category'];
         $submission->materials = $validated['materials'];
@@ -65,13 +107,13 @@ class DdaController extends Controller
         $submission->deity = $validated['deity'];
         $submission->statement = $validated['statement'];
 
-        // Images will be added later
-        $submission->images = [];
+        // Images
+        $submission->images = $imageUrls;
 
-        // Declaration will be handled later
+        // Declaration
         $submission->declaration = true;
 
-        // Default status
+        // Status
         $submission->status = 'Pending';
 
         $submission->save();
@@ -82,7 +124,7 @@ class DdaController extends Controller
     }
 
     /**
-     * Show a single submission
+     * Display a single submission
      */
     public function show($id)
     {

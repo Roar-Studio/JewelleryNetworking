@@ -176,7 +176,7 @@
                         <p class="sub-panel-desc">Upload 1&#x2013;10 images of your entry. JPEG or PNG only. Maximum 25 MB per image.</p>
 
                         <div class="upload-zone" id="upload-zone">
-                            <input type="file" id="file-input" name="images[]" accept="image/jpeg,image/png" multiple>
+                            <input type="file" id="file-input" name="images[]" accept="image/jpeg,image/png" multiple required>
                             <div class="upload-zone-inner">
                                 <div class="upload-icon">
                                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
