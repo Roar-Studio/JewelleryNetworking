@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\Admin\{AdminAuthController, CustomerController, MembershipController, EventController, TransactionController, CouponController, GalleryController};
 use App\Http\Controllers\Web\Frontend\{CustomerAuthController};
 use App\Http\Controllers\Api\Frontend\{CheckoutController};
+use App\Http\Controllers\DdaController;
 use Mews\Captcha\CaptchaController;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\MembershipAcknowledgementMail;
@@ -103,6 +104,9 @@ Route::prefix('deitiesdesignawards')->group(function () {
         return view('deitiesdesignawards.sections.submit');
     });
 
+    Route::post('/submit', [DdaController::class, 'store'])
+    ->name('dda.submit');
+
     Route::get('/terms', function () {
         return view('deitiesdesignawards.sections.terms');
     });
@@ -110,6 +114,8 @@ Route::prefix('deitiesdesignawards')->group(function () {
     Route::get('/media-preview', function () {
         return view('deitiesdesignawards.sections.media-preview');
     });
+
+    
 
 });
 

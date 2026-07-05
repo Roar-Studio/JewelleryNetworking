@@ -4,6 +4,24 @@
 
 @section('content')
 
+@if(session('success'))
+    <div class="alert alert-success"
+        style="max-width:1200px;margin:20px auto;padding:15px;background:#d4edda;color:#155724;border-radius:8px;">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if ($errors->any())
+    <div class="alert alert-danger"
+        style="max-width:1200px;margin:20px auto;padding:15px;background:#f8d7da;color:#721c24;border-radius:8px;">
+        <ul style="margin:0;padding-left:20px;">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 <section class="page-hero-int">
     <div class="page-hero-int-content">
         <span class="page-hero-int-eyebrow">Submit Your Entry</span>
@@ -35,11 +53,19 @@
             {{-- Form Area --}}
             <div class="submit-form-area">
 
-                {{-- Step 1: Participant Info --}}
-                <div class="sub-panel active" id="sub-panel-1">
-                    <h3 class="sub-panel-title">Step 1 &#x2014; Participant Information</h3>
-                    <p class="sub-panel-desc">Tell us about yourself or your organisation.</p>
-                    <form id="form-step-1" novalidate>
+                <form
+                    action="{{ route('dda.submit') }}"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    id="dda-form"
+                    novalidate
+                >
+                    @csrf
+
+                    {{-- Step 1: Participant Info --}}
+                    <div class="sub-panel active" id="sub-panel-1">
+                        <h3 class="sub-panel-title">Step 1 &#x2014; Participant Information</h3>
+                        <p class="sub-panel-desc">Tell us about yourself or your organisation.</p>
                         <div class="form-grid">
                             <div class="form-field">
                                 <label for="f-first">First Name <span class="req">*</span></label>
@@ -92,14 +118,12 @@
                         <div class="form-actions">
                             <button type="button" class="btn-form-next" onclick="goStep(2)">Continue to Entry Details <span>&#x2192;</span></button>
                         </div>
-                    </form>
-                </div>
+                    </div>
 
-                {{-- Step 2: Entry Details --}}
-                <div class="sub-panel" id="sub-panel-2">
-                    <h3 class="sub-panel-title">Step 2 &#x2014; Entry Details</h3>
-                    <p class="sub-panel-desc">Tell us about your entry.</p>
-                    <form id="form-step-2" novalidate>
+                    {{-- Step 2: Entry Details --}}
+                    <div class="sub-panel" id="sub-panel-2">
+                        <h3 class="sub-panel-title">Step 2 &#x2014; Entry Details</h3>
+                        <p class="sub-panel-desc">Tell us about your entry.</p>
                         <div class="form-grid">
                             <div class="form-field full">
                                 <label for="f-piece-name">Piece / Collection Name <span class="req">*</span></label>
@@ -144,64 +168,62 @@
                             <button type="button" class="btn-form-prev" onclick="goStep(1)"><span>&#x2190;</span> Back</button>
                             <button type="button" class="btn-form-next" onclick="goStep(3)">Continue to Images <span>&#x2192;</span></button>
                         </div>
-                    </form>
-                </div>
+                    </div>
 
-                {{-- Step 3: Image Upload --}}
-                <div class="sub-panel" id="sub-panel-3">
-                    <h3 class="sub-panel-title">Step 3 &#x2014; Image Upload</h3>
-                    <p class="sub-panel-desc">Upload 1&#x2013;10 images of your entry. JPEG or PNG only. Maximum 25 MB per image.</p>
+                    {{-- Step 3: Image Upload --}}
+                    <div class="sub-panel" id="sub-panel-3">
+                        <h3 class="sub-panel-title">Step 3 &#x2014; Image Upload</h3>
+                        <p class="sub-panel-desc">Upload 1&#x2013;10 images of your entry. JPEG or PNG only. Maximum 25 MB per image.</p>
 
-                    <div class="upload-zone" id="upload-zone">
-                        <input type="file" id="file-input" accept="image/jpeg,image/png" multiple>
-                        <div class="upload-zone-inner">
-                            <div class="upload-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                    <polyline points="17 8 12 3 7 8"/>
-                                    <line x1="12" y1="3" x2="12" y2="15"/>
-                                </svg>
+                        <div class="upload-zone" id="upload-zone">
+                            <input type="file" id="file-input" name="images[]" accept="image/jpeg,image/png" multiple>
+                            <div class="upload-zone-inner">
+                                <div class="upload-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="17 8 12 3 7 8"/>
+                                        <line x1="12" y1="3" x2="12" y2="15"/>
+                                    </svg>
+                                </div>
+                                <p class="upload-primary">Drag &amp; drop your images here</p>
+                                <p class="upload-secondary">or <button type="button" class="upload-browse" onclick="document.getElementById('file-input').click()">browse files</button></p>
+                                <p class="upload-hint">JPEG or PNG &bull; Max 25 MB each &bull; Up to 10 images</p>
                             </div>
-                            <p class="upload-primary">Drag &amp; drop your images here</p>
-                            <p class="upload-secondary">or <button type="button" class="upload-browse" onclick="document.getElementById('file-input').click()">browse files</button></p>
-                            <p class="upload-hint">JPEG or PNG &bull; Max 25 MB each &bull; Up to 10 images</p>
+                        </div>
+
+                        <div class="upload-count" id="upload-count" style="display:none"><span id="count-num">0</span> image(s) selected</div>
+                        <div class="upload-error" id="upload-error" style="display:none"></div>
+                        <div class="preview-grid" id="preview-grid"></div>
+
+                        <div class="form-actions" style="margin-top:2rem">
+                            <button type="button" class="btn-form-prev" onclick="goStep(2)"><span>&#x2190;</span> Back</button>
+                            <button type="button" class="btn-form-next" id="btn-to-step-4" onclick="goStep(4)">Continue to Declaration <span>&#x2192;</span></button>
                         </div>
                     </div>
 
-                    <div class="upload-count" id="upload-count" style="display:none"><span id="count-num">0</span> image(s) selected</div>
-                    <div class="upload-error" id="upload-error" style="display:none"></div>
-                    <div class="preview-grid" id="preview-grid"></div>
-
-                    <div class="form-actions" style="margin-top:2rem">
-                        <button type="button" class="btn-form-prev" onclick="goStep(2)"><span>&#x2190;</span> Back</button>
-                        <button type="button" class="btn-form-next" id="btn-to-step-4" onclick="goStep(4)">Continue to Declaration <span>&#x2192;</span></button>
-                    </div>
-                </div>
-
-                {{-- Step 4: Declaration --}}
-                <div class="sub-panel" id="sub-panel-4">
-                    <h3 class="sub-panel-title">Step 4 &#x2014; Declaration &amp; Submit</h3>
-                    <p class="sub-panel-desc">Please read and confirm the following declarations before submitting your entry.</p>
-                    <form id="form-step-4" novalidate>
+                    {{-- Step 4: Declaration --}}
+                    <div class="sub-panel" id="sub-panel-4">
+                        <h3 class="sub-panel-title">Step 4 &#x2014; Declaration &amp; Submit</h3>
+                        <p class="sub-panel-desc">Please read and confirm the following declarations before submitting your entry.</p>
                         <div class="declaration-block">
                             <div class="check-row">
-                                <input type="checkbox" id="decl-1" required>
+                                <input type="checkbox" id="decl-1" name="declaration_original" value="1" required>
                                 <label for="decl-1">I confirm that the submitted work is my original creation and I hold the rights to enter it in this competition.</label>
                             </div>
                             <div class="check-row">
-                                <input type="checkbox" id="decl-2" required>
+                                <input type="checkbox" id="decl-2" name="declaration_devotional" value="1" required>
                                 <label for="decl-2">I confirm that the submitted piece was created with sincere devotional, sacred or spiritual intent.</label>
                             </div>
                             <div class="check-row">
-                                <input type="checkbox" id="decl-3" required>
+                                <input type="checkbox" id="decl-3" name="declaration_information" value="1" required>
                                 <label for="decl-3">I confirm that all information provided in this submission is accurate and complete.</label>
                             </div>
                             <div class="check-row">
-                                <input type="checkbox" id="decl-4" required>
+                                <input type="checkbox" id="decl-4" name="declaration_promotion" value="1" required>
                                 <label for="decl-4">I grant Deities Design Awards the right to use submitted images for promotional, editorial and archival purposes with attribution.</label>
                             </div>
                             <div class="check-row">
-                                <input type="checkbox" id="decl-5" required>
+                                <input type="checkbox" id="decl-5" name="declaration_terms" value="1" required>
                                 <label for="decl-5">I have read and agree to the <a href="{{ url('/deitiesdesignawards/terms') }}" target="_blank" style="color:var(--gold,#b8922a)">Terms &amp; Conditions</a> and <a href="{{ url('/deitiesdesignawards/privacy') }}" target="_blank" style="color:var(--gold,#b8922a)">Privacy Policy</a>.</label>
                             </div>
                         </div>
@@ -222,8 +244,9 @@
                             <p>Thank you for entering the Deities Design Awards. You will receive a confirmation email at the address provided. Your entry reference number is <strong id="ref-num"></strong>.</p>
                             <a href="{{ url('/deitiesdesignawards') }}" style="color:var(--gold,#b8922a);font-size:.85rem">Return to Homepage &#x2192;</a>
                         </div>
-                    </form>
-                </div>
+                    </div>
+
+                </form>
 
             </div>{{-- /.submit-form-area --}}
         </div>{{-- /.submit-layout --}}
@@ -236,33 +259,64 @@
 <script>
 (function () {
 
-    // ── Step navigation ───────────────────────────────────────────────────────
+
     function goStep(n) {
-        document.querySelectorAll('.sub-panel').forEach(function (p) {
-            p.classList.remove('active');
-        });
-        document.querySelectorAll('.prog-step').forEach(function (s) {
-            s.classList.remove('active', 'done');
-        });
 
-        document.getElementById('sub-panel-' + n).classList.add('active');
+    const currentPanel = document.querySelector('.sub-panel.active');
 
-        document.querySelectorAll('.prog-step').forEach(function (s) {
-            var sn = parseInt(s.dataset.step);
-            if (sn < n) s.classList.add('done');
-            if (sn === n) s.classList.add('active');
-        });
+    if (currentPanel && n > 1) {
 
-        var layout = document.querySelector('.submit-layout');
-        if (layout) {
-            window.scrollTo({ top: layout.offsetTop - 80, behavior: 'smooth' });
+        const requiredFields = currentPanel.querySelectorAll(
+            "input[required], select[required], textarea[required]"
+        );
+
+        for (let field of requiredFields) {
+
+            if (!field.checkValidity()) {
+
+                field.reportValidity();
+
+                return;
+            }
         }
     }
+
+    // Hide all panels
+    document.querySelectorAll('.sub-panel').forEach(function (p) {
+        p.classList.remove('active');
+    });
+
+    // Hide all progress
+    document.querySelectorAll('.prog-step').forEach(function (s) {
+        s.classList.remove('active', 'done');
+    });
+
+    // Show selected panel
+    document
+        .getElementById('sub-panel-' + n)
+        .classList.add('active');
+
+    // Update sidebar
+    document.querySelectorAll('.prog-step').forEach(function (s) {
+
+        var sn = parseInt(s.dataset.step);
+
+        if (sn < n)
+            s.classList.add('done');
+
+        if (sn === n)
+            s.classList.add('active');
+    });
+
+    window.scrollTo({
+        top: document.querySelector('.submit-layout').offsetTop - 80,
+        behavior: 'smooth'
+    });
+}
 
     // Expose to global scope for inline onclick attributes
     window.goStep = goStep;
 
-    // ── File upload ───────────────────────────────────────────────────────────
     var zone     = document.getElementById('upload-zone');
     var fi       = document.getElementById('file-input');
     var grid     = document.getElementById('preview-grid');
@@ -270,6 +324,14 @@
     var cntNum   = document.getElementById('count-num');
     var errEl    = document.getElementById('upload-error');
     var files    = [];
+
+    function syncFileInput() {
+        var dt = new DataTransfer();
+        files.forEach(function (f) {
+            dt.items.add(f);
+        });
+        fi.files = dt.files;
+    }
 
     function validateAndPreview(newFiles) {
         errEl.style.display = 'none';
@@ -300,6 +362,7 @@
         }
 
         renderPreviews();
+        syncFileInput();
     }
 
     function renderPreviews() {
@@ -311,7 +374,7 @@
                 var d = document.createElement('div');
                 d.className = 'preview-thumb';
                 d.innerHTML = '<img src="' + e.target.result + '" alt="Preview ' + i + '">'
-                            + '<button class="preview-remove" data-idx="' + i + '" title="Remove">&times;</button>';
+                            + '<button type="button" class="preview-remove" data-idx="' + i + '" title="Remove">&times;</button>';
                 grid.appendChild(d);
             };
             rd.readAsDataURL(f);
@@ -327,6 +390,7 @@
         if (e.target.classList.contains('preview-remove')) {
             files.splice(parseInt(e.target.dataset.idx), 1);
             renderPreviews();
+            syncFileInput();
         }
     });
 
@@ -347,10 +411,9 @@
     // File input change
     fi.addEventListener('change', function () {
         validateAndPreview(fi.files);
-        fi.value = '';
     });
 
-    // ── Word counter ──────────────────────────────────────────────────────────
+    // ── Word counter 
     var ta = document.getElementById('f-statement');
     var wc = document.getElementById('stmt-count');
     if (ta && wc) {
@@ -360,27 +423,26 @@
         });
     }
 
-    // ── Final submit ──────────────────────────────────────────────────────────
-    var formStep4 = document.getElementById('form-step-4');
-    if (formStep4) {
-        formStep4.addEventListener('submit', function (e) {
+    const form = document.getElementById("dda-form");
+
+form.addEventListener("submit", function (e) {
+
+    // Check all declaration checkboxes
+    const checks = document.querySelectorAll(".check-row input");
+
+    for (let check of checks) {
+
+        if (!check.checked) {
+
+            alert("Please accept all declarations before submitting.");
+
             e.preventDefault();
 
-            var allChecked = Array.from(
-                document.querySelectorAll('.check-row input')
-            ).every(function (c) { return c.checked; });
-
-            if (!allChecked) {
-                alert('Please confirm all declarations before submitting.');
-                return;
-            }
-
-            var ref = 'DDA-' + Date.now().toString(36).toUpperCase();
-            document.getElementById('ref-num').textContent = ref;
-            formStep4.style.display = 'none';
-            document.getElementById('submit-success').style.display = 'block';
-        });
+            return;
+        }
     }
+
+});
 
 })();
 </script>
