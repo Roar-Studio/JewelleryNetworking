@@ -118,9 +118,7 @@ class DdaController extends Controller
 
         $submission->save();
 
-        return redirect()
-            ->back()
-            ->with('success', 'Submission saved successfully! Entry ID: ' . $entryId);
+        return redirect()->route('dda.order.summary', $submission->id);
     }
 
     /**
