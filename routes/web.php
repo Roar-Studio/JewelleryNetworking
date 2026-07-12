@@ -9,6 +9,7 @@ use Mews\Captcha\CaptchaController;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\MembershipAcknowledgementMail;
 use Carbon\Carbon;
+use App\Http\Controllers\DdaPaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,6 +107,39 @@ Route::prefix('deitiesdesignawards')->group(function () {
 
     Route::post('/submit', [DdaController::class, 'store'])
     ->name('dda.submit');
+
+    Route::post('/submit', [DdaController::class, 'store'])
+    ->name('dda.submit');
+
+// Payment Routes
+Route::get(
+    '/order-summary/{id}',
+    [DdaPaymentController::class, 'orderSummary']
+)->name('dda.order.summary');
+
+Route::post(
+    '/create-order',
+    [DdaPaymentController::class, 'createOrder']
+)->name('dda.create.order');
+
+Route::post(
+    '/razorpay/callback',
+    [DdaPaymentController::class, 'razorpayCallback']
+)->name('dda.razorpay.callback');
+
+Route::get(
+    '/payment-success',
+    [DdaPaymentController::class, 'paymentSuccess']
+)->name('dda.payment.success');
+
+Route::get(
+    '/payment-failed',
+    [DdaPaymentController::class, 'paymentFailed']
+)->name('dda.payment.failed');
+
+Route::get('/terms', function () {
+    return view('deitiesdesignawards.sections.terms');
+});
 
     Route::get('/terms', function () {
         return view('deitiesdesignawards.sections.terms');

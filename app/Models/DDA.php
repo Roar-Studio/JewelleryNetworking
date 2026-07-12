@@ -60,4 +60,13 @@ class DDA extends Model
         'images' => 'array',
         'declaration' => 'boolean',
     ];
+
+    /**
+     * Relationship:
+     * One Submission can have many Payment Transactions
+     */
+    public function transactions()
+    {
+        return $this->hasMany(DdaTransaction::class, 'dda_id', 'id');
+    }
 }
