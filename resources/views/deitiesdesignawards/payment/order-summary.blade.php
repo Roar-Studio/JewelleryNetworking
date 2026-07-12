@@ -3,355 +3,386 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Order Summary</title>
+    <title>Order Summary</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+        body {
 
-body{
+            background: #f7f5f2;
+            font-family: Inter, sans-serif;
+            color: #333;
 
-background:#f7f5f2;
-font-family:Inter,sans-serif;
-color:#333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-display:flex;
-justify-content:center;
-align-items:center;
+            min-height: 100vh;
 
-min-height:100vh;
+            padding: 30px;
 
-padding:30px;
+        }
 
-}
+        .card {
 
-.card{
+            width: 100%;
+            max-width: 760px;
 
-width:100%;
-max-width:760px;
+            background: #fff;
 
-background:#fff;
+            border-radius: 18px;
 
-border-radius:18px;
+            padding: 45px;
 
-padding:45px;
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, .08);
 
-box-shadow:
-0 12px 40px rgba(0,0,0,.08);
+        }
 
-}
+        .logo {
 
-.logo{
+            text-align: center;
+            margin-bottom: 25px;
 
-text-align:center;
-margin-bottom:25px;
+        }
 
-}
+        .logo img {
 
-.logo img{
+            height: 80px;
 
-height:80px;
+        }
 
-}
+        .title {
 
-.title{
+            font-family: "Cormorant Garamond", serif;
 
-font-family:"Cormorant Garamond",serif;
+            font-size: 44px;
 
-font-size:44px;
+            text-align: center;
 
-text-align:center;
+            color: #b78a2c;
 
-color:#b78a2c;
+            margin-bottom: 10px;
 
-margin-bottom:10px;
+        }
 
-}
+        .subtitle {
 
-.subtitle{
+            text-align: center;
 
-text-align:center;
+            color: #777;
 
-color:#777;
+            margin-bottom: 35px;
 
-margin-bottom:35px;
+        }
 
-}
+        .summary {
 
-.summary{
+            border: 1px solid #ececec;
 
-border:1px solid #ececec;
+            border-radius: 12px;
 
-border-radius:12px;
+            overflow: hidden;
 
-overflow:hidden;
+        }
 
-}
+        .row {
 
-.row{
+            display: flex;
 
-display:flex;
+            justify-content: space-between;
 
-justify-content:space-between;
+            padding: 18px 22px;
 
-padding:18px 22px;
+            border-bottom: 1px solid #ececec;
 
-border-bottom:1px solid #ececec;
+        }
 
-}
+        .row:last-child {
 
-.row:last-child{
+            border-bottom: none;
 
-border-bottom:none;
+        }
 
-}
+        .label {
 
-.label{
+            font-weight: 600;
 
-font-weight:600;
+            color: #666;
 
-color:#666;
+        }
 
-}
+        .value {
 
-.value{
+            font-weight: 500;
 
-font-weight:500;
+            color: #222;
 
-color:#222;
+            text-align: right;
 
-text-align:right;
+        }
 
-}
+        .total {
 
-.total{
+            background: #faf7f1;
 
-background:#faf7f1;
+        }
 
-}
+        .total .label {
 
-.total .label{
+            font-size: 20px;
 
-font-size:20px;
+            font-weight: 700;
 
-font-weight:700;
+            color: #b78a2c;
 
-color:#b78a2c;
+        }
 
-}
+        .total .value {
 
-.total .value{
+            font-size: 28px;
 
-font-size:28px;
+            font-weight: 700;
 
-font-weight:700;
+            color: #b78a2c;
 
-color:#b78a2c;
+        }
 
-}
+        .note {
 
-.note{
+            margin-top: 25px;
 
-margin-top:25px;
+            font-size: 14px;
 
-font-size:14px;
+            line-height: 24px;
 
-line-height:24px;
+            color: #777;
 
-color:#777;
+            text-align: center;
 
-text-align:center;
+        }
 
-}
+        .pay-btn {
 
-.pay-btn{
+            width: 100%;
 
-width:100%;
+            margin-top: 35px;
 
-margin-top:35px;
+            padding: 18px;
 
-padding:18px;
+            font-size: 18px;
 
-font-size:18px;
+            font-weight: 600;
 
-font-weight:600;
+            border: none;
 
-border:none;
+            border-radius: 10px;
 
-border-radius:10px;
+            background: #b78a2c;
 
-background:#b78a2c;
+            color: #fff;
 
-color:#fff;
+            cursor: pointer;
 
-cursor:pointer;
+            transition: .3s;
 
-transition:.3s;
+        }
 
-}
+        .pay-btn:hover {
 
-.pay-btn:hover{
+            background: #9f7320;
 
-background:#9f7320;
+            transform: translateY(-2px);
 
-transform:translateY(-2px);
+        }
 
-}
+        @media(max-width:600px) {
 
-@media(max-width:600px){
+            .card {
 
-.card{
+                padding: 25px;
 
-padding:25px;
+            }
 
-}
+            .title {
 
-.title{
+                font-size: 34px;
 
-font-size:34px;
+            }
 
-}
+            .row {
 
-.row{
+                flex-direction: column;
 
-flex-direction:column;
+                gap: 8px;
 
-gap:8px;
+            }
 
-}
+            .value {
 
-.value{
+                text-align: left;
 
-text-align:left;
+            }
 
-}
+            .total .value {
 
-.total .value{
+                font-size: 24px;
 
-font-size:24px;
+            }
 
-}
-
-}
-
-</style>
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="card">
+    <div class="card">
 
-<div class="logo">
+        <div class="logo">
 
-<img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Logo">
+            <img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Logo">
+
+        </div>
+
+        <h1 class="title">
+            Order Summary
+        </h1>
+
+        <p class="subtitle">
+            Please review your submission before proceeding to payment.
+        </p>
+
+        <div class="summary">
+
+            <div class="row">
+
+                <div class="label">
+                    Entry ID
+                </div>
+
+                <div class="value">
+                    {{ $submission->entry_id }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Participant
+                </div>
+
+                <div class="value">
+                    {{ $submission->first_name }} {{ $submission->last_name }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Email
+                </div>
+
+                <div class="value">
+                    {{ $submission->email }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Award Category
+                </div>
+
+                <div class="value">
+                    {{ ucfirst($submission->award_category) }}
+                </div>
+
+            </div>
+
+            <div class="row total">
+
+                <div class="label">
+                    Total Amount
+                </div>
+
+                <div class="value">
+                    ₹{{ number_format($amount) }}
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="note">
+
+            Your submission will be processed once payment is successfully completed.
+
+        </p>
+
+        <div style="margin-top:30px;">
+
+    <h3>Select Payment Method</h3>
+
+    <label style="display:block;margin-top:15px;">
+        <input
+            type="radio"
+            name="payment_method"
+            value="razorpay"
+            checked>
+
+        Razorpay
+    </label>
+
+    <label style="display:block;margin-top:10px;">
+        <input
+            type="radio"
+            name="payment_method"
+            value="paypal">
+
+        PayPal
+    </label>
 
 </div>
 
-<h1 class="title">
-Order Summary
-</h1>
+        <button id="pay-btn" data-submission="{{ $submission->id }}" class="btn">
+            Proceed to Payment
+        </button>
 
-<p class="subtitle">
-Please review your submission before proceeding to payment.
-</p>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-<div class="summary">
-
-<div class="row">
-
-<div class="label">
-Entry ID
-</div>
-
-<div class="value">
-{{ $submission->entry_id }}
-</div>
-
-</div>
-
-<div class="row">
-
-<div class="label">
-Participant
-</div>
-
-<div class="value">
-{{ $submission->first_name }} {{ $submission->last_name }}
-</div>
-
-</div>
-
-<div class="row">
-
-<div class="label">
-Email
-</div>
-
-<div class="value">
-{{ $submission->email }}
-</div>
-
-</div>
-
-<div class="row">
-
-<div class="label">
-Award Category
-</div>
-
-<div class="value">
-{{ ucfirst($submission->award_category) }}
-</div>
-
-</div>
-
-<div class="row total">
-
-<div class="label">
-Total Amount
-</div>
-
-<div class="value">
-₹{{ number_format($amount) }}
-</div>
-
-</div>
-
-</div>
-
-<p class="note">
-
-Your submission will be processed once payment is successfully completed.
-
-</p>
-
-<button
-    id="pay-btn"
-    data-submission="{{ $submission->id }}"
-    class="btn">
-    Proceed to Payment
-</button>
-
-</div>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-<script>
+    <script>
 
 document.getElementById("pay-btn").addEventListener("click", function () {
 
+    let paymentMethod = document.querySelector(
+        'input[name="payment_method"]:checked'
+    ).value;
+
     let submissionId = this.dataset.submission;
 
-    fetch("{{ route('dda.create.order') }}", {
+    let url =
+        paymentMethod === "razorpay"
+            ? "{{ route('dda.create.order') }}"
+            : "{{ route('dda.paypal.create') }}";
+
+    fetch(url, {
 
         method: "POST",
 
@@ -375,10 +406,9 @@ document.getElementById("pay-btn").addEventListener("click", function () {
 
             const text = await response.text();
 
-            console.log("Laravel Error:");
             console.log(text);
 
-            alert("Laravel returned an error. Check Console.");
+            alert("Laravel Error. Check Console.");
 
             return null;
         }
@@ -391,14 +421,34 @@ document.getElementById("pay-btn").addEventListener("click", function () {
 
         if (!data) return;
 
-        console.log("Response :", data);
+        console.log(data);
 
         if (!data.success) {
 
-            alert("Unable to create order");
+            alert(data.message ?? "Unable to create payment.");
 
             return;
         }
+
+        /*
+        |--------------------------------------------------------------------------
+        | PAYPAL
+        |--------------------------------------------------------------------------
+        */
+
+        if (paymentMethod === "paypal") {
+
+            window.location.href = data.approve_url;
+
+            return;
+
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | RAZORPAY
+        |--------------------------------------------------------------------------
+        */
 
         var options = {
 
@@ -416,53 +466,61 @@ document.getElementById("pay-btn").addEventListener("click", function () {
 
             handler: function (response) {
 
-    fetch("{{ route('dda.razorpay.callback') }}", {
+                fetch("{{ route('dda.razorpay.callback') }}", {
 
-        method: "POST",
+                    method: "POST",
 
-        headers: {
+                    headers: {
 
-            "Content-Type":"application/json",
+                        "Content-Type": "application/json",
 
-            "Accept":"application/json",
+                        "Accept": "application/json",
 
-            "X-CSRF-TOKEN":"{{ csrf_token() }}"
+                        "X-CSRF-TOKEN": "{{ csrf_token() }}"
 
-        },
+                    },
 
-        body: JSON.stringify({
+                    body: JSON.stringify({
 
-            transaction_id: data.transaction_id,
+                        transaction_id: data.transaction_id,
 
-            razorpay_payment_id: response.razorpay_payment_id,
+                        razorpay_payment_id: response.razorpay_payment_id,
 
-            razorpay_order_id: response.razorpay_order_id,
+                        razorpay_order_id: response.razorpay_order_id,
 
-            razorpay_signature: response.razorpay_signature
+                        razorpay_signature: response.razorpay_signature
 
-        })
+                    })
 
-    })
+                })
 
-    .then(res => res.json())
+                .then(res => res.json())
 
-    .then(result => {
+                .then(result => {
 
-        console.log(result);
+                    if (result.success) {
 
-        if(result.success){
+                        window.location.href =
+                            "/deitiesdesignawards/payment-success";
 
-            window.location.href="{{ route('dda.payment.success') }}";
+                    } else {
 
-        }else{
+                        window.location.href =
+                            "/deitiesdesignawards/payment-failed";
 
-            alert(result.message);
+                    }
 
-        }
+                })
 
-    });
+                .catch(err => {
 
-},
+                    console.log(err);
+
+                    alert("Payment verification failed.");
+
+                });
+
+            },
 
             prefill: {
 
@@ -490,7 +548,7 @@ document.getElementById("pay-btn").addEventListener("click", function () {
 
     .catch(error => {
 
-        console.error("Fetch Error:", error);
+        console.log(error);
 
         alert("Something went wrong.");
 
