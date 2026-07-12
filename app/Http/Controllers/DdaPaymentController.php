@@ -155,10 +155,10 @@ class DdaPaymentController extends Controller
         }
     }
 
-    public function paymentSuccess()
-    {
-        return view('deitiesdesignawards.payment.success');
-    }
+public function paymentSuccess()
+{
+    return view('deitiesdesignawards.payment.success');
+}
 
     public function paymentFailed()
     {

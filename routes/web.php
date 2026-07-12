@@ -137,6 +137,21 @@ Route::get(
     [DdaPaymentController::class, 'paymentFailed']
 )->name('dda.payment.failed');
 
+Route::post(
+    '/paypal/create-order',
+    [DdaPaymentController::class, 'createPaypalOrder']
+)->name('dda.paypal.create');
+
+Route::get(
+    '/paypal/success',
+    [DdaPaymentController::class, 'paypalSuccess']
+)->name('dda.paypal.success');
+
+Route::get(
+    '/paypal/cancel',
+    [DdaPaymentController::class, 'paypalCancel']
+)->name('dda.paypal.cancel');
+
 Route::get('/terms', function () {
     return view('deitiesdesignawards.sections.terms');
 });
