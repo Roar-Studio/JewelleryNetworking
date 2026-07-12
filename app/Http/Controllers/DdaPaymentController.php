@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PaymentSuccess;
 use App\Models\DDA;
 use App\Models\DdaTransaction;
 use Illuminate\Http\Request;
@@ -141,6 +142,12 @@ class DdaPaymentController extends Controller
                 'gateway_signature' => $attributes['razorpay_signature'],
                 'status' => 'Completed',
             ]);
+
+            /* Dispatch invoice */
+            PaymentSuccess::dispatch(
+                $transaction->dda_id,
+                $transaction->id
+            );
 
             return response()->json([
                 'success' => true,
