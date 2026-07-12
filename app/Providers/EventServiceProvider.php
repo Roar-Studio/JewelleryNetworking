@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\PaymentSuccess;
+use App\Listeners\SendPaymentInvoice;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Mail\Events\MessageSending;
@@ -19,6 +21,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        PaymentSuccess::class => [
+            SendPaymentInvoice::class
+        ]
     ];
 
     /**
