@@ -10,7 +10,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-class SendPaymentInvoice
+class SendPaymentSuccessMail
 {
     /**
      * Create the event listener.
@@ -33,7 +33,7 @@ class SendPaymentInvoice
         /* TODO: Create a proper mail template for this */
         Mail::raw(
             "Your payment was successfull",
-            function($message) use ($submission){
+            function ($message) use ($submission) {
                 $message->to($submission->email)->subject("Payment Sucessfull");
             }
         );

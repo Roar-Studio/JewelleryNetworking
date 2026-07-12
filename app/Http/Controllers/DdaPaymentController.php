@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PaymentFailed;
 use App\Events\PaymentSuccess;
 use App\Models\DDA;
 use App\Models\DdaTransaction;
@@ -9,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Razorpay\Api\Api;
+use Razorpay\Api\Errors\SignatureVerificationError;
 
 class DdaPaymentController extends Controller
 {
@@ -41,7 +43,7 @@ class DdaPaymentController extends Controller
             $transaction = DdaTransaction::create([
                 'dda_id' => $submission->id,
                 'gateway' => 'razorpay',
-                'transaction_no' => 'DDA-'.strtoupper(Str::random(12)),
+                'transaction_no' => 'DDA-' . strtoupper(Str::random(12)),
                 'amount' => $amount,
                 'currency' => 'INR',
                 'status' => 'Pending',
@@ -59,11 +61,9 @@ class DdaPaymentController extends Controller
                     env('RAZORPAY_KEY'),
                     env('RAZORPAY_SECRET')
                 );
-
             } catch (\Exception $e) {
 
                 dd($e->getMessage());
-
             }
 
             /*
@@ -106,19 +106,24 @@ class DdaPaymentController extends Controller
                 'email' => $submission->email,
                 'phone' => $submission->phone,
             ]);
-
         } catch (\Exception $e) {
 
             return response()->json([
                 'success' => false,
                 'message' => $e->getMessage(),
             ], 500);
-
         }
     }
 
     public function razorpayCallback(Request $request)
     {
+
+        $attributes = [
+            'razorpay_order_id' => $request->razorpay_order_id,
+            'razorpay_payment_id' => $request->razorpay_payment_id,
+            'razorpay_signature' => $request->razorpay_signature,
+        ];
+
         try {
 
             $transaction = DdaTransaction::findOrFail($request->transaction_id);
@@ -128,11 +133,6 @@ class DdaPaymentController extends Controller
                 env('RAZORPAY_SECRET')
             );
 
-            $attributes = [
-                'razorpay_order_id' => $request->razorpay_order_id,
-                'razorpay_payment_id' => $request->razorpay_payment_id,
-                'razorpay_signature' => $request->razorpay_signature,
-            ];
 
             $api->utility->verifyPaymentSignature($attributes);
 
@@ -152,13 +152,30 @@ class DdaPaymentController extends Controller
             return response()->json([
                 'success' => true,
             ]);
+        } catch (SignatureVerificationError $e) {
+            $transaction->update(
+                [
+                    'gateway_payment_id' => $attributes['razorpay_payment_id'],
+                    'gateway_signature' => $attributes['razorpay_signature'],
+                    'status' => 'Failed'
+                ]
+            );
 
+            PaymentFailed::dispatch(
+                $transaction->dda_id,
+                $transaction->id
+            );
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Payment verification failed.',
+            ], 400);
         } catch (\Exception $e) {
+
             return response()->json([
                 'success' => false,
                 'message' => $e->getMessage(),
             ], 500);
-
         }
     }
 
