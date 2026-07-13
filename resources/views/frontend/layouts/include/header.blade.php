@@ -72,10 +72,12 @@
             <img src="{{ asset('new_ui/assets/images/plan.svg') }}" class="membership-icon" alt="Membership Icon">
             <span>Membership</span>
         </a>
-        <a class="nav-link {{ request()->is('membership') ? 'active' : '' }}" href="/deitiesdesignawards">
-            <img src="{{ asset('new_ui/assets/images/design_logo.png') }}" class="membership-icon" alt="Membership Icon">
-            <span>Deities Design Awards</span>
-        </a>
+        <a class="nav-link {{ request()->is('deitiesdesignawards') ? 'active' : '' }}" href="/deitiesdesignawards">
+    <img src="{{ asset('new_ui/assets/images/Inverted Logo.svg') }}"
+         alt="Deities Design Awards"
+         style="width:20px; height:20px;">
+    <span>Deities Design Awards</span>
+</a>
         <a class="nav-link {{ request()->is('events') ? 'active' : '' }}" href="/events">
             <img src="{{ asset('new_ui/assets/images/calender.svg') }}" class="calender-icon" alt="calender Icon">
             <span>Exclusive Events</span>
