@@ -123,3 +123,31 @@ Route::get('/server-limits', function () {
         'max_execution_time' => ini_get('max_execution_time'),
     ];
 });
+
+/*
+|--------------------------------------------------------------------------
+| Test Website Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::prefix('test')->group(function () {
+
+    Route::view('/', 'test.index');
+
+    Route::view('/about', 'test.about');
+    Route::view('/categories', 'test.categories');
+    Route::view('/contact', 'test.contact');
+    Route::view('/design-category', 'test.design-category');
+    Route::view('/faq', 'test.faq');
+    Route::view('/gallery', 'test.gallery');
+    Route::view('/inspiration', 'test.inspiration');
+    Route::view('/jury', 'test.jury');
+    Route::view('/media-preview', 'test.media-preview');
+    Route::view('/participate', 'test.participate');
+    Route::view('/partners', 'test.partners');
+    Route::view('/privacy', 'test.privacy');
+    Route::view('/sponsor-us', 'test.sponsor-us');
+    Route::view('/submit', 'test.submit');
+    Route::view('/terms', 'test.terms');
+
+});
