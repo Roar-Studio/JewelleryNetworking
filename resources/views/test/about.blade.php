@@ -128,7 +128,7 @@
       <span class="section-eyebrow">Founder Profile</span>
       <div class="founder-bio-grid">
         <div>
-          <img src="{{ asset('testdda/Images/founder.webp') }}" alt="Prernaa Makhariaa" class="founder-profile-photo" style="width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(184,146,42,.2);display:block">
+          <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/founder.webp') }}" alt="Prernaa Makhariaa" class="founder-profile-photo" style="width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(184,146,42,.2);display:block">
           <div class="founder-bio-meta" style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(184,146,42,.2)">
             <span class="founder-bio-name" style="display:block;font-family:var(--serif);font-size:1.4rem;font-style:italic;margin-bottom:.2rem">Prernaa Makhariaa</span>
             <span class="founder-bio-role" style="display:block;font-family:var(--body);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep,#8a7026);line-height:1.6">Founder &amp; Visionary,<br>Deities Design Awards (DDA).</span>

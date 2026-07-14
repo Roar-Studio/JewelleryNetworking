@@ -120,7 +120,7 @@
       <div class="partner-full">
         <div class="partner-full-logo">
           <div class="partner-logo-placeholder">
-            <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/jab-logo.png') }}" alt="Jewellers Association Bengaluru logo" class="partner-logo-img">
+            <img src="{{ asset('testdda/Logo/jab-logo.png') }}" alt="Jewellers Association Bengaluru logo" class="partner-logo-img">
           </div>
         </div>
         <div class="partner-full-content">
@@ -135,7 +135,7 @@
       <div class="partner-full">
         <div class="partner-full-logo">
           <div class="partner-logo-placeholder">
-            <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/iskcon_logo.svg') }}" alt="ISKCON Chowpatty logo" class="partner-logo-img">
+            <img src="{{ asset('testdda/Logo/iskcon_logo.svg') }}" alt="ISKCON Chowpatty logo" class="partner-logo-img">
           </div>
         </div>
         <div class="partner-full-content">
@@ -154,7 +154,7 @@
       <div class="partner-full">
         <div class="partner-full-logo">
           <div class="partner-logo-placeholder">
-            <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/JN%20Logo%20.svg') }}" alt="Jewellery Networking logo" class="partner-logo-img">
+            <img src="{{ asset('testdda/Logo/JN%20Logo%20.svg') }}" alt="Jewellery Networking logo" class="partner-logo-img">
           </div>
         </div>
         <div class="partner-full-content">

@@ -143,7 +143,7 @@
   <!--  HERO FULL BLEED  -->
   <section class="hero">
     <div class="hero-media">
-      <img class="hero-banner-img" src="{{ asset('testdda/Images/Banner/Banner%20Home%20Page%20Main.png') }}" alt="" aria-hidden="true">
+      <img class="hero-banner-img" src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Banner+Home+Page+Main.png') }}" alt="" aria-hidden="true">
     </div>
 
     <div class="hero-content">
@@ -232,15 +232,15 @@
       <span class="section-eyebrow" style="justify-content:center">Inspiration</span>
       <div class="inspo-banner">
         <a href="{{ url('/test/gallery') }}?category=carvings" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('testdda/Images/Banner/Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
           <span class="inspo-panel-btn">Carvings <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=paintings" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('testdda/Images/Banner/Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
           <span class="inspo-panel-btn">Painting <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=wooden" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('testdda/Images/Banner/Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
           <span class="inspo-panel-btn">Wooden <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=deities" class="inspo-panel">
@@ -389,7 +389,7 @@
         <div class="partners-logo-list">
           <a href="{{ url('/test/partners') }}" class="partner-logo-item">
             <span class="partner-logo-link">
-              <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/JN%20Logo%20.svg') }}" alt="Jewellery Networking">
+              <img src="{{ asset('testdda/Logo/JN%20Logo%20.svg') }}" alt="Jewellery Networking">
             </span>
             <span class="partner-logo-name">Jewellery Networking</span>
           </a>
@@ -400,13 +400,13 @@
         <div class="partners-logo-list">
           <a href="{{ url('/test/partners') }}" class="partner-logo-item">
             <span class="partner-logo-link">
-              <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/jab-logo.png') }}" alt="Jewellers Association Bengaluru">
+              <img src="{{ asset('testdda/Logo/jab-logo.png') }}" alt="Jewellers Association Bengaluru">
             </span>
             <span class="partner-logo-name">Jewellers Association Bengaluru</span>
           </a>
           <a href="{{ url('/test/partners') }}" class="partner-logo-item">
             <span class="partner-logo-link">
-              <img src="{{ asset('testdda/Logo/Partners%20and%20Sponsor%20Logo/iskcon_logo.svg') }}" alt="ISKCON Chowpatty">
+              <img src="{{ asset('testdda/Logo/iskcon_logo.svg') }}" alt="ISKCON Chowpatty">
             </span>
             <span class="partner-logo-name">ISKCON Chowpatty</span>
           </a>

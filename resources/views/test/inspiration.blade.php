@@ -119,7 +119,7 @@
 
       <!-- Row 1 — full width banner with theme colour palette -->
       <div class="insp-row-full">
-        <img src="{{ asset('testdda/Images/Banner/Inspiration Banner 1.png') }}" alt="Inspiration collection" loading="lazy">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Inspiration+Banner+1.png') }}" alt="Inspiration collection" loading="lazy">
         <div class="insp-theme">
           <span class="insp-theme-label">Theme</span>
           <div class="insp-palette">
@@ -134,19 +134,19 @@
       <!-- Rows 2 & 3 — two image sections per row, each with its buttons -->
       <div class="insp-grid2">
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('testdda/Images\Banner\Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('carvings')">Open Carving Gallery</button>
           </div>
         </div>
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('testdda/Images\Banner\Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('paintings')">Open Painting Gallery</button>
           </div>
         </div>
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('testdda/Images\Banner\Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('wooden')">Open Wooden Gallery</button>
           </div>
