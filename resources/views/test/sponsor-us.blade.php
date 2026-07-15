@@ -98,14 +98,7 @@
   </div>
 
   <section class="page-hero-int wash-gold">
-    <div class="page-hero-collage" aria-hidden="true">
-      <img class="c1" src="inspiration%20pdf%20and%20images/Carving/thumbs/Carving%201_thumb.jpg" alt="">
-      <img class="c2" src="inspiration%20pdf%20and%20images/Painting/thumbs/Painting%201_thumb.jpg" alt="">
-      <img class="c3" src="inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%201_thumb.jpg" alt="">
-      <img class="c4" src="inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%202_thumb.jpg" alt="">
-      <img class="c5" src="inspiration%20pdf%20and%20images/Carving/thumbs/Carving%202_thumb.jpg" alt="">
-      <img class="c6" src="inspiration%20pdf%20and%20images/Painting/thumbs/Painting%202_thumb.jpg" alt="">
-    </div>
+    
     <div class="page-hero-int-content">
       <h1 class="page-hero-int-title sponsor-hero-title">Partner with us.</h1>
     </div>
@@ -119,29 +112,29 @@
       <div class="sponsor-grid">
         <div class="sponsor-tier-card">
           <span class="tier-label">Title Sponsor</span>
-          <h4>INR &#8377;20 L</h4>
+          <h4>INR &#8377;20 Lakhs</h4>
           <a href="mailto:info@deitiesdesignawards.com?subject=Title Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Powered By</span>
-          <h4>INR &#8377;10 L</h4>
+          <h4>INR &#8377;10 Lakhs</h4>
           <a href="mailto:info@deitiesdesignawards.com?subject=Powered By Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
       <div class="sponsor-grid" style="margin-top:2rem">
         <div class="sponsor-tier-card">
           <span class="tier-label">Category Sponsor</span>
-          <h4>INR &#8377;7.50 L</h4>
+          <h4>INR &#8377;7.50 Lakhs</h4>
           <a href="mailto:info@deitiesdesignawards.com?subject=Category Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Media Sponsor</span>
-          <h4>INR &#8377;7.50 L</h4>
+          <h4>INR &#8377;7.50 Lakhs</h4>
           <a href="mailto:info@deitiesdesignawards.com?subject=Media Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Logistics Partner</span>
-          <h4>INR &#8377;5 L</h4>
+          <h4>INR &#8377;5 Lakhs</h4>
           <a href="mailto:info@deitiesdesignawards.com?subject=Logistics Partner Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
@@ -155,7 +148,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards">
-        <p>It was always devotion</p>
+
         <div class="footer-socials">
           <a href="https://www.instagram.com/deitiesdesignawards" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
           <a href="https://www.facebook.com/profile.php?id=61578502570613" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h-2a2 2 0 0 0-2 2v2H8v3h2v7h3v-7h2.5l.5-3H13v-1.5c0-.5.5-1 1-1h2V8z"/></svg></a>

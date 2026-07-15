@@ -164,11 +164,6 @@
         </a>
       </div>
     </div>
-
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <span class="line"></span>
-    </div>
   </section>
 
 
@@ -184,13 +179,13 @@
       </div>
 
       <div class="cat-strip" aria-hidden="true">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Natai/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.34%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gaur/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.41%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Lalita/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.02%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Radha/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.08%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopinath/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.07%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Vishaka%20Devi/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.11%20PM.jpeg') }}" alt="">
-        <img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopalji/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.15%20PM.jpeg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gaur+(1)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Lalita+(1)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Radha+(2)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Krishna+(1)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Vishaka+Devi+(8)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gopalji+(2)_thumb.jpg') }}" alt="">
       </div>
 
       <div class="cat7-grid">
@@ -374,14 +369,6 @@
 
   <!--  PARTNERS BAND (gold) — logos, click through to Partners page  -->
   <section class="partners-band logo-variant">
-    <div class="page-hero-collage" aria-hidden="true">
-      <img class="c1" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%208_thumb.jpg') }}" alt="">
-      <img class="c2" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%206_thumb.jpg') }}" alt="">
-      <img class="c3" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%207_thumb.jpg') }}" alt="">
-      <img class="c4" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%209_thumb.jpg') }}" alt="">
-      <img class="c5" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%2010_thumb.jpg') }}" alt="">
-      <img class="c6" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%208_thumb.jpg') }}" alt="">
-    </div>
     <div class="partners-collage-wash" aria-hidden="true"></div>
     <div class="partners-inner">
       <div class="partners-group">
@@ -423,7 +410,6 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards">
-        <p>It was always devotion</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/deitiesdesignawards" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">

@@ -101,14 +101,7 @@
 
   <!-- PAGE HERO -->
   <section class="page-hero-int wash-gold">
-    <div class="page-hero-collage" aria-hidden="true">
-      <img class="c1" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%201_thumb.jpg') }}" alt="">
-      <img class="c2" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%201_thumb.jpg') }}" alt="">
-      <img class="c3" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%201_thumb.jpg') }}" alt="">
-      <img class="c4" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%202_thumb.jpg') }}" alt="">
-      <img class="c5" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%202_thumb.jpg') }}" alt="">
-      <img class="c6" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%202_thumb.jpg') }}" alt="">
-    </div>
+    
     <div class="page-hero-int-content">
       <span class="page-hero-int-eyebrow">Design Category</span>
       <h1 class="page-hero-int-title">Seven Sacred Forms</h1>
@@ -124,7 +117,7 @@
         <!-- Nitai -->
         <div class="deity-card" id="nitai">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Natai/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.34%20PM.jpeg') }}" alt="Nitai"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="Nitai"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">I</span>
               <h3>Nitai</h3>
@@ -133,7 +126,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Natai/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.34%20PM.jpeg') }}" alt="Nitai"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="Nitai"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -161,7 +154,7 @@
         <!-- Gaur -->
         <div class="deity-card" id="gaur">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gaur/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.41%20PM.jpeg') }}" alt="Gaur"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gaur+(2)_thumb.jpg') }}" alt="Gaur"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">II</span>
               <h3>Gaur</h3>
@@ -170,7 +163,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gaur/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.41%20PM.jpeg') }}" alt="Gaur"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gaur+(2)_thumb.jpg') }}" alt="Gaur"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -199,7 +192,7 @@
         <!-- Lalita -->
         <div class="deity-card" id="lalita">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Lalita/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.02%20PM.jpeg') }}" alt="Lalita"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Lalita+(1)_thumb.jpg') }}" alt="Lalita"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">III</span>
               <h3>Lalita</h3>
@@ -208,7 +201,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Lalita/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.02%20PM.jpeg') }}" alt="Lalita"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Lalita+(1)_thumb.jpg') }}" alt="Lalita"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -241,7 +234,7 @@
         <!-- Radharani / Radha -->
         <div class="deity-card" id="radharani-radha">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Radha/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.08%20PM.jpeg') }}" alt="Radharani / Radha"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Radha+(2)_thumb.jpg') }}" alt="Radharani / Radha"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">IV</span>
               <h3>Radharani / Radha</h3>
@@ -250,7 +243,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Radha/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.08%20PM.jpeg') }}" alt="Radharani / Radha"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Radha+(2)_thumb.jpg') }}" alt="Radharani / Radha"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -282,7 +275,7 @@
         <!-- Gopinath / Krishna -->
         <div class="deity-card" id="gopinath-krishna">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopinath/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.07%20PM.jpeg') }}" alt="Gopinath / Krishna"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Krishna+(1)_thumb.jpg') }}" alt="Gopinath / Krishna"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">V</span>
               <h3>Gopinath / Krishna</h3>
@@ -291,7 +284,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopinath/thumbs/WhatsApp%20Image%202026-04-28%20at%208.10.07%20PM.jpeg') }}" alt="Gopinath / Krishna"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Krishna+(1)_thumb.jpg') }}" alt="Gopinath / Krishna"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -318,7 +311,7 @@
         <!-- Vishakhadevi -->
         <div class="deity-card" id="vishakhadevi">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Vishaka%20Devi/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.11%20PM.jpeg') }}" alt="Vishakhadevi"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Vishaka+Devi+(6).jpg') }}" alt="Vishakhadevi"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">VI</span>
               <h3>Vishakhadevi</h3>
@@ -327,7 +320,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Vishaka%20Devi/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.11%20PM.jpeg') }}" alt="Vishakhadevi"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Vishaka+Devi+(6).jpg') }}" alt="Vishakhadevi"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -360,7 +353,7 @@
         <!-- Gopalji -->
         <div class="deity-card" id="gopalji">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopalji/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.15%20PM.jpeg') }}" alt="Gopalji"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gopalji+(2)_thumb.jpg') }}" alt="Gopalji"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">VII</span>
               <h3>Gopalji</h3>
@@ -369,7 +362,7 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('testdda/inspiration%20pdf%20and%20images/Deities/Gopalji/thumbs/WhatsApp%20Image%202026-04-28%20at%208.09.15%20PM.jpeg') }}" alt="Gopalji"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gopalji+(2)_thumb.jpg') }}" alt="Gopalji"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
@@ -407,7 +400,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards">
-        <p>It was always devotion</p>
+        
         <div class="footer-socials">
           <a href="https://www.instagram.com/deitiesdesignawards" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
           <a href="https://www.facebook.com/profile.php?id=61578502570613" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
