@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 class DdaController extends Controller
 {
     /**
-     * Display all submissions
+     * Display all submissions.
      */
     public function index()
     {
@@ -19,13 +19,24 @@ class DdaController extends Controller
     }
 
     /**
-     * Store a new submission
+     * Store a new submission.
      */
     public function store(Request $request)
     {
-        // Validate Form
+        /*
+        |--------------------------------------------------------------------------
+        | Validation
+        |--------------------------------------------------------------------------
+        */
+
         $validated = $request->validate([
-            // Step 1
+
+            /*
+            |--------------------------------------------------------------------------
+            | Participant Information
+            |--------------------------------------------------------------------------
+            */
+
             'first_name'       => 'required|string|max:255',
             'last_name'        => 'required|string|max:255',
             'email'            => 'required|email|max:255',
@@ -35,17 +46,41 @@ class DdaController extends Controller
             'organisation'     => 'nullable|string|max:255',
             'participant_type' => 'required|string|max:255',
 
-            // Step 2
-            'piece_name'       => 'required|string|max:255',
-            'award_category'   => 'required|string|max:255',
-            'materials'        => 'required|string|max:255',
-            'year'             => 'required|string|max:10',
-            'deity'            => 'required|string|max:255',
-            'statement'        => 'required|string',
+            /*
+            |--------------------------------------------------------------------------
+            | Entry A
+            |--------------------------------------------------------------------------
+            */
 
-            // Step 3
-            'images'           => 'required|array|min:1|max:10',
-            'images.*'         => 'image|mimes:jpg,jpeg,png|max:25600',
+            'deity_category_a' => 'required|string|max:255',
+            'jewellery_piece_a'=> 'required|string|max:255',
+            'material_a'       => 'required|string|max:255',
+            'statement_a'      => 'required|string|min:150',
+
+            'images_a'         => 'required|array|min:1|max:10',
+            'images_a.*'       => 'image|mimes:jpg,jpeg,png|max:25600',
+
+            /*
+            |--------------------------------------------------------------------------
+            | Entry B
+            |--------------------------------------------------------------------------
+            */
+
+            'deity_category_b' => 'required|string|max:255',
+            'jewellery_piece_b'=> 'required|string|max:255',
+            'material_b'       => 'required|string|max:255',
+            'statement_b'      => 'required|string|min:150',
+
+            'images_b'         => 'required|array|min:1|max:10',
+            'images_b.*'       => 'image|mimes:jpg,jpeg,png|max:25600',
+
+            /*
+            |--------------------------------------------------------------------------
+            | Declaration
+            |--------------------------------------------------------------------------
+            */
+
+            'declaration'      => 'accepted',
         ]);
 
         /*
@@ -53,29 +88,56 @@ class DdaController extends Controller
         | Generate Entry ID
         |--------------------------------------------------------------------------
         */
-        $entryId = 'DDA' . str_pad(DDA::count() + 1, 6, '0', STR_PAD_LEFT);
+
+        $nextId = (DDA::max('id') ?? 0) + 1;
+
+        $entryId = 'DDA' . str_pad($nextId, 6, '0', STR_PAD_LEFT);
 
         /*
         |--------------------------------------------------------------------------
-        | Upload Images to AWS S3
+        | Upload Entry A Images
         |--------------------------------------------------------------------------
         */
 
-        $imageUrls = [];
+        $imagesA = [];
 
-        if ($request->hasFile('images')) {
+        if ($request->hasFile('images_a')) {
 
-            foreach ($request->file('images') as $image) {
+            foreach ($request->file('images_a') as $image) {
 
-                $fileName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
 
                 $path = Storage::disk('s3')->putFileAs(
-                    'submissions/' . $entryId,
+                    "submissions/{$entryId}/entry_a",
                     $image,
                     $fileName
                 );
 
-                $imageUrls[] = Storage::disk('s3')->url($path);
+                $imagesA[] = Storage::disk('s3')->url($path);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | Upload Entry B Images
+        |--------------------------------------------------------------------------
+        */
+
+        $imagesB = [];
+
+        if ($request->hasFile('images_b')) {
+
+            foreach ($request->file('images_b') as $image) {
+
+                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+
+                $path = Storage::disk('s3')->putFileAs(
+                    "submissions/{$entryId}/entry_b",
+                    $image,
+                    $fileName
+                );
+
+                $imagesB[] = Storage::disk('s3')->url($path);
             }
         }
 
@@ -87,42 +149,69 @@ class DdaController extends Controller
 
         $submission = new DDA();
 
-        $submission->entry_id = $entryId;
+        /*
+        |--------------------------------------------------------------------------
+        | Participant
+        |--------------------------------------------------------------------------
+        */
 
-        // Participant Information
-        $submission->first_name = $validated['first_name'];
-        $submission->last_name = $validated['last_name'];
-        $submission->email = $validated['email'];
-        $submission->phone = $validated['phone'];
-        $submission->city = $validated['city'];
-        $submission->country = $validated['country'];
-        $submission->organisation = $validated['organisation'] ?? null;
+        $submission->entry_id         = $entryId;
+
+        $submission->first_name       = $validated['first_name'];
+        $submission->last_name        = $validated['last_name'];
+        $submission->email            = $validated['email'];
+        $submission->phone            = $validated['phone'] ?? null;
+        $submission->city             = $validated['city'];
+        $submission->country          = $validated['country'];
+        $submission->organisation     = $validated['organisation'] ?? null;
         $submission->participant_type = $validated['participant_type'];
 
-        // Entry Details
-        $submission->piece_name = $validated['piece_name'];
-        $submission->award_category = $validated['award_category'];
-        $submission->materials = $validated['materials'];
-        $submission->year = $validated['year'];
-        $submission->deity = $validated['deity'];
-        $submission->statement = $validated['statement'];
+        /*
+        |--------------------------------------------------------------------------
+        | Entry A
+        |--------------------------------------------------------------------------
+        */
 
-        // Images
-        $submission->images = $imageUrls;
+        $submission->deity_category_a = $validated['deity_category_a'];
+        $submission->jewellery_piece_a = $validated['jewellery_piece_a'];
+        $submission->material_a = $validated['material_a'];
+        $submission->statement_a = $validated['statement_a'];
+        $submission->images_a = $imagesA;
 
-        // Declaration
+        /*
+        |--------------------------------------------------------------------------
+        | Entry B
+        |--------------------------------------------------------------------------
+        */
+
+        $submission->deity_category_b = $validated['deity_category_b'];
+        $submission->jewellery_piece_b = $validated['jewellery_piece_b'];
+        $submission->material_b = $validated['material_b'];
+        $submission->statement_b = $validated['statement_b'];
+        $submission->images_b = $imagesB;
+
+        /*
+        |--------------------------------------------------------------------------
+        | Other Fields
+        |--------------------------------------------------------------------------
+        */
+
         $submission->declaration = true;
-
-        // Status
         $submission->status = 'Pending';
 
         $submission->save();
+
+        /*
+        |--------------------------------------------------------------------------
+        | Redirect to Order Summary
+        |--------------------------------------------------------------------------
+        */
 
         return redirect()->route('dda.order.summary', $submission->id);
     }
 
     /**
-     * Display a single submission
+     * Display a submission.
      */
     public function show($id)
     {

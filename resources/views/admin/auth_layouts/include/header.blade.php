@@ -196,7 +196,8 @@
                         <li class="{{ request()->routeIs('manage.event.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.event.index') }}"><span class="menu-item text-truncate" data-i18n="Layout Empty">Events</span></a></li>
                         <li class="{{ request()->routeIs('manage.transaction.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.transaction.index') }}"><span class="menu-item text-truncate" data-i18n="Layout Empty">Transactions</span></a></li>
                         <li class="{{ request()->routeIs('manage.coupon.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.coupon.index') }}"><span class="menu-item text-truncate" data-i18n="Layout Empty">Coupons</span></a></li>
-                        <li class="{{ request()->routeIs('manage.gallery.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.gallery.index') }}"><span class="menu-item text-truncate" data-i18n="Layout Empty">Gallery</span></a></li>                        
+                        <li class="{{ request()->routeIs('manage.gallery.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.gallery.index') }}"><span class="menu-item text-truncate" data-i18n="Layout Empty">Gallery</span></a></li>
+                        <li class="{{ request()->routeIs('manage.dda.*') ? 'active' : '' }}"><a class="d-flex align-items-center" href="{{ route('manage.dda.index') }}"><span class="menu-item text-truncate">DDA</span></a></li>                        
                     </ul>
                 </li>
                 <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#">
