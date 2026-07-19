@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Web\Admin\{AdminAuthController, CustomerController, MembershipController, EventController, TransactionController, CouponController, GalleryController};
+use App\Http\Controllers\Web\Admin\{AdminAuthController, CustomerController, MembershipController, EventController, TransactionController, CouponController, GalleryController, DdaController as AdminDdaController};
 use App\Http\Controllers\Web\Frontend\{CustomerAuthController};
 use App\Http\Controllers\Api\Frontend\{CheckoutController};
 use App\Http\Controllers\DdaController;
@@ -47,6 +47,7 @@ Route::prefix('deitiesdesignawards')->group(function () {
     Route::get('/', function () {
         return view('deitiesdesignawards.sections.index');
     });
+    
     
 
     Route::get('/about', function () {
@@ -110,6 +111,10 @@ Route::prefix('deitiesdesignawards')->group(function () {
 
     Route::post('/submit', [DdaController::class, 'store'])
     ->name('dda.submit');
+
+    Route::get('/login', [CustomerAuthController::class, 'ddaLogin'])
+    ->name('dda.login');
+
 
 // Payment Routes
 Route::get(
@@ -209,6 +214,30 @@ Route::prefix('admin/manage')->name('manage.')->group(function () {
     Route::prefix('gallery')->name('gallery.')->group(function () {
         Route::get('/', [GalleryController::class, 'index'])->name('index');
     });
+
+    Route::prefix('dda')->name('dda.')->group(function () {
+
+    // Listing
+    Route::get('/', [AdminDdaController::class, 'index'])
+        ->name('index');
+
+    // View Submission
+    Route::get('/{id}', [AdminDdaController::class, 'show'])
+        ->name('show');
+
+    // Edit Page
+    Route::get('/{id}/edit', [AdminDdaController::class, 'edit'])
+        ->name('edit');
+
+    // Update Submission
+    Route::put('/{id}', [AdminDdaController::class, 'update'])
+        ->name('update');
+
+    // Update Review Status
+    Route::post('/{id}/status', [AdminDdaController::class, 'updateStatus'])
+        ->name('status.update');
+    });
+
 
     // Route::prefix('event-attendees')->name('attendees.')->group(function () {
     //     Route::get('/', [EventAttendess::class, 'index'])->name('index');

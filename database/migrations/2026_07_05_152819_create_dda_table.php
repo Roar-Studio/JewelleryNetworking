@@ -29,7 +29,7 @@ return new class extends Migration
 
             /*
             |--------------------------------------------------------------------------
-            | Step 1 - Participant Information
+            | Participant Information
             |--------------------------------------------------------------------------
             */
             $table->string('first_name');
@@ -43,29 +43,34 @@ return new class extends Migration
 
             /*
             |--------------------------------------------------------------------------
-            | Step 2 - Entry Details
+            | Entry 1
             |--------------------------------------------------------------------------
             */
-            $table->string('piece_name');
-            $table->string('award_category');
-            $table->string('materials');
-            $table->string('year');
-            $table->string('deity');
-            $table->longText('statement');
+
+            $table->string('deity_category_a');
+            $table->string('jewellery_piece_a');
+            $table->string('material_a');
+            $table->longText('statement_a');
+            $table->json('images_a')->nullable();
 
             /*
             |--------------------------------------------------------------------------
-            | Step 3 - Image Upload
+            | Entry 2
             |--------------------------------------------------------------------------
             */
-            // Stores uploaded image paths as JSON
-            $table->json('images')->nullable();
+
+            $table->string('deity_category_b')->nullable();
+            $table->string('jewellery_piece_b')->nullable();
+            $table->string('material_b')->nullable();
+            $table->longText('statement_b')->nullable();
+            $table->json('images_b')->nullable();
 
             /*
             |--------------------------------------------------------------------------
-            | Step 4 - Declaration
+            | Declaration
             |--------------------------------------------------------------------------
             */
+
             $table->boolean('declaration')->default(false);
 
             /*
@@ -73,6 +78,7 @@ return new class extends Migration
             | Submission Status
             |--------------------------------------------------------------------------
             */
+
             $table->enum('status', [
                 'Pending',
                 'Under Review',
@@ -85,15 +91,8 @@ return new class extends Migration
             | Timestamps
             |--------------------------------------------------------------------------
             */
+
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('dda');
     }
 };

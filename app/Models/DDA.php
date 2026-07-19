@@ -23,9 +23,19 @@ class DDA extends Model
      * Allow Mass Assignment
      */
     protected $fillable = [
+
+        /*
+        |--------------------------------------------------------------------------
+        | Technical Information
+        |--------------------------------------------------------------------------
+        */
         'entry_id',
 
-        // Participant Information
+        /*
+        |--------------------------------------------------------------------------
+        | Participant Information
+        |--------------------------------------------------------------------------
+        */
         'first_name',
         'last_name',
         'email',
@@ -35,21 +45,40 @@ class DDA extends Model
         'organisation',
         'participant_type',
 
-        // Entry Details
-        'piece_name',
-        'award_category',
-        'materials',
-        'year',
-        'deity',
-        'statement',
+        /*
+        |--------------------------------------------------------------------------
+        | Entry A
+        |--------------------------------------------------------------------------
+        */
+        'deity_category_a',
+        'jewellery_piece_a',
+        'material_a',
+        'statement_a',
+        'images_a',
 
-        // Images
-        'images',
+        /*
+        |--------------------------------------------------------------------------
+        | Entry B
+        |--------------------------------------------------------------------------
+        */
+        'deity_category_b',
+        'jewellery_piece_b',
+        'material_b',
+        'statement_b',
+        'images_b',
 
-        // Declaration
+        /*
+        |--------------------------------------------------------------------------
+        | Declaration
+        |--------------------------------------------------------------------------
+        */
         'declaration',
 
-        // Submission Status
+        /*
+        |--------------------------------------------------------------------------
+        | Submission Status
+        |--------------------------------------------------------------------------
+        */
         'status',
     ];
 
@@ -57,8 +86,13 @@ class DDA extends Model
      * Cast Attributes
      */
     protected $casts = [
-        'images' => 'array',
+
+        'images_a' => 'array',
+
+        'images_b' => 'array',
+
         'declaration' => 'boolean',
+
     ];
 
     /**

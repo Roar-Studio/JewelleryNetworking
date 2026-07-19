@@ -19,6 +19,10 @@ class CustomerAuthController extends Controller
         $categories = Category::all();
         return view('frontend.login', compact('categories'));
     }
+    public function ddaLogin(){
+        $categories = Category::all();
+        return view('deitiesdesignawards.auth.login', compact('categories'));
+    }
     public function forgotPassword(){
         return view('frontend.forgot-password');
     }

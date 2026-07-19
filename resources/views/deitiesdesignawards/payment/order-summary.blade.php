@@ -208,6 +208,166 @@
 
         }
 
+        .payment-section {
+
+    margin-top: 35px;
+    padding: 28px;
+
+    background: #faf7f1;
+
+    border: 1px solid #ececec;
+    border-radius: 14px;
+
+}
+
+.payment-section-title {
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #b78a2c;
+
+    margin-bottom: 18px;
+
+}
+
+.payment-options {
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.payment-option {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.payment-radio {
+
+    position: absolute;
+    left: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    accent-color: #b78a2c;
+    cursor: pointer;
+
+    z-index: 2;
+
+}
+
+.payment-option-content {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+
+    padding: 18px 20px 18px 54px;
+
+    background: #fff;
+
+    border: 1.5px solid #ececec;
+    border-radius: 12px;
+
+    transition: border-color .25s ease, background .25s ease, box-shadow .25s ease, transform .2s ease;
+
+}
+
+.payment-option:hover .payment-option-content {
+
+    border-color: #d9c188;
+    box-shadow: 0 6px 18px rgba(183, 138, 44, .1);
+    transform: translateY(-1px);
+
+}
+
+.payment-radio:checked + .payment-option-content {
+
+    border-color: #b78a2c;
+    background: #fdf6e8;
+    box-shadow: 0 6px 18px rgba(183, 138, 44, .15);
+
+}
+
+.payment-option-icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    background: #f7f5f2;
+
+    border-radius: 10px;
+
+}
+
+.payment-option-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.payment-option-name {
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+
+}
+
+.payment-option-desc {
+
+    font-size: 12.5px;
+    color: #888;
+
+}
+
+@media (max-width: 600px) {
+
+    .payment-section {
+
+        padding: 20px;
+
+    }
+
+    .payment-option-content {
+
+        padding: 16px 16px 16px 48px;
+        gap: 12px;
+
+    }
+
+    .payment-radio {
+
+        left: 16px;
+
+    }
+
+    .payment-option-desc {
+
+        display: none;
+
+    }
+
+}
+
         @media(max-width:600px) {
 
             .card {
@@ -241,6 +401,7 @@
                 font-size: 24px;
 
             }
+            
 
         }
     </style>
@@ -282,7 +443,7 @@
             <div class="row">
 
                 <div class="label">
-                    Participant
+                    Participant Name
                 </div>
 
                 <div class="value">
@@ -306,11 +467,163 @@
             <div class="row">
 
                 <div class="label">
-                    Award Category
+                    Phone
                 </div>
 
                 <div class="value">
-                    {{ ucfirst($submission->award_category) }}
+                    {{ $submission->phone }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Participant Type
+                </div>
+
+                <div class="value">
+                    {{ ucfirst($submission->participant_type) }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Organisation
+                </div>
+
+                <div class="value">
+                    {{ $submission->organisation }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    City
+                </div>
+
+                <div class="value">
+                    {{ $submission->city }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Country
+                </div>
+
+                <div class="value">
+                    {{ $submission->country }}
+                </div>
+
+            </div>
+
+            <div class="row" style="background:#faf7f1;">
+
+                <div class="label" style="font-size:17px;">
+                    Entry 1
+                </div>
+
+                <div class="value"></div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Deity Category
+                </div>
+
+                <div class="value">
+                    {{ $submission->deity_category_a }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Jewellery Piece
+                </div>
+
+                <div class="value">
+                    {{ $submission->jewellery_piece_a }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Primary Material
+                </div>
+
+                <div class="value">
+                    {{ $submission->material_a }}
+                </div>
+
+            </div>
+
+            <div class="row" style="background:#faf7f1;">
+
+                <div class="label" style="font-size:17px;">
+                    Entry 2
+                </div>
+
+                <div class="value"></div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Deity Category
+                </div>
+
+                <div class="value">
+                    {{ $submission->deity_category_b }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Jewellery Piece
+                </div>
+
+                <div class="value">
+                    {{ $submission->jewellery_piece_b }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Primary Material
+                </div>
+
+                <div class="value">
+                    {{ $submission->material_b }}
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="label">
+                    Entries Submitted
+                </div>
+
+                <div class="value">
+                    Entry A + Entry B
                 </div>
 
             </div>
@@ -337,33 +650,74 @@
 
         <div style="margin-top:30px;">
 
-    <h3>Select Payment Method</h3>
+    <div class="payment-section">
 
-    <label style="display:block;margin-top:15px;">
-        <input
-            type="radio"
-            name="payment_method"
-            value="razorpay"
-            checked>
+    <h3 class="payment-section-title">Select Payment Method</h3>
 
-        Razorpay
-    </label>
+    <div class="payment-options">
 
-    <label style="display:block;margin-top:10px;">
-        <input
-            type="radio"
-            name="payment_method"
-            value="paypal">
+        <label class="payment-option" for="pay-razorpay">
 
-        PayPal
-    </label>
+            <input
+                type="radio"
+                id="pay-razorpay"
+                name="payment_method"
+                value="razorpay"
+                class="payment-radio"
+                checked>
+
+            <span class="payment-option-content">
+
+                <span class="payment-option-icon payment-icon-razorpay">
+                    <svg viewBox="0 0 32 32" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#3395FF" d="M18.5 2 8 19.2h7.1L11.6 30 26 12.3h-7.6z"/>
+                        <path fill="#072654" d="M18.5 2 13.9 16.9h4.4L26 12.3z" opacity=".55"/>
+                    </svg>
+                </span>
+
+                <span class="payment-option-text">
+                    <span class="payment-option-name">Razorpay</span>
+                    <span class="payment-option-desc">Cards, UPI, Netbanking &amp; Wallets</span>
+                </span>
+
+            </span>
+
+        </label>
+
+        <label class="payment-option" for="pay-paypal">
+
+            <input
+                type="radio"
+                id="pay-paypal"
+                name="payment_method"
+                value="paypal"
+                class="payment-radio">
+
+            <span class="payment-option-content">
+
+                <span class="payment-option-icon payment-icon-paypal">
+                    <svg viewBox="0 0 32 32" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#003087" d="M12.3 6.5h6.6c3.7 0 5.6 1.8 5.1 5.1-.6 4-3.4 6.1-7.1 6.1h-2.1c-.5 0-.9.3-1 .8l-.9 5.6c0 .2-.2.4-.4.4h-3.4c-.3 0-.5-.2-.4-.6L11 7.2c.1-.4.4-.7.9-.7z"/>
+                        <path fill="#009cde" d="M15.9 10.2h5.1c2.9 0 4.3 1.5 3.9 4.1-.5 3.2-2.7 4.9-5.7 4.9H17c-.4 0-.7.3-.8.6l-.7 4.5c0 .1-.1.2-.3.2h-2.6l1.7-11.4c.1-.6.6-.9 1.6-.9z" opacity=".85"/>
+                    </svg>
+                </span>
+
+                <span class="payment-option-text">
+                    <span class="payment-option-name">PayPal</span>
+                    <span class="payment-option-desc">International Payments</span>
+                </span>
+
+            </span>
+
+        </label>
+
+    </div>
 
 </div>
 
-        <button id="pay-btn" data-submission="{{ $submission->id }}" class="btn">
-            Proceed to Payment
-        </button>
-
+<button id="pay-btn" data-submission="{{ $submission->id }}" class="pay-btn">
+    Proceed to Payment
+</button>
     </div>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
