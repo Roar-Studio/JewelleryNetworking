@@ -143,7 +143,7 @@
   <!--  HERO FULL BLEED  -->
   <section class="hero">
     <div class="hero-media">
-      <img class="hero-banner-img" src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Banner+Home+Page+Main.png') }}" alt="" aria-hidden="true">
+      <img class="hero-banner-img" src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Homepage.png') }}" alt="" aria-hidden="true">
     </div>
 
     <div class="hero-content">
@@ -227,19 +227,19 @@
       <span class="section-eyebrow" style="justify-content:center">Inspiration</span>
       <div class="inspo-banner">
         <a href="{{ url('/test/gallery') }}?category=carvings" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/CRAVINGS.png') }}" alt="Carvings" loading="lazy"></div>
           <span class="inspo-panel-btn">Carvings <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=paintings" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/PAINTINGS.png') }}" alt="Painting" loading="lazy"></div>
           <span class="inspo-panel-btn">Painting <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=wooden" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/WOODEN.png') }}" alt="Wooden" loading="lazy"></div>
           <span class="inspo-panel-btn">Wooden <span>&rarr;</span></span>
         </a>
         <a href="{{ url('/test/gallery') }}?category=deities" class="inspo-panel">
-          <div class="inspo-panel-img"><img src="{{ asset('testdda/Images/Banner/Deities-insp.jpg') }}" alt="Deities" loading="lazy"></div>
+          <div class="inspo-panel-img"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/DIETY+INSPO.png') }}" alt="Deities" loading="lazy"></div>
           <span class="inspo-panel-btn">Deities <span>&rarr;</span></span>
         </a>
       </div>
