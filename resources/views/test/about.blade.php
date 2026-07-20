@@ -135,13 +135,21 @@
           </div>
         </div>
         <div>
-          <blockquote style="font-family:var(--serif);font-size:1.5rem;font-style:italic;font-weight:300;line-height:1.65;border-left:2px solid var(--gold,#b8922a);padding-left:1.5rem;margin:0 0 2rem">&#x201C;BE CEEN: Connect, Engage, Empower and Network.&#x201D;</blockquote>
-          <p>Prernaa Makhariaa, Founder and Visionary of the Deities Design Awards (DDA), is a seasoned entrepreneur and influential voice in the jewellery industry.</p>
-          <br>
-          <p>She is the founder of Jewellery Networking, a premier platform dedicated to helping the global jewellery community &#x201C;BE CEEN&#x201D; by providing a one-stop destination for businesses, service providers and service seekers to connect, engage, empower and network.</p>
-          <br>
-          <p>With over two decades of industry expertise, Prernaa is passionate about uniting the gems, jewellery and allied sectors, creating meaningful opportunities for collaboration, experiences, growth, learning and innovation across the global jewellery ecosystem.</p>
-        </div>
+  <blockquote style="font-family:var(--serif);font-size:1.5rem;font-style:italic;font-weight:300;line-height:1.65;border-left:2px solid var(--gold,#b8922a);padding-left:1.5rem;margin:0 0 2rem">
+    &#x201C;BE CEEN: Connect, Engage, Empower and Network.&#x201D;
+  </blockquote>
+  <p>
+    Prernaa Makhariaa, Founder &amp; Visionary of the Deities Design Awards (DDA), is a jewellery entrepreneur and industry influencer with over two decades of experience.
+  </p>
+  <br>
+  <p>
+    She is also the founder of Jewellery Networking, a global platform built on the philosophy of <strong>&#x201C;BE CEEN: Connect, Engage, Empower and Network.&#x201D;</strong>
+  </p>
+  <br>
+  <p>
+    The platform serves as a one-stop destination for the jewellery community, bringing together businesses, service providers, and industry professionals to foster collaboration, growth, learning, innovation, and meaningful connections across the global gems and jewellery ecosystem.
+  </p>
+</div>
       </div>
     </div>
   </section>

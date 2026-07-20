@@ -97,13 +97,19 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
-    
+  <section
+    class="page-hero-int wash-gold"
+    style="background-image:url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/INSPIRATION+PAGE.png');
+           background-size:cover;
+           background-position:center;
+           background-repeat:no-repeat;">
+
     <div class="page-hero-int-content">
-      <!-- <span class="page-hero-int-eyebrow">Inspiration</span> -->
-      <h1 class="page-hero-int-title">Inspiration</h1>
+        <!-- <span class="page-hero-int-eyebrow">Inspiration</span> -->
+        <h1 class="page-hero-int-title">Inspiration</h1>
     </div>
-  </section>
+
+</section>
 
 
   <section class="section insp-banner-sec">
