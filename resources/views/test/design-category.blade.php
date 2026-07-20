@@ -100,13 +100,16 @@
   </div>
 
   <!-- PAGE HERO -->
-  <section class="page-hero-int wash-gold">
-    
+  <section class="page-hero-int wash-gold"
+    style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+           url('{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/SEVEN+SACRED.png') }}') center center / cover no-repeat;">
+
     <div class="page-hero-int-content">
-      <span class="page-hero-int-eyebrow">Design Category</span>
-      <h1 class="page-hero-int-title">Seven Sacred Forms</h1>
+        <span class="page-hero-int-eyebrow">Design Category</span>
+        <h1 class="page-hero-int-title">Seven Sacred Forms</h1>
     </div>
-  </section>
+
+</section>
 
 
   <!-- DEITY CATEGORIES ACCORDION -->

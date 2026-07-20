@@ -109,20 +109,19 @@
   </div>
 
 
-  <!-- PAGE HERO -->
-  <section class="page-hero-int wash-teal">
-    <div class="page-hero-collage" aria-hidden="true">
-      <img class="c1" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%201_thumb.jpg') }}" alt="">
-      <img class="c2" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%201_thumb.jpg') }}" alt="">
-      <img class="c3" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%201_thumb.jpg') }}" alt="">
-      <img class="c4" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%202_thumb.jpg') }}" alt="">
-      <img class="c5" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%202_thumb.jpg') }}" alt="">
-      <img class="c6" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%202_thumb.jpg') }}" alt="">
-    </div>
+<!-- PAGE HERO -->
+<section
+    class="page-hero-int wash-teal"
+    style="background-image:url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/JURY.png');
+           background-size:cover;
+           background-position:center;
+           background-repeat:no-repeat;">
+
     <div class="page-hero-int-content">
-      <h1 class="page-hero-int-title">Judged with<br>discernment.</h1>
+        <h1 class="page-hero-int-title">Judged with<br>discernment.</h1>
     </div>
-  </section>
+
+</section>
 
   <section class="section jury-criteria-section" id="evaluation-criteria">
     <div class="container jury-criteria-layout">

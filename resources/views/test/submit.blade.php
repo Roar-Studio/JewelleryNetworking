@@ -13,9 +13,9 @@
   <div id="evil-eye-cursor" class="evil-eye-cursor"></div>
   <div class="announce">Inaugural Edition | 2026 <span class="pipe">|</span> Registration opens soon <span class="pipe">|</span> <a href="{{ url('/test/contact') }}">Be notified →</a></div>
   <nav>
-    <a href="{{ url('/test/index') }}" class="nav-logo"><img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
+    <a href="{{ url('/test/') }}" class="nav-logo"><img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
     <div class="nav-links">
-      <a href="{{ url('/test/index') }}" class="nav-link">Home</a>
+      <a href="{{ url('/test/') }}" class="nav-link">Home</a>
       <div class="has-dropdown">
         <a class="nav-link">Categories <span class="chev">&#x25BC;</span></a>
         <div class="dropdown">
@@ -97,13 +97,21 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
-    
+<section
+    class="page-hero-int wash-gold"
+    style="background-image:url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/SUBMITION+PAGE.PNG');
+           background-size:cover;
+           background-position:center;
+           background-repeat:no-repeat;">
+
     <div class="page-hero-int-content">
-      <span class="page-hero-int-eyebrow">Submit Your Entry</span>
-      <h1 class="page-hero-int-title">Begin your <span class="it">submission.</span></h1>
+        <span class="page-hero-int-eyebrow">Submit Your Entry</span>
+        <h1 class="page-hero-int-title">
+            Begin your <span class="it">submission.</span>
+        </h1>
     </div>
-  </section>
+
+</section>
 
   <section class="section">
     <div class="container">
