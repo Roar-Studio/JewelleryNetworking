@@ -97,8 +97,13 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
-    
+<section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/SPONSERs+(1).png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
     <div class="page-hero-int-content">
       <h1 class="page-hero-int-title sponsor-hero-title">Partner with us.</h1>
     </div>

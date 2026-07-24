@@ -105,8 +105,13 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
-    
+<section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/participate.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
     <div class="page-hero-int-content">
       <!-- <span class="page-hero-int-eyebrow">Inspiration</span> -->
       <h1 class="page-hero-int-title">Inspiration</h1>
@@ -120,40 +125,32 @@
 
       <!-- Row 1 — full width banner with theme colour palette -->
       <div class="insp-row-full">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Inspiration+Banner+1.png') }}" alt="Inspiration collection" loading="lazy">
-        <div class="insp-theme">
-          <span class="insp-theme-label">Theme</span>
-          <div class="insp-palette">
-            <span class="insp-swatch" style="background:#A6192E">#A6192E</span>
-            <span class="insp-swatch" style="background:#D66676">#D66676</span>
-            <span class="insp-swatch" style="background:#3A8223">#3A8223</span>
-            <span class="insp-swatch" style="background:#85752B">#85752B</span>
-          </div>
-        </div>
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/COLOR+PALETTE+1.png') }}" alt="Inspiration collection" loading="lazy">
+        
       </div>
 
       <!-- Rows 2 & 3 — two image sections per row, each with its buttons -->
       <div class="insp-grid2">
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Carving-insp.jpg') }}" alt="Carvings" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/CARVINGS.png') }}" alt="Carvings" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('carvings')">Open Carving Gallery</button>
           </div>
         </div>
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Painting-insp.jpg') }}" alt="Painting" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/PAINTINGS+(1).png') }}" alt="Painting" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('paintings')">Open Painting Gallery</button>
           </div>
         </div>
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Wooden-insp.jpg') }}" alt="Wooden" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/WOODEN+(1).png') }}" alt="Wooden" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('wooden')">Open Wooden Gallery</button>
           </div>
         </div>
         <div class="insp-item">
-          <div class="insp-tile"><img src="{{ asset('deitiesdesignawardsdda/Images\Banner\Deities-insp.jpg') }}" alt="Deities" loading="lazy"></div>
+          <div class="insp-tile"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/DIETY+INSPO+(1).png') }}" alt="Deities" loading="lazy"></div>
           <div class="insp-btncell">
             <button class="insp-btn insp-btn-gallery" onclick="openGallery('deities')">Open Deities Gallery</button>
           </div>

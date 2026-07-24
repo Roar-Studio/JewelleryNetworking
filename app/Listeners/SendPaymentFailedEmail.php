@@ -3,11 +3,12 @@
 namespace App\Listeners;
 
 use App\Events\PaymentFailed;
+use App\Mail\PaymentFailedMail;
 use App\Models\DDA;
 use App\Models\DdaTransaction;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Throwable;
 
 class SendPaymentFailedEmail
 {
@@ -24,17 +25,27 @@ class SendPaymentFailedEmail
      */
     public function handle(PaymentFailed $event): void
     {
-        /* 1. Find the entry */
+        /* 1. Find the submission */
         $submission = DDA::findOrFail($event->entry_id);
-        /* 2. Find the valid transaction */
-        $trasaction = DdaTransaction::findOrFail($event->transaction_id);
-        /* 3. Send the email to the participants with pdf with his / her submission details */
-        /* TODO: Create a proper mail template for this */
-        Mail::raw(
-            "Your payment was failed",
-            function ($message) use ($submission) {
-                $message->to($submission->email)->subject("Payment Failed");
-            }
-        );
+
+        /* 2. Find the transaction */
+        $transaction = DdaTransaction::findOrFail($event->transaction_id);
+
+        try {
+
+            /* 3. Send the professional payment failed email */
+            Mail::to($submission->email)->send(
+                new PaymentFailedMail($submission, $transaction)
+            );
+
+        } catch (Throwable $exception) {
+
+            Log::error('Failed to send payment failed email.', [
+                'submission_id'      => $submission->id,
+                'transaction_id'     => $transaction->id,
+                'exception_message'  => $exception->getMessage(),
+                'exception_trace'    => $exception->getTraceAsString(),
+            ]);
+        }
     }
 }

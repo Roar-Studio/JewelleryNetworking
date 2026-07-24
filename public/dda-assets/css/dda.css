@@ -207,7 +207,7 @@ nav .nav-cta.active{background:var(--gold);color:var(--brown)}
   font-family:var(--display);
   font-size:clamp(42px,5vw,76px);
   line-height:1.0;letter-spacing:0.06em;
-  color:#ffffff;
+  color:#2A1F10;
   margin-bottom:28px;
   white-space:nowrap;
 }
@@ -215,7 +215,7 @@ nav .nav-cta.active{background:var(--gold);color:var(--brown)}
 .hero-tagline{
   font-family:var(--serif);font-style:italic;font-weight:400;
   font-size:clamp(20px,2vw,28px);
-  color:#ffffff;
+  color:#2A1F10;
   margin-bottom:48px;
   max-width:580px;
 }
@@ -465,6 +465,7 @@ nav .nav-cta,.btn-primary,.btn-gold,.btn-outline,.btn-cta-gold,.mob-register-btn
   object-position:top;
   display:block;
 }
+
 .cat7-grid{
   display:grid;
   grid-template-columns:repeat(7,1fr);
@@ -2363,6 +2364,7 @@ p { font-size: 1rem; line-height: 1.85; opacity: 1; }
   min-height:460px;          /* keeps the banner tall enough for the 320px theme boxes */
   overflow:hidden;
   border-radius:4px;
+  margin-bottom: 15px;
 }
 .insp-row-full img {
   position:absolute; inset:0;
@@ -2405,6 +2407,8 @@ p { font-size: 1rem; line-height: 1.85; opacity: 1; }
   display:grid;
   grid-template-columns:repeat(2, 1fr);
   gap:0;
+  column-gap: 24px;
+  row-gap: 40px;
 }
 .insp-item { display:flex; flex-direction:column; gap:0; }
 
