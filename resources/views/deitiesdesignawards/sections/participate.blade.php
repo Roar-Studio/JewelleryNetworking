@@ -105,9 +105,15 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-teal">
-    
+<section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/participate.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
     <div class="page-hero-int-content">
+
       <span class="page-hero-int-eyebrow">How to Participate</span>
       <h1 class="page-hero-int-title">Your journey to recognition.</h1>
     </div>

@@ -1,4 +1,4 @@
-<?php
+\<?php
 
 namespace App\Http\Controllers;
 
@@ -40,7 +40,7 @@ class DdaController extends Controller
             'first_name'       => 'required|string|max:255',
             'last_name'        => 'required|string|max:255',
             'email'            => 'required|email|max:255',
-            'phone'            => 'nullable|string|max:20',
+            'phone'            => 'required|string|max:20',
             'city'             => 'required|string|max:255',
             'country'          => 'required|string|max:255',
             'organisation'     => 'nullable|string|max:255',
@@ -82,6 +82,41 @@ class DdaController extends Controller
 
             'declaration'      => 'accepted',
         ]);
+
+        /*
+        |--------------------------------------------------------------------------
+        | Duplicate Submission Prevention
+        |--------------------------------------------------------------------------
+        | Block a new submission if an existing record with the same Email ID
+        | or Phone Number is still "active" (Pending, Payment Pending, or
+        | Under Review). Submissions marked Completed, Rejected, or Cancelled
+        | are considered resolved and do not block a fresh submission.
+        */
+
+        $activeStatuses = [
+            'Pending',
+            'Payment Pending',
+            'Under Review',
+        ];
+
+        $duplicateSubmission = DDA::where(function ($query) use ($validated) {
+
+            $query->where('email', $validated['email']);
+
+            if (!empty($validated['phone'])) {
+                $query->orWhere('phone', $validated['phone']);
+            }
+        })
+            ->whereIn('status', $activeStatuses)
+            ->exists();
+
+        if ($duplicateSubmission) {
+            return back()
+                ->withInput()
+                ->withErrors([
+                    'email' => 'A submission already exists with this Email ID or Phone Number. Please complete your existing submission or contact the Deities Design Awards support team.',
+                ]);
+        }
 
         /*
         |--------------------------------------------------------------------------

@@ -73,7 +73,7 @@
             <span>Membership</span>
         </a>
         <a class="nav-link {{ request()->is('membership') ? 'active' : '' }}" href="/deitiesdesignawards">
-            <img src="{{ asset('new_ui/assets/images/design_logo.png') }}" class="membership-icon" alt="Membership Icon">
+            <img src="{{ asset('new_ui/assets/images/Inverted Logo (1).svg') }}" class="membership-icon" alt="Membership Icon" style="width:20px; height:20px;">
             <span>Deities Design Awards</span>
         </a>
         <a class="nav-link {{ request()->is('events') ? 'active' : '' }}" href="/events">

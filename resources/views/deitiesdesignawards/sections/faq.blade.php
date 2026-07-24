@@ -7,105 +7,104 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('testdda/css/dda.css') }}">
+  <link rel="stylesheet" href="{{ asset('dda-assets/css/dda.css') }}">
 </head>
 <body>
   <div id="evil-eye-cursor" class="evil-eye-cursor"></div>
-  <div class="announce">Inaugural Edition | 2026 <span class="pipe">|</span> Registration opens soon <span class="pipe">|</span> <a href="{{ url('/test/contact') }}">Be notified →</a></div>
+  <div class="announce">Inaugural Edition | 2026 <span class="pipe">|</span> Registration opens soon <span class="pipe">|</span> <a href="{{ url('/deitiesdesignawards/contact') }}">Be notified →</a></div>
   <nav>
-    <a href="{{ url('/test') }}" class="nav-logo"><img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
+    <a href="{{ url('/deitiesdesignawards') }}" class="nav-logo"><img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
     <div class="nav-links">
-      <a href="{{ url('/test') }}" class="nav-link">Home</a>
+      <a href="{{ url('/deitiesdesignawards') }}" class="nav-link">Home</a>
       <div class="has-dropdown">
         <a class="nav-link">Categories <span class="chev">▼</span></a>
         <div class="dropdown">
           <span class="dropdown-label">Deities Category</span>
-          <a href="{{ url('/test/design-category') }}#nitai">Nitai</a>
-          <a href="{{ url('/test/design-category') }}#gaur">Gaur</a>
-          <a href="{{ url('/test/design-category') }}#lalita">Lalita</a>
-          <a href="{{ url('/test/design-category') }}#radharani-radha">Radharani / Radha</a>
-          <a href="{{ url('/test/design-category') }}#gopinath-krishna">Gopinath / Krishna</a>
-          <a href="{{ url('/test/design-category') }}#vishakhadevi">Vishakhadevi</a>
-          <a href="{{ url('/test/design-category') }}#gopalji">Gopalji</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#nitai">Nitai</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gaur">Gaur</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#lalita">Lalita</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#radharani-radha">Radharani / Radha</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gopinath-krishna">Gopinath / Krishna</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#vishakhadevi">Vishakhadevi</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gopalji">Gopalji</a>
         </div>
       </div>
       <div class="has-dropdown">
         <a class="nav-link">Participate <span class="chev">▼</span></a>
         <div class="dropdown">
-          <a href="{{ url('/test/participate') }}#how-to-enter">How to Enter</a>
-          <a href="{{ url('/test/participate') }}#guidelines">Submission Guidelines</a>
-          <a href="{{ url('/test/participate') }}#fees">Fees</a>
-          <a href="{{ url('/test/participate') }}#dates">Important Dates</a>
-          <a href="{{ url('/test/jury') }}#evaluation-criteria">Judging Criteria</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#how-to-enter">How to Enter</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#guidelines">Submission Guidelines</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#fees">Fees</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#dates">Important Dates</a>
+          <a href="{{ url('/deitiesdesignawards/jury') }}#evaluation-criteria">Judging Criteria</a>
         </div>
       </div>
-      <a href="{{ url('/test/inspiration') }}" class="nav-link">Inspiration</a>
+      <a href="{{ url('/deitiesdesignawards/inspiration') }}" class="nav-link">Inspiration</a>
       <div class="has-dropdown">
         <a class="nav-link">Partners <span class="chev">▼</span></a>
         <div class="dropdown">
-          <a href="{{ url('/test/partners') }}">Our Partners</a>
-          <a href="{{ url('/test/sponsor-us') }}">Be a Sponsor</a>
+          <a href="{{ url('/deitiesdesignawards/partners') }}">Our Partners</a>
+          <a href="{{ url('/deitiesdesignawards/sponsor-us') }}">Be a Sponsor</a>
         </div>
       </div>
-      <a href="{{ url('/test/about') }}" class="nav-link">About</a>
-      <a href="{{ url('/test/contact') }}" class="nav-link">Contact</a>
+      <a href="{{ url('/deitiesdesignawards/about') }}" class="nav-link">About</a>
+      <a href="{{ url('/deitiesdesignawards/contact') }}" class="nav-link">Contact</a>
     </div>
     <div class="nav-right">
       <button class="nav-icon" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
-      <a href="{{ url('/test/submit') }}" class="nav-cta">Register</a>
+      <a href="{{ url('/deitiesdesignawards/submit') }}" class="nav-cta">Register</a>
       <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
   </nav>
   <div class="mobile-menu-drawer">
-    <div class="mobile-menu-logo"><img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></div>
+    <div class="mobile-menu-logo"><img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></div>
     <div class="mobile-menu-links">
-      <a href="{{ url('/test') }}" class="mob-link">Home</a>
+      <a href="{{ url('/deitiesdesignawards') }}" class="mob-link">Home</a>
       <div class="mob-dropdown">
         <button class="mob-dropdown-toggle">Categories <span class="chev">▼</span></button>
         <div class="mob-dropdown-menu">
           <span class="dropdown-label">Deities Category</span>
-          <a href="{{ url('/test/design-category') }}#nitai">Nitai</a>
-          <a href="{{ url('/test/design-category') }}#gaur">Gaur</a>
-          <a href="{{ url('/test/design-category') }}#lalita">Lalita</a>
-          <a href="{{ url('/test/design-category') }}#radharani-radha">Radharani / Radha</a>
-          <a href="{{ url('/test/design-category') }}#gopinath-krishna">Gopinath / Krishna</a>
-          <a href="{{ url('/test/design-category') }}#vishakhadevi">Vishakhadevi</a>
-          <a href="{{ url('/test/design-category') }}#gopalji">Gopalji</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#nitai">Nitai</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gaur">Gaur</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#lalita">Lalita</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#radharani-radha">Radharani / Radha</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gopinath-krishna">Gopinath / Krishna</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#vishakhadevi">Vishakhadevi</a>
+          <a href="{{ url('/deitiesdesignawards/design-category') }}#gopalji">Gopalji</a>
         </div>
       </div>
       <div class="mob-dropdown">
         <button class="mob-dropdown-toggle">Participate <span class="chev">▼</span></button>
         <div class="mob-dropdown-menu">
-          <a href="{{ url('/test/participate') }}#how-to-enter">How to Enter</a>
-          <a href="{{ url('/test/participate') }}#guidelines">Submission Guidelines</a>
-          <a href="{{ url('/test/participate') }}#fees">Fees</a>
-          <a href="{{ url('/test/participate') }}#dates">Important Dates</a>
-          <a href="{{ url('/test/jury') }}#evaluation-criteria">Judging Criteria</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#how-to-enter">How to Enter</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#guidelines">Submission Guidelines</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#fees">Fees</a>
+          <a href="{{ url('/deitiesdesignawards/participate') }}#dates">Important Dates</a>
+          <a href="{{ url('/deitiesdesignawards/jury') }}#evaluation-criteria">Judging Criteria</a>
         </div>
       </div>
-      <a href="{{ url('/test/inspiration') }}" class="mob-link">Inspiration</a>
+      <a href="{{ url('/deitiesdesignawards/inspiration') }}" class="mob-link">Inspiration</a>
       <div class="mob-dropdown">
         <button class="mob-dropdown-toggle">Partners <span class="chev">▼</span></button>
         <div class="mob-dropdown-menu">
-          <a href="{{ url('/test/partners') }}">Our Partners</a>
-          <a href="{{ url('/test/sponsor-us') }}">Be a Sponsor</a>
+          <a href="{{ url('/deitiesdesignawards/partners') }}">Our Partners</a>
+          <a href="{{ url('/deitiesdesignawards/sponsor-us') }}">Be a Sponsor</a>
         </div>
       </div>
-      <a href="{{ url('/test/about') }}" class="mob-link">About</a>
-      <a href="{{ url('/test/contact') }}" class="mob-link">Contact</a>
-      <a href="{{ url('/test/submit') }}" class="mob-register-btn">Register</a>
+      <a href="{{ url('/deitiesdesignawards/about') }}" class="mob-link">About</a>
+      <a href="{{ url('/deitiesdesignawards/contact') }}" class="mob-link">Contact</a>
+      <a href="{{ url('/deitiesdesignawards/submit') }}" class="mob-register-btn">Register</a>
     </div>
   </div>
 
-  <section class="page-hero-int wash-teal">
-    <div class="page-hero-collage" aria-hidden="true">
-      <img class="c1" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%201_thumb.jpg') }}" alt="">
-      <img class="c2" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%201_thumb.jpg') }}" alt="">
-      <img class="c3" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%201_thumb.jpg') }}" alt="">
-      <img class="c4" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Wooden/thumbs/Wooden%202_thumb.jpg') }}" alt="">
-      <img class="c5" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Carving/thumbs/Carving%202_thumb.jpg') }}" alt="">
-      <img class="c6" src="{{ asset('testdda/inspiration%20pdf%20and%20images/Painting/thumbs/Painting%202_thumb.jpg') }}" alt="">
-    </div>
+  <section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/JURY.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
+    
     <div class="page-hero-int-content">
       <span class="page-hero-int-eyebrow">FAQs</span>
       <h1 class="page-hero-int-title">Frequently Asked<br>Questions</h1>
@@ -201,7 +200,7 @@
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="{{ asset('testdda/Logo/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards">
+        <img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards">
        
         <div class="footer-socials">
           <a href="https://www.instagram.com/deitiesdesignawards" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
@@ -209,13 +208,13 @@
           <a href="https://www.youtube.com/@DeitiesDesignAwards" target="_blank" rel="noopener" class="footer-social" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.75v4.5L15 12l-5-2.25z" fill="currentColor" stroke="none"/></svg></a>
         </div>
       </div>
-      <div class="footer-col"><h5>Explore</h5><ul><li><a href="{{ url('/test/about') }}">About DDA</a></li><li><a href="{{ url('/test/categories') }}">Categories</a></li><li><a href="{{ url('/test/inspiration') }}">Inspiration</a></li><li><a href="{{ url('/test/participate') }}#dates">Calendar</a></li></ul></div>
-      <div class="footer-col"><h5>Participate</h5><ul><li><a href="{{ url('/test/participate') }}#how-to-enter">How to Enter</a></li><li><a href="{{ url('/test/participate') }}#fees">Fees</a></li><li><a href="{{ url('/test/participate') }}#guidelines">Guidelines</a></li><li><a href="{{ url('/test/faq') }}">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Explore</h5><ul><li><a href="{{ url('/deitiesdesignawards/about') }}">About DDA</a></li><li><a href="{{ url('/deitiesdesignawards/categories') }}">Categories</a></li><li><a href="{{ url('/deitiesdesignawards/inspiration') }}">Inspiration</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#dates">Calendar</a></li></ul></div>
+      <div class="footer-col"><h5>Participate</h5><ul><li><a href="{{ url('/deitiesdesignawards/participate') }}#how-to-enter">How to Enter</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#fees">Fees</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#guidelines">Guidelines</a></li><li><a href="{{ url('/deitiesdesignawards/faq') }}">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+919819155544">+91 98191 55544</a></li><li><a href="mailto:info@deitiesdesignawards.com">info@deitiesdesignawards.com</a></li><li>Mumbai, India</li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Deities Design Awards · All Rights Reserved</span>
-      <span><a href="{{ url('/test/terms') }}">Terms</a><a href="{{ url('/test/privacy') }}">Privacy</a><a href="{{ url('/test/terms') }}">Code of Conduct</a></span>
+      <span><a href="{{ url('/deitiesdesignawards/terms') }}">Terms</a><a href="{{ url('/deitiesdesignawards/privacy') }}">Privacy</a><a href="{{ url('/deitiesdesignawards/terms') }}">Code of Conduct</a></span>
     </div>
   </footer>
   <script>
