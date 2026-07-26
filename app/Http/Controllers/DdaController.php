@@ -1,4 +1,4 @@
-\<?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -46,10 +46,10 @@ class DdaController extends Controller
             'organisation'     => 'nullable|string|max:255',
             'participant_type' => 'required|string',
             'participant_type_other' => [
-                    'nullable',
-                    'string',
-                    'max:255',
-                    'required_if:participant_type,other',
+                'nullable',
+                'string',
+                'max:255',
+                'required_if:participant_type,other',
             ],
 
             /*
@@ -59,7 +59,7 @@ class DdaController extends Controller
             */
 
             'deity_category_a' => 'required|string|max:255',
-            'jewellery_piece_a'=> 'required|string|max:255',
+            'jewellery_piece_a' => 'required|string|max:255',
             'material_a'       => 'required|string|max:255',
             'statement_a'      => 'required|string|min:150',
 
@@ -73,7 +73,7 @@ class DdaController extends Controller
             */
 
             'deity_category_b' => 'required|string|max:255',
-            'jewellery_piece_b'=> 'required|string|max:255',
+            'jewellery_piece_b' => 'required|string|max:255',
             'material_b'       => 'required|string|max:255',
             'statement_b'      => 'required|string|min:150',
 
