@@ -1,13 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Web\Admin\{AdminAuthController, CustomerController, MembershipController, EventController, TransactionController, CouponController, GalleryController};
+use App\Http\Controllers\Web\Admin\{AdminAuthController, CustomerController, MembershipController, EventController, TransactionController, CouponController, GalleryController, DdaController as AdminDdaController};
 use App\Http\Controllers\Web\Frontend\{CustomerAuthController};
 use App\Http\Controllers\Api\Frontend\{CheckoutController};
+use App\Http\Controllers\DdaController;
 use Mews\Captcha\CaptchaController;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\MembershipAcknowledgementMail;
 use Carbon\Carbon;
+use App\Http\Controllers\DdaPaymentController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +38,144 @@ Route::get('/term-and-conditions', [CustomerAuthController::class, 'termAndCondi
 Route::get('/gallery', [CustomerAuthController::class, 'gallery'])->name('gallery');
 Route::get('/gallery/{id}', [CustomerAuthController::class, 'galleryDetail'])->name('galleryDetail');
 Route::get('/contact-us', [CustomerAuthController::class, 'contactUs'])->name('contactUs');
-Route::get('/deitiesdesignawards', function () {
-    return view('deitiesdesignawards.coming-soon');
+
+
+// Route::get('/deitiesdesignawards', function () {
+//     return view('deitiesdesignawards.coming-soon');
+//     });
+Route::prefix('deitiesdesignawards')->group(function () {
+
+    Route::get('/', function () {
+        return view('deitiesdesignawards.sections.index');
     });
+    
+    
+
+    Route::get('/about', function () {
+        return view('deitiesdesignawards.sections.about');
+    });
+
+    Route::get('/categories', function () {
+        return view('deitiesdesignawards.sections.categories');
+    });
+
+    Route::get('/design-category', function () {
+        return view('deitiesdesignawards.sections.design-category');
+    });
+
+    Route::get('/contact', function () {
+        return view('deitiesdesignawards.sections.contact');
+    });
+
+    Route::get('/faq', function () {
+        return view('deitiesdesignawards.sections.faq');
+    });
+
+    Route::get('/gallery', function () {
+        return view('deitiesdesignawards.sections.gallery');
+    });
+
+    Route::get('/inspiration', function () {
+        return view('deitiesdesignawards.sections.inspiration');
+    });
+
+    Route::get('/jury', function () {
+        return view('deitiesdesignawards.sections.jury');
+    });
+
+    Route::get('/participate', function () {
+        return view('deitiesdesignawards.sections.participate');
+    });
+
+    Route::get('/partners', function () {
+        return view('deitiesdesignawards.sections.partners');
+    });
+
+    Route::get('/press-kit', function () {
+        return view('deitiesdesignawards.sections.press-kit');
+    });
+
+    Route::get('/privacy', function () {
+        return view('deitiesdesignawards.sections.privacy');
+    });
+
+    Route::get('/sponsor-us', function () {
+        return view('deitiesdesignawards.sections.sponsor-us');
+    });
+
+    Route::get('/submit', function () {
+        return view('deitiesdesignawards.sections.submit');
+    });
+
+    Route::post('/submit', [DdaController::class, 'store'])
+    ->name('dda.submit');
+
+    Route::post('/submit', [DdaController::class, 'store'])
+    ->name('dda.submit');
+
+    Route::get('/login', [CustomerAuthController::class, 'ddaLogin'])
+    ->name('dda.login');
+
+    Route::post('/deitiesdesignawards/contact', [ContactController::class, 'send'])
+    ->name('dda.contact.send');
+
+
+// Payment Routes
+Route::get(
+    '/order-summary/{id}',
+    [DdaPaymentController::class, 'orderSummary']
+)->name('dda.order.summary');
+
+Route::post(
+    '/create-order',
+    [DdaPaymentController::class, 'createOrder']
+)->name('dda.create.order');
+
+Route::post(
+    '/razorpay/callback',
+    [DdaPaymentController::class, 'razorpayCallback']
+)->name('dda.razorpay.callback');
+
+Route::get(
+    '/payment-success',
+    [DdaPaymentController::class, 'paymentSuccess']
+)->name('dda.payment.success');
+
+Route::get(
+    '/payment-failed',
+    [DdaPaymentController::class, 'paymentFailed']
+)->name('dda.payment.failed');
+
+Route::post(
+    '/paypal/create-order',
+    [DdaPaymentController::class, 'createPaypalOrder']
+)->name('dda.paypal.create');
+
+Route::get(
+    '/paypal/success',
+    [DdaPaymentController::class, 'paypalSuccess']
+)->name('dda.paypal.success');
+
+Route::get(
+    '/paypal/cancel',
+    [DdaPaymentController::class, 'paypalCancel']
+)->name('dda.paypal.cancel');
+
+Route::get('/terms', function () {
+    return view('deitiesdesignawards.sections.terms');
+});
+
+    Route::get('/terms', function () {
+        return view('deitiesdesignawards.sections.terms');
+    });
+
+    Route::get('/media-preview', function () {
+        return view('deitiesdesignawards.sections.media-preview');
+    });
+
+    
+
+});
 
 //Route::middleware(['auth', 'preventBackHistory'])->group(function () {
     Route::get('/dashboard', [CustomerAuthController::class, 'dashboard'])->name('dashboard');
@@ -80,6 +218,30 @@ Route::prefix('admin/manage')->name('manage.')->group(function () {
     Route::prefix('gallery')->name('gallery.')->group(function () {
         Route::get('/', [GalleryController::class, 'index'])->name('index');
     });
+
+    Route::prefix('dda')->name('dda.')->group(function () {
+
+    // Listing
+    Route::get('/', [AdminDdaController::class, 'index'])
+        ->name('index');
+
+    // View Submission
+    Route::get('/{id}', [AdminDdaController::class, 'show'])
+        ->name('show');
+
+    // Edit Page
+    Route::get('/{id}/edit', [AdminDdaController::class, 'edit'])
+        ->name('edit');
+
+    // Update Submission
+    Route::put('/{id}', [AdminDdaController::class, 'update'])
+        ->name('update');
+
+    // Update Review Status
+    Route::post('/{id}/status', [AdminDdaController::class, 'updateStatus'])
+        ->name('status.update');
+    });
+
 
     // Route::prefix('event-attendees')->name('attendees.')->group(function () {
     //     Route::get('/', [EventAttendess::class, 'index'])->name('index');
@@ -124,30 +286,4 @@ Route::get('/server-limits', function () {
     ];
 });
 
-/*
-|--------------------------------------------------------------------------
-| Test Website Routes
-|--------------------------------------------------------------------------
-*/
 
-Route::prefix('test')->group(function () {
-
-    Route::view('/', 'test.index');
-
-    Route::view('/about', 'test.about');
-    Route::view('/categories', 'test.categories');
-    Route::view('/contact', 'test.contact');
-    Route::view('/design-category', 'test.design-category');
-    Route::view('/faq', 'test.faq');
-    Route::view('/gallery', 'test.gallery');
-    Route::view('/inspiration', 'test.inspiration');
-    Route::view('/jury', 'test.jury');
-    Route::view('/media-preview', 'test.media-preview');
-    Route::view('/participate', 'test.participate');
-    Route::view('/partners', 'test.partners');
-    Route::view('/privacy', 'test.privacy');
-    Route::view('/sponsor-us', 'test.sponsor-us');
-    Route::view('/submit', 'test.submit');
-    Route::view('/terms', 'test.terms');
-
-});
