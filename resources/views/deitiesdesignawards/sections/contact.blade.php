@@ -164,18 +164,55 @@
         <div class="contact-form-col">
           <div class="contact-form-card">
             <h3 style="font-family:var(--serif);font-style:italic;font-size:1.5rem;margin-bottom:1.5rem">Send us a message</h3>
-            <form class="contact-form" id="contact-form" novalidate>
+
+            @if(session('success'))
+            <div style="padding:15px;background:#e8f8e8;border:1px solid #28a745;color:#155724;margin-bottom:20px;border-radius:6px;">
+                {{ session('success') }}
+            </div>
+            @endif
+
+            @if($errors->any())
+            <div style="padding:15px;background:#fdeaea;border:1px solid #dc3545;color:#721c24;margin-bottom:20px;border-radius:6px;">
+                <ul style="margin:0;padding-left:20px;">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+
+            <form
+                class="contact-form"
+                id="contact-form"
+                method="POST"
+                action="{{ route('dda.contact.send') }}">
+                @csrf
               <div class="form-field">
                 <label for="cf-name">Your Name <span class="req">*</span></label>
-                <input type="text" id="cf-name" placeholder="Full name" required>
+                <input
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    value="{{ old('name') }}"
+                    placeholder="Full name"
+                    required>
               </div>
               <div class="form-field">
                 <label for="cf-email">Email Address <span class="req">*</span></label>
-                <input type="email" id="cf-email" placeholder="your@email.com" required>
+                <input
+                    type="email"
+                    id="cf-email"
+                    name="email"
+                    value="{{ old('email') }}"
+                    placeholder="your@email.com"
+                    required>
               </div>
               <div class="form-field">
                 <label for="cf-subject">Subject <span class="req">*</span></label>
-                <select id="cf-subject" required>
+                <select
+                    id="cf-subject"
+                    name="subject"
+                    required>
                   <option value="">Select a topic</option>
                   <option>General Enquiry</option>
                   <option>Submission Help</option>
@@ -187,7 +224,12 @@
               </div>
               <div class="form-field">
                 <label for="cf-msg">Message <span class="req">*</span></label>
-                <textarea id="cf-msg" rows="6" placeholder="How can we help you?" required></textarea>
+                <textarea
+                    id="cf-msg"
+                    name="message"
+                    rows="6"
+                    placeholder="How can we help you?"
+                    required>{{ old('message') }}</textarea>
               </div>
               <button type="submit" class="btn-gold" style="width:100%;justify-content:center">Send Message <span class="arrow">&#x2192;</span></button>
               <div id="cf-success" style="display:none;margin-top:1rem;padding:1rem;background:rgba(184,146,42,.08);border:1px solid rgba(184,146,42,.2);border-radius:4px;font-size:.85rem;text-align:center">Thank you &#x2014; we&#x2019;ve received your message and will respond within 2 business days.</div>
@@ -223,11 +265,6 @@
     document.addEventListener('click',e=>{if(!dr.contains(e.target)&&!tb.contains(e.target)&&dr.classList.contains('active')){tb.classList.remove('active');dr.classList.remove('active');document.body.classList.remove('no-scroll');}});
     document.querySelectorAll('.mobile-menu-links > a.mob-link, .mob-dropdown-menu a').forEach(l=>l.addEventListener('click',()=>{tb.classList.remove('active');dr.classList.remove('active');document.body.classList.remove('no-scroll');}));
     document.querySelectorAll('.mob-dropdown-toggle').forEach(t=>{t.addEventListener('click',e=>{e.stopPropagation();const m=t.nextElementSibling,c=t.querySelector('.chev');document.querySelectorAll('.mob-dropdown-toggle').forEach(o=>{if(o!==t){o.nextElementSibling.classList.remove('open');o.querySelector('.chev').classList.remove('rotate');}});m.classList.toggle('open');c.classList.toggle('rotate');});});
-    document.getElementById('contact-form').addEventListener('submit',e=>{
-      e.preventDefault();
-      document.getElementById('cf-success').style.display='block';
-      e.target.querySelector('button[type="submit"]').disabled=true;
-    });
 
     // Evil Eye Cursor
     const cursorContainer = document.getElementById('evil-eye-cursor');

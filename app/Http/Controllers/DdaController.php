@@ -44,7 +44,13 @@ class DdaController extends Controller
             'city'             => 'required|string|max:255',
             'country'          => 'required|string|max:255',
             'organisation'     => 'nullable|string|max:255',
-            'participant_type' => 'required|string|max:255',
+            'participant_type' => 'required|string',
+            'participant_type_other' => [
+                    'nullable',
+                    'string',
+                    'max:255',
+                    'required_if:participant_type,other',
+            ],
 
             /*
             |--------------------------------------------------------------------------
@@ -199,7 +205,11 @@ class DdaController extends Controller
         $submission->city             = $validated['city'];
         $submission->country          = $validated['country'];
         $submission->organisation     = $validated['organisation'] ?? null;
-        $submission->participant_type = $validated['participant_type'];
+        if ($validated['participant_type'] === 'other') {
+            $submission->participant_type = $validated['participant_type_other'];
+        } else {
+            $submission->participant_type = $validated['participant_type'];
+        }
 
         /*
         |--------------------------------------------------------------------------

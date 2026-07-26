@@ -226,37 +226,31 @@
             <div class="tl-dot pulse"></div>
             <div class="tl-phase">Phase One</div>
             <div class="tl-title">Registration Opens</div>
-            <div class="tl-date">15th July 2026</div>
+            <div class="tl-date">29th July 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Two</div>
-            <div class="tl-title">Entry Submission</div>
-            <div class="tl-date">Till 25th July 2026</div>
+            <div class="tl-title">Closure of Entry Submission</div>
+            <div class="tl-date">25th August 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Three</div>
             <div class="tl-title">Preliminary Jury Evaluation</div>
-            <div class="tl-date">31st July 2026</div>
+            <div class="tl-date">30th August 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Four</div>
-            <div class="tl-title">Shortlist<br>Reveal</div>
-            <div class="tl-date">3rd Aug 2026</div>
+            <div class="tl-title">Final Jury Round</div>
+            <div class="tl-date">14th Oct 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Five</div>
-            <div class="tl-title">Final Jewellery Submission</div>
-            <div class="tl-date">Till 25th Aug 2026</div>
-          </div>
-          <div class="tl-step">
-            <div class="tl-dot"></div>
-            <div class="tl-phase">Phase Six</div>
             <div class="tl-title">Awards<br>Night</div>
-            <div class="tl-date">30th Aug 2026</div>
+            <div class="tl-date">18th Oct 2026</div>
           </div>
         </div>
       </div>

@@ -97,7 +97,13 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
+<section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/SUBMITION+PAGE.PNG');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
     <div class="page-hero-int-content">
       <span class="page-hero-int-eyebrow">Submit Your Entry</span>
       <h1 class="page-hero-int-title">Begin your submission.</h1>
@@ -194,19 +200,71 @@
                   @enderror
                 </div>
                 <div class="form-field full">
-                  <label for="f-category">Participant Type <span class="req">*</span></label>
-                  <select id="f-category" name="participant_type" required>
-                    <option value="">Select your category</option>
-                    <option value="designer" {{ old('participant_type') == 'designer' ? 'selected' : '' }}>Designer / Studio</option>
-                    <option value="brand" {{ old('participant_type') == 'brand' ? 'selected' : '' }}>Brand / Retailer</option>
-                    <option value="artisan" {{ old('participant_type') == 'artisan' ? 'selected' : '' }}>Artisan / Manufacturer</option>
-                    <option value="diamantaire" {{ old('participant_type') == 'diamantaire' ? 'selected' : '' }}>Diamantaire / Supplier</option>
-                    <option value="student" {{ old('participant_type') == 'student' ? 'selected' : '' }}>Student</option>
-                  </select>
-                  @error('participant_type')
-                    <div class="text-danger">{{ $message }}</div>
-                  @enderror
-                </div>
+    <label for="f-category">
+        Participant Type
+        <span class="req">*</span>
+    </label>
+
+    <select
+        id="f-category"
+        name="participant_type"
+        required>
+
+        <option value="">Select your category</option>
+
+        <option value="designer" {{ old('participant_type') == 'designer' ? 'selected' : '' }}>
+            Designer / Studio
+        </option>
+
+        <option value="brand" {{ old('participant_type') == 'brand' ? 'selected' : '' }}>
+            Brand / Retailer
+        </option>
+
+        <option value="artisan" {{ old('participant_type') == 'artisan' ? 'selected' : '' }}>
+            Artisan / Manufacturer
+        </option>
+
+        <option value="diamantaire" {{ old('participant_type') == 'diamantaire' ? 'selected' : '' }}>
+            Diamantaire / Supplier
+        </option>
+
+        <option value="student" {{ old('participant_type') == 'student' ? 'selected' : '' }}>
+            Student
+        </option>
+
+        <option value="other" {{ old('participant_type') == 'other' ? 'selected' : '' }}>
+            Other
+        </option>
+
+    </select>
+
+    @error('participant_type')
+        <div class="text-danger">{{ $message }}</div>
+    @enderror
+</div>
+
+<div
+    class="form-field full"
+    id="participant-type-other"
+    style="{{ old('participant_type') == 'other' ? '' : 'display:none;' }}">
+
+    <label for="participant_type_other">
+        Please specify
+        <span class="req">*</span>
+    </label>
+
+    <input
+        type="text"
+        id="participant_type_other"
+        name="participant_type_other"
+        value="{{ old('participant_type_other') }}"
+        placeholder="Enter your participant type">
+
+    @error('participant_type_other')
+        <div class="text-danger">{{ $message }}</div>
+    @enderror
+
+</div>
               </div>
               <div class="form-actions">
                 <button type="button" class="btn-form-next" onclick="if(validateStep(1)) goStep(2)">Continue to Entry Details <span>&#x2192;</span></button>
@@ -247,7 +305,7 @@
                   </div>
                   <div class="form-field full">
                     <label for="f-material-a">Primary Material <span class="req">*</span></label>
-                    <input type="text" id="f-material-a" name="material_a" value="{{ old('material_a') }}" placeholder="e.g. 22k gold, rubies, enamel" required>
+                    <input type="text" id="f-material-a" name="material_a" value="{{ old('material_a') }}" placeholder="e.g. 22k gold, silver" required>
                     @error('material_a')
                       <div class="text-danger">{{ $message }}</div>
                     @enderror
@@ -264,6 +322,9 @@
 
                 <div class="entry-upload-label">Upload Images <span class="req">*</span></div>
                 <p class="sub-panel-desc" style="margin-top:-1rem">Upload 1&#x2013;10 images of this entry. JPEG or PNG only. Maximum 25 MB per image.</p>
+                <p style="margin:10px 0 15px;color:#b22222;font-weight:700;font-size:15px;">
+    <strong>Note:</strong> All submitted images must be photographed or presented against a plain <strong>white or black background only</strong>. Images with coloured, textured, or distracting backgrounds may not be considered during the evaluation process.
+</p>
                 <div class="upload-zone" id="upload-zone-a">
                   <input type="file" class="file-input" id="file-input-a" name="images_a[]" accept="image/jpeg,image/png" multiple>
                   <div class="upload-zone-inner">
@@ -339,6 +400,9 @@
 
                 <div class="entry-upload-label">Upload Images <span class="req">*</span></div>
                 <p class="sub-panel-desc" style="margin-top:-1rem">Upload 1&#x2013;10 images of this entry. JPEG or PNG only. Maximum 25 MB per image.</p>
+                <p style="margin:10px 0 15px;color:#b22222;font-weight:700;font-size:15px;">
+    <strong>Note:</strong> All submitted images must be photographed or presented against a plain <strong>white or black background only</strong>. Images with coloured, textured, or distracting backgrounds may not be considered during the evaluation process.
+</p>
                 <div class="upload-zone" id="upload-zone-b">
                   <input type="file" class="file-input" id="file-input-b" name="images_b[]" accept="image/jpeg,image/png" multiple>
                   <div class="upload-zone-inner">
@@ -593,6 +657,31 @@
       ta.addEventListener('input',updateCount);
       updateCount();
     });
+
+    const participantType = document.getElementById('f-category');
+const otherField = document.getElementById('participant-type-other');
+const otherInput = document.getElementById('participant_type_other');
+
+function toggleParticipantType() {
+
+    if (participantType.value === 'other') {
+
+        otherField.style.display = 'block';
+        otherInput.required = true;
+
+    } else {
+
+        otherField.style.display = 'none';
+        otherInput.required = false;
+        otherInput.value = '';
+
+    }
+
+}
+
+participantType.addEventListener('change', toggleParticipantType);
+
+toggleParticipantType();
 
     // Evil Eye Cursor
     const cursorContainer = document.getElementById('evil-eye-cursor');
