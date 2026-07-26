@@ -418,7 +418,13 @@
     </div>
   </div>
 
-  <section class="page-hero-int wash-gold">
+<section class="page-hero-int wash-gold"
+    style="
+        background-image: url('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/WhatsApp+Image+2026-07-26+at+6.25.02+PM.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    ">
     
     <div class="page-hero-int-content">
       <span class="page-hero-int-eyebrow">Inspiration Gallery</span>
@@ -448,6 +454,17 @@
         <button class="gallery-tab-btn deity-tab-btn" data-deity="Gopalji">Gopalji</button>
         <button class="gallery-tab-btn deity-tab-btn" data-deity="All dietiestogether">All Together</button>
       </div>
+
+      <p style="
+    text-align:center;
+    margin: 0 0 1.5rem;
+    font-size:0.95rem;
+    font-weight:600;
+    color: var(--gold-deep, #8a7026);
+    letter-spacing:0.03em;
+">
+    Click on any image to view the full-size version.
+</p>
 
       <div class="gallery-pdf-wrap">
         <a id="gallery-pdf-btn" class="gallery-pdf-btn" href="#" download style="display:none">

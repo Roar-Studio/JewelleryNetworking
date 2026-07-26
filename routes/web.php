@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\MembershipAcknowledgementMail;
 use Carbon\Carbon;
 use App\Http\Controllers\DdaPaymentController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -114,6 +115,9 @@ Route::prefix('deitiesdesignawards')->group(function () {
 
     Route::get('/login', [CustomerAuthController::class, 'ddaLogin'])
     ->name('dda.login');
+
+    Route::post('/deitiesdesignawards/contact', [ContactController::class, 'send'])
+    ->name('dda.contact.send');
 
 
 // Payment Routes

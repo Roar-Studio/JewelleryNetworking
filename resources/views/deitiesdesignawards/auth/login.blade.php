@@ -215,7 +215,7 @@
         <div class="content-body">
             <div class="auth-inner">
                 <!-- Login basic -->
-                <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Indias+first+awards+platform+dedicated+to+jewellery+created+for+the+divine.png') }}"/>
+                <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/SEVEN+SACRED.png') }}"/>
                 <div class="card mb-0">
                     <div class="card-body">
                         <img class="brand-logo" src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}">
