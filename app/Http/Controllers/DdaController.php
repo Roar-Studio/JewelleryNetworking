@@ -116,13 +116,6 @@ class DdaController extends Controller
             ->whereIn('status', $activeStatuses)
             ->exists();
         
-        if ($duplicateSubmission) {
-            return back()
-                ->withInput()
-                ->withErrors([
-                    'email' => 'A submission already exists with this Email ID or Phone Number. Please complete your existing submission or contact the Deities Design Awards support team.',
-                ]);
-        }
         $nextId = (DDA::max('id') ?? 0) + 1;
         $entryId = 'DDA' . str_pad($nextId, 6, '0', STR_PAD_LEFT);
         
