@@ -64,11 +64,16 @@ class DdaPaymentController extends Controller
             try {
 
                 $api = new Api(
-                    env('RAZORPAY_KEY'),
-                    env('RAZORPAY_SECRET')
+                    'rzp_live_P5HDJtaQPAUv2F',
+                    '1bhHKP6KX1ApHjtM0lxzEq1N'
                 );
             } catch (\Exception $e) {
-
+                Log::error('Razorpay API Initialization Failed', [
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+             'trace' => $e->getTraceAsString(),
+    ]);
                 dd($e->getMessage());
             }
 
@@ -77,6 +82,14 @@ class DdaPaymentController extends Controller
             | Create Razorpay Order
             |--------------------------------------------------------------------------
             */
+            
+            Log::info('Creating Razorpay Order', [
+        'key' => 'rzp_live_P5HDJtaQPAUv2F',
+        'amount' => $amount * 100,
+        'currency' => 'INR',
+        'receipt' => (string) $transaction->id,
+        'app_env' => app()->environment(),
+    ]);
 
             $order = $api->order->create([
                 'receipt' => (string) $transaction->id,
@@ -103,7 +116,7 @@ class DdaPaymentController extends Controller
 
             return response()->json([
                 'success' => true,
-                'key' => env('RAZORPAY_KEY'),
+                'key' => 'rzp_live_P5HDJtaQPAUv2F',
                 'amount' => $amount * 100,
                 'submission_id' => $submission->id,
                 'transaction_id' => $transaction->id,
@@ -113,6 +126,12 @@ class DdaPaymentController extends Controller
                 'phone' => $submission->phone,
             ]);
         } catch (\Exception $e) {
+                Log::error('Razorpay API Initialization Failed', [
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+             'trace' => $e->getTraceAsString(),
+    ]);
 
             return response()->json([
                 'success' => false,
@@ -266,6 +285,11 @@ public function paymentSuccess()
             | Create PayPal Order
             |--------------------------------------------------------------------------
             */
+            Log::info('PayPal Config', [
+                'mode' => config('paypal.mode'),
+            'client_id' => config('paypal.live.client_id'),
+            'secret_length' => strlen(config('paypal.live.client_secret') ?? ''),
+            ]);
 
             $client = $this->paypalClient();
 
