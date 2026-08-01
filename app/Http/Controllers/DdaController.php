@@ -28,7 +28,7 @@ class DdaController extends Controller
         | Validation
         |--------------------------------------------------------------------------
         */
-
+        
         $validated = $request->validate([
 
             /*
@@ -115,7 +115,7 @@ class DdaController extends Controller
         })
             ->whereIn('status', $activeStatuses)
             ->exists();
-
+        
         if ($duplicateSubmission) {
             return back()
                 ->withInput()
@@ -123,6 +123,9 @@ class DdaController extends Controller
                     'email' => 'A submission already exists with this Email ID or Phone Number. Please complete your existing submission or contact the Deities Design Awards support team.',
                 ]);
         }
+        $nextId = (DDA::max('id') ?? 0) + 1;
+        $entryId = 'DDA' . str_pad($nextId, 6, '0', STR_PAD_LEFT);
+        
 
         /*
         |--------------------------------------------------------------------------
@@ -139,24 +142,54 @@ class DdaController extends Controller
         | Upload Entry A Images
         |--------------------------------------------------------------------------
         */
+        
+
+        // $imagesA = [];
+
+
+        // if ($request->hasFile('images_a')) {
+
+        //     foreach ($request->file('images_a') as $image) {
+
+        //         $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+
+        //         $path = Storage::disk('s3')->putFileAs(
+        //             "submissions/{$entryId}/entry_a",
+        //             $image,
+        //             $fileName
+        //         );
+
+        //         $imagesA[] = Storage::disk('s3')->url($path);
+        //     }
+        // }
 
         $imagesA = [];
 
         if ($request->hasFile('images_a')) {
 
-            foreach ($request->file('images_a') as $image) {
+        foreach ($request->file('images_a') as $image) {
 
-                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+        $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
 
-                $path = Storage::disk('s3')->putFileAs(
-                    "submissions/{$entryId}/entry_a",
-                    $image,
-                    $fileName
-                );
+        try {
 
-                $imagesA[] = Storage::disk('s3')->url($path);
-            }
-        }
+    $path = Storage::disk('s3')->putFileAs(
+        "submissions/{$entryId}/entry_a",
+        $image,
+        $fileName
+    );
+
+    $imagesA[] = Storage::disk('s3')->url($path);
+
+} catch (\Exception $e) {
+
+    dd($e->getMessage());
+
+}
+
+    }
+
+}
 
         /*
         |--------------------------------------------------------------------------
@@ -164,24 +197,51 @@ class DdaController extends Controller
         |--------------------------------------------------------------------------
         */
 
+        // $imagesB = [];
+
+        // if ($request->hasFile('images_b')) {
+
+        //     foreach ($request->file('images_b') as $image) {
+
+        //         $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+
+        //         $path = Storage::disk('s3')->putFileAs(
+        //             "submissions/{$entryId}/entry_b",
+        //             $image,
+        //             $fileName
+        //         );
+
+        //         $imagesB[] = Storage::disk('s3')->url($path);
+        //     }
+        // }
+
         $imagesB = [];
 
-        if ($request->hasFile('images_b')) {
+if ($request->hasFile('images_b')) {
 
-            foreach ($request->file('images_b') as $image) {
+    foreach ($request->file('images_b') as $image) {
 
-                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+        $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
 
-                $path = Storage::disk('s3')->putFileAs(
-                    "submissions/{$entryId}/entry_b",
-                    $image,
-                    $fileName
-                );
+        try {
 
-                $imagesB[] = Storage::disk('s3')->url($path);
-            }
+            $path = Storage::disk('s3')->putFileAs(
+                "submissions/{$entryId}/entry_b",
+                $image,
+                $fileName
+            );
+
+            $imagesB[] = Storage::disk('s3')->url($path);
+
+        } catch (\Exception $e) {
+
+            dd($e->getMessage());
+
         }
 
+    }
+
+}
         /*
         |--------------------------------------------------------------------------
         | Save Submission
