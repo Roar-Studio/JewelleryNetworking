@@ -7,6 +7,7 @@ use App\Events\PaymentSuccess;
 use App\Models\DDA;
 use App\Models\DdaTransaction;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Razorpay\Api\Api;
@@ -23,6 +24,12 @@ class DdaPaymentController extends Controller
     public function orderSummary($id)
     {
         $submission = DDA::findOrFail($id);
+
+
+        /* Disable user to view other's order summary */
+        if (Auth::guard('customer')->id() !== $submission->customer?->id) {
+            abort(403, 'Unauthorized');
+        }
 
         $amount = config('dda.entry_fee');
 
@@ -64,16 +71,16 @@ class DdaPaymentController extends Controller
             try {
 
                 $api = new Api(
-                    'rzp_live_P5HDJtaQPAUv2F',
-                    '1bhHKP6KX1ApHjtM0lxzEq1N'
+                    config('razorpay.key'),
+                    config('razorpay.secret')
                 );
             } catch (\Exception $e) {
                 Log::error('Razorpay API Initialization Failed', [
-                'message' => $e->getMessage(),
-                'file' => $e->getFile(),
-                'line' => $e->getLine(),
-             'trace' => $e->getTraceAsString(),
-    ]);
+                    'message' => $e->getMessage(),
+                    'file' => $e->getFile(),
+                    'line' => $e->getLine(),
+                    'trace' => $e->getTraceAsString(),
+                ]);
                 dd($e->getMessage());
             }
 
@@ -82,14 +89,14 @@ class DdaPaymentController extends Controller
             | Create Razorpay Order
             |--------------------------------------------------------------------------
             */
-            
+
             Log::info('Creating Razorpay Order', [
-        'key' => 'rzp_live_P5HDJtaQPAUv2F',
-        'amount' => $amount * 100,
-        'currency' => 'INR',
-        'receipt' => (string) $transaction->id,
-        'app_env' => app()->environment(),
-    ]);
+                'key' => 'rzp_live_P5HDJtaQPAUv2F',
+                'amount' => $amount * 100,
+                'currency' => 'INR',
+                'receipt' => (string) $transaction->id,
+                'app_env' => app()->environment(),
+            ]);
 
             $order = $api->order->create([
                 'receipt' => (string) $transaction->id,
@@ -126,12 +133,12 @@ class DdaPaymentController extends Controller
                 'phone' => $submission->phone,
             ]);
         } catch (\Exception $e) {
-                Log::error('Razorpay API Initialization Failed', [
+            Log::error('Razorpay API Initialization Failed', [
                 'message' => $e->getMessage(),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
-             'trace' => $e->getTraceAsString(),
-    ]);
+                'trace' => $e->getTraceAsString(),
+            ]);
 
             return response()->json([
                 'success' => false,
@@ -154,8 +161,8 @@ class DdaPaymentController extends Controller
             $transaction = DdaTransaction::findOrFail($request->transaction_id);
 
             $api = new Api(
-                env('RAZORPAY_KEY'),
-                env('RAZORPAY_SECRET')
+                config("razorpay.key"),
+                config('razorpay.secret')
             );
 
 
@@ -186,7 +193,7 @@ class DdaPaymentController extends Controller
                 ]
             );
 
-            PaymentFailed::dispatch(
+            PaymentFailedMail::dispatch(
                 $transaction->dda_id,
                 $transaction->id
             );
@@ -204,10 +211,10 @@ class DdaPaymentController extends Controller
         }
     }
 
-public function paymentSuccess()
-{
-    return view('deitiesdesignawards.payment.success');
-}
+    public function paymentSuccess()
+    {
+        return view('deitiesdesignawards.payment.success');
+    }
 
     public function paymentFailed()
     {
@@ -287,8 +294,8 @@ public function paymentSuccess()
             */
             Log::info('PayPal Config', [
                 'mode' => config('paypal.mode'),
-            'client_id' => config('paypal.live.client_id'),
-            'secret_length' => strlen(config('paypal.live.client_secret') ?? ''),
+                'client_id' => config('paypal.live.client_id'),
+                'secret_length' => strlen(config('paypal.live.client_secret') ?? ''),
             ]);
 
             $client = $this->paypalClient();
@@ -307,12 +314,12 @@ public function paymentSuccess()
                     ],
                 ]],
                 'application_context' => [
-                'brand_name' => config('paypal.brand_name'),
-                'landing_page' => 'NO_PREFERENCE',
-                'user_action' => 'PAY_NOW',
-                'shipping_preference' => 'NO_SHIPPING',
-                'return_url' => route('dda.paypal.success'),
-                'cancel_url' => route('dda.paypal.cancel'),
+                    'brand_name' => config('paypal.brand_name'),
+                    'landing_page' => 'NO_PREFERENCE',
+                    'user_action' => 'PAY_NOW',
+                    'shipping_preference' => 'NO_SHIPPING',
+                    'return_url' => route('dda.paypal.success'),
+                    'cancel_url' => route('dda.paypal.cancel'),
                 ],
             ];
 
@@ -439,7 +446,6 @@ public function paymentSuccess()
             );
 
             return redirect()->route('dda.payment.failed');
-
         } catch (HttpException $e) {
 
             Log::error('PayPal capture failed: ' . $e->getMessage());
@@ -454,7 +460,6 @@ public function paymentSuccess()
             );
 
             return redirect()->route('dda.payment.failed');
-
         } catch (\Exception $e) {
 
             Log::error('PayPal success handling failed: ' . $e->getMessage());

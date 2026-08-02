@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Customer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -29,6 +30,7 @@ class DDA extends Model
         | Technical Information
         |--------------------------------------------------------------------------
         */
+        'customer_id',
         'entry_id',
 
         /*
@@ -102,5 +104,17 @@ class DDA extends Model
     public function transactions()
     {
         return $this->hasMany(DdaTransaction::class, 'dda_id', 'id');
+    }
+
+    public function customer()
+    {
+        return $this->belongsTo(Customer::class);
+    }
+
+    public function isPaymentDone(): bool
+    {
+        return $this->transactions()
+            ->where('status', 'completed')
+            ->exists();
     }
 }

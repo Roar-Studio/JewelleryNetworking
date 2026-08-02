@@ -210,163 +210,163 @@
 
         .payment-section {
 
-    margin-top: 35px;
-    padding: 28px;
+            margin-top: 35px;
+            padding: 28px;
 
-    background: #faf7f1;
+            background: #faf7f1;
 
-    border: 1px solid #ececec;
-    border-radius: 14px;
+            border: 1px solid #ececec;
+            border-radius: 14px;
 
-}
+        }
 
-.payment-section-title {
+        .payment-section-title {
 
-    font-family: "Cormorant Garamond", serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #b78a2c;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #b78a2c;
 
-    margin-bottom: 18px;
+            margin-bottom: 18px;
 
-}
+        }
 
-.payment-options {
+        .payment-options {
 
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
 
-}
+        }
 
-.payment-option {
+        .payment-option {
 
-    position: relative;
+            position: relative;
 
-    display: flex;
-    align-items: center;
+            display: flex;
+            align-items: center;
 
-    cursor: pointer;
+            cursor: pointer;
 
-}
+        }
 
-.payment-radio {
+        .payment-radio {
 
-    position: absolute;
-    left: 20px;
+            position: absolute;
+            left: 20px;
 
-    width: 20px;
-    height: 20px;
+            width: 20px;
+            height: 20px;
 
-    accent-color: #b78a2c;
-    cursor: pointer;
+            accent-color: #b78a2c;
+            cursor: pointer;
 
-    z-index: 2;
+            z-index: 2;
 
-}
+        }
 
-.payment-option-content {
+        .payment-option-content {
 
-    display: flex;
-    align-items: center;
-    gap: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
 
-    width: 100%;
+            width: 100%;
 
-    padding: 18px 20px 18px 54px;
+            padding: 18px 20px 18px 54px;
 
-    background: #fff;
+            background: #fff;
 
-    border: 1.5px solid #ececec;
-    border-radius: 12px;
+            border: 1.5px solid #ececec;
+            border-radius: 12px;
 
-    transition: border-color .25s ease, background .25s ease, box-shadow .25s ease, transform .2s ease;
+            transition: border-color .25s ease, background .25s ease, box-shadow .25s ease, transform .2s ease;
 
-}
+        }
 
-.payment-option:hover .payment-option-content {
+        .payment-option:hover .payment-option-content {
 
-    border-color: #d9c188;
-    box-shadow: 0 6px 18px rgba(183, 138, 44, .1);
-    transform: translateY(-1px);
+            border-color: #d9c188;
+            box-shadow: 0 6px 18px rgba(183, 138, 44, .1);
+            transform: translateY(-1px);
 
-}
+        }
 
-.payment-radio:checked + .payment-option-content {
+        .payment-radio:checked+.payment-option-content {
 
-    border-color: #b78a2c;
-    background: #fdf6e8;
-    box-shadow: 0 6px 18px rgba(183, 138, 44, .15);
+            border-color: #b78a2c;
+            background: #fdf6e8;
+            box-shadow: 0 6px 18px rgba(183, 138, 44, .15);
 
-}
+        }
 
-.payment-option-icon {
+        .payment-option-icon {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
 
-    background: #f7f5f2;
+            background: #f7f5f2;
 
-    border-radius: 10px;
+            border-radius: 10px;
 
-}
+        }
 
-.payment-option-text {
+        .payment-option-text {
 
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
 
-}
+        }
 
-.payment-option-name {
+        .payment-option-name {
 
-    font-size: 16px;
-    font-weight: 600;
-    color: #222;
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
 
-}
+        }
 
-.payment-option-desc {
+        .payment-option-desc {
 
-    font-size: 12.5px;
-    color: #888;
+            font-size: 12.5px;
+            color: #888;
 
-}
+        }
 
-@media (max-width: 600px) {
+        @media (max-width: 600px) {
 
-    .payment-section {
+            .payment-section {
 
-        padding: 20px;
+                padding: 20px;
 
-    }
+            }
 
-    .payment-option-content {
+            .payment-option-content {
 
-        padding: 16px 16px 16px 48px;
-        gap: 12px;
+                padding: 16px 16px 16px 48px;
+                gap: 12px;
 
-    }
+            }
 
-    .payment-radio {
+            .payment-radio {
 
-        left: 16px;
+                left: 16px;
 
-    }
+            }
 
-    .payment-option-desc {
+            .payment-option-desc {
 
-        display: none;
+                display: none;
 
-    }
+            }
 
-}
+        }
 
         @media(max-width:600px) {
 
@@ -401,7 +401,7 @@
                 font-size: 24px;
 
             }
-            
+
 
         }
     </style>
@@ -642,275 +642,298 @@
 
         </div>
 
-        <p class="note">
+        @if (!$submission->isPaymentDone())
+            <p class="note">
 
-            Your submission will be processed once payment is successfully completed.
+                Your submission will be processed once payment is successfully completed.
 
-        </p>
+            </p>
+        @endif
 
         <div style="margin-top:30px;">
 
-    <div class="payment-section">
+            @if ($submission->isPaymentDone())
+                <div
+                    style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:14px;padding:28px;text-align:center;margin:24px 0;box-shadow:0 4px 12px rgba(0,0,0,.05);">
 
-    <h3 class="payment-section-title">Select Payment Method</h3>
+                    <div
+                        style="width:70px;height:70px;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
 
-    <div class="payment-options">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"
+                            viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
 
-        <label class="payment-option" for="pay-razorpay">
+                    </div>
 
-            <input
-                type="radio"
-                id="pay-razorpay"
-                name="payment_method"
-                value="razorpay"
-                class="payment-radio"
-                checked>
+                    <h3 style="margin:0;color:#166534;font-size:26px;font-weight:700;">
+                        Payment Completed
+                    </h3>
 
-            <span class="payment-option-content">
+                    <p style="margin:16px auto 0;max-width:600px;color:#4b5563;font-size:16px;line-height:1.7;">
+                        Thank you! Your registration fee has been successfully received and your
+                        submission has been confirmed.
+                        You do not need to make another payment for this entry.
+                    </p>
 
-                <span class="payment-option-icon payment-icon-razorpay">
-                    <svg viewBox="0 0 32 32" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#3395FF" d="M18.5 2 8 19.2h7.1L11.6 30 26 12.3h-7.6z"/>
-                        <path fill="#072654" d="M18.5 2 13.9 16.9h4.4L26 12.3z" opacity=".55"/>
-                    </svg>
-                </span>
+                </div>
+            @else
+                <div class="payment-section">
 
-                <span class="payment-option-text">
-                    <span class="payment-option-name">Razorpay</span>
-                    <span class="payment-option-desc">Cards, UPI, Netbanking &amp; Wallets</span>
-                </span>
+                    <h3 class="payment-section-title">Select Payment Method</h3>
 
-            </span>
+                    <div class="payment-options">
 
-        </label>
+                        <label class="payment-option" for="pay-razorpay">
 
-        <label class="payment-option" for="pay-paypal">
+                            <input type="radio" id="pay-razorpay" name="payment_method" value="razorpay"
+                                class="payment-radio" checked>
 
-            <input
-                type="radio"
-                id="pay-paypal"
-                name="payment_method"
-                value="paypal"
-                class="payment-radio">
+                            <span class="payment-option-content">
 
-            <span class="payment-option-content">
+                                <span class="payment-option-icon payment-icon-razorpay">
+                                    <svg viewBox="0 0 32 32" width="26" height="26"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#3395FF" d="M18.5 2 8 19.2h7.1L11.6 30 26 12.3h-7.6z" />
+                                        <path fill="#072654" d="M18.5 2 13.9 16.9h4.4L26 12.3z" opacity=".55" />
+                                    </svg>
+                                </span>
 
-                <span class="payment-option-icon payment-icon-paypal">
-                    <svg viewBox="0 0 32 32" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#003087" d="M12.3 6.5h6.6c3.7 0 5.6 1.8 5.1 5.1-.6 4-3.4 6.1-7.1 6.1h-2.1c-.5 0-.9.3-1 .8l-.9 5.6c0 .2-.2.4-.4.4h-3.4c-.3 0-.5-.2-.4-.6L11 7.2c.1-.4.4-.7.9-.7z"/>
-                        <path fill="#009cde" d="M15.9 10.2h5.1c2.9 0 4.3 1.5 3.9 4.1-.5 3.2-2.7 4.9-5.7 4.9H17c-.4 0-.7.3-.8.6l-.7 4.5c0 .1-.1.2-.3.2h-2.6l1.7-11.4c.1-.6.6-.9 1.6-.9z" opacity=".85"/>
-                    </svg>
-                </span>
+                                <span class="payment-option-text">
+                                    <span class="payment-option-name">Razorpay</span>
+                                    <span class="payment-option-desc">Cards, UPI, Netbanking &amp; Wallets</span>
+                                </span>
 
-                <span class="payment-option-text">
-                    <span class="payment-option-name">PayPal</span>
-                    <span class="payment-option-desc">International Payments</span>
-                </span>
+                            </span>
 
-            </span>
+                        </label>
 
-        </label>
+                        <label class="payment-option" for="pay-paypal">
 
-    </div>
+                            <input type="radio" id="pay-paypal" name="payment_method" value="paypal"
+                                class="payment-radio">
 
-</div>
+                            <span class="payment-option-content">
 
-<button id="pay-btn" data-submission="{{ $submission->id }}" class="pay-btn">
-    Proceed to Payment
-</button>
-    </div>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+                                <span class="payment-option-icon payment-icon-paypal">
+                                    <svg viewBox="0 0 32 32" width="26" height="26"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#003087"
+                                            d="M12.3 6.5h6.6c3.7 0 5.6 1.8 5.1 5.1-.6 4-3.4 6.1-7.1 6.1h-2.1c-.5 0-.9.3-1 .8l-.9 5.6c0 .2-.2.4-.4.4h-3.4c-.3 0-.5-.2-.4-.6L11 7.2c.1-.4.4-.7.9-.7z" />
+                                        <path fill="#009cde"
+                                            d="M15.9 10.2h5.1c2.9 0 4.3 1.5 3.9 4.1-.5 3.2-2.7 4.9-5.7 4.9H17c-.4 0-.7.3-.8.6l-.7 4.5c0 .1-.1.2-.3.2h-2.6l1.7-11.4c.1-.6.6-.9 1.6-.9z"
+                                            opacity=".85" />
+                                    </svg>
+                                </span>
 
-    <script>
+                                <span class="payment-option-text">
+                                    <span class="payment-option-name">PayPal</span>
+                                    <span class="payment-option-desc">International Payments</span>
+                                </span>
 
-document.getElementById("pay-btn").addEventListener("click", function () {
+                            </span>
 
-    let paymentMethod = document.querySelector(
-        'input[name="payment_method"]:checked'
-    ).value;
+                        </label>
 
-    let submissionId = this.dataset.submission;
+                    </div>
 
-    let url =
-        paymentMethod === "razorpay"
-            ? "{{ route('dda.create.order') }}"
-            : "{{ route('dda.paypal.create') }}";
+                </div>
 
-    fetch(url, {
+                <button id="pay-btn" data-submission="{{ $submission->id }}" class="pay-btn">
+                    Proceed to Payment
+                </button>
+            @endif
+        </div>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-        method: "POST",
+        <script>
+            document.getElementById("pay-btn").addEventListener("click", function() {
 
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "X-CSRF-TOKEN": "{{ csrf_token() }}"
-        },
+                let paymentMethod = document.querySelector(
+                    'input[name="payment_method"]:checked'
+                ).value;
 
-        body: JSON.stringify({
-            submission_id: submissionId
-        })
+                let submissionId = this.dataset.submission;
 
-    })
+                let url =
+                    paymentMethod === "razorpay" ?
+                    "{{ route('dda.create.order') }}" :
+                    "{{ route('dda.paypal.create') }}";
 
-    .then(async (response) => {
+                fetch(url, {
 
-        console.log("Status :", response.status);
+                        method: "POST",
 
-        if (!response.ok) {
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json",
+                            "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                        },
 
-            const text = await response.text();
-
-            console.log(text);
-
-            alert("Laravel Error. Check Console.");
-
-            return null;
-        }
-
-        return response.json();
-
-    })
-
-    .then(data => {
-
-        if (!data) return;
-
-        console.log(data);
-
-        if (!data.success) {
-
-            alert(data.message ?? "Unable to create payment.");
-
-            return;
-        }
-
-        /*
-        |--------------------------------------------------------------------------
-        | PAYPAL
-        |--------------------------------------------------------------------------
-        */
-
-        if (paymentMethod === "paypal") {
-
-            window.location.href = data.approve_url;
-
-            return;
-
-        }
-
-        /*
-        |--------------------------------------------------------------------------
-        | RAZORPAY
-        |--------------------------------------------------------------------------
-        */
-
-        var options = {
-
-            key: data.key,
-
-            amount: data.amount,
-
-            currency: "INR",
-
-            name: "Deities Design Awards",
-
-            description: "Entry Fee",
-
-            order_id: data.razorpay_order_id,
-
-            handler: function (response) {
-
-                fetch("{{ route('dda.razorpay.callback') }}", {
-
-                    method: "POST",
-
-                    headers: {
-
-                        "Content-Type": "application/json",
-
-                        "Accept": "application/json",
-
-                        "X-CSRF-TOKEN": "{{ csrf_token() }}"
-
-                    },
-
-                    body: JSON.stringify({
-
-                        transaction_id: data.transaction_id,
-
-                        razorpay_payment_id: response.razorpay_payment_id,
-
-                        razorpay_order_id: response.razorpay_order_id,
-
-                        razorpay_signature: response.razorpay_signature
+                        body: JSON.stringify({
+                            submission_id: submissionId
+                        })
 
                     })
 
-                })
+                    .then(async (response) => {
 
-                .then(res => res.json())
+                        console.log("Status :", response.status);
 
-                .then(result => {
+                        if (!response.ok) {
 
-                    if (result.success) {
+                            const text = await response.text();
 
-                        window.location.href =
-                            "/deitiesdesignawards/payment-success";
+                            console.log(text);
 
-                    } else {
+                            alert("Laravel Error. Check Console.");
 
-                        window.location.href =
-                            "/deitiesdesignawards/payment-failed";
+                            return null;
+                        }
 
-                    }
+                        return response.json();
 
-                })
+                    })
 
-                .catch(err => {
+                    .then(data => {
 
-                    console.log(err);
+                        if (!data) return;
 
-                    alert("Payment verification failed.");
+                        console.log(data);
 
-                });
+                        if (!data.success) {
 
-            },
+                            alert(data.message ?? "Unable to create payment.");
 
-            prefill: {
+                            return;
+                        }
 
-                name: "{{ $submission->first_name }} {{ $submission->last_name }}",
+                        /*
+                        |--------------------------------------------------------------------------
+                        | PAYPAL
+                        |--------------------------------------------------------------------------
+                        */
 
-                email: "{{ $submission->email }}",
+                        if (paymentMethod === "paypal") {
 
-                contact: "{{ $submission->phone }}"
+                            window.location.href = data.approve_url;
 
-            },
+                            return;
 
-            theme: {
+                        }
 
-                color: "#C59A2E"
+                        /*
+                        |--------------------------------------------------------------------------
+                        | RAZORPAY
+                        |--------------------------------------------------------------------------
+                        */
 
-            }
+                        var options = {
 
-        };
+                            key: data.key,
 
-        var rzp = new Razorpay(options);
+                            amount: data.amount,
 
-        rzp.open();
+                            currency: "INR",
 
-    })
+                            name: "Deities Design Awards",
 
-    .catch(error => {
+                            description: "Entry Fee",
 
-        console.log(error);
+                            order_id: data.razorpay_order_id,
 
-        alert("Something went wrong.");
+                            handler: function(response) {
 
-    });
+                                fetch("{{ route('dda.razorpay.callback') }}", {
 
-});
+                                        method: "POST",
 
-</script>
+                                        headers: {
+
+                                            "Content-Type": "application/json",
+
+                                            "Accept": "application/json",
+
+                                            "X-CSRF-TOKEN": "{{ csrf_token() }}"
+
+                                        },
+
+                                        body: JSON.stringify({
+
+                                            transaction_id: data.transaction_id,
+
+                                            razorpay_payment_id: response.razorpay_payment_id,
+
+                                            razorpay_order_id: response.razorpay_order_id,
+
+                                            razorpay_signature: response.razorpay_signature
+
+                                        })
+
+                                    })
+
+                                    .then(res => res.json())
+
+                                    .then(result => {
+
+                                        if (result.success) {
+
+                                            window.location.href =
+                                                "/deitiesdesignawards/payment-success";
+
+                                        } else {
+
+                                            window.location.href =
+                                                "/deitiesdesignawards/payment-failed";
+
+                                        }
+
+                                    })
+
+                                    .catch(err => {
+
+                                        console.log(err);
+
+                                        alert("Payment verification failed.");
+
+                                    });
+
+                            },
+
+                            prefill: {
+
+                                name: "{{ $submission->first_name }} {{ $submission->last_name }}",
+
+                                email: "{{ $submission->email }}",
+
+                                contact: "{{ $submission->phone }}"
+
+                            },
+
+                            theme: {
+
+                                color: "#C59A2E"
+
+                            }
+
+                        };
+
+                        var rzp = new Razorpay(options);
+
+                        rzp.open();
+
+                    })
+
+                    .catch(error => {
+
+                        console.log(error);
+
+                        alert("Something went wrong.");
+
+                    });
+
+            });
+        </script>
 </body>
 
 </html>

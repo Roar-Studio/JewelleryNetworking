@@ -61,7 +61,7 @@
     <div class="mobile-menu-links">
       <a href="{{ url('/deitiesdesignawards') }}" class="mob-link">Home</a>
       <div class="mob-dropdown">
-        <button class="mob-dropdown-toggle">Categories <span class="chev">&#x25BC;</span></button>
+        <button class="mob-dropdown-toggle">Categories<span class="chev">&#x25BC;</span></button>
         <div class="mob-dropdown-menu">
           <span class="dropdown-label">Deities Category</span>
           <a href="{{ url('/deitiesdesignawards/design-category') }}#nitai">Nitai</a>

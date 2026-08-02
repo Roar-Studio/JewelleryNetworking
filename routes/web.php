@@ -11,6 +11,8 @@ use App\Mail\MembershipAcknowledgementMail;
 use Carbon\Carbon;
 use App\Http\Controllers\DdaPaymentController;
 use App\Http\Controllers\ContactController;
+use App\Mail\DdaSubmissionAcknowledgementMail;
+use App\Models\DDA;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,8 +50,8 @@ Route::prefix('deitiesdesignawards')->group(function () {
     Route::get('/', function () {
         return view('deitiesdesignawards.sections.index');
     });
-    
-    
+
+
 
     Route::get('/about', function () {
         return view('deitiesdesignawards.sections.about');
@@ -108,62 +110,62 @@ Route::prefix('deitiesdesignawards')->group(function () {
     });
 
     Route::post('/submit', [DdaController::class, 'store'])
-    ->name('dda.submit');
+        ->name('dda.submit');
 
     Route::post('/submit', [DdaController::class, 'store'])
-    ->name('dda.submit');
+        ->name('dda.submit');
 
     Route::get('/login', [CustomerAuthController::class, 'ddaLogin'])
-    ->name('dda.login');
+        ->name('dda.login');
 
     Route::post('/deitiesdesignawards/contact', [ContactController::class, 'send'])
-    ->name('dda.contact.send');
+        ->name('dda.contact.send');
 
 
-// Payment Routes
-Route::get(
-    '/order-summary/{id}',
-    [DdaPaymentController::class, 'orderSummary']
-)->name('dda.order.summary');
+    // Payment Routes
+    Route::get(
+        '/order-summary/{id}',
+        [DdaPaymentController::class, 'orderSummary']
+    )->name('dda.order.summary');
 
-Route::post(
-    '/create-order',
-    [DdaPaymentController::class, 'createOrder']
-)->name('dda.create.order');
+    Route::post(
+        '/create-order',
+        [DdaPaymentController::class, 'createOrder']
+    )->name('dda.create.order');
 
-Route::post(
-    '/razorpay/callback',
-    [DdaPaymentController::class, 'razorpayCallback']
-)->name('dda.razorpay.callback');
+    Route::post(
+        '/razorpay/callback',
+        [DdaPaymentController::class, 'razorpayCallback']
+    )->name('dda.razorpay.callback');
 
-Route::get(
-    '/payment-success',
-    [DdaPaymentController::class, 'paymentSuccess']
-)->name('dda.payment.success');
+    Route::get(
+        '/payment-success',
+        [DdaPaymentController::class, 'paymentSuccess']
+    )->name('dda.payment.success');
 
-Route::get(
-    '/payment-failed',
-    [DdaPaymentController::class, 'paymentFailed']
-)->name('dda.payment.failed');
+    Route::get(
+        '/payment-failed',
+        [DdaPaymentController::class, 'paymentFailed']
+    )->name('dda.payment.failed');
 
-Route::post(
-    '/paypal/create-order',
-    [DdaPaymentController::class, 'createPaypalOrder']
-)->name('dda.paypal.create');
+    Route::post(
+        '/paypal/create-order',
+        [DdaPaymentController::class, 'createPaypalOrder']
+    )->name('dda.paypal.create');
 
-Route::get(
-    '/paypal/success',
-    [DdaPaymentController::class, 'paypalSuccess']
-)->name('dda.paypal.success');
+    Route::get(
+        '/paypal/success',
+        [DdaPaymentController::class, 'paypalSuccess']
+    )->name('dda.paypal.success');
 
-Route::get(
-    '/paypal/cancel',
-    [DdaPaymentController::class, 'paypalCancel']
-)->name('dda.paypal.cancel');
+    Route::get(
+        '/paypal/cancel',
+        [DdaPaymentController::class, 'paypalCancel']
+    )->name('dda.paypal.cancel');
 
-Route::get('/terms', function () {
-    return view('deitiesdesignawards.sections.terms');
-});
+    Route::get('/terms', function () {
+        return view('deitiesdesignawards.sections.terms');
+    });
 
     Route::get('/terms', function () {
         return view('deitiesdesignawards.sections.terms');
@@ -172,20 +174,17 @@ Route::get('/terms', function () {
     Route::get('/media-preview', function () {
         return view('deitiesdesignawards.sections.media-preview');
     });
-
-    
-
 });
 
 //Route::middleware(['auth', 'preventBackHistory'])->group(function () {
-    Route::get('/dashboard', [CustomerAuthController::class, 'dashboard'])->name('dashboard');
-    Route::get('/profile', [CustomerAuthController::class, 'profile'])->name('profile');
-    Route::get('/membership-directory', [CustomerAuthController::class, 'membershipDirectory'])->name('membershipDirectory');
-    Route::get('/member/{member_id}', [CustomerAuthController::class, 'memberDetails'])->name('memberDetails');
-    Route::get('/order/confirmation/{order_id}', [CustomerAuthController::class, 'orderConfirmation'])->name('order.confirmation');
-    Route::get('/paypal/checkout/cancel/{order_id}', [CheckoutController::class, 'paypalCancel'])->name('paypal.cancel');
-    Route::get('/razorpay/checkout/cancel/{order_id}', [CheckoutController::class, 'paypalCancel'])->name('razorpay.cancel');
-    Route::get('/invoice/{order_id}', [CustomerAuthController::class, 'generateInvoice'])->name('invoice');
+Route::get('/dashboard', [CustomerAuthController::class, 'dashboard'])->name('dashboard');
+Route::get('/profile', [CustomerAuthController::class, 'profile'])->name('profile');
+Route::get('/membership-directory', [CustomerAuthController::class, 'membershipDirectory'])->name('membershipDirectory');
+Route::get('/member/{member_id}', [CustomerAuthController::class, 'memberDetails'])->name('memberDetails');
+Route::get('/order/confirmation/{order_id}', [CustomerAuthController::class, 'orderConfirmation'])->name('order.confirmation');
+Route::get('/paypal/checkout/cancel/{order_id}', [CheckoutController::class, 'paypalCancel'])->name('paypal.cancel');
+Route::get('/razorpay/checkout/cancel/{order_id}', [CheckoutController::class, 'paypalCancel'])->name('razorpay.cancel');
+Route::get('/invoice/{order_id}', [CustomerAuthController::class, 'generateInvoice'])->name('invoice');
 //});
 
 Route::get('/login', [CustomerAuthController::class, 'index'])->name('login');
@@ -200,7 +199,7 @@ Route::prefix('admin/manage')->name('manage.')->group(function () {
         Route::get('/', [CustomerController::class, 'index'])->name('index');
         Route::get('/import', [CustomerController::class, 'import'])->name('import');
     });
-    
+
     Route::prefix('membership')->name('membership.')->group(function () {
         Route::get('/', [MembershipController::class, 'index'])->name('index');
     });
@@ -221,25 +220,25 @@ Route::prefix('admin/manage')->name('manage.')->group(function () {
 
     Route::prefix('dda')->name('dda.')->group(function () {
 
-    // Listing
-    Route::get('/', [AdminDdaController::class, 'index'])
-        ->name('index');
+        // Listing
+        Route::get('/', [AdminDdaController::class, 'index'])
+            ->name('index');
 
-    // View Submission
-    Route::get('/{id}', [AdminDdaController::class, 'show'])
-        ->name('show');
+        // View Submission
+        Route::get('/{id}', [AdminDdaController::class, 'show'])
+            ->name('show');
 
-    // Edit Page
-    Route::get('/{id}/edit', [AdminDdaController::class, 'edit'])
-        ->name('edit');
+        // Edit Page
+        Route::get('/{id}/edit', [AdminDdaController::class, 'edit'])
+            ->name('edit');
 
-    // Update Submission
-    Route::put('/{id}', [AdminDdaController::class, 'update'])
-        ->name('update');
+        // Update Submission
+        Route::put('/{id}', [AdminDdaController::class, 'update'])
+            ->name('update');
 
-    // Update Review Status
-    Route::post('/{id}/status', [AdminDdaController::class, 'updateStatus'])
-        ->name('status.update');
+        // Update Review Status
+        Route::post('/{id}/status', [AdminDdaController::class, 'updateStatus'])
+            ->name('status.update');
     });
 
 

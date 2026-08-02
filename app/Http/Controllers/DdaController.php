@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\DdaSubmissionAcknowledgementMail;
 use App\Models\DDA;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 class DdaController extends Controller
@@ -23,12 +26,19 @@ class DdaController extends Controller
      */
     public function store(Request $request)
     {
+
+
+        /* if the user is not logged in redirect back to login*/
+        if (!Auth::guard("customer")->check()) {
+            return redirect()->route("dda.login")->with('error', 'Please login to continue');
+        }
+
         /*
         |--------------------------------------------------------------------------
         | Validation
         |--------------------------------------------------------------------------
         */
-        
+
         $validated = $request->validate([
 
             /*
@@ -115,10 +125,10 @@ class DdaController extends Controller
         })
             ->whereIn('status', $activeStatuses)
             ->exists();
-        
+
         $nextId = (DDA::max('id') ?? 0) + 1;
         $entryId = 'DDA' . str_pad($nextId, 6, '0', STR_PAD_LEFT);
-        
+
 
         /*
         |--------------------------------------------------------------------------
@@ -135,7 +145,7 @@ class DdaController extends Controller
         | Upload Entry A Images
         |--------------------------------------------------------------------------
         */
-        
+
 
         // $imagesA = [];
 
@@ -160,29 +170,25 @@ class DdaController extends Controller
 
         if ($request->hasFile('images_a')) {
 
-        foreach ($request->file('images_a') as $image) {
+            foreach ($request->file('images_a') as $image) {
 
-        $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
 
-        try {
+                try {
 
-    $path = Storage::disk('s3')->putFileAs(
-        "submissions/{$entryId}/entry_a",
-        $image,
-        $fileName
-    );
+                    $path = Storage::disk('s3')->putFileAs(
+                        "submissions/{$entryId}/entry_a",
+                        $image,
+                        $fileName
+                    );
 
-    $imagesA[] = Storage::disk('s3')->url($path);
+                    $imagesA[] = Storage::disk('s3')->url($path);
+                } catch (\Exception $e) {
 
-} catch (\Exception $e) {
-
-    dd($e->getMessage());
-
-}
-
-    }
-
-}
+                    dd($e->getMessage());
+                }
+            }
+        }
 
         /*
         |--------------------------------------------------------------------------
@@ -210,31 +216,27 @@ class DdaController extends Controller
 
         $imagesB = [];
 
-if ($request->hasFile('images_b')) {
+        if ($request->hasFile('images_b')) {
 
-    foreach ($request->file('images_b') as $image) {
+            foreach ($request->file('images_b') as $image) {
 
-        $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
+                $fileName = uniqid() . '_' . time() . '.' . $image->getClientOriginalExtension();
 
-        try {
+                try {
 
-            $path = Storage::disk('s3')->putFileAs(
-                "submissions/{$entryId}/entry_b",
-                $image,
-                $fileName
-            );
+                    $path = Storage::disk('s3')->putFileAs(
+                        "submissions/{$entryId}/entry_b",
+                        $image,
+                        $fileName
+                    );
 
-            $imagesB[] = Storage::disk('s3')->url($path);
+                    $imagesB[] = Storage::disk('s3')->url($path);
+                } catch (\Exception $e) {
 
-        } catch (\Exception $e) {
-
-            dd($e->getMessage());
-
+                    dd($e->getMessage());
+                }
+            }
         }
-
-    }
-
-}
         /*
         |--------------------------------------------------------------------------
         | Save Submission
@@ -250,6 +252,7 @@ if ($request->hasFile('images_b')) {
         */
 
         $submission->entry_id         = $entryId;
+        $submission->customer_id      = Auth::guard('customer')->id();
 
         $submission->first_name       = $validated['first_name'];
         $submission->last_name        = $validated['last_name'];
@@ -304,6 +307,9 @@ if ($request->hasFile('images_b')) {
         | Redirect to Order Summary
         |--------------------------------------------------------------------------
         */
+
+        Mail::to($submission->email)
+            ->queue(new DdaSubmissionAcknowledgementMail($submission));
 
         return redirect()->route('dda.order.summary', $submission->id);
     }
