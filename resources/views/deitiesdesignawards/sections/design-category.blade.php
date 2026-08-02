@@ -192,8 +192,13 @@
     <td>-</td>
     <td>Detachable/ adjustable threads</td>
     <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg" alt="Choker" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg"
+    alt="Choker"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 
   <tr>
@@ -205,8 +210,13 @@
     <td>-</td>
     <td>Detachable/ adjustable threads</td>
     <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg" alt="Necklace 1" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+    alt="Necklace (Layer 1)"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 
   <tr>
@@ -218,8 +228,13 @@
     <td>-</td>
     <td>Detachable/ adjustable threads</td>
     <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg" alt="Necklace 2" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+    alt="Necklace (Layer 2)"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 
   <tr>
@@ -231,8 +246,13 @@
     <td>-</td>
     <td>Flexible/loose/openable bracelet</td>
     <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg" alt="Bracelet" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg"
+    alt="Bracelet"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 
   <tr>
@@ -255,8 +275,13 @@
     <td>1–1.5 inches</td>
     <td>Thick thread to tie up - adjustable and flexible. Total circumference is 12 inches and front preferred 6 inches.</td>
     <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg" alt="Waistbelt" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg"
+    alt="Waistbelt"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 
   <tr>
@@ -267,9 +292,14 @@
     <td>1–1.5 inches</td>
     <td>-</td>
     <td>Flexible</td>
-    <td>
-      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg" alt="Payal" style="width:80px;height:auto;border-radius:4px;">
-    </td>
+<td>
+  <img
+    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg"
+    alt="Payal"
+    class="table-thumb"
+    onclick="openImage(this.src)"
+  >
+</td>
   </tr>
 </tbody>
   </table>
@@ -1178,6 +1208,7 @@
     </div>
   </footer>
 
+
   <script>
     const tb=document.querySelector('.mobile-menu-toggle'),dr=document.querySelector('.mobile-menu-drawer');
     tb.addEventListener('click',()=>{tb.classList.toggle('active');dr.classList.toggle('active');document.body.classList.toggle('no-scroll');});
@@ -1228,6 +1259,36 @@
       cursorContainer.style.top = (mouseY - 20) + 'px';
       updatePupilPosition();
     });
+
+function openImage(src){
+    document.getElementById('imageModal').style.display = "flex";
+    document.getElementById('modalImg').src = src;
+}
+
+function closeImage(){
+    document.getElementById('imageModal').style.display = "none";
+}
+
+document.getElementById('imageModal').addEventListener('click', function(e){
+    if(e.target === this){
+        closeImage();
+    }
+});
+
+document.addEventListener('keydown', function(e){
+    if(e.key === "Escape"){
+        closeImage();
+    }
+});
+
   </script>
+
+    <div id="imageModal" class="image-modal">
+    <span class="close-image" onclick="closeImage()">&times;</span>
+
+    <img id="modalImg" class="image-modal-content">
+
+    <div id="imageCaption"></div>
+</div>
 </body>
 </html>
