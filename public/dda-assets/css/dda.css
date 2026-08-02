@@ -1959,7 +1959,7 @@ body.no-scroll nav .nav-cta {
 /* Legal pages */
 .legal-wrap { max-width:780px; margin:0 auto; }
 .legal-effective { font-size:.9rem; opacity:.825; font-style:italic; margin-bottom:2rem; }
-.legal-wrap h3 { font-family:var(--serif); font-size:1.25rem; font-weight:400; color:var(--gold,#b8922a); margin:2.5rem 0 .75rem; border-bottom:1px solid rgba(184,146,42,.15); padding-bottom:.5rem; }
+.legal-wrap h3 { font-family:var(--serif); font-size:1.25rem; font-weight:600; color:var(--gold,#b8922a); margin:2.5rem 0 .75rem; border-bottom:1px solid rgba(184,146,42,.15); padding-bottom:.5rem; }
 .legal-wrap p { font-size:.95rem; line-height:1.85; opacity:.8; margin-bottom:.75rem; }
 .legal-contact-note { margin-top:3rem; padding:1.25rem; background:rgba(184,146,42,.05); border:1px solid rgba(184,146,42,.15); font-size:.95rem; }
 

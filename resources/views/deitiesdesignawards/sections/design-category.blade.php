@@ -130,7 +130,7 @@
         <!-- Nitai -->
         <div class="deity-card" id="nitai">
           <button class="deity-card-head">
-            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="Nitai"></div>
+            <div class="deity-card-avatar"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai.jpg') }}" alt="Nitai"></div>
             <div class="deity-card-title">
               <span class="deity-card-num">I</span>
               <h3>Nitai</h3>
@@ -139,11 +139,12 @@
           </button>
           <div class="deity-card-body">
             <div class="deity-card-top">
-              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="Nitai"></div>
+              <div class="deity-card-visual"><img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai.jpg') }}" alt="Nitai"></div>
               <div class="deity-meta">
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>24 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -324,6 +325,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>24 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -462,6 +464,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>32/33 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -644,6 +647,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>34 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -815,6 +819,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>34 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -851,6 +856,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>31/32 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1033,6 +1039,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>26 inches</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1176,7 +1183,7 @@
         <h5>Explore</h5>
         <ul>
           <li><a href="{{ url('/deitiesdesignawards/about') }}">About DDA</a></li>
-          <li><a href="{{ url('/deitiesdesignawards/categories') }}">Categories</a></li>
+          <li><a href="{{ url('/deitiesdesignawards/design-category') }}">Design Categories</a></li>
           <li><a href="{{ url('/deitiesdesignawards/inspiration') }}">Inspiration</a></li>
           <li><a href="{{ url('/deitiesdesignawards/participate') }}#dates">Calendar</a></li>
         </ul>
