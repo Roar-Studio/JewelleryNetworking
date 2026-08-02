@@ -1724,8 +1724,62 @@ body.no-scroll nav .nav-cta {
 .deity-table td {
   padding: .6rem .65rem;
   border-bottom: 1px solid rgba(184,146,42,.08);
-  opacity: .75;
   white-space: prewrap;
+}
+.table-thumb{
+    width:80px;
+    height:auto;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.table-thumb:hover{
+    transform:scale(1.05);
+}
+
+.image-modal{
+    display:none;
+    position:fixed;
+    z-index:99999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.image-modal-content{
+    max-width:90%;
+    max-height:90%;
+    border-radius:8px;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+.close-image{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:#fff;
+    font-size:45px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.close-image:hover{
+    color:#ddd;
+}
+
+#imageCaption{
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    font-size:18px;
 }
 .deity-table td:first-child { font-weight: 500; opacity: 1; color: var(--brown); white-space: nowrap; }
 .deity-table tr:hover td { background: rgba(184,146,42,.03); }
