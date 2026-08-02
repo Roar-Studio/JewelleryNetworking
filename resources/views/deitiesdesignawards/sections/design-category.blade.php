@@ -147,20 +147,133 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Jhumka Earrings</td><td>2</td><td>1</td><td>2 inches</td><td>TBC</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>TBC</td><td>4.5-6 inches</td><td>3-3.5 inches</td><td>TBC</td><td>Detachable/ adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>TBC</td><td>7.5 inches</td><td>TBC</td><td>TBC</td><td>Detachable/ adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>TBC</td><td>11 inches</td><td>TBC</td><td>TBC</td><td>Detachable/ adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Bracelet</td><td>2</td><td>1</td><td>6.5 inches</td><td>TBC</td><td>TBC</td><td>Flexible/loose/openable bracelet</td><td>TBC</td></tr>
-                      <tr><td>Bangle</td><td>2</td><td>1</td><td>2 inches</td><td>2 inches</td><td>TBC</td><td>Openable bangles</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>TBC</td><td>6 inches</td><td>1 inch</td><td>1-1.15 inches</td><td>Thick thread to tie up -adjustable and flexible. total circumference is 12 inches and front prefer 6 inches</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>1</td><td>10-12 inches</td><td>1-1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>Jhumka Earrings</td>
+    <td>2</td>
+    <td>1</td>
+    <td>2 inches</td>
+    <td>2 inches</td>
+    <td>-</td>
+    <td>Stick-ons without post and butterfly</td>
+    <td>TBD</td>
+  </tr>
+
+  <tr>
+    <td>Jhumka Earrings</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1.5 inches</td>
+    <td>0.75 inches</td>
+    <td>-</td>
+    <td>Stick-ons without post and butterfly</td>
+    <td>TBD</td>
+  </tr>
+
+  <tr>
+    <td>Choker</td>
+    <td>1</td>
+    <td>-</td>
+    <td>4.5–6 inches</td>
+    <td>3–3.5 inches</td>
+    <td>-</td>
+    <td>Detachable/ adjustable threads</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg" alt="Choker" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Necklace (Layer 1)</td>
+    <td>1</td>
+    <td>-</td>
+    <td>7.5 inches</td>
+    <td>0.5 inches</td>
+    <td>-</td>
+    <td>Detachable/ adjustable threads</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg" alt="Necklace 1" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Necklace (Layer 2)</td>
+    <td>1</td>
+    <td>-</td>
+    <td>11 inches</td>
+    <td>0.5 inches</td>
+    <td>-</td>
+    <td>Detachable/ adjustable threads</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg" alt="Necklace 2" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Bracelet</td>
+    <td>2</td>
+    <td>1</td>
+    <td>6.5 inches</td>
+    <td>1.2 inches</td>
+    <td>-</td>
+    <td>Flexible/loose/openable bracelet</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg" alt="Bracelet" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Bangle</td>
+    <td>2</td>
+    <td>1</td>
+    <td>2 inches</td>
+    <td>2 inches</td>
+    <td>-</td>
+    <td>Openable bangles</td>
+    <td>TBD</td>
+  </tr>
+
+  <tr>
+    <td>Waistbelt</td>
+    <td>1</td>
+    <td>-</td>
+    <td>6 inches</td>
+    <td>1 inch</td>
+    <td>1–1.5 inches</td>
+    <td>Thick thread to tie up - adjustable and flexible. Total circumference is 12 inches and front preferred 6 inches.</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg" alt="Waistbelt" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Payal</td>
+    <td>2</td>
+    <td>1</td>
+    <td>10–11 inches</td>
+    <td>1–1.5 inches</td>
+    <td>-</td>
+    <td>Flexible</td>
+    <td>
+      <img src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg" alt="Payal" style="width:80px;height:auto;border-radius:4px;">
+    </td>
+  </tr>
+</tbody>
+  </table>
+</div>
           </div>
         </div>
 
@@ -184,21 +297,121 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Jhumka Earrings</td><td>1</td><td>2</td><td>2.5 inches</td><td>TBC</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Long Earrings</td><td>2</td><td>1</td><td>2.5 inches</td><td>2.5 inches</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>TBC</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>TBC</td><td>10 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>TBC</td><td>11 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Bracelet</td><td>2</td><td>1</td><td>6.5 inches</td><td>TBC</td><td>TBC</td><td>Flexible/loose/openable bracelet</td><td>TBC</td></tr>
-                      <tr><td>Bangle</td><td>2</td><td>1</td><td>2 inches</td><td>2 inches</td><td>TBC</td><td>Openable bangles</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>TBC</td><td>16 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Thick thread to tie up, adjustable and flexible</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>1</td><td>10 to 11 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jhumka Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Long Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2.5 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 1)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>10 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 2)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bracelet</td>
+        <td>2</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bangle</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Openable bangles</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>-</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Thick thread to tie up - adjustable and flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10–11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
@@ -222,25 +435,165 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Paisley</td><td>1</td><td>1</td><td>3 inches</td><td>2 inches</td><td>TBC</td><td>Paisley turns towards the right side facing. Height: 5 inch, 1.5 inch pin at the back.</td><td>TBC</td></tr>
-                      <tr><td>Maangtikha</td><td>1</td><td>1</td><td>5 inches</td><td>0.8 inches</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                      <tr><td>Damini / Mathapatti</td><td>1</td><td>1</td><td>6.5 inches</td><td>1 inches</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                      <tr><td>Earrings</td><td>2</td><td>1</td><td>2 inches</td><td>2 inches</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Nosering</td><td>1</td><td>TBC</td><td>0.7 inches</td><td>1 inches</td><td>TBC</td><td>Maximum size: 1 inch (length) and 1.4 inches (breadth)</td><td>TBC</td></tr>
-                      <tr><td>Bangle</td><td>6</td><td>3</td><td>2 inches</td><td>2 inches</td><td>TBC</td><td>2 aani openable bangle</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>TBC</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>TBC</td><td>10 inches</td><td>1 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>TBC</td><td>11 inches</td><td>1 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 3</td><td>1</td><td>TBC</td><td>12 inches</td><td>1 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>TBC</td><td>16 inches</td><td>2 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>1</td><td>10 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Rings</td><td>1</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>To be organised by ISKCON</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paisley</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Paisley turns towards the right side facing. Height: 5 inches. 1.5 inch pin at the back.</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Maangtikha</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5 inches</td>
+        <td>0.8 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Damini / Mathapatti</td>
+        <td>1</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Nosering</td>
+        <td>1</td>
+        <td>-</td>
+        <td>0.75 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Maximum size: 1 inch (length) and 1.4 inches (breadth)</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bangle</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>2 aani openable bangle</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 1)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>10 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads (breadth between 0.5 &amp; 1 inch)</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 2)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 3)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>12 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>-</td>
+        <td>13 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Rings</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>To be organised by ISKCON</td>
+        <td>TBC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
@@ -264,24 +617,154 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Paisley</td><td>1</td><td>0</td><td>3 inches</td><td>2 inches</td><td>Mechanism will be like brooch pins in the V shape with 2 sticks at the back that go into the hair</td><td>Paisley turn towards left side facing. Height 5 inch, 1.5 inch pin at the back</td><td>TBC</td></tr>
-                      <tr><td>Damini / Mathapatti</td><td>1</td><td>0</td><td>5&ndash;6.5 inches</td><td>0.8 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>0</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>0</td><td>9 inches</td><td>0</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>0</td><td>10 inches</td><td>0</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 3</td><td>1</td><td>0</td><td>12 inches</td><td>0</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt with Long Latkan</td><td>1</td><td>0</td><td>16 inches</td><td>2&ndash;2.5 inches</td><td>TBC</td><td>Detachable/adjustable threads/drop shape latkans</td><td>TBC</td></tr>
-                      <tr><td>Bangle</td><td>1</td><td>2</td><td>2 inches</td><td>2 inches</td><td>Openable 2 aani</td><td>Flexible/loose/openable bracelet</td><td>TBC</td></tr>
-                      <tr><td>Bracelet</td><td>1</td><td>2</td><td>6.5 inches</td><td>0</td><td>TBC</td><td>Flexible/loose/openable bracelet</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>1</td><td>10 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Rings</td><td>1</td><td>0</td><td>0</td><td>0</td><td>To be organised by ISKCON</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Jhumka Earrings</td><td>2</td><td>1</td><td>2 inches</td><td>2.5 inches</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paisley</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2.75 inches</td>
+        <td>1.5 inches</td>
+        <td>Mechanism will be like brooch pins in the V shape with 2 sticks at the back that go into the hair.</td>
+        <td>Paisley turns towards left side facing. Height: 5 inches, 1.5 inch pin at the back.</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Damini / Mathapatti</td>
+        <td>1</td>
+        <td>0</td>
+        <td>5–6.5 inches</td>
+        <td>0.8 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>0</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 1)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>9 inches</td>
+        <td>0 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 2)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>10 inches</td>
+        <td>0 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 3)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>12 inches</td>
+        <td>0 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Long Latkan Waistbelt</td>
+        <td>1</td>
+        <td>0</td>
+        <td>16 inches</td>
+        <td>2–2.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads/drop shape latkans</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bangle</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>Openable 2 aani</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bracelet</td>
+        <td>1</td>
+        <td>2</td>
+        <td>18 inches</td>
+        <td>1.2 inches</td>
+        <td>-</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Rings</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>To be organised by ISKCON</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Jhumka Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
@@ -341,25 +824,165 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Paisley</td><td>1</td><td>TBC</td><td>3 inches</td><td>2 inches</td><td>TBC</td><td>Paisley turns towards left side</td><td>TBC</td></tr>
-                      <tr><td>Maangtikha</td><td>1</td><td>TBC</td><td>5 inches</td><td>0.8 inches</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                      <tr><td>Damini / Mathapatti</td><td>1</td><td>TBC</td><td>6.5 inches</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                      <tr><td>Long Earrings</td><td>2</td><td>1</td><td>2 inches</td><td>2 inches</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Nosering</td><td>1</td><td>TBC</td><td>0.7 inches</td><td>1 inches</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                      <tr><td>Bangle</td><td>6</td><td>3</td><td>2 inches</td><td>2 inches</td><td>2 aani openable</td><td>Flexible/loose/openable bracelet</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>TBC</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>TBC</td><td>9 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>TBC</td><td>10 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 3</td><td>1</td><td>TBC</td><td>11 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>TBC</td><td>16 inches</td><td>1&ndash;1.5 inches</td><td>1&ndash;1.5 inches</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>1</td><td>10&ndash;11 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Rings</td><td>1</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paisley</td>
+        <td>1</td>
+        <td>-</td>
+        <td>3 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Paisley turns towards left side</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Maangtikha</td>
+        <td>1</td>
+        <td>-</td>
+        <td>5 inches</td>
+        <td>0.8 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Damini / Mathapatti</td>
+        <td>1</td>
+        <td>-</td>
+        <td>12 inches</td>
+        <td>0.25 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Long Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Nosering</td>
+        <td>1</td>
+        <td>-</td>
+        <td>0.7 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bangle</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>2 aani openable</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 1)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>9 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 2)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>10 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 3)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>0.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>-</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10–11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Rings</td>
+        <td>1</td>
+        <td>-</td>
+        <td>9 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
@@ -383,22 +1006,121 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Choker</td><td>1</td><td>0</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 1</td><td>1</td><td>0</td><td>9 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 2</td><td>1</td><td>0</td><td>10 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 3</td><td>1</td><td>0</td><td>11 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Necklace 4</td><td>1</td><td>0</td><td>12 inches</td><td>TBC</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>0</td><td>16 inches</td><td>1&ndash;1.5 inches</td><td>1&ndash;1.5 inches</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Bracelet 1</td><td>2</td><td>1</td><td>6.5 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Bracelet 2</td><td>2</td><td>1</td><td>6.5 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>2</td><td>10&ndash;11 inches</td><td>TBC</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Stick</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>0</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 1)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>9 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 2)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>10 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 3)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Necklace (Layer 4)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>12 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>0</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Detachable/adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bracelet 1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bracelet 2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10–11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
