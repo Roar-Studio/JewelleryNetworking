@@ -189,13 +189,13 @@
       </div>
 
       <div class="cat-strip" aria-hidden="true">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai+(1)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gaur+(1)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Lalita+(1)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Radha+(2)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Krishna+(1)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Vishaka+Devi+(8)_thumb.jpg') }}" alt="">
-        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gopalji+(2)_thumb.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Nitai.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gaur.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Lalita.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Radha.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Krishna.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Vishaka+Devi.jpg') }}" alt="">
+        <img src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Gopalji.jpg') }}" alt="">
       </div>
 
       <div class="cat7-grid">
@@ -269,7 +269,7 @@
             <div class="tl-dot pulse"></div>
             <div class="tl-phase">Phase One</div>
             <div class="tl-title">Registration Opens</div>
-            <div class="tl-date">29th July 2026</div>
+            <div class="tl-date">5th August 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
