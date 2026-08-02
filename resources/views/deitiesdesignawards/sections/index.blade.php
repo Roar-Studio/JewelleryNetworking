@@ -168,7 +168,7 @@
           <span>Register Now</span>
           <span class="arrow">&rarr;</span>
         </a>
-        <a href="{{ url('/deitiesdesignawards/about') }}" class="btn-primary">
+        <a href="{{ url('/deitiesdesignawards/design-category') }}" class="btn-primary">
           <span>Discover More</span>
           <span class="arrow">&rarr;</span>
         </a>
@@ -436,7 +436,7 @@
         <h5>Explore</h5>
         <ul>
           <li><a href="{{ url('/deitiesdesignawards/about') }}">About DDA</a></li>
-          <li><a href="{{ url('/deitiesdesignawards/categories') }}">Categories</a></li>
+          <li><a href="{{ url('/deitiesdesignawards/design-category') }}">Design Categories</a></li>
           <li><a href="{{ url('/deitiesdesignawards/inspiration') }}">Inspiration</a></li>
           <li><a href="{{ url('/deitiesdesignawards/participate') }}#dates">Calendar</a></li>
         </ul>
@@ -461,7 +461,7 @@
     </div>
     <div class="footer-bottom">
       <span>&#169; 2026 Deities Design Awards &#183; All Rights Reserved</span>
-      <span><a href="{{ url('/deitiesdesignawards/terms') }}">Terms</a><a href="{{ url('/deitiesdesignawards/privacy') }}">Privacy</a><a href="{{ url('/deitiesdesignawards/terms') }}">Code of Conduct</a></span>
+      <span><a href="{{ url('/deitiesdesignawards/terms') }}">Terms</a><a href="{{ url('/deitiesdesignawards/privacy') }}">Privacy</a></span>
     </div>
   </footer>
 

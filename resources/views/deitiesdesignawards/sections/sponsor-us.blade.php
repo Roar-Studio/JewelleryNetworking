@@ -13,9 +13,9 @@
   <div id="evil-eye-cursor" class="evil-eye-cursor"></div>
   <div class="announce">Inaugural Edition | 2026 <span class="pipe">|</span> Registration opens soon <span class="pipe">|</span> <a href="{{ url('/deitiesdesignawards/contact') }}">Be notified →</a></div>
   <nav>
-    <a href="{{ url('/deitiesdesignawards/index') }}" class="nav-logo"><img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
+    <a href="{{ url('/deitiesdesignawards') }}" class="nav-logo"><img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards"></a>
     <div class="nav-links">
-      <a href="{{ url('/deitiesdesignawards/index') }}" class="nav-link">Home</a>
+      <a href="{{ url('/deitiesdesignawards') }}" class="nav-link">Home</a>
       <div class="has-dropdown">
         <a class="nav-link">Categories <span class="chev">▼</span></a>
         <div class="dropdown">
@@ -118,29 +118,29 @@
         <div class="sponsor-tier-card">
           <span class="tier-label">Title Sponsor</span>
           <h4>INR &#8377;20 Lakhs</h4>
-          <a href="mailto:info@deitiesdesignawards.com?subject=Title Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Powered By</span>
           <h4>INR &#8377;10 Lakhs</h4>
-          <a href="mailto:info@deitiesdesignawards.com?subject=Powered By Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
       <div class="sponsor-grid" style="margin-top:2rem">
         <div class="sponsor-tier-card">
           <span class="tier-label">Category Sponsor</span>
           <h4>INR &#8377;7.50 Lakhs</h4>
-          <a href="mailto:info@deitiesdesignawards.com?subject=Category Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Media Sponsor</span>
           <h4>INR &#8377;7.50 Lakhs</h4>
-          <a href="mailto:info@deitiesdesignawards.com?subject=Media Sponsor Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Logistics Partner</span>
           <h4>INR &#8377;5 Lakhs</h4>
-          <a href="mailto:info@deitiesdesignawards.com?subject=Logistics Partner Enquiry" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
       <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;opacity:.55">Above amounts are inclusive of GST.</p>
@@ -160,13 +160,13 @@
           <a href="https://www.youtube.com/@DeitiesDesignAwards" target="_blank" rel="noopener" class="footer-social" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.75v4.5L15 12l-5-2.25z" fill="currentColor" stroke="none"/></svg></a>
         </div>
       </div>
-      <div class="footer-col"><h5>Explore</h5><ul><li><a href="{{ url('/deitiesdesignawards/about') }}">About DDA</a></li><li><a href="{{ url('/deitiesdesignawards/categories') }}">Categories</a></li><li><a href="{{ url('/deitiesdesignawards/inspiration') }}">Inspiration</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#dates">Calendar</a></li></ul></div>
+      <div class="footer-col"><h5>Explore</h5><ul><li><a href="{{ url('/deitiesdesignawards/about') }}">About DDA</a></li><li><a href="{{ url('/deitiesdesignawards/design-category') }}">Design Categories</a></li><li><a href="{{ url('/deitiesdesignawards/inspiration') }}">Inspiration</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#dates">Calendar</a></li></ul></div>
       <div class="footer-col"><h5>Participate</h5><ul><li><a href="{{ url('/deitiesdesignawards/participate') }}#how-to-enter">How to Enter</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#fees">Fees</a></li><li><a href="{{ url('/deitiesdesignawards/participate') }}#guidelines">Guidelines</a></li><li><a href="{{ url('/deitiesdesignawards/faq') }}">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+919819155544">+91 98191 55544</a></li><li><a href="mailto:info@deitiesdesignawards.com">info@deitiesdesignawards.com</a></li><li>Mumbai, India</li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Deities Design Awards · All Rights Reserved</span>
-      <span><a href="{{ url('/deitiesdesignawards/terms') }}">Terms</a><a href="{{ url('/deitiesdesignawards/privacy') }}">Privacy</a><a href="{{ url('/deitiesdesignawards/terms') }}">Code of Conduct</a></span>
+      <span><a href="{{ url('/deitiesdesignawards/terms') }}">Terms</a><a href="{{ url('/deitiesdesignawards/privacy') }}">Privacy</a></span>
     </div>
   </footer>
   <script>

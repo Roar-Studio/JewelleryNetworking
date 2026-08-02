@@ -142,10 +142,14 @@
               <span class="cdi-value">B4 Parekh Market,<br>Basement Floor,<br>Next to Kennedy Bridge,<br>Opera House,<br>Charni Road,<br>Mumbai- 400004.</span>
               <div class="contact-mini-map">
                 <iframe
-                  src="https://www.google.com/maps?q=B4+Parekh+Market,+Basement+Floor,+Next+to+Kennedy+Bridge,+Opera+House,+Charni+Road,+Mumbai+400004&output=embed"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Deities Design Awards office location — B4 Parekh Market, Charni Road, Mumbai">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.7051275887789!2d72.8134576983948!3d18.957480699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf71dcae1c7d%3A0xa97a9fa774a67423!2sParekh%20Market%20Building!5e0!3m2!1sen!2sin!4v1785700749961!5m2!1sen!2sin"
+                    width="100%"
+                    height="250"
+                    style="border:0;border-radius:10px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Deities Design Awards Office">
                 </iframe>
               </div>
               <a href="https://www.google.com/maps/search/?api=1&query=B4+Parekh+Market+Basement+Floor+Next+to+Kennedy+Bridge+Opera+House+Charni+Road+Mumbai+400004" target="_blank" rel="noopener" class="btn-outline contact-mini-map-btn">
