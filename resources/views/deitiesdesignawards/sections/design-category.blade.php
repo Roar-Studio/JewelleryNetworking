@@ -162,147 +162,149 @@
       </tr>
     </thead>
     <tbody>
-  <tr>
-    <td>Jhumka Earrings</td>
-    <td>2</td>
-    <td>1</td>
-    <td>2 inches</td>
-    <td>2 inches</td>
-    <td>-</td>
-    <td>Stick-ons without post and butterfly</td>
-    <td>TBD</td>
-  </tr>
 
-  <tr>
-    <td>Jhumka Earrings</td>
-    <td>2</td>
-    <td>1</td>
-    <td>1.5 inches</td>
-    <td>0.75 inches</td>
-    <td>-</td>
-    <td>Stick-ons without post and butterfly</td>
-    <td>TBD</td>
-  </tr>
+      <tr>
+        <td>Jhumka Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBD</td>
+      </tr>
 
-  <tr>
-    <td>Choker</td>
-    <td>1</td>
-    <td>-</td>
-    <td>4.5–6 inches</td>
-    <td>3–3.5 inches</td>
-    <td>-</td>
-    <td>Detachable/ adjustable threads</td>
-    <td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg"
-    alt="Choker"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
+      <tr>
+        <td>Jhumka Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBD</td>
+      </tr>
 
-  <tr>
-    <td>Necklace (Layer 1)</td>
-    <td>1</td>
-    <td>-</td>
-    <td>7.5 inches</td>
-    <td>0.5 inches</td>
-    <td>-</td>
-    <td>Detachable/ adjustable threads</td>
-    <td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
-    alt="Necklace (Layer 1)"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg"
+            alt="Choker"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
 
-  <tr>
-    <td>Necklace (Layer 2)</td>
-    <td>1</td>
-    <td>-</td>
-    <td>11 inches</td>
-    <td>0.5 inches</td>
-    <td>-</td>
-    <td>Detachable/ adjustable threads</td>
-    <td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
-    alt="Necklace (Layer 2)"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
+      <tr>
+        <td>Necklace 1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>7.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+            alt="Necklace 1"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
 
-  <tr>
-    <td>Bracelet</td>
-    <td>2</td>
-    <td>1</td>
-    <td>6.5 inches</td>
-    <td>1.2 inches</td>
-    <td>-</td>
-    <td>Flexible/loose/openable bracelet</td>
-    <td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg"
-    alt="Bracelet"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
+      <tr>
+        <td>Necklace 2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+            alt="Necklace 2"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
 
-  <tr>
-    <td>Bangle</td>
-    <td>2</td>
-    <td>1</td>
-    <td>2 inches</td>
-    <td>2 inches</td>
-    <td>-</td>
-    <td>Openable bangles</td>
-    <td>TBD</td>
-  </tr>
+      <tr>
+        <td>Bracelet</td>
+        <td>2</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg"
+            alt="Bracelet"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
 
-  <tr>
-    <td>Waistbelt</td>
-    <td>1</td>
-    <td>-</td>
-    <td>6 inches</td>
-    <td>1 inch</td>
-    <td>1–1.5 inches</td>
-    <td>Thick thread to tie up - adjustable and flexible. Total circumference is 12 inches and front preferred 6 inches.</td>
-    <td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg"
-    alt="Waistbelt"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
+      <tr>
+        <td>Bangle</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>Openable bangles</td>
+        <td>TBD</td>
+      </tr>
 
-  <tr>
-    <td>Payal</td>
-    <td>2</td>
-    <td>1</td>
-    <td>10–11 inches</td>
-    <td>1–1.5 inches</td>
-    <td>-</td>
-    <td>Flexible</td>
-<td>
-  <img
-    src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg"
-    alt="Payal"
-    class="table-thumb"
-    onclick="openImage(this.src)"
-  >
-</td>
-  </tr>
-</tbody>
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>-</td>
+        <td>6 inches</td>
+        <td>1 inch</td>
+        <td>1–1.5 inches</td>
+        <td>Thick thread to tie up - adjustable and flexible. Total circumference is 12 inches and front preferred 6 inches.</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg"
+            alt="Waistbelt"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10–11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Flexible</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg"
+            alt="Payal"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+    </tbody>
   </table>
 </div>
           </div>
@@ -343,13 +345,14 @@
       </tr>
     </thead>
     <tbody>
+
       <tr>
         <td>Jhumka Earrings</td>
         <td>2</td>
         <td>1</td>
         <td>2 inches</td>
         <td>2.5 inches</td>
-        <td>-</td>
+        <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
         <td>TBC</td>
       </tr>
@@ -360,7 +363,7 @@
         <td>1</td>
         <td>2.5 inches</td>
         <td>2.5 inches</td>
-        <td>-</td>
+        <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
         <td>TBC</td>
       </tr>
@@ -371,28 +374,28 @@
         <td>-</td>
         <td>4.5–6 inches</td>
         <td>3–3.5 inches</td>
-        <td>-</td>
+        <td>3–3.5 inches</td>
         <td>Detachable/adjustable threads</td>
         <td>TBC</td>
       </tr>
 
       <tr>
-        <td>Necklace (Layer 1)</td>
+        <td>Necklace 1</td>
         <td>1</td>
         <td>-</td>
         <td>10 inches</td>
-        <td>0.5 inches</td>
+        <td>-</td>
         <td>-</td>
         <td>Detachable/adjustable threads</td>
         <td>TBC</td>
       </tr>
 
       <tr>
-        <td>Necklace (Layer 2)</td>
+        <td>Necklace 2</td>
         <td>1</td>
         <td>-</td>
         <td>11 inches</td>
-        <td>0.5 inches</td>
+        <td>-</td>
         <td>-</td>
         <td>Detachable/adjustable threads</td>
         <td>TBC</td>
@@ -403,8 +406,8 @@
         <td>2</td>
         <td>1</td>
         <td>6.5 inches</td>
-        <td>-</td>
-        <td>-</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
         <td>Flexible/loose/openable bracelet</td>
         <td>TBC</td>
       </tr>
@@ -415,7 +418,7 @@
         <td>1</td>
         <td>2 inches</td>
         <td>2 inches</td>
-        <td>-</td>
+        <td>2 inches</td>
         <td>Openable bangles</td>
         <td>TBC</td>
       </tr>
@@ -426,7 +429,7 @@
         <td>-</td>
         <td>16 inches</td>
         <td>1–1.5 inches</td>
-        <td>-</td>
+        <td>1–1.5 inches</td>
         <td>Thick thread to tie up - adjustable and flexible</td>
         <td>TBC</td>
       </tr>
@@ -437,10 +440,11 @@
         <td>1</td>
         <td>10–11 inches</td>
         <td>1–1.5 inches</td>
-        <td>-</td>
+        <td>1–1.5 inches</td>
         <td>Flexible</td>
         <td>TBC</td>
       </tr>
+
     </tbody>
   </table>
 </div>
@@ -467,7 +471,7 @@
                 <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
               </div>
             </div>
-            <div class="deity-table-wrap">
+           <div class="deity-table-wrap">
   <table class="deity-table">
     <thead>
       <tr>
@@ -482,6 +486,7 @@
       </tr>
     </thead>
     <tbody>
+
       <tr>
         <td>Paisley</td>
         <td>1</td>
@@ -489,7 +494,7 @@
         <td>3 inches</td>
         <td>2 inches</td>
         <td>-</td>
-        <td>Paisley turns towards the right side facing. Height: 5 inches. 1.5 inch pin at the back.</td>
+        <td>Paisley turn towards right side facing/Height 5 inch, 1.5 inch pin at the back.</td>
         <td>TBC</td>
       </tr>
 
@@ -530,10 +535,10 @@
         <td>Nosering</td>
         <td>1</td>
         <td>-</td>
-        <td>0.75 inches</td>
-        <td>2 inches</td>
+        <td>0.7 inches</td>
+        <td>1 inch</td>
         <td>-</td>
-        <td>Maximum size: 1 inch (length) and 1.4 inches (breadth)</td>
+        <td>Maximum size 1 inch length and 1.4 inch breadth</td>
         <td>TBC</td>
       </tr>
 
@@ -543,8 +548,8 @@
         <td>3</td>
         <td>2 inches</td>
         <td>2 inches</td>
-        <td>-</td>
-        <td>2 aani openable bangle</td>
+        <td>2 inches</td>
+        <td>2.0 aani openable bangle</td>
         <td>TBC</td>
       </tr>
 
@@ -555,40 +560,40 @@
         <td>4.5–6 inches</td>
         <td>3–3.5 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
+        <td>Detachable/ adjustable threads</td>
         <td>TBC</td>
       </tr>
 
       <tr>
-        <td>Necklace (Layer 1)</td>
+        <td>Necklace Layer 1</td>
         <td>1</td>
         <td>-</td>
         <td>10 inches</td>
         <td>1 inch</td>
         <td>-</td>
-        <td>Detachable/adjustable threads (breadth between 0.5 &amp; 1 inch)</td>
+        <td>Detachable/ adjustable threads</td>
         <td>TBC</td>
       </tr>
 
       <tr>
-        <td>Necklace (Layer 2)</td>
+        <td>Necklace Layer 2</td>
         <td>1</td>
         <td>-</td>
         <td>11 inches</td>
-        <td>0.5 inches</td>
+        <td>1 inch</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
+        <td>Detachable/ adjustable threads</td>
         <td>TBC</td>
       </tr>
 
       <tr>
-        <td>Necklace (Layer 3)</td>
+        <td>Necklace Layer 3</td>
         <td>1</td>
         <td>-</td>
         <td>12 inches</td>
-        <td>0.5 inches</td>
+        <td>1 inch</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
+        <td>Detachable/ adjustable threads</td>
         <td>TBC</td>
       </tr>
 
@@ -596,10 +601,10 @@
         <td>Waistbelt</td>
         <td>1</td>
         <td>-</td>
-        <td>13 inches</td>
+        <td>16 inches</td>
         <td>2 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
+        <td>Detachable/ adjustable threads</td>
         <td>TBC</td>
       </tr>
 
@@ -624,6 +629,7 @@
         <td>To be organised by ISKCON</td>
         <td>TBC</td>
       </tr>
+
     </tbody>
   </table>
 </div>
@@ -665,14 +671,15 @@
       </tr>
     </thead>
     <tbody>
+
       <tr>
         <td>Paisley</td>
         <td>1</td>
         <td>0</td>
-        <td>2.75 inches</td>
-        <td>1.5 inches</td>
+        <td>3 inches</td>
+        <td>2 inches</td>
         <td>Mechanism will be like brooch pins in the V shape with 2 sticks at the back that go into the hair.</td>
-        <td>Paisley turns towards left side facing. Height: 5 inches, 1.5 inch pin at the back.</td>
+        <td>Paisley turn towards left side facing/Height 5 inch, 1.5 inch pin at the back.</td>
         <td>TBC</td>
       </tr>
 
@@ -699,7 +706,7 @@
       </tr>
 
       <tr>
-        <td>Necklace (Layer 1)</td>
+        <td>Necklace Layer 1</td>
         <td>1</td>
         <td>0</td>
         <td>9 inches</td>
@@ -710,7 +717,7 @@
       </tr>
 
       <tr>
-        <td>Necklace (Layer 2)</td>
+        <td>Necklace Layer 2</td>
         <td>1</td>
         <td>0</td>
         <td>10 inches</td>
@@ -721,7 +728,7 @@
       </tr>
 
       <tr>
-        <td>Necklace (Layer 3)</td>
+        <td>Necklace Layer 3</td>
         <td>1</td>
         <td>0</td>
         <td>12 inches</td>
@@ -757,8 +764,8 @@
         <td>Bracelet</td>
         <td>1</td>
         <td>2</td>
-        <td>18 inches</td>
-        <td>1.2 inches</td>
+        <td>6.5 inches</td>
+        <td>0 inches</td>
         <td>-</td>
         <td>Flexible/loose/openable bracelet</td>
         <td>TBC</td>
@@ -781,7 +788,7 @@
         <td>0</td>
         <td>0</td>
         <td>0</td>
-        <td>To be organised by ISKCON</td>
+        <td>-</td>
         <td>Stick-ons without post and butterfly</td>
         <td>TBC</td>
       </tr>
@@ -796,6 +803,7 @@
         <td>Stick-ons without post and butterfly</td>
         <td>TBC</td>
       </tr>
+
     </tbody>
   </table>
 </div>
@@ -823,19 +831,112 @@
               </div>
             </div>
             <div class="deity-table-wrap">
-                  <table class="deity-table">
-                    <thead><tr><th>Jewellery Piece</th><th>No. of Pieces</th><th>No. of Pairs</th><th>Length</th><th>Breadth</th><th>Width</th><th>Specifications</th><th>Reference Image</th></tr></thead>
-                    <tbody>
-                      <tr><td>Long Earrings</td><td>2</td><td>1</td><td>2 inches</td><td>2.5 inches</td><td>TBC</td><td>Stick-ons without post and butterfly</td><td>TBC</td></tr>
-                      <tr><td>Choker</td><td>1</td><td>TBC</td><td>4.5&ndash;6 inches</td><td>3&ndash;3.5 inches</td><td>TBC</td><td>Detachable/adjustable threads</td><td>TBC</td></tr>
-                      <tr><td>Mala</td><td>1</td><td>TBC</td><td>TBC</td><td>Size to be confirmed</td><td>TBC</td><td>Detachable/adjustable threads with a single pendant. Pendant will be large (Haaram) and wrap around the body like a Janeo, crossing over the chest.</td><td>TBC</td></tr>
-                      <tr><td>Waistbelt</td><td>1</td><td>TBC</td><td>16 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Detachable/adjustable threads, 5/6 layers</td><td>TBC</td></tr>
-                      <tr><td>Payal</td><td>2</td><td>2</td><td>10&ndash;11 inches</td><td>1&ndash;1.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Bracelet</td><td>TBC</td><td>1</td><td>2 inches</td><td>6.5 inches</td><td>TBC</td><td>Flexible</td><td>TBC</td></tr>
-                      <tr><td>Flute</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td><td>TBC</td></tr>
-                    </tbody>
-                  </table>
-                </div>
+  <table class="deity-table">
+    <thead>
+      <tr>
+        <th>Jewellery Piece</th>
+        <th>No. of Pieces</th>
+        <th>No. of Pairs</th>
+        <th>Length</th>
+        <th>Breadth</th>
+        <th>Width</th>
+        <th>Specifications</th>
+        <th>Reference Image</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>Long Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Mala</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Size</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads "/"</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Waistbelt</td>
+        <td>1</td>
+        <td>-</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Detachable/ adjustable threads /5/6 layered</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10–11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Rings</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Stick-ons</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Bracelet</td>
+        <td>-</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>6.5 inches</td>
+        <td>0</td>
+        <td>Flexible/loose/openable bracelet</td>
+        <td>TBC</td>
+      </tr>
+
+      <tr>
+        <td>Long Necklace</td>
+        <td>1</td>
+        <td>-</td>
+        <td>28 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>With chain to attach</td>
+        <td>TBC</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
           </div>
         </div>
 
