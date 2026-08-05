@@ -307,6 +307,9 @@
     </tbody>
   </table>
 </div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
+</div>
           </div>
         </div>
 
@@ -447,6 +450,9 @@
 
     </tbody>
   </table>
+</div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
 </div>
           </div>
         </div>
@@ -633,6 +639,9 @@
     </tbody>
   </table>
 </div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
+</div>
           </div>
         </div>
 
@@ -807,6 +816,9 @@
     </tbody>
   </table>
 </div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
+</div>
           </div>
         </div>
 
@@ -936,6 +948,9 @@
 
     </tbody>
   </table>
+</div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
 </div>
           </div>
         </div>
@@ -1120,6 +1135,9 @@
     </tbody>
   </table>
 </div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
+</div>
           </div>
         </div>
 
@@ -1258,6 +1276,9 @@
       </tr>
     </tbody>
   </table>
+</div>
+<div class="table-scroll-note">
+    ← Swipe horizontally to view all details →
 </div>
           </div>
         </div>
