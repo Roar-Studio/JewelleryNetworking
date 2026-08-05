@@ -1708,6 +1708,53 @@ body.no-scroll nav .nav-cta {
   border: 1px solid rgba(184,146,42,.15);
   border-radius: 4px;
 }
+.deity-table-wrap{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:#c9a227 #f6f3ea;
+}
+
+.deity-table-wrap::-webkit-scrollbar{
+    height:8px;
+}
+
+.deity-table-wrap::-webkit-scrollbar-track{
+    background:#f6f3ea;
+    border-radius:20px;
+}
+
+.deity-table-wrap::-webkit-scrollbar-thumb{
+    background:#c9a227;
+    border-radius:20px;
+}
+.table-scroll-note{
+    display:none;
+}
+
+@media (max-width:768px){
+    .table-scroll-note{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:6px;
+        margin-top:10px;
+        font-size:13px;
+        color:#9a7b1f;
+        font-weight:500;
+        opacity:.9;
+        animation:swipeHint 2s ease-in-out infinite;
+    }
+}
+
+@keyframes swipeHint{
+    0%,100%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(8px);
+    }
+}
 .deity-table { width: 100%; border-collapse: collapse; font-size: .78rem; table-layout: auto; }
 .deity-table th {
   text-align: left;
