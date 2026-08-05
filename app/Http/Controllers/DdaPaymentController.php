@@ -193,7 +193,7 @@ class DdaPaymentController extends Controller
                 ]
             );
 
-            PaymentFailedMail::dispatch(
+            PaymentFailed::dispatch(
                 $transaction->dda_id,
                 $transaction->id
             );
@@ -341,7 +341,7 @@ class DdaPaymentController extends Controller
                 }
             }
 
-            if (! $approveUrl) {
+            if (!$approveUrl) {
                 throw new \Exception('Unable to retrieve PayPal approval URL.');
             }
 
@@ -507,6 +507,8 @@ class DdaPaymentController extends Controller
             );
         }
 
-        return redirect()->route('dda.payment.failed');
+        return redirect()->route('dda.payment.failed', [
+            'entry_id' => $transaction->dda_id,
+        ]);
     }
 }

@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Payment Failed</title>
+    <title>Payment Failed</title>
 
-<style>
+    <style>
+        body {
 
-body{
+            font-family: Arial;
+            background: #f7f5f2;
 
-font-family:Arial;
-background:#f7f5f2;
+            display: flex;
 
-display:flex;
+            justify-content: center;
 
-justify-content:center;
+            align-items: center;
 
-align-items:center;
+            height: 100vh;
 
-height:100vh;
+        }
 
-}
+        .card {
 
-.card{
+            background: white;
 
-background:white;
+            width: 600px;
 
-width:600px;
+            padding: 50px;
 
-padding:50px;
+            border-radius: 15px;
 
-border-radius:15px;
+            text-align: center;
 
-text-align:center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
 
-box-shadow:0 10px 30px rgba(0,0,0,.1);
+        }
 
-}
+        h1 {
 
-h1{
+            color: #d32f2f;
 
-color:#d32f2f;
+        }
 
-}
+        a {
 
-a{
+            display: inline-block;
 
-display:inline-block;
+            margin-top: 30px;
 
-margin-top:30px;
+            padding: 15px 30px;
 
-padding:15px 30px;
+            background: #C59A2E;
 
-background:#C59A2E;
+            color: white;
 
-color:white;
+            text-decoration: none;
 
-text-decoration:none;
+            border-radius: 8px;
 
-border-radius:8px;
-
-}
-
-</style>
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="card">
+    <div class="card">
 
-<h1>Payment Failed</h1>
+        <h1>Payment Failed</h1>
 
-<p>
+        <p>
 
-Unfortunately your payment could not be completed.
+            Unfortunately your payment could not be completed.
 
-</p>
+        </p>
 
-<p>
+        <p>
 
-Please try again.
+            Please try again.
 
-</p>
+        </p>
 
-<a href="{{ url()->previous() }}">
+        <a href="/deitiesdesignawards/order-summary/{{ request()->query('entry_id') }}">
 
-Try Again
+            Try Again
 
-</a>
+        </a>
 
-</div>
+    </div>
 
 </body>
+
 </html>

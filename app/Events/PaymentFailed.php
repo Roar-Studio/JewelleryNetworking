@@ -1,56 +1,24 @@
 <?php
 
-namespace App\Mail;
+namespace App\Events;
 
-use App\Models\DDA;
-use App\Models\DdaTransaction;
-use Illuminate\Bus\Queueable;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Broadcasting\Channel;
+use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Broadcasting\PresenceChannel;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class PaymentFailedMail extends Mailable
+class PaymentFailed
 {
-    use Queueable, SerializesModels;
+    use Dispatchable, InteractsWithSockets, SerializesModels;
 
     /**
-     * Create a new message instance.
+     * Create a new event instance.
      */
     public function __construct(
-        public DDA $submission,
-        public DdaTransaction $transaction
-    ) {
-        //
-    }
-
-    /**
-     * Get the message envelope.
-     */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Payment Failed - Deities Design Awards',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'emails.payment-failed',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-     */
-    public function attachments(): array
-    {
-        return [];
-    }
+        public string $entry_id,
+        public string $transaction_id
+    ) {}
 }
