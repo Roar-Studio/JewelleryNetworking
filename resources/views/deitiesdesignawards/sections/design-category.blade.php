@@ -195,7 +195,7 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker.jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker+(1).jpg"
             alt="Choker"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -213,7 +213,7 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklase.jpg"
             alt="Necklace 1"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -231,7 +231,7 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklace.jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklase.jpg"
             alt="Necklace 2"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -249,7 +249,7 @@
         <td>Flexible/loose/openable bracelet</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet.jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet+(1).jpg"
             alt="Bracelet"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -296,7 +296,7 @@
         <td>Flexible</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal.jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal+(1).jpg"
             alt="Payal"
             class="table-thumb"
             onclick="openImage(this.src)"
