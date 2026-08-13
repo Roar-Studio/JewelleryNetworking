@@ -164,25 +164,55 @@
     <tbody>
 
       <tr>
-        <td>Jhumka Earrings</td>
+        <td>Waistbelt/Kamarbandh</td>
+        <td>1</td>
+        <td>-</td>
+        <td>6 inches</td>
+        <td>1 inch</td>
+        <td>1–1.5 inches</td>
+        <td>Thick thread to tie up -adjustable and flexible. Total circumference is 12 inches and front prefer 6 inches.</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Waistbelt-Clear-Deity.png"
+            alt="Waistbelt/Kamarbandh"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
         <td>2</td>
         <td>1</td>
-        <td>2 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>TBD</td>
+        <td>10 to 11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Flexible & Openable</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Payal-Clear-Deity.png"
+            alt="Payal"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
         <td>Jhumka Earrings</td>
         <td>2</td>
         <td>1</td>
-        <td>2.5 inches</td>
+        <td>2 – 2.5 inches</td>
         <td>-</td>
         <td>-</td>
         <td>Stick-ons without post and butterfly</td>
-        <td>TBD</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Payal"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -195,7 +225,7 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Choker+(1).jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Choker-Clear-Deity.png"
             alt="Choker"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -204,7 +234,7 @@
       </tr>
 
       <tr>
-        <td>Necklace 1</td>
+        <td>Necklace Set (Layer 1)</td>
         <td>1</td>
         <td>-</td>
         <td>7.5 inches</td>
@@ -213,8 +243,8 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklase.jpg"
-            alt="Necklace 1"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Necklace-Clear-Deity.png"
+            alt="Necklace Set (Layer 1)"
             class="table-thumb"
             onclick="openImage(this.src)"
           >
@@ -222,7 +252,7 @@
       </tr>
 
       <tr>
-        <td>Necklace 2</td>
+        <td>Necklace Set (Layer 2)</td>
         <td>1</td>
         <td>-</td>
         <td>11 inches</td>
@@ -231,8 +261,8 @@
         <td>Detachable/ adjustable threads</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Necklase.jpg"
-            alt="Necklace 2"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Necklace-Clear-Deity.png"
+            alt="Necklace Set (Layer 2)"
             class="table-thumb"
             onclick="openImage(this.src)"
           >
@@ -249,7 +279,7 @@
         <td>Flexible/loose/openable bracelet</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Bracelet+(1).jpg"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Bracelet-Clear-Deity.png"
             alt="Bracelet"
             class="table-thumb"
             onclick="openImage(this.src)"
@@ -265,39 +295,10 @@
         <td>2 inches</td>
         <td>2 inches</td>
         <td>Openable bangles</td>
-        <td>TBD</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
-        <td>1</td>
-        <td>-</td>
-        <td>6 inches</td>
-        <td>1 inch</td>
-        <td>1–1.5 inches</td>
-        <td>Thick thread to tie up - adjustable and flexible. Total circumference is 12 inches and front preferred 6 inches.</td>
         <td>
           <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Waistbelt.jpg"
-            alt="Waistbelt"
-            class="table-thumb"
-            onclick="openImage(this.src)"
-          >
-        </td>
-      </tr>
-
-      <tr>
-        <td>Payal</td>
-        <td>2</td>
-        <td>1</td>
-        <td>10–11 inches</td>
-        <td>1–1.5 inches</td>
-        <td>1–1.5 inches</td>
-        <td>Flexible</td>
-        <td>
-          <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Payal+(1).jpg"
-            alt="Payal"
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Bangles-Clear-Deity.png"
+            alt="Bangle"
             class="table-thumb"
             onclick="openImage(this.src)"
           >
@@ -350,6 +351,38 @@
     <tbody>
 
       <tr>
+        <td>Waistbelt/Kamarbandh</td>
+        <td>1</td>
+        <td>-</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Thick thread to tie up -adjustable and flexible</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Waistbelt-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Payal</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10 to 11 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>Flexible</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Payal-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
         <td>Jhumka Earrings</td>
         <td>2</td>
         <td>1</td>
@@ -357,18 +390,28 @@
         <td>2.5 inches</td>
         <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Jhumkas-Earring-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Long Earrings</td>
+        <td>Long earrings</td>
         <td>2</td>
         <td>1</td>
         <td>2.5 inches</td>
         <td>2.5 inches</td>
         <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Jhumkas-Earring-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -376,32 +419,47 @@
         <td>1</td>
         <td>-</td>
         <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
-        <td>3–3.5 inches</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>3/3.5 inches</td>
+        <td>3/3.5 inches</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Choker-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Necklace 1</td>
+        <td>Necklace Set (Layer 1)</td>
         <td>1</td>
         <td>-</td>
         <td>10 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Necklace-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Necklace 2</td>
+        <td>Necklace Set (Layer 2)</td>
         <td>1</td>
         <td>-</td>
         <td>11 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Necklace-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -412,7 +470,12 @@
         <td>2 inches</td>
         <td>2 inches</td>
         <td>Flexible/loose/openable bracelet</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Bracelet-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -423,29 +486,12 @@
         <td>2 inches</td>
         <td>2 inches</td>
         <td>Openable bangles</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
-        <td>1</td>
-        <td>-</td>
-        <td>16 inches</td>
-        <td>1–1.5 inches</td>
-        <td>1–1.5 inches</td>
-        <td>Thick thread to tie up - adjustable and flexible</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Payal</td>
-        <td>2</td>
-        <td>1</td>
-        <td>10–11 inches</td>
-        <td>1–1.5 inches</td>
-        <td>1–1.5 inches</td>
-        <td>Flexible</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Bangles-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
     </tbody>
@@ -501,7 +547,28 @@
         <td>2 inches</td>
         <td>-</td>
         <td>Paisley turn towards right side facing/Height 5 inch, 1.5 inch pin at the back.</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Paisley-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Damini/Mathapatti</td>
+        <td>1</td>
+        <td>1</td>
+        <td>6.5 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>-</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Damini-Mathapatti-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -512,106 +579,28 @@
         <td>0.8 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Maangtikha-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Damini / Mathapatti</td>
-        <td>1</td>
-        <td>1</td>
-        <td>6.5 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>-</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Earrings</td>
-        <td>2</td>
-        <td>1</td>
-        <td>2 inches</td>
-        <td>2 inches</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Nosering</td>
-        <td>1</td>
-        <td>-</td>
-        <td>0.7 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>Maximum size 1 inch length and 1.4 inch breadth</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Bangle</td>
-        <td>6</td>
-        <td>3</td>
-        <td>2 inches</td>
-        <td>2 inches</td>
-        <td>2 inches</td>
-        <td>2.0 aani openable bangle</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Choker</td>
-        <td>1</td>
-        <td>-</td>
-        <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace Layer 1</td>
-        <td>1</td>
-        <td>-</td>
-        <td>10 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace Layer 2</td>
-        <td>1</td>
-        <td>-</td>
-        <td>11 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace Layer 3</td>
-        <td>1</td>
-        <td>-</td>
-        <td>12 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
+        <td>Waistbelt/Kamarbandh</td>
         <td>1</td>
         <td>-</td>
         <td>16 inches</td>
         <td>2 inches</td>
         <td>-</td>
         <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Waistbelt-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -622,7 +611,124 @@
         <td>1–1.5 inches</td>
         <td>-</td>
         <td>Flexible</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Payal-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Nosering</td>
+        <td>1</td>
+        <td>-</td>
+        <td>0.7 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>maximium size 1 length and 1.4 breadth</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Nose-Ring-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Earring-2-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Choker-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 1)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>10 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Necklace-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 2)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Necklace-2-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 3)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>12 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Necklace-3-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Bangle</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>2.0 aani openable bangle</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Bangles-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -633,7 +739,12 @@
         <td>-</td>
         <td>-</td>
         <td>To be organised by ISKCON</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Rings-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
     </tbody>
@@ -682,80 +793,179 @@
     <tbody>
 
       <tr>
-        <td>Paisley</td>
+        <td>Paiseley</td>
         <td>1</td>
         <td>0</td>
         <td>3 inches</td>
         <td>2 inches</td>
-        <td>Mechanism will be like brooch pins in the V shape with 2 sticks at the back that go into the hair.</td>
-        <td>Paisley turn towards left side facing/Height 5 inch, 1.5 inch pin at the back.</td>
-        <td>TBC</td>
+        <td>-</td>
+        <td>Paisley kalgi turns towards left side facing/Height 5 inch, 1.5 inch pin at the back, will be made as a set with mathapatti. Mechanism will be like brooch pins in the V shape with 2 sticks at the back that goes into the hair.</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Paisley-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Damini / Mathapatti</td>
+        <td>Damini/Mathapatti</td>
         <td>1</td>
         <td>0</td>
-        <td>5–6.5 inches</td>
+        <td>5-6.5 inches</td>
         <td>0.8 inches</td>
         <td>-</td>
+        <td>Flexible, will be made as a set with the paisely kalgi.</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Damini-Mathapatti-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Maangtikha</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5 inches</td>
+        <td>0.8 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Maangtikha-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Long Latkan Waistbelt/Kamarbandh</td>
+        <td>1</td>
+        <td>0</td>
+        <td>16 inches</td>
+        <td>2-2.5 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads/drop shape latkans</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Long-Latkan-Waistbelt-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Payals</td>
+        <td>2</td>
+        <td>1</td>
+        <td>10 inches</td>
+        <td>1-1.5 inches</td>
+        <td>-</td>
         <td>Flexible</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Payal-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Nosering</td>
+        <td>1</td>
+        <td>-</td>
+        <td>0.7 inches</td>
+        <td>1 inch</td>
+        <td>-</td>
+        <td>maximium size 1 length and 1.4 breadth</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Nose-Ring-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
         <td>Choker</td>
         <td>1</td>
         <td>0</td>
-        <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
+        <td>4.5-6 inches</td>
+        <td>3/3.5 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Choker-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Necklace Layer 1</td>
+        <td>Necklace Set (Layer 1)</td>
         <td>1</td>
         <td>0</td>
         <td>9 inches</td>
         <td>0 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Bracelet-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Necklace Layer 2</td>
+        <td>Necklace Set (Layer 2)</td>
         <td>1</td>
         <td>0</td>
         <td>10 inches</td>
         <td>0 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Necklace-2-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Necklace Layer 3</td>
+        <td>Necklace Set (Layer 3)</td>
         <td>1</td>
         <td>0</td>
         <td>12 inches</td>
         <td>0 inches</td>
         <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Long Latkan Waistbelt</td>
-        <td>1</td>
-        <td>0</td>
-        <td>16 inches</td>
-        <td>2–2.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads/drop shape latkans</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Necklace-3-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -764,9 +974,14 @@
         <td>2</td>
         <td>2 inches</td>
         <td>2 inches</td>
-        <td>Openable 2 aani</td>
+        <td>openable 2 aani</td>
         <td>Flexible/loose/openable bracelet</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Bangle-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -777,18 +992,12 @@
         <td>0 inches</td>
         <td>-</td>
         <td>Flexible/loose/openable bracelet</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Payal</td>
-        <td>2</td>
-        <td>1</td>
-        <td>10 inches</td>
-        <td>1–1.5 inches</td>
-        <td>-</td>
-        <td>Flexible</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Bracelet-Clear-Deity-V2.png
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -799,18 +1008,12 @@
         <td>0</td>
         <td>-</td>
         <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Jhumka Earrings</td>
-        <td>2</td>
-        <td>1</td>
-        <td>2 inches</td>
-        <td>2.5 inches</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Rings-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
     </tbody>
@@ -821,6 +1024,7 @@
 </div>
           </div>
         </div>
+
 
         <!-- Gopinath / Krishna -->
         <div class="deity-card" id="gopinath-krishna">
@@ -859,80 +1063,83 @@
     <tbody>
 
       <tr>
-        <td>Long Earrings</td>
-        <td>2</td>
-        <td>1</td>
-        <td>2 inches</td>
-        <td>2.5 inches</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Choker</td>
-        <td>1</td>
-        <td>-</td>
-        <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Mala</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Size</td>
-        <td>-</td>
-        <td>Detachable/ adjustable threads "/"</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
+        <td>Waistbelt/Kamarband</td>
         <td>1</td>
         <td>-</td>
         <td>16 inches</td>
         <td>1–1.5 inches</td>
         <td>1–1.5 inches</td>
         <td>Detachable/ adjustable threads /5/6 layered</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Waistbelt-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
         <td>Payal</td>
         <td>2</td>
         <td>2</td>
-        <td>10–11 inches</td>
+        <td>10 to 11 inches</td>
         <td>1–1.5 inches</td>
         <td>-</td>
         <td>Flexible</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Payal-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Rings</td>
-        <td>1</td>
+        <td>Flute</td>
+        <td>-</td>
+        <td>-</td>
+        <td>16 inches</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
-        <td>-</td>
-        <td>Stick-ons</td>
-        <td>TBC</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Rings-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
-        <td>Bracelet</td>
-        <td>-</td>
+        <td>Jhumka & Long Earings</td>
+        <td>2</td>
         <td>1</td>
         <td>2 inches</td>
-        <td>6.5 inches</td>
-        <td>0</td>
-        <td>Flexible/loose/openable bracelet</td>
-        <td>TBC</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Long-Earrings-2-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Chokers</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5–6 inches</td>
+        <td>3–3.5 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Chokers-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
       <tr>
@@ -942,8 +1149,45 @@
         <td>28 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>With chain to attach</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads. With single pendant which will be large - (Haaram), goes around the body like a janeo, crossing the body like a janeo.</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Long-Necklace-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Bracelet</td>
+        <td>-</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>6.5 inches</td>
+        <td>0</td>
+        <td>-</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Bracelet-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Rings</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>To be organised by Iscon</td>
+        <td>Stick-ons</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Rings-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
       </tr>
 
     </tbody>
@@ -997,8 +1241,33 @@
         <td>3 inches</td>
         <td>2 inches</td>
         <td>-</td>
-        <td>Paisley turns towards left side</td>
-        <td>TBC</td>
+        <td>Paisley turn towards left side facing/Height 5 inch, 1.5 inch pin at the back</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Paisley-Clear-Deity-V2.png"
+            alt="Paisley"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Damini/Mathapatti</td>
+        <td>1</td>
+        <td>-</td>
+        <td>6.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Damini-Mathapatti-Clear-Deity-V2.png"
+            alt="Damini/Mathapatti"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
@@ -1009,29 +1278,50 @@
         <td>0.8 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Maangtikha-Clear-Deity-V2.png"
+            alt="Maangtikha"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
-        <td>Damini / Mathapatti</td>
+        <td>Waistbelt</td>
         <td>1</td>
         <td>-</td>
-        <td>12 inches</td>
-        <td>0.25 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>TBC</td>
+        <td>16 inches</td>
+        <td>1–1.5 inches</td>
+        <td>1–1.5 inches</td>
+        <td>detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Waistbelt-Clear-Deity-V2.png"
+            alt="Waistbelt"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
-        <td>Long Earrings</td>
+        <td>Payal</td>
         <td>2</td>
         <td>1</td>
-        <td>2 inches</td>
-        <td>2 inches</td>
+        <td>10-11 inches</td>
+        <td>1–1.5 inches</td>
         <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
+        <td>Flexible</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Payal-Clear-Deity.png"
+            alt="Payal"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
@@ -1042,7 +1332,104 @@
         <td>1 inch</td>
         <td>-</td>
         <td>-</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Nose-Ring-Clear-Deity.png"
+            alt="Nosering"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Long Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Long Earings"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>-</td>
+        <td>4.5-6 inches</td>
+        <td>3/3.5 inches</td>
+        <td>-</td>
+        <td>detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Choker-Clear-Deity-V2.png"
+            alt="Choker"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 1)</td>
+        <td>1</td>
+        <td>-</td>
+        <td>9 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopalji/Necklace-1-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 1)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 2)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>10 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Necklace-2-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 2)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 3)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Necklace-3-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 3)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
@@ -1053,73 +1440,14 @@
         <td>2 inches</td>
         <td>2 aani openable</td>
         <td>Flexible/loose/openable bracelet</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Choker</td>
-        <td>1</td>
-        <td>-</td>
-        <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 1)</td>
-        <td>1</td>
-        <td>-</td>
-        <td>9 inches</td>
-        <td>0.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 2)</td>
-        <td>1</td>
-        <td>-</td>
-        <td>10 inches</td>
-        <td>0.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 3)</td>
-        <td>1</td>
-        <td>-</td>
-        <td>11 inches</td>
-        <td>0.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
-        <td>1</td>
-        <td>-</td>
-        <td>16 inches</td>
-        <td>1–1.5 inches</td>
-        <td>1–1.5 inches</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Payal</td>
-        <td>2</td>
-        <td>1</td>
-        <td>10–11 inches</td>
-        <td>1–1.5 inches</td>
-        <td>-</td>
-        <td>Flexible</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Bangle-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
@@ -1130,7 +1458,14 @@
         <td>1 inch</td>
         <td>-</td>
         <td>Stick-ons without post and butterfly</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Rings-Clear-Deity-V2.png"
+            alt="Rings"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
     </tbody>
   </table>
@@ -1141,6 +1476,7 @@
           </div>
         </div>
 
+        <!-- Gopalji -->
         <!-- Gopalji -->
         <div class="deity-card" id="gopalji">
           <button class="deity-card-head">
@@ -1177,102 +1513,183 @@
     </thead>
     <tbody>
       <tr>
-        <td>Choker</td>
-        <td>1</td>
-        <td>0</td>
-        <td>4.5–6 inches</td>
-        <td>3–3.5 inches</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 1)</td>
-        <td>1</td>
-        <td>0</td>
-        <td>9 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 2)</td>
-        <td>1</td>
-        <td>0</td>
-        <td>10 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 3)</td>
-        <td>1</td>
-        <td>0</td>
-        <td>11 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Necklace (Layer 4)</td>
-        <td>1</td>
-        <td>0</td>
-        <td>12 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Waistbelt</td>
+        <td>Layered Waistbelt/Kamarbandh</td>
         <td>1</td>
         <td>0</td>
         <td>16 inches</td>
         <td>1–1.5 inches</td>
         <td>1–1.5 inches</td>
-        <td>Detachable/adjustable threads</td>
-        <td>TBC</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Waistbelt-Clear-Deity.png"
+            alt="Layered Waistbelt/Kamarbandh"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
-        <td>Bracelet 1</td>
+        <td>Pair of sticks</td>
+        <td>2</td>
+        <td>-</td>
+        <td>19 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Necklace-3-Clear-Deity-V2.png"
+            alt="Pair of sticks"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Anklets/ PAYAL</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10-11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Flexible</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Payal-Clear-Deity.png"
+            alt="Anklets/ PAYAL"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Choker</td>
+        <td>1</td>
+        <td>0</td>
+        <td>4.5–6 inches</td>
+        <td>3-3.50 inches</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopal+Ji/Chokers-Clear-Deity-V2.png"
+            alt="Choker"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 1)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>9 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopal+Ji/Necklace-4-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 1)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 2)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>10 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopal+Ji/Necklace-3-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 2)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklace Set (Layer 3)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>11 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopal+Ji/Necklace-2-Clear-Deity-V2.png"
+            alt="Necklace Set (Layer 3)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Necklaces Set (Layer 4)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>12 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detachable/ adjustable threads</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gopal+Ji/Necklace-1-Clear-Deity-V2.png"
+            alt="Necklaces Set (Layer 4)"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>Bracelets 1</td>
         <td>2</td>
         <td>1</td>
         <td>6.5 inches</td>
         <td>1–1.5 inches</td>
         <td>-</td>
         <td>Flexible</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Bracelet-Clear-Deity.png"
+            alt="Bracelets 1"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
 
       <tr>
-        <td>Bracelet 2</td>
+        <td>Bracelets 2</td>
         <td>2</td>
         <td>1</td>
         <td>6.5 inches</td>
         <td>1–1.5 inches</td>
         <td>-</td>
         <td>Flexible</td>
-        <td>TBC</td>
-      </tr>
-
-      <tr>
-        <td>Payal</td>
-        <td>2</td>
-        <td>2</td>
-        <td>10–11 inches</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Flexible</td>
-        <td>TBC</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Gaur/Not+to+be+used/Bracelet-Clear-Deity.png"
+            alt="Bracelets 2"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
       </tr>
     </tbody>
   </table>

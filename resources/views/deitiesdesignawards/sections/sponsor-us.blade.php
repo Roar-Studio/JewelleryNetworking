@@ -117,34 +117,77 @@
       <div class="sponsor-grid">
         <div class="sponsor-tier-card">
           <span class="tier-label">Title Sponsor</span>
-          <h4>INR &#8377;20 Lakhs</h4>
+          <h4>INR &#8377;20 Lakhs + GST</h4>
           <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Powered By</span>
-          <h4>INR &#8377;10 Lakhs</h4>
+          <h4>INR &#8377;10 Lakh + GST</h4>
           <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
       <div class="sponsor-grid" style="margin-top:2rem">
         <div class="sponsor-tier-card">
           <span class="tier-label">Category Sponsor</span>
-          <h4>INR &#8377;7.50 Lakhs</h4>
+          <h4>INR &#8377;7.50 Lakh + GST</h4>
           <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Media Sponsor</span>
-          <h4>INR &#8377;7.50 Lakhs</h4>
+          <h4>INR &#8377;7.50 Lakh + GST</h4>
           <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
         <div class="sponsor-tier-card">
           <span class="tier-label">Logistics Partner</span>
-          <h4>INR &#8377;5 Lakhs</h4>
+          <h4>INR &#8377;5 Lakh + GST</h4>
           <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
         </div>
       </div>
-      <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;opacity:.55">Above amounts are inclusive of GST.</p>
-      <p style="text-align:center;margin-top:.75rem;font-size:.85rem;opacity:.6">For more details, mail us at <a href="mailto:info@deitiesdesignawards.com" style="color:var(--gold-deep,#8a7026)">info@deitiesdesignawards.com</a> or call <a href="tel:+919819155544" style="color:var(--gold-deep,#8a7026)">+91 98191 55544</a></p>
+      <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;opacity:.6">For more details, mail us at <a href="mailto:info@deitiesdesignawards.com" style="color:var(--gold-deep,#8a7026)">info@deitiesdesignawards.com</a> or call <a href="tel:+919819155544" style="color:var(--gold-deep,#8a7026)">+91 98191 55544</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff;border-top:1px solid rgba(184,146,42,.12)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <h2 class="page-hero-int-title" style="font-size:2rem;margin-bottom:.5rem">Category Sponsorships</h2>
+        <p style="max-width:740px;margin:0 auto;font-size:1.1rem;font-weight:600;color:var(--gold-deep,#1f5f6b)">Accessories</p>
+      </div>
+      <div class="sponsor-grid">
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Sponsor</span>
+          <h4>INR &#8377;8 Lakhs + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Co-Sponsor</span>
+          <h4>INR &#8377;4 Lakh + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Necklace Set</span>
+          <h4>INR &#8377;6 Lakh + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="sponsor-grid" style="margin-top:2rem">
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Choker</span>
+          <h4>INR &#8377;6 Lakh + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Bangle / Bracelet</span>
+          <h4>INR &#8377;6 Lakh + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+        <div class="sponsor-tier-card">
+          <span class="tier-label">Special Category</span>
+          <h4>INR &#8377;5 Lakh + GST</h4>
+          <a href="/deitiesdesignawards/contact" class="btn-gold" style="margin-top:auto;display:inline-flex;align-items:center;gap:.75rem"><span>Enquire</span><span class="arrow">→</span></a>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;opacity:.6">For more details, mail us at <a href="mailto:info@deitiesdesignawards.com" style="color:var(--gold-deep,#8a7026)">info@deitiesdesignawards.com</a> or call <a href="tel:+919819155544" style="color:var(--gold-deep,#8a7026)">+91 98191 55544</a></p>
     </div>
   </section>
 
