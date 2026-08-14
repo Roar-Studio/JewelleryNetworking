@@ -1,3 +1,4 @@
+```blade
 <!DOCTYPE html>
 <html lang="en">
 
@@ -319,20 +320,50 @@
                                 </div>
                                 <div class="form-grid">
                                     <div class="form-field full">
-                                        <label for="f-deity-a">Deity Category <span class="req">*</span></label>
-                                        <select id="f-deity-a" name="deity_category_a" class="deity-select" required>
-                                            <option value="">Select deity category</option>
-                                            <option value="radharani-radha"
-                                                {{ old('deity_category_a') == 'radharani-radha' ? 'selected' : '' }}>
-                                                Radharani / Radha</option>
-                                            <option value="gopinath-krishna"
-                                                {{ old('deity_category_a') == 'gopinath-krishna' ? 'selected' : '' }}>
-                                                Gopinath / Krishna</option>
-                                        </select>
-                                        @error('deity_category_a')
-                                            <div class="text-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
+    <label for="f-deity-a">Deity Category <span class="req">*</span></label>
+    <select id="f-deity-a" name="deity_category_a" class="deity-select" required>
+        <option value="">Select deity category</option>
+
+        <option value="nitai"
+            {{ old('deity_category_a') == 'nitai' ? 'selected' : '' }}>
+            Nitai
+        </option>
+
+        <option value="gaur"
+            {{ old('deity_category_a') == 'gaur' ? 'selected' : '' }}>
+            Gaur
+        </option>
+
+        <option value="lalita"
+            {{ old('deity_category_a') == 'lalita' ? 'selected' : '' }}>
+            Lalita Devi
+        </option>
+
+        <option value="radharani-radha"
+            {{ old('deity_category_a') == 'radharani-radha' ? 'selected' : '' }}>
+            Radha Rani
+        </option>
+
+        <option value="gopinath-krishna"
+            {{ old('deity_category_a') == 'gopinath-krishna' ? 'selected' : '' }}>
+            Gopinath Krishna
+        </option>
+
+        <option value="vishakhadevi"
+            {{ old('deity_category_a') == 'vishakhadevi' ? 'selected' : '' }}>
+            Vishakhadevi
+        </option>
+
+        <option value="gopalji"
+            {{ old('deity_category_a') == 'gopalji' ? 'selected' : '' }}>
+            Gopalji
+        </option>
+    </select>
+
+    @error('deity_category_a')
+        <div class="text-danger">{{ $message }}</div>
+    @enderror
+</div>
                                     <div class="form-field full">
                                         <label for="f-piece-a">Jewellery Piece <span class="req">*</span></label>
                                         <select id="f-piece-a" name="jewellery_piece_a" class="piece-select" required
@@ -415,28 +446,50 @@
                                 </div>
                                 <div class="form-grid">
                                     <div class="form-field full">
-                                        <label for="f-deity-b">Deity Category <span class="req">*</span></label>
-                                        <select id="f-deity-b" name="deity_category_b" class="deity-select" required>
-                                            <option value="">Select deity category</option>
-                                            <option value="nitai"
-                                                {{ old('deity_category_b') == 'nitai' ? 'selected' : '' }}>Nitai
-                                            </option>
-                                            <option value="gaur"
-                                                {{ old('deity_category_b') == 'gaur' ? 'selected' : '' }}>Gaur</option>
-                                            <option value="lalita"
-                                                {{ old('deity_category_b') == 'lalita' ? 'selected' : '' }}>Lalita
-                                            </option>
-                                            <option value="vishakhadevi"
-                                                {{ old('deity_category_b') == 'vishakhadevi' ? 'selected' : '' }}>
-                                                Vishakhadevi</option>
-                                            <option value="gopalji"
-                                                {{ old('deity_category_b') == 'gopalji' ? 'selected' : '' }}>Gopalji
-                                            </option>
-                                        </select>
-                                        @error('deity_category_b')
-                                            <div class="text-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
+    <label for="f-deity-b">Deity Category <span class="req">*</span></label>
+    <select id="f-deity-b" name="deity_category_b" class="deity-select" required>
+        <option value="">Select deity category</option>
+
+        <option value="nitai"
+            {{ old('deity_category_b') == 'nitai' ? 'selected' : '' }}>
+            Nitai
+        </option>
+
+        <option value="gaur"
+            {{ old('deity_category_b') == 'gaur' ? 'selected' : '' }}>
+            Gaur
+        </option>
+
+        <option value="lalita"
+            {{ old('deity_category_b') == 'lalita' ? 'selected' : '' }}>
+            Lalita Devi
+        </option>
+
+        <option value="radharani-radha"
+            {{ old('deity_category_b') == 'radharani-radha' ? 'selected' : '' }}>
+            Radha Rani
+        </option>
+
+        <option value="gopinath-krishna"
+            {{ old('deity_category_b') == 'gopinath-krishna' ? 'selected' : '' }}>
+            Gopinath Krishna
+        </option>
+
+        <option value="vishakhadevi"
+            {{ old('deity_category_b') == 'vishakhadevi' ? 'selected' : '' }}>
+            Vishakhadevi
+        </option>
+
+        <option value="gopalji"
+            {{ old('deity_category_b') == 'gopalji' ? 'selected' : '' }}>
+            Gopalji
+        </option>
+    </select>
+
+    @error('deity_category_b')
+        <div class="text-danger">{{ $message }}</div>
+    @enderror
+</div>
                                     <div class="form-field full">
                                         <label for="f-piece-b">Jewellery Piece <span class="req">*</span></label>
                                         <select id="f-piece-b" name="jewellery_piece_b" class="piece-select" required
@@ -488,6 +541,7 @@
                                                 stroke="currentColor" stroke-width="1">
                                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                                 <polyline points="17 8 12 3 7 8" />
+                                                <line x1="12" y1="3" x2="7" y2="8" />
                                                 <line x1="12" y1="3" x2="12" y2="15" />
                                             </svg>
                                         </div>
@@ -673,6 +727,7 @@
                 c.classList.toggle('rotate');
             });
         });
+
         // Step navigation
         let highestStepReached = 1;
 
@@ -724,58 +779,107 @@
             });
         });
 
-        // Jewellery pieces available per deity (matches design-category.html)
-        const JEWELLERY_PIECES = {
-            'nitai': ['Jhumka Earrings', 'Choker', 'Necklace 1', 'Necklace 2', 'Bracelet', 'Bangle', 'Waistbelt',
-                'Payal'
-            ],
-            'gaur': ['Jhumka Earrings', 'Long Earrings', 'Choker', 'Necklace 1', 'Necklace 2', 'Bracelet', 'Bangle',
-                'Waistbelt', 'Payal'
-            ],
-            'lalita': ['Paisley', 'Maangtikha', 'Damini / Mathapatti', 'Earrings', 'Nosering', 'Bangle', 'Choker',
-                'Necklace 1', 'Necklace 2', 'Necklace 3', 'Waistbelt', 'Payal', 'Rings'
-            ],
-            'radharani-radha': ['Paisley', 'Damini / Mathapatti', 'Choker', 'Necklace 1', 'Necklace 2', 'Necklace 3',
-                'Waistbelt with Long Latkan', 'Bangle', 'Bracelet', 'Payal', 'Rings', 'Jhumka Earrings'
-            ],
-            'gopinath-krishna': ['Long Earrings', 'Choker', 'Mala', 'Waistbelt', 'Payal', 'Bracelet', 'Flute'],
-            'vishakhadevi': ['Paisley', 'Maangtikha', 'Damini / Mathapatti', 'Long Earrings', 'Nosering', 'Bangle',
-                'Choker', 'Necklace 1', 'Necklace 2', 'Necklace 3', 'Waistbelt', 'Payal', 'Rings'
-            ],
-            'gopalji': ['Choker', 'Necklace 1', 'Necklace 2', 'Necklace 3', 'Necklace 4', 'Waistbelt', 'Bracelet 1',
-                'Bracelet 2', 'Payal', 'Stick'
-            ]
-        };
+        // Jewellery pieces available per deity
+        (function () {
+            const jewelleryOptions = {
+                'nitai': [
+                    'Accessories (Waistbelt/Kamarbandh, Anklet/Payal)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'gaur': [
+                    'Accessories (Waistbelt/Kamarbandh, Anklet/Payal)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'lalita': [
+                    'Accessories (Head Ornament - Paisley Kalgi With Mathapatti, Maangtikka, Waistbelt / Kamarbandh, Anklet / Payal, Nose Ring)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'radharani-radha': [
+                    'Accessories (Head Ornament - Paisley Kalgi With Mathapatti, Maangtikka, Waistbelt / Kamarbandh With Long Tassels, Anklet / Payal, Nose Ring)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'gopinath-krishna': [
+                    'Accessories (Layered Waistbelt / Kamarbandh, Anklet / Payal, Flute)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'vishakhadevi': [
+                    'Accessories (Head Ornament - Paisley Kalgi With Mathapatti, Maangtikka, Waistbelt / Kamarbandh, Anklet / Payal, Nose Ring)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Set (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ],
+                'gopalji': [
+                    'Accessories (Layered Waistbelt / Kamarbandh, Anklet / Payal, Pair Of Sticks)',
+                    'Earrings (Jhumkas Or Long Earrings)',
+                    'Choker',
+                    'Necklace Sets (Necklace & Earring)',
+                    'Bangle / Bracelet'
+                ]
+            };
 
-        document.querySelectorAll('.deity-select').forEach(sel => {
-            const entryBlock = sel.closest('.entry-block');
-            const pieceSelect = entryBlock.querySelector('.piece-select');
+            document.querySelectorAll('.deity-select').forEach(deitySelect => {
+                const entryBlock = deitySelect.closest('.entry-block');
 
-            function populatePieces(selectedValue) {
-                const pieces = JEWELLERY_PIECES[sel.value];
-                if (!pieces) {
-                    pieceSelect.innerHTML = '<option value="">Select deity category first</option>';
-                    pieceSelect.disabled = true;
+                if (!entryBlock) {
                     return;
                 }
-                pieceSelect.innerHTML = '<option value="">Select jewellery piece</option>' +
-                    pieces.map(p => {
-                        const val = p.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-                        const sel = (selectedValue && selectedValue === val) ? ' selected' : '';
-                        return `<option value="${val}"${sel}>${p}</option>`;
-                    }).join('');
-                pieceSelect.disabled = false;
-            }
 
-            sel.addEventListener('change', () => populatePieces());
+                const pieceSelect = entryBlock.querySelector('.piece-select');
 
-            // Re-populate jewellery pieces on page load if a deity category was
-            // already selected (e.g. after a Laravel validation redirect) so the
-            // previously chosen piece can be restored from the old() value.
-            if (sel.value) {
-                populatePieces(pieceSelect.dataset.old || '');
-            }
-        });
+                if (!pieceSelect) {
+                    return;
+                }
+
+                function populatePieces(selectedValue) {
+                    const pieces = jewelleryOptions[deitySelect.value];
+
+                    pieceSelect.innerHTML = '';
+
+                    if (!pieces) {
+                        pieceSelect.innerHTML = '<option value="">Select deity category first</option>';
+                        pieceSelect.disabled = true;
+                        return;
+                    }
+
+                    pieceSelect.innerHTML = '<option value="">Select jewellery piece</option>' +
+                        pieces.map(piece => {
+                            const value = piece.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                            const selected = selectedValue && selectedValue === value ? ' selected' : '';
+
+                            return `<option value="${value}"${selected}>${piece}</option>`;
+                        }).join('');
+
+                    pieceSelect.disabled = false;
+                }
+
+                deitySelect.addEventListener('change', () => {
+                    populatePieces('');
+                });
+
+                // Re-populate jewellery pieces on page load if a deity category was
+                // already selected (e.g. after a Laravel validation redirect) so the
+                // previously chosen piece can be restored from the old() value.
+                if (deitySelect.value) {
+                    populatePieces(pieceSelect.dataset.old || '');
+                }
+            });
+        })();
 
         // Per-entry file upload (Entry 1 = "a", Entry 2 = "b")
         const entryFiles = {};
