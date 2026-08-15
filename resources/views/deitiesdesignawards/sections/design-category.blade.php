@@ -144,7 +144,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>24 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -331,7 +331,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>24 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -520,7 +520,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>32/33 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
            <div class="deity-table-wrap">
@@ -731,21 +731,7 @@
           ></td>
       </tr>
 
-      <tr>
-        <td>Rings</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>To be organised by ISKCON</td>
-        <td><img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Rings-Clear-Deity-V2.png"
-            alt="Bangle"
-            class="table-thumb"
-            onclick="openImage(this.src)"
-          ></td>
-      </tr>
+      
 
     </tbody>
   </table>
@@ -773,7 +759,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>34 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1000,21 +986,7 @@
           ></td>
       </tr>
 
-      <tr>
-        <td>Rings</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td><img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Rings-Clear-Deity-V2.png"
-            alt="Bangle"
-            class="table-thumb"
-            onclick="openImage(this.src)"
-          ></td>
-      </tr>
+      
 
     </tbody>
   </table>
@@ -1043,7 +1015,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>34 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1174,21 +1146,6 @@
           ></td>
       </tr>
 
-      <tr>
-        <td>Rings</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>To be organised by Iscon</td>
-        <td>Stick-ons</td>
-        <td><img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Rings-Clear-Deity-V2.png"
-            alt="Bangle"
-            class="table-thumb"
-            onclick="openImage(this.src)"
-          ></td>
-      </tr>
 
     </tbody>
   </table>
@@ -1216,7 +1173,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>31/32 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1450,23 +1407,7 @@
         </td>
       </tr>
 
-      <tr>
-        <td>Rings</td>
-        <td>1</td>
-        <td>-</td>
-        <td>9 inches</td>
-        <td>1 inch</td>
-        <td>-</td>
-        <td>Stick-ons without post and butterfly</td>
-        <td>
-          <img
-            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Rings-Clear-Deity-V2.png"
-            alt="Rings"
-            class="table-thumb"
-            onclick="openImage(this.src)"
-          >
-        </td>
-      </tr>
+      
     </tbody>
   </table>
 </div>
@@ -1494,7 +1435,7 @@
                 <div><span class="deity-meta-label">Metals</span><ul class="deity-meta-list"><li>925 Silver</li><li>Brass</li><li>Other precious metals</li><li class="opt">Optional — 14/18/22kt gold or platinum 950</li></ul></div>
                 <div><span class="deity-meta-label">Stones</span><ul class="deity-meta-list"><li>Cubic zirconia — white and coloured</li><li class="opt">Optional — diamond and lab-grown diamonds</li></ul></div>
                 <div><span class="deity-meta-label">Idol Height</span><ul class="deity-meta-list"><li>26 inches</li></ul></div>
-                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>-</li></ul></div>
+                <div><span class="deity-meta-label">Theme</span><ul class="deity-meta-list"><li>Colourfull Jewellery (Prefer Primary Colors)</li></ul></div>
               </div>
             </div>
             <div class="deity-table-wrap">
@@ -1784,6 +1725,9 @@
 
     // Evil Eye Cursor
     const cursorContainer = document.getElementById('evil-eye-cursor');
+    cursorContainer.style.position = 'fixed';
+cursorContainer.style.zIndex = '999999';
+cursorContainer.style.pointerEvents = 'none';
     let mouseX = 0, mouseY = 0;
     const svgHTML = '<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3445.6 3445.6"><defs><style>.st0{fill:#170f15}.st1{fill:#fff}.st2{fill:#7bbae5}.st3{fill:#2d2c80}</style></defs><circle class="st3" cx="1722.8" cy="1722.8" r="1715.7"/><circle class="st1" cx="1722.8" cy="1722.8" r="1144"/><circle class="st2" cx="1722.8" cy="1722.8" r="638.6"/><circle class="st0" cx="1722.8" cy="1722.8" r="276.4" transform="translate(-713.6 1722.8) rotate(-45)"/></svg>';
     cursorContainer.innerHTML = svgHTML;

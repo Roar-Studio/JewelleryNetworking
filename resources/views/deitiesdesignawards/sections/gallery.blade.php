@@ -442,18 +442,70 @@
         <button class="gallery-tab-btn" data-category="wooden">Wooden</button>
         <button class="gallery-tab-btn" data-category="deities">Deities</button>
       </div>
-      <div class="gallery-filter-tabs deity-filter-tabs" id="deity-filter-tabs" aria-label="Filter deities">
-        <button class="gallery-tab-btn deity-tab-btn active" data-deity="all">All Deities</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Natai">Natai</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Gaur">Gaur</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Lalita">Lalita</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Radha">Radharani / Radha</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Gopinath">Gopinath</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Krishna">Krishna</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Vishaka Devi">Vishakhadevi</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="Gopalji">Gopalji</button>
-        <button class="gallery-tab-btn deity-tab-btn" data-deity="All dietiestogether">All Together</button>
-      </div>
+      <div
+    class="gallery-filter-tabs deity-filter-tabs"
+    id="deity-filter-tabs"
+    aria-label="Filter deities"
+>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn active"
+        data-deity="all"
+    >
+        All Deities
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="nitai"
+    >
+        Nitai
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="gaur"
+    >
+        Gaur
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="lalita"
+    >
+        Lalita
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="radha"
+    >
+        Radharani / Radha
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="gopinath"
+    >
+        Gopinath
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="vishakhadevi"
+    >
+        Vishakhadevi
+    </button>
+
+    <button
+        class="gallery-tab-btn deity-tab-btn"
+        data-deity="gopalji"
+    >
+        Gopalji
+    </button>
+
+
+</div>
 
       <p style="
     text-align:center;
@@ -515,263 +567,622 @@
 
   <script src="{{ asset('dda-assets/js/gallery-data.js') }}"></script>
   <script>
-    const tb=document.querySelector('.mobile-menu-toggle'),dr=document.querySelector('.mobile-menu-drawer');
-    tb.addEventListener('click',()=>{tb.classList.toggle('active');dr.classList.toggle('active');document.body.classList.toggle('no-scroll');});
-    document.addEventListener('click',e=>{if(!dr.contains(e.target)&&!tb.contains(e.target)&&dr.classList.contains('active')){tb.classList.remove('active');dr.classList.remove('active');document.body.classList.remove('no-scroll');}});
-    document.querySelectorAll('.mobile-menu-links > a.mob-link, .mob-dropdown-menu a').forEach(l=>l.addEventListener('click',()=>{tb.classList.remove('active');dr.classList.remove('active');document.body.classList.remove('no-scroll');}));
-    document.querySelectorAll('.mob-dropdown-toggle').forEach(t=>{t.addEventListener('click',e=>{e.stopPropagation();const m=t.nextElementSibling,c=t.querySelector('.chev');document.querySelectorAll('.mob-dropdown-toggle').forEach(o=>{if(o!==t){o.nextElementSibling.classList.remove('open');o.querySelector('.chev').classList.remove('rotate');}});m.classList.toggle('open');c.classList.toggle('rotate');});});
+document.addEventListener("DOMContentLoaded", function () {
 
-    // Evil Eye Cursor
-    const cursorContainer = document.getElementById('evil-eye-cursor');
-    let mouseX = 0, mouseY = 0;
+    /* ============================================================
+       MOBILE MENU
+    ============================================================ */
 
-    const svgHTML = '<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3445.6 3445.6"><defs><style>.st0{fill:#170f15}.st1{fill:#fff}.st2{fill:#7bbae5}.st3{fill:#2d2c80}</style></defs><circle class="st3" cx="1722.8" cy="1722.8" r="1715.7"/><circle class="st1" cx="1722.8" cy="1722.8" r="1144"/><circle class="st2" cx="1722.8" cy="1722.8" r="638.6"/><circle class="st0" cx="1722.8" cy="1722.8" r="276.4" transform="translate(-713.6 1722.8) rotate(-45)"/></svg>';
+    const tb = document.querySelector('.mobile-menu-toggle');
+    const dr = document.querySelector('.mobile-menu-drawer');
 
-    cursorContainer.innerHTML = svgHTML;
-    const svg = cursorContainer.querySelector('svg');
-    const pupil = svg.querySelector('.st0');
-    const centerX = 1722.8;
-    const centerY = 1722.8;
-    const maxDistance = 200;
+    if (tb && dr) {
+        tb.addEventListener('click', () => {
+            tb.classList.toggle('active');
+            dr.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
 
-    function updatePupilPosition() {
-      const dx = mouseX - (cursorContainer.offsetLeft + 20);
-      const dy = mouseY - (cursorContainer.offsetTop + 20);
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      const angle = Math.atan2(dy, dx);
-      const moveDistance = Math.min(distance, maxDistance) * 0.15;
-      const newX = centerX + Math.cos(angle) * moveDistance;
-      const newY = centerY + Math.sin(angle) * moveDistance;
+        document.addEventListener('click', e => {
+            if (
+                !dr.contains(e.target) &&
+                !tb.contains(e.target) &&
+                dr.classList.contains('active')
+            ) {
+                tb.classList.remove('active');
+                dr.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        });
 
-      pupil.setAttribute('cx', newX);
-      pupil.setAttribute('cy', newY);
+        document
+            .querySelectorAll('.mobile-menu-links > a.mob-link, .mob-dropdown-menu a')
+            .forEach(link => {
+                link.addEventListener('click', () => {
+                    tb.classList.remove('active');
+                    dr.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+        document
+            .querySelectorAll('.mob-dropdown-toggle')
+            .forEach(toggle => {
+                toggle.addEventListener('click', e => {
+                    e.stopPropagation();
+
+                    const menu = toggle.nextElementSibling;
+                    const chev = toggle.querySelector('.chev');
+
+                    document
+                        .querySelectorAll('.mob-dropdown-toggle')
+                        .forEach(other => {
+                            if (other !== toggle) {
+                                other.nextElementSibling.classList.remove('open');
+                                other.querySelector('.chev')?.classList.remove('rotate');
+                            }
+                        });
+
+                    menu.classList.toggle('open');
+                    chev?.classList.toggle('rotate');
+                });
+            });
     }
 
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursorContainer.style.left = (mouseX - 20) + 'px';
-      cursorContainer.style.top = (mouseY - 20) + 'px';
-      updatePupilPosition();
-    });
 
-    // Gallery functionality - data loaded from gallery-data.js
+    /* ============================================================
+       EVIL EYE CURSOR
+       (single implementation — the duplicate copy that used to
+       live outside DOMContentLoaded has been removed)
+    ============================================================ */
+
+    const cursorContainer = document.getElementById('evil-eye-cursor');
+
+    if (cursorContainer) {
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        const svgHTML = `
+            <svg
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                viewBox="0 0 3445.6 3445.6"
+            >
+                <defs>
+                    <style>
+                        .st0 { fill:#170f15 }
+                        .st1 { fill:#fff }
+                        .st2 { fill:#7bbae5 }
+                        .st3 { fill:#2d2c80 }
+                    </style>
+                </defs>
+                <circle class="st3" cx="1722.8" cy="1722.8" r="1715.7"/>
+                <circle class="st1" cx="1722.8" cy="1722.8" r="1144"/>
+                <circle class="st2" cx="1722.8" cy="1722.8" r="638.6"/>
+                <circle class="st0" cx="1722.8" cy="1722.8" r="276.4" transform="translate(-713.6 1722.8) rotate(-45)"/>
+            </svg>
+        `;
+
+        cursorContainer.innerHTML = svgHTML;
+
+        cursorContainer.style.position = 'fixed';
+        cursorContainer.style.width = '40px';
+        cursorContainer.style.height = '40px';
+        cursorContainer.style.pointerEvents = 'none';
+        cursorContainer.style.zIndex = '99999';
+        cursorContainer.style.transform = 'translate(-50%, -50%)';
+
+        const svg = cursorContainer.querySelector('svg');
+        const pupil = svg.querySelector('.st0');
+
+        const centerX = 1722.8;
+        const centerY = 1722.8;
+        const maxDistance = 200;
+
+        function updatePupilPosition() {
+            const dx = mouseX - (cursorContainer.offsetLeft + 20);
+            const dy = mouseY - (cursorContainer.offsetTop + 20);
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const angle = Math.atan2(dy, dx);
+            const moveDistance = Math.min(distance, maxDistance) * 0.15;
+            const newX = centerX + Math.cos(angle) * moveDistance;
+            const newY = centerY + Math.sin(angle) * moveDistance;
+
+            pupil.setAttribute('cx', newX);
+            pupil.setAttribute('cy', newY);
+        }
+
+        document.addEventListener('mousemove', e => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorContainer.style.left = (mouseX - 20) + 'px';
+            cursorContainer.style.top = (mouseY - 20) + 'px';
+            updatePupilPosition();
+        });
+    }
+
+
+    /* ============================================================
+       GALLERY VARIABLES
+    ============================================================ */
+
     const IMAGES_PER_LOAD = 20;
+
     let currentCategory = 'all';
     let currentImages = [];
     let currentImageIndex = 0;
     let imagesDisplayed = 0;
+
     let currentDeityFilter = 'all';
 
-    // Inspiration PDF per category — shown as a download button above the grid
+
+    /* ============================================================
+       PDF FILES
+    ============================================================ */
+
     const CATEGORY_PDFS = {
-      wooden:    '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Wooden.pdf') }}',
-      carvings:  '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Carvings.pdf') }}',
-      deities:   '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Deities.pdf') }}',
-      paintings: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Painting.pdf') }}'
+        wooden: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Wooden.pdf') }}',
+        carvings: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Carvings.pdf') }}',
+        deities: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Deities.pdf') }}',
+        paintings: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Painting.pdf') }}'
     };
 
     const CATEGORY_LABELS = {
-      wooden:    'Wooden',
-      carvings:  'Carvings',
-      deities:   'Deities',
-      paintings: 'Painting'
+        wooden: 'Wooden',
+        carvings: 'Carvings',
+        deities: 'Deities',
+        paintings: 'Painting'
     };
 
     function updatePdfButton(category) {
-      const btn = document.getElementById('gallery-pdf-btn');
-      const pdf = CATEGORY_PDFS[category];
-      if (pdf) {
-        btn.href = pdf;
-        btn.setAttribute('download', decodeURIComponent(pdf.split('/').pop()));
-        btn.querySelector('span').textContent = `Download ${CATEGORY_LABELS[category]} Inspiration PDF`;
-        btn.style.display = 'inline-flex';
-      } else {
-        btn.style.display = 'none';
-      }
+        const btn = document.getElementById('gallery-pdf-btn');
+        if (!btn) return;
+
+        const pdf = CATEGORY_PDFS[category];
+
+        if (pdf) {
+            btn.href = pdf;
+            btn.setAttribute('download', decodeURIComponent(pdf.split('/').pop()));
+
+            const span = btn.querySelector('span');
+            if (span) {
+                span.textContent = `Download ${CATEGORY_LABELS[category]} Inspiration PDF`;
+            }
+
+            btn.style.display = 'inline-flex';
+        } else {
+            btn.style.display = 'none';
+        }
     }
 
-    function getDeityGroup(img) {
-      const source = decodeURIComponent(img.full || img.thumb || '');
-      const match = source.match(/\/Deities\/([^/]+)\//);
-      return match ? match[1] : '';
+
+    /* ============================================================
+       DEITY NORMALIZATION
+       Krishna and Gopinath are the SAME category — "gopinath".
+    ============================================================ */
+
+    function normalizeDeityName(name) {
+        if (!name) return '';
+
+        const value = name.toLowerCase().trim().replace(/[_-]/g, ' ');
+
+        if (value.includes('nitai')) return 'nitai';
+        if (value.includes('gaur')) return 'gaur';
+        if (value.includes('lalita')) return 'lalita';
+        if (value.includes('radha') || value.includes('radharani')) return 'radha';
+        if (value.includes('gopinath') || value.includes('krishna')) return 'gopinath';
+        if (value.includes('vishaka') || value.includes('vishakadevi')) return 'vishakhadevi';
+        if (value.includes('gopalji')) return 'gopalji';
+        if (value.includes('all together') || value.includes('all dieties')) return 'all-together';
+
+        return value;
     }
 
-    function updateDeityFilters(category) {
-      const filters = document.getElementById('deity-filter-tabs');
-      if (!filters) return;
 
-      filters.style.display = category === 'deities' ? 'flex' : 'none';
+    /* ============================================================
+       DETECT DEITY FROM IMAGE URL
+    ============================================================ */
 
-      if (category !== 'deities') {
-        currentDeityFilter = 'all';
-        filters.querySelectorAll('.deity-tab-btn').forEach(btn => {
-          btn.classList.toggle('active', btn.dataset.deity === 'all');
-        });
-      }
+    function getDeityGroup(image) {
+        let url = '';
+
+        if (typeof image === 'string') {
+            url = image;
+        } else if (image && typeof image === 'object') {
+            url = image.deity || image.category || image.name || image.full || image.thumb || '';
+        }
+
+        if (!url) return '';
+
+        const decoded = decodeURIComponent(url);
+        const filename = decoded.split('/').pop().toLowerCase();
+
+        if (filename.includes('nitai')) return 'nitai';
+        if (filename.includes('gaur')) return 'gaur';
+        if (filename.includes('lalita')) return 'lalita';
+        if (filename.includes('radha') || filename.includes('radharani')) return 'radha';
+        if (filename.includes('gopinath') || filename.includes('krishna')) return 'gopinath';
+        if (filename.includes('vishaka') || filename.includes('vishakadevi')) return 'vishakhadevi';
+        if (filename.includes('gopalji')) return 'gopalji';
+
+        if (image && typeof image === 'object') {
+            return normalizeDeityName(image.deity || image.category || image.name || '');
+        }
+
+        return '';
     }
+
+
+    /* ============================================================
+       GET IMAGE URL
+    ============================================================ */
+
+    function getThumbUrl(image) {
+        if (!image) return '';
+        if (typeof image === 'string') return image;
+        return image.thumb || image.full || '';
+    }
+
+    function getFullUrl(image) {
+        if (!image) return '';
+        if (typeof image === 'string') return image;
+        return image.full || image.thumb || '';
+    }
+
+
+    /* ============================================================
+       GET IMAGES FOR CATEGORY
+    ============================================================ */
 
     function getImagesForCategory(category) {
-      if (category === 'all') {
-        return [...galleryData.wooden, ...galleryData.carvings, ...galleryData.deities, ...galleryData.paintings];
-      }
+        if (category === 'all') {
+            return [
+                ...(galleryData.wooden || []),
+                ...(galleryData.carvings || []),
+                ...(galleryData.paintings || []),
+                ...(galleryData.deities || [])
+            ];
+        }
 
-      const images = galleryData[category] || [];
-      if (category !== 'deities' || currentDeityFilter === 'all') {
-        return images;
-      }
+        const images = galleryData[category] || [];
 
-      return images.filter(img => getDeityGroup(img) === currentDeityFilter);
+        if (category !== 'deities' || currentDeityFilter === 'all') {
+            return images;
+        }
+
+        if (currentDeityFilter === 'all-together') {
+            return images;
+        }
+
+        return images.filter(image => getDeityGroup(image) === currentDeityFilter);
     }
+
+
+    /* ============================================================
+       DEITY FILTER VISIBILITY
+    ============================================================ */
+
+    function updateDeityFilters(category) {
+        const filters = document.getElementById('deity-filter-tabs');
+        if (!filters) return;
+
+        if (category === 'deities') {
+            filters.style.display = 'flex';
+        } else {
+            filters.style.display = 'none';
+            currentDeityFilter = 'all';
+
+            filters.querySelectorAll('.deity-tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.deity === 'all');
+            });
+        }
+    }
+
+
+    /* ============================================================
+       RENDER GALLERY
+    ============================================================ */
 
     function renderGallery(category) {
-      const container = document.getElementById('gallery-container');
-      const allImages = getImagesForCategory(category);
+        const container = document.getElementById('gallery-container');
+        if (!container) return;
 
-      currentImages = allImages;
-      imagesDisplayed = 0;
-      container.innerHTML = '';
+        currentImages = getImagesForCategory(category);
+        currentImageIndex = 0;
+        imagesDisplayed = 0;
 
-      updateDeityFilters(category);
-      updatePdfButton(category);
-      loadMoreImages();
+        container.innerHTML = '';
+
+        updateDeityFilters(category);
+        updatePdfButton(category);
+
+        loadMoreImages();
     }
+
+
+    /* ============================================================
+       LOAD MORE IMAGES
+    ============================================================ */
 
     function loadMoreImages() {
-      const container = document.getElementById('gallery-container');
-      const loadBtn = document.getElementById('load-more-btn');
-      const infoDiv = document.getElementById('gallery-info');
+        const container = document.getElementById('gallery-container');
+        const loadBtn = document.getElementById('load-more-btn');
+        const infoDiv = document.getElementById('gallery-info');
 
-      const startIdx = imagesDisplayed;
-      const endIdx = Math.min(imagesDisplayed + IMAGES_PER_LOAD, currentImages.length);
-      const imagesToAdd = currentImages.slice(startIdx, endIdx);
+        if (!container) return;
 
-      const html = imagesToAdd.map((img, idx) => `
-        <div class="gal-item" onclick="openLightbox(${startIdx + idx})">
-          <img src="${img.thumb}" alt="Gallery image" loading="lazy">
-          <div class="gal-overlay"><span>View Image</span></div>
-        </div>
-      `).join('');
+        const startIdx = imagesDisplayed;
+        const endIdx = Math.min(imagesDisplayed + IMAGES_PER_LOAD, currentImages.length);
+        const imagesToAdd = currentImages.slice(startIdx, endIdx);
 
-      container.innerHTML += html;
-      imagesDisplayed = endIdx;
+        const html = imagesToAdd.map((image, idx) => {
+            const thumb = getThumbUrl(image);
+            if (!thumb) return '';
 
-      // Update load more button
-      if (imagesDisplayed >= currentImages.length) {
-        loadBtn.style.display = 'none';
-        infoDiv.textContent = `Showing all ${currentImages.length} images`;
-      } else {
-        loadBtn.style.display = 'block';
-        infoDiv.textContent = `Showing ${imagesDisplayed} of ${currentImages.length} images`;
-      }
+            return `
+                <div class="gal-item" onclick="openLightbox(${startIdx + idx})">
+                    <img
+                        src="${thumb}"
+                        alt="Deities Design Awards Gallery Image"
+                        loading="lazy"
+                        decoding="async"
+                        onerror="console.error('Failed to load:', this.src); this.parentElement.style.display='none';"
+                    >
+                    <div class="gal-overlay"><span>View Image</span></div>
+                </div>
+            `;
+        }).join('');
+
+        container.innerHTML += html;
+        imagesDisplayed = endIdx;
+
+        if (loadBtn) {
+            loadBtn.style.display = (imagesDisplayed >= currentImages.length) ? 'none' : 'block';
+        }
+
+        if (infoDiv) {
+            infoDiv.textContent = (currentImages.length === 0)
+                ? 'No images available'
+                : `Showing ${imagesDisplayed} of ${currentImages.length} images`;
+        }
     }
+
+
+    /* ============================================================
+       LIGHTBOX
+    ============================================================ */
 
     function showFullImage(src) {
-      const content = document.getElementById('lightbox-content');
-      const img = document.getElementById('lightbox-img');
-      const dl = document.getElementById('lightbox-download');
-      content.classList.add('loading');
-      // Point the download link at the full image, using the original filename
-      dl.href = src;
-      dl.setAttribute('download', decodeURIComponent(src.split('/').pop()));
-      const loader = new Image();
-      loader.onload = () => {
-        img.src = src;
-        content.classList.remove('loading');
-      };
-      loader.src = src;
+        const content = document.getElementById('lightbox-content');
+        const img = document.getElementById('lightbox-img');
+        const dl = document.getElementById('lightbox-download');
+
+        if (!src) return;
+
+        content.classList.add('loading');
+        dl.href = src;
+        dl.setAttribute('download', decodeURIComponent(src.split('/').pop()));
+
+        const loader = new Image();
+
+        loader.onload = () => {
+            img.src = src;
+            img.alt = 'Deities Design Awards';
+            content.classList.remove('loading');
+        };
+
+        loader.onerror = () => {
+            content.classList.remove('loading');
+            console.error('Failed to load full image:', src);
+        };
+
+        loader.src = src;
     }
+
+
+    /* ============================================================
+       DOWNLOAD IMAGE
+    ============================================================ */
 
     async function downloadImage(e) {
-      const dl = document.getElementById('lightbox-download');
-      const src = dl.getAttribute('href');
-      if (!src || src === '#') return;
-      // Fetch as a blob so the browser saves the file instead of navigating to it
-      e.preventDefault();
-      try {
-        const res = await fetch(src);
-        const blob = await res.blob();
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = decodeURIComponent(src.split('/').pop());
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-      } catch (err) {
-        // Fallback: open the image in a new tab if the fetch fails
-        window.open(src, '_blank');
-      }
+        e.preventDefault();
+
+        const dl = document.getElementById('lightbox-download');
+        const src = dl.getAttribute('href');
+
+        if (!src || src === '#') return;
+
+        try {
+            const response = await fetch(src);
+            if (!response.ok) throw new Error('Image download failed');
+
+            const blob = await response.blob();
+            const objectUrl = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = objectUrl;
+            a.download = decodeURIComponent(src.split('/').pop());
+
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+
+            URL.revokeObjectURL(objectUrl);
+        } catch (error) {
+            console.error('Download failed:', error);
+            window.open(src, '_blank');
+        }
     }
 
-    function openLightbox(index) {
-      currentImageIndex = index;
-      document.getElementById('lightbox').classList.add('active');
-      showFullImage(currentImages[index].full);
+
+    /* ============================================================
+       OPEN / CLOSE / NAV LIGHTBOX
+    ============================================================ */
+
+    window.openLightbox = function(index) {
+        if (!currentImages.length) return;
+
+        currentImageIndex = index;
+
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.add('active');
+
+        showFullImage(getFullUrl(currentImages[currentImageIndex]));
+    };
+
+    window.closeLightbox = function() {
+        document.getElementById('lightbox').classList.remove('active');
+    };
+
+    window.nextImage = function() {
+        if (!currentImages.length) return;
+        currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+        showFullImage(getFullUrl(currentImages[currentImageIndex]));
+    };
+
+    window.previousImage = function() {
+        if (!currentImages.length) return;
+        currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+        showFullImage(getFullUrl(currentImages[currentImageIndex]));
+    };
+
+    window.downloadImage = downloadImage;
+    window.loadMoreImages = loadMoreImages;
+
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.addEventListener('click', e => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
     }
 
-    function closeLightbox() {
-      document.getElementById('lightbox').classList.remove('active');
-    }
 
-    function nextImage() {
-      currentImageIndex = (currentImageIndex + 1) % currentImages.length;
-      showFullImage(currentImages[currentImageIndex].full);
-    }
-
-    function previousImage() {
-      currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
-      showFullImage(currentImages[currentImageIndex].full);
-    }
-
-    document.getElementById('lightbox').addEventListener('click', (e) => {
-      if (e.target.id === 'lightbox') closeLightbox();
-    });
+    /* ============================================================
+       MAIN CATEGORY BUTTONS
+    ============================================================ */
 
     document.querySelectorAll('.gallery-tab-btn[data-category]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        document.querySelectorAll('.gallery-tab-btn[data-category]').forEach(b => b.classList.remove('active'));
-        e.currentTarget.classList.add('active');
-        currentCategory = e.currentTarget.dataset.category;
-        if (currentCategory !== 'deities') currentDeityFilter = 'all';
-        renderGallery(currentCategory);
-      });
+        btn.addEventListener('click', e => {
+            document.querySelectorAll('.gallery-tab-btn[data-category]').forEach(b => {
+                b.classList.remove('active');
+            });
+
+            e.currentTarget.classList.add('active');
+            currentCategory = e.currentTarget.dataset.category;
+
+            if (currentCategory !== 'deities') {
+                currentDeityFilter = 'all';
+            }
+
+            renderGallery(currentCategory);
+        });
     });
+
+
+    /* ============================================================
+       DEITY BUTTONS
+       (Krishna button intentionally not used — Gopinath covers
+       both Gopinath + Krishna)
+    ============================================================ */
 
     document.querySelectorAll('.deity-tab-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        document.querySelectorAll('.deity-tab-btn').forEach(b => b.classList.remove('active'));
-        e.currentTarget.classList.add('active');
-        currentDeityFilter = e.currentTarget.dataset.deity;
-        currentCategory = 'deities';
-        document.querySelectorAll('.gallery-tab-btn[data-category]').forEach(b => {
-          b.classList.toggle('active', b.dataset.category === 'deities');
+        btn.addEventListener('click', e => {
+            document.querySelectorAll('.deity-tab-btn').forEach(b => {
+                b.classList.remove('active');
+            });
+
+            e.currentTarget.classList.add('active');
+            currentDeityFilter = normalizeDeityName(e.currentTarget.dataset.deity);
+            currentCategory = 'deities';
+
+            document.querySelectorAll('.gallery-tab-btn[data-category]').forEach(b => {
+                b.classList.toggle('active', b.dataset.category === 'deities');
+            });
+
+            renderGallery('deities');
         });
-        renderGallery(currentCategory);
-      });
     });
 
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (document.getElementById('lightbox').classList.contains('active')) {
+
+    /* ============================================================
+       KEYBOARD NAVIGATION
+    ============================================================ */
+
+    document.addEventListener('keydown', e => {
+        const lb = document.getElementById('lightbox');
+        if (!lb || !lb.classList.contains('active')) return;
+
         if (e.key === 'ArrowRight') nextImage();
         if (e.key === 'ArrowLeft') previousImage();
         if (e.key === 'Escape') closeLightbox();
-      }
     });
 
+
+    /* ============================================================
+       URL PARAMETERS
+       Examples:
+       ?category=carvings
+       ?category=wooden
+       ?category=paintings
+       ?category=deities
+       ?category=deities&deity=nitai
+       ?category=deities&deity=gopinath
+    ============================================================ */
+
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-    const deity = urlParams.get('deity');
-    if (category && galleryData[category]) {
-      currentCategory = category;
-      document.querySelector(`[data-category="${category}"]`).click();
-      const deityBtn = [...document.querySelectorAll('.deity-tab-btn')].find(btn => btn.dataset.deity === deity);
-      if (category === 'deities' && deityBtn) deityBtn.click();
-    } else {
-      renderGallery('all');
+    let urlCategory = urlParams.get('category');
+    const urlDeity = urlParams.get('deity');
+
+    const categoryMap = {
+        painting: 'paintings',
+        carving: 'carvings',
+        wood: 'wooden',
+        deity: 'deities'
+    };
+
+    if (categoryMap[urlCategory]) {
+        urlCategory = categoryMap[urlCategory];
     }
-  </script>
+
+
+    /* ============================================================
+       INITIAL LOAD
+    ============================================================ */
+
+    if (urlCategory && galleryData[urlCategory]) {
+        currentCategory = urlCategory;
+
+        const categoryButton = document.querySelector(`[data-category="${urlCategory}"]`);
+
+        if (categoryButton) {
+            categoryButton.click();
+        } else {
+            renderGallery(urlCategory);
+        }
+
+        if (urlCategory === 'deities' && urlDeity) {
+            const normalizedUrlDeity = normalizeDeityName(urlDeity);
+
+            const deityButton = [...document.querySelectorAll('.deity-tab-btn')]
+                .find(btn => normalizeDeityName(btn.dataset.deity) === normalizedUrlDeity);
+
+            if (deityButton) {
+                deityButton.click();
+            }
+        }
+    } else {
+        const allButton = document.querySelector('[data-category="all"]');
+
+        if (allButton) {
+            allButton.click();
+        } else {
+            renderGallery('all');
+        }
+    }
+
+});
+</script>
 </body>
 </html>
