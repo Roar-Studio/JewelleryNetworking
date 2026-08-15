@@ -565,7 +565,7 @@
     </div>
   </footer>
 
-  <script src="{{ asset('dda-assets/js/gallery-data.js') }}"></script>
+  <script src="{{ asset('dda-assets/js/gallery-data.js') }}?v={{ filemtime(public_path('dda-assets/js/gallery-data.js')) }}"></script>
   <script>
 document.addEventListener("DOMContentLoaded", function () {
 
