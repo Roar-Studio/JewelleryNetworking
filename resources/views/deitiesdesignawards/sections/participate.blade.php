@@ -206,7 +206,7 @@
             <tr><th>Deities Categories</th><th>Fee</th><th>Details</th></tr>
           </thead>
           <tbody>
-            <tr><td>Entry Fee</td><td><span class="fee-inr">INR &#8377;2,500</span> <span class="fee-gst">(incl. GST) /</span> <span class="fee-usd">USD $29</span></td><td>Participants are eligible to submit up to 2 categories, Category 1  Radharani or Gopinath. <br><br>One entry in any of the other Deity categories, in accordance with the competition guidelines.</td></tr>
+            <tr><td>General Category</td><td><span class="fee-inr">INR &#8377;2,500</span> <span class="fee-gst">(incl. GST) /</span> <span class="fee-usd">USD $29</span></td><td>Participants are eligible to submit up to 2 categories, Category 1  Radharani or Gopinath. <br><br>One entry in any of the other Deity categories, in accordance with the competition guidelines.</td></tr>
             <tr><td>Special Category</td><td><span class="fee-inr">INR &#8377;9,000</span> <span class="fee-gst">(incl. GST) /</span> <span class="fee-usd">USD $99</span></td><td>Create 1 exclusive piece for any one deity</td></tr>
           </tbody>
         </table>
