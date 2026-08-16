@@ -2567,3 +2567,261 @@ p { font-size: 1rem; line-height: 1.85; opacity: 1; }
   .insp-theme-label { font-size:1.5rem; }
   .insp-theme { gap:14px; }
 }
+
+/* =========================================================
+   MOBILE RESPONSIVE - DEITY CATEGORY TABLES
+   DESKTOP REMAINS COMPLETELY UNCHANGED
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------
+       DEITY CARD
+    ----------------------------------------- */
+
+    .deity-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .deity-card-body {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .deity-card-top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .deity-card-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .deity-card-visual img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .deity-meta {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       TABLE WRAPPER
+    ----------------------------------------- */
+
+    .deity-table-wrap {
+        width: 100%;
+        overflow: visible;
+        margin-top: 20px;
+    }
+
+
+    /* -----------------------------------------
+       TURN TABLE INTO VERTICAL CARDS
+    ----------------------------------------- */
+
+    .deity-table {
+        width: 100%;
+        display: block;
+        border: none;
+    }
+
+    .deity-table thead {
+        display: none;
+    }
+
+    .deity-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .deity-table tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 18px;
+        background: #ffffff;
+        border: 1px solid rgba(204, 170, 62, 0.35);
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------
+       EACH TABLE CELL
+    ----------------------------------------- */
+
+    .deity-table tbody td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 8px 0;
+
+        border: none;
+        text-align: left;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------
+       LABELS FOR EACH COLUMN
+    ----------------------------------------- */
+
+    .deity-table tbody td:nth-child(1)::before {
+        content: "Jewellery Piece";
+    }
+
+    .deity-table tbody td:nth-child(2)::before {
+        content: "No. of Pieces";
+    }
+
+    .deity-table tbody td:nth-child(3)::before {
+        content: "No. of Pairs";
+    }
+
+    .deity-table tbody td:nth-child(4)::before {
+        content: "Length";
+    }
+
+    .deity-table tbody td:nth-child(5)::before {
+        content: "Breadth";
+    }
+
+    .deity-table tbody td:nth-child(6)::before {
+        content: "Width";
+    }
+
+    .deity-table tbody td:nth-child(7)::before {
+        content: "Specifications";
+    }
+
+    .deity-table tbody td:nth-child(8)::before {
+        content: "Reference Image";
+    }
+
+
+    /* -----------------------------------------
+       LABEL STYLE
+    ----------------------------------------- */
+
+    .deity-table tbody td::before {
+        display: block;
+
+        margin-bottom: 4px;
+
+        font-size: 11px;
+        font-weight: 600;
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #b38f24;
+    }
+
+
+    /* -----------------------------------------
+       JEWELLERY NAME
+    ----------------------------------------- */
+
+    .deity-table tbody td:first-child {
+        padding-top: 0;
+        padding-bottom: 14px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        color: #222;
+    }
+
+
+    /* -----------------------------------------
+       REFERENCE IMAGE
+    ----------------------------------------- */
+
+    .deity-table tbody td:last-child {
+        padding-top: 12px;
+    }
+
+    .deity-table .table-thumb {
+        display: block;
+
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+
+        margin-top: 8px;
+
+        object-fit: contain;
+
+        cursor: pointer;
+    }
+
+
+    /* -----------------------------------------
+       REMOVE OLD SWIPE MESSAGE
+    ----------------------------------------- */
+
+    .table-scroll-note {
+        display: none;
+    }
+
+
+    /* -----------------------------------------
+       DEITY META INFORMATION
+    ----------------------------------------- */
+
+    .deity-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .deity-meta > div {
+        width: 100%;
+    }
+
+    .deity-meta-list {
+        padding-left: 18px;
+        margin-top: 6px;
+    }
+
+
+    /* -----------------------------------------
+       DEITY HEADER
+    ----------------------------------------- */
+
+    .deity-card-head {
+        width: 100%;
+    }
+
+    .deity-card-title {
+        min-width: 0;
+    }
+
+    .deity-card-title h3 {
+        font-size: 18px;
+    }
+
+
+    /* -----------------------------------------
+       PREVENT HORIZONTAL PAGE SCROLL
+    ----------------------------------------- */
+
+    .deity-accordion,
+    .deity-card,
+    .deity-card-body,
+    .container {
+        max-width: 100%;
+    }
+
+}
