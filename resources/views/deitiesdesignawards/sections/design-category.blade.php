@@ -170,7 +170,7 @@
         <td>6 inches</td>
         <td>1 inch</td>
         <td>1–1.5 inches</td>
-        <td>Thick thread to tie up -adjustable and flexible. Total circumference is 12 inches and front prefer 6 inches.</td>
+        <td>Thick thread to tie up -adjustable and flexible. total circumference is 12 inches and front prefer 6 inches.</td>
         <td>
           <img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Nitai/Waistbelt-Clear-Deity.png"
@@ -201,6 +201,22 @@
 
       <tr>
         <td>Jhumka Earrings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 – 2.5 inches</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Payal"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Long Earrings</td>
         <td>2</td>
         <td>1</td>
         <td>2 – 2.5 inches</td>
@@ -540,7 +556,7 @@
     <tbody>
 
       <tr>
-        <td>Paisley</td>
+        <td>Head Ornament - Paisley Kalgi With Mathapatti</td>
         <td>1</td>
         <td>1</td>
         <td>3 inches</td>
@@ -555,7 +571,7 @@
           ></td>
       </tr>
 
-      <tr>
+      <!-- <tr>
         <td>Damini/Mathapatti</td>
         <td>1</td>
         <td>1</td>
@@ -569,7 +585,7 @@
             class="table-thumb"
             onclick="openImage(this.src)"
           ></td>
-      </tr>
+      </tr> -->
 
       <tr>
         <td>Maangtikha</td>
@@ -685,7 +701,7 @@
 
       <tr>
         <td>Necklace Set (Layer 2)</td>
-        <td>1</td>
+        <td>-</td>
         <td>-</td>
         <td>11 inches</td>
         <td>1 inch</td>
@@ -701,7 +717,7 @@
 
       <tr>
         <td>Necklace Set (Layer 3)</td>
-        <td>1</td>
+        <td>-</td>
         <td>-</td>
         <td>12 inches</td>
         <td>1 inch</td>
@@ -779,13 +795,13 @@
     <tbody>
 
       <tr>
-        <td>Paiseley</td>
+        <td>Head Ornament - Paisley Kalgi With Mathapatti</td>
         <td>1</td>
         <td>0</td>
         <td>3 inches</td>
         <td>2 inches</td>
-        <td>-</td>
-        <td>Paisley kalgi turns towards left side facing/Height 5 inch, 1.5 inch pin at the back, will be made as a set with mathapatti. Mechanism will be like brooch pins in the V shape with 2 sticks at the back that goes into the hair.</td>
+        <td>mechanism will be like brooch pins in the V shape - with 2 sticks at the back that goes into the hair</td>
+        <td>Paisley kalgi turns towards left side facing/Height 5 inch, 1.5 inch pin at the back , will be made as a set with mathapatti.</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Paisley-Clear-Deity-V2.png"
             alt="Bangle"
@@ -1116,12 +1132,12 @@
 
       <tr>
         <td>Long Necklace</td>
-        <td>1</td>
+        <td>-</td>
         <td>-</td>
         <td>28 inches</td>
         <td>-</td>
         <td>-</td>
-        <td>Detachable/ adjustable threads. With single pendant which will be large - (Haaram), goes around the body like a janeo, crossing the body like a janeo.</td>
+        <td>Detachable/ adjustable threads. With single pendant which will be large - (Haaram), go around the cross on body like a janeo.</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Long-Necklace-Clear-Deity-V2.png"
             alt="Bangle"
@@ -1137,7 +1153,7 @@
         <td>2 inches</td>
         <td>6.5 inches</td>
         <td>0</td>
-        <td>-</td>
+        <td>Flexible/loose/openable bracelet</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Bracelet-Clear-Deity-V2.png"
             alt="Bangle"
@@ -1192,7 +1208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Paisley</td>
+        <td>Paisley Kalgi With Mathapatti</td>
         <td>1</td>
         <td>-</td>
         <td>3 inches</td>
