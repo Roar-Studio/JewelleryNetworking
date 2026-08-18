@@ -203,9 +203,9 @@
         <td>Jhumka Earrings</td>
         <td>2</td>
         <td>1</td>
-        <td>2 – 2.5 inches</td>
-        <td>-</td>
-        <td>-</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
@@ -652,12 +652,28 @@
       </tr>
 
       <tr>
-        <td>Earings</td>
+        <td>Jhumka Earings</td>
         <td>2</td>
         <td>1</td>
-        <td>2 inches</td>
-        <td>2 inches</td>
-        <td>-</td>
+        <td>2 </td>
+        <td>2.5 </td>
+        <td>2.5</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Earring-2-Clear-Deity.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Long Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2.5 </td>
+        <td>2.5</td>
         <td>Stick-ons without post and butterfly</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/lalita/Earring-2-Clear-Deity.png"
@@ -801,7 +817,7 @@
         <td>3 inches</td>
         <td>2 inches</td>
         <td>mechanism will be like brooch pins in the V shape - with 2 sticks at the back that goes into the hair</td>
-        <td>Paisley kalgi turns towards left side facing/Height 5 inch, 1.5 inch pin at the back , will be made as a set with mathapatti.</td>
+        <td>Paisley kalgi turns towards left side facing/Height 5 inch, 1.5 inch pin at the back , will be made as a set with mathapatti ( Flexible, will be made as a set with the paisely kalgi.)</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Radha+Rani/Paisley-Clear-Deity-V2.png"
             alt="Bangle"
@@ -891,12 +907,28 @@
       </tr>
 
       <tr>
-        <td>Earings</td>
+        <td>Jhumka Earings</td>
         <td>2</td>
         <td>1</td>
         <td>2 inches</td>
         <td>2.5 inches</td>
-        <td>-</td>
+        <td>2.5 inches</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
+
+      <tr>
+        <td>Long Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
         <td><img
             src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
@@ -1113,6 +1145,21 @@
             onclick="openImage(this.src)"
           ></td>
       </tr>
+      <tr>
+        <td>Long Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>-</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td><img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Krishna/Long-Earrings-2-Clear-Deity-V2.png"
+            alt="Bangle"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          ></td>
+      </tr>
 
       <tr>
         <td>Chokers</td>
@@ -1208,7 +1255,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Paisley Kalgi With Mathapatti</td>
+        <td>Paisley Kalgi With Mathapatti / Damini</td>
         <td>1</td>
         <td>-</td>
         <td>3 inches</td>
@@ -1225,7 +1272,7 @@
         </td>
       </tr>
 
-      <tr>
+      <!-- <tr>
         <td>Damini/Mathapatti</td>
         <td>1</td>
         <td>-</td>
@@ -1241,7 +1288,7 @@
             onclick="openImage(this.src)"
           >
         </td>
-      </tr>
+      </tr> -->
 
       <tr>
         <td>Maangtikha</td>
@@ -1316,12 +1363,30 @@
       </tr>
 
       <tr>
+        <td>Jhumka Earings</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2 inches</td>
+        <td>2.5 inches</td>
+        <td>2.5 inches</td>
+        <td>Stick-ons without post and butterfly</td>
+        <td>
+          <img
+            src="https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Final+Images/Vishaka+Devi/Earring-Clear-Deity-V2.png"
+            alt="Long Earings"
+            class="table-thumb"
+            onclick="openImage(this.src)"
+          >
+        </td>
+      </tr>
+
+      <tr>
         <td>Long Earings</td>
         <td>2</td>
         <td>1</td>
         <td>2 inches</td>
-        <td>2 inches</td>
-        <td>-</td>
+        <td>2.5 inches</td>
+        <td>2.5 inches</td>
         <td>Stick-ons without post and butterfly</td>
         <td>
           <img
