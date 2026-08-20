@@ -29,7 +29,7 @@ class CustomerAuthController extends Controller
         // Mail::to('vishal.pawar@vervali.com')->send(new MembershipAcknowledgementMail('abcd', Carbon::now()->addDays(30)->format('Y-m-d'), 'Premium', 'Some benefits', 'ORD123456'));
         // Mail::to('vishal.pawar@vervali.com')->send(new EventRegisteredMail('abcd', 'abc', 'address 123', Carbon::now()->addDays(30)->format('Y-m-d h:i:s'), 'ORD123456'));
         // Mail::to('vishal.pawar@vervali.com')->send(new SuspiciousLoginMail('abcd', 'abc', 'address 123', Carbon::now()->addDays(30)->format('Y-m-d h:i:s'), 'Device Info', 'Browser Info'));
-    
+
         return response()->json(['status' => true, 'message' => 'Dummy mail sent successfully'], 200);
     }
 
@@ -60,15 +60,22 @@ class CustomerAuthController extends Controller
             'first_name' => 'required|string|max:50',
             'last_name' => 'required|string|max:50',
             'username' => [
-                'required', 'string', 'min:3', 'max:50', 'regex:/^[A-Za-z0-9\s.]+$/',
+                'required',
+                'string',
+                'min:3',
+                'max:50',
+                'regex:/^[A-Za-z0-9\s.]+$/',
                 Rule::unique('customers')->where('is_deleted', 0),
             ],
             'email' => [
-                'required', 'email', 'max:60',
+                'required',
+                'email',
+                'max:60',
                 Rule::unique('customers')->where('is_deleted', 0),
             ],
             'mobile_no' => [
-                'required', 'digits_between:7,15', 'regex:/^[6-9]\d{6,14}$/',
+                'required',
+                'digits_between:7,15',
                 Rule::unique('customers')->where('is_deleted', 0),
             ],
             'password' => [
@@ -84,7 +91,7 @@ class CustomerAuthController extends Controller
             'password.regex' => 'Password must include uppercase, lowercase, number, and special character.',
             'accept_consent.required' => 'You must accept the Terms and Conditions.',
         ]);
-    
+
         if ($validator->fails()) {
             return Response::json([
                 'status' => false,
@@ -92,19 +99,19 @@ class CustomerAuthController extends Controller
                 'errors' => $validator->errors()
             ], 402);
         }
-    
-        $old_customer = Customer::where(function($query) use ($request) {
-                $query->where('mobile_no', $request->mobile_no)
-                    ->orWhere('email', $request->email)
-                    ->orWhere('username', $request->username);
-            })
-        ->first();
-    
+
+        $old_customer = Customer::where(function ($query) use ($request) {
+            $query->where('mobile_no', $request->mobile_no)
+                ->orWhere('email', $request->email)
+                ->orWhere('username', $request->username);
+        })
+            ->first();
+
         if ($old_customer) {
             $requestCount = OtpRequest::where('customer_id', $old_customer->id)
                 ->where('requested_at', '>=', Carbon::now()->subMinutes(30))
                 ->count();
-    
+
             if ($requestCount >= 5) {
                 return Response::json([
                     'status' => false,
@@ -112,7 +119,7 @@ class CustomerAuthController extends Controller
                 ], 200);
             }
         }
-    
+
         // If connection exists and is already active
         if ($old_customer) {
             // Agar record already active hai aur delete nahi hua
@@ -131,7 +138,7 @@ class CustomerAuthController extends Controller
 
         try {
             DB::beginTransaction();
-    
+
             // Create a new user if no connection found
             $new_customer = new Customer();
             $new_customer->first_name = $request->first_name;
@@ -148,15 +155,15 @@ class CustomerAuthController extends Controller
             $new_customer->is_deleted = 1;
             $new_customer->save();
 
-        
+
             // Send OTP
             $otp = Functions::sendOTP($new_customer->id);
-        
+
             // Example: send OTP to email (adjust 'vishal.pawar@gmail.com's accordingly)
-            
+
             Mail::to($new_customer->email)->send(new OtpMail($otp->otp));
             DB::commit();
-        
+
             return Response::json([
                 'status' => true,
                 'message' => 'OTP sent successfully',
@@ -164,7 +171,6 @@ class CustomerAuthController extends Controller
                 'customer_id' => $new_customer->id,
                 'token' => $otp->token
             ], 200);
-
         } catch (QueryException $e) {
             DB::rollBack();
             // Log the SQL + bindings for debugging
@@ -178,7 +184,6 @@ class CustomerAuthController extends Controller
                 'status' => false,
                 'message' => 'Some error occurred while creating customer. Please try again.'
             ], 500);
-
         } catch (\Exception $e) {
             DB::rollBack();
             Log::error('General Error while saving customer', ['error' => $e->getMessage()]);
@@ -193,9 +198,9 @@ class CustomerAuthController extends Controller
     {
         $customer = Customer::find($request->id);
         $requestCount = OtpRequest::where('customer_id', $request->id)
-                        ->where('requested_at', '>=', Carbon::now()->subMinutes(30))
-                        ->count();
-        
+            ->where('requested_at', '>=', Carbon::now()->subMinutes(30))
+            ->count();
+
         if ($requestCount >= 5) {
             return response()->json([
                 'status' => false,
@@ -204,9 +209,9 @@ class CustomerAuthController extends Controller
         }
 
         $otp = Functions::sendOTP($request->id);
-            
+
         Mail::to($customer->email)->send(new OtpMail($otp->otp));
-        
+
         return response()->json([
             'status' => true,
             'message' => 'OTP has been resent successfully.',
@@ -230,12 +235,12 @@ class CustomerAuthController extends Controller
 
         $customer = Customer::find($request->customer_id);
 
-        
-        $old_customer = Customer::where(function($query) use ($customer) {
-                $query->where('mobile_no', $customer->mobile_no)
-                    ->orWhere('email', $customer->email)
-                    ->orWhere('username', $customer->username);
-            })
+
+        $old_customer = Customer::where(function ($query) use ($customer) {
+            $query->where('mobile_no', $customer->mobile_no)
+                ->orWhere('email', $customer->email)
+                ->orWhere('username', $customer->username);
+        })
             ->where('id', '!=', $customer->id)
             ->where('is_deleted', 0)
             ->first();
@@ -245,7 +250,7 @@ class CustomerAuthController extends Controller
                 'message' => 'Connection already exists. Please contact admin support.'
             ], 200);
         }
-        
+
         if ($customer->otp_attempts >= 3) {
             $firstFailedAttempt = new Carbon($customer->first_failed_attempt_at);
             if ($firstFailedAttempt->diffInMinutes(Carbon::now()) < 15) {
@@ -260,7 +265,7 @@ class CustomerAuthController extends Controller
                 $customer->save();
             }
         }
-    
+
         $otpEntry = OtpMaster::where('token', $request->token)->where('customer_id', $request->customer_id)->where('otp', $request->otp)
             ->whereBetween('created_at', [
                 Carbon::now()->subMinutes(10),
@@ -269,12 +274,12 @@ class CustomerAuthController extends Controller
             ->first();
 
         if ($otpEntry) {
-        // Check if OTP is correct and not expired
+            // Check if OTP is correct and not expired
             if ($otpEntry->otp == $request->otp) {
                 $otpEntry->status = 1;
                 $otpEntry->verified_at = Carbon::now()->format('Y-m-d H:i:s');
                 $otpEntry->save();
-        
+
                 $customer->otp_attempts = 0;
                 $customer->first_failed_attempt_at = null;
                 $customer->is_active = 1;
@@ -294,21 +299,20 @@ class CustomerAuthController extends Controller
                 } else {
                     $membershipId = '';
                 }
-        
+
                 Mail::to($customer->email)->send(new WelcomeMail($customer->first_name, $membershipId));
                 Mail::to(env('SALES_EMAIL'))->cc(['jagdish.gaikwad@vervali.com', 'jay.gupta@vervali.com'])
-                        ->send(new WelcomeAdminMail($customer, $membershipId));
+                    ->send(new WelcomeAdminMail($customer, $membershipId));
 
                 return Response::json(['status' => true, 'message' => 'OTP Validated', 'customer_id' => $otpEntry->customer_id, 'token' => $request->token], 200);
-            }
-            else {
+            } else {
                 // Increment the failed attempts
                 if ($customer->otp_attempts == 0) {
                     $customer->first_failed_attempt_at = Carbon::now();
                 }
                 $customer->otp_attempts++;
                 $customer->save();
-        
+
                 return response()->json([
                     'status' => false,
                     'message' => 'Invalid OTP'
@@ -316,7 +320,6 @@ class CustomerAuthController extends Controller
             }
         }
         return Response::json(['status' => false, 'message' => 'Invalid OTP or Token'], 500);
-        
     }
 
     public function validateForgotOtp(Request $request)
@@ -332,7 +335,7 @@ class CustomerAuthController extends Controller
         }
 
         $customer = Customer::find($request->customer_id);
-        
+
         if ($customer->otp_attempts >= 3) {
             $firstFailedAttempt = new Carbon($customer->first_failed_attempt_at);
             if ($firstFailedAttempt->diffInMinutes(Carbon::now()) < 15) {
@@ -347,7 +350,7 @@ class CustomerAuthController extends Controller
                 $customer->save();
             }
         }
-    
+
         $otpEntry = OtpMaster::where('token', $request->token)->where('customer_id', $request->customer_id)->where('otp', $request->otp)
             ->whereBetween('created_at', [
                 Carbon::now()->subMinutes(10),
@@ -356,27 +359,26 @@ class CustomerAuthController extends Controller
             ->first();
 
         if ($otpEntry) {
-        // Check if OTP is correct and not expired
+            // Check if OTP is correct and not expired
             if ($otpEntry->otp == $request->otp) {
                 $otpEntry->status = 1;
                 $otpEntry->verified_at = Carbon::now()->format('Y-m-d H:i:s');
                 $otpEntry->save();
-        
+
                 $customer->otp_attempts = 0;
                 $customer->first_failed_attempt_at = null;
                 $customer->is_active = 1;
                 $customer->save();
-        
+
                 return Response::json(['status' => true, 'message' => 'OTP Validated', 'customer_id' => $otpEntry->customer_id, 'token' => $request->token], 200);
-            }
-            else {
+            } else {
                 // Increment the failed attempts
                 if ($customer->otp_attempts == 0) {
                     $customer->first_failed_attempt_at = Carbon::now();
                 }
                 $customer->otp_attempts++;
                 $customer->save();
-        
+
                 return response()->json([
                     'status' => false,
                     'message' => 'Invalid OTP'
@@ -384,7 +386,6 @@ class CustomerAuthController extends Controller
             }
         }
         return Response::json(['status' => false, 'message' => 'Invalid OTP or Token'], 500);
-        
     }
 
     public function getForgotOtp(Request $request)
@@ -399,13 +400,12 @@ class CustomerAuthController extends Controller
 
         $customer = Customer::where('email', $request->email)->first();
 
-        if(!$customer){
+        if (!$customer) {
             return Response::json(['status' => false, 'message' => 'Consumer Not Found'], 500);
-        }
-        elseif($customer){
+        } elseif ($customer) {
             $requestCount = OtpRequest::where('customer_id', $customer->id)
-                            ->where('requested_at', '>=', Carbon::now()->subMinutes(30))
-                            ->count();
+                ->where('requested_at', '>=', Carbon::now()->subMinutes(30))
+                ->count();
             if ($requestCount >= 5) {
                 return response()->json([
                     'status' => false,
@@ -416,7 +416,7 @@ class CustomerAuthController extends Controller
 
             Mail::to($customer->email)->send(new OtpMail($otp->otp));
 
-    
+
             return Response::json(['status' => true, 'message' => 'OTP sent successfully', 'customer_id' => $customer->id, 'token' => $otp->token], 200);
         }
     }
@@ -436,7 +436,7 @@ class CustomerAuthController extends Controller
             'customer_id.required' => 'The connection ID is required.',
             'token.required' => 'The token is required.',
         ]);
-    
+
 
         if ($validator->fails()) {
             return Response::json(['status' => false, 'message' => 'Validation failed', 'errors' => $validator->errors()], 500);
@@ -454,7 +454,7 @@ class CustomerAuthController extends Controller
             ->latest()->first();
 
         if (!$otpEntry) {
-        return Response::json(['status' => false, 'message' => 'Invalid or expired token'], 500);
+            return Response::json(['status' => false, 'message' => 'Invalid or expired token'], 500);
         }
 
         $customer = Customer::find($request->customer_id);
@@ -469,10 +469,10 @@ class CustomerAuthController extends Controller
                 'message' => 'New password cannot be the same as your old password.'
             ], 400);
         }
-        
+
         $customer->password = Hash::make($request->password);
         $customer->save();
-        if($customer->save()){
+        if ($customer->save()) {
             return Response::json(['status' => true, 'message' => 'Password Updated Successfully'], 200);
         }
         return Response::json(['status' => false, 'message' => 'Unable to update password'], 500);
@@ -499,7 +499,7 @@ class CustomerAuthController extends Controller
             })
             ->first();
 
-            
+
         $email = $existCustomer ? $existCustomer->email : $emailInput;
 
         $cacheKey = 'customer_login_attempts_' . $email;
@@ -560,24 +560,24 @@ class CustomerAuthController extends Controller
         // Check for other device login
         $activeTokens = $user->tokens()
             ->where('device_type', $deviceType)
-            ->where(function($q) use ($expiry) {
+            ->where(function ($q) use ($expiry) {
                 $q->whereNull('expires_at')->orWhere('expires_at', '>', now());
             })
             ->get();
 
-        $otherDeviceToken = $activeTokens->firstWhere('device_id', '!=', $currentDeviceId);
-        if ($otherDeviceToken) {
-            return response()->json([
-                'status' => 'error',
-                'message' => "You are already logged in on another {$deviceType} device. Please log out from that device to continue.",
-            ], 403);
-        }
+        // $otherDeviceToken = $activeTokens->firstWhere('device_id', '!=', $currentDeviceId);
+        // if ($otherDeviceToken) {
+        //     return response()->json([
+        //         'status' => 'error',
+        //         'message' => "You are already logged in on another {$deviceType} device. Please log out from that device to continue.",
+        //     ], 403);
+        // }
 
-        // Delete same-device token (allow re-login)
-        $sameDeviceToken = $activeTokens->firstWhere('device_id', $currentDeviceId);
-        if ($sameDeviceToken) {
-            $sameDeviceToken->delete();
-        }
+        // // Delete same-device token (allow re-login)
+        // $sameDeviceToken = $activeTokens->firstWhere('device_id', $currentDeviceId);
+        // if ($sameDeviceToken) {
+        //     $sameDeviceToken->delete();
+        // }
 
         // Update user table device id
         // if ($deviceType === 'mobile') {
@@ -666,7 +666,7 @@ class CustomerAuthController extends Controller
             'data' => $customer
         ], 200);
     }
-    
+
     public function getEventDetail(Request $request, $event_id = null)
     {
         $today = Carbon::now()->format('Y-m-d H:i:s');
@@ -689,11 +689,11 @@ class CustomerAuthController extends Controller
     public function getEvents(Request $request)
     {
         $query = Event::withCount(['transactions as completed_transaction_count' => function ($query) {
-                $query->where('status', 'completed');
-            }])
+            $query->where('status', 'completed');
+        }])
             ->where('is_active', 1)
             ->where('is_deleted', 0);
-        
+
         // Only apply date filtering if view_type is 'month'
         if ($request->has('view_type') && $request->input('view_type') === 'month') {
             if ($request->has('start_date') && $request->has('end_date')) {
@@ -703,22 +703,22 @@ class CustomerAuthController extends Controller
                 ]);
             }
         }
-        
+
         $events = $query->orderBy('event_start_datetime', 'desc')->get();
-        
+
         if ($events->isEmpty()) {
             return response()->json(['status' => 'error', 'message' => 'No events found', 'data' => []], 200);
         }
-        
+
         return response()->json(['status' => 'success', 'message' => 'Events list fetched', 'data' => $events], 200);
     }
-    
+
     // Get Authenticated User API
     public function user(Request $request)
     {
         // dd(Auth::guard('customer-api')->user());
         if (Auth::guard('customer-api')->check()) {
-            return response()->json(['status' => 'success','data' => ['user' => Auth::guard('customer-api')->user()] ], 200); // in minutes
+            return response()->json(['status' => 'success', 'data' => ['user' => Auth::guard('customer-api')->user()]], 200); // in minutes
         }
         return response()->json(['status' => 'error', 'message' => 'Unauthenticated'], 401);
     }
@@ -817,16 +817,16 @@ class CustomerAuthController extends Controller
             'limit'     => 'nullable|integer|min:1|max:100',
             'category' => 'nullable'
         ]);
-        
+
         $user = Auth::guard('customer-api')->user();
-        
+
         // Use defaults if not provided
         $planType = $validated['plan_type'] ?? null;
         $alphabet = $validated['alphabet'] ?? null;
         $search = $validated['search'] ?? null;
         $offset = $validated['offset'] ?? 0;
         $limit = $validated['limit'] ?? 10;
-        $category = $validated['category'] ?? null;        
+        $category = $validated['category'] ?? null;
 
         $query = Customer::query();
 
@@ -854,28 +854,28 @@ class CustomerAuthController extends Controller
         // Search functionality - name or mobile number
         if (!is_null($search) && trim($search) !== '') {
             $searchTerm = trim($search);
-            $query->where(function($q) use ($searchTerm) {
+            $query->where(function ($q) use ($searchTerm) {
                 // Search in first name
                 $q->where('first_name', 'LIKE', "%{$searchTerm}%")
-                // Search in last name
-                ->orWhere('last_name', 'LIKE', "%{$searchTerm}%")
-                // Search in full name (combined)
-                ->orWhereRaw("CONCAT(first_name, ' ', last_name) LIKE ?", ["%{$searchTerm}%"])
-                // Search in mobile number (without country code)
-                ->orWhere('mobile_no', 'LIKE', "%{$searchTerm}%")
-                // Search in mobile number with country code
-                ->orWhereRaw("CONCAT(mobile_no_cc, mobile_no) LIKE ?", ["%{$searchTerm}%"])
-                // Search in company name (bonus)
-                ->orWhere('company_name', 'LIKE', "%{$searchTerm}%");
+                    // Search in last name
+                    ->orWhere('last_name', 'LIKE', "%{$searchTerm}%")
+                    // Search in full name (combined)
+                    ->orWhereRaw("CONCAT(first_name, ' ', last_name) LIKE ?", ["%{$searchTerm}%"])
+                    // Search in mobile number (without country code)
+                    ->orWhere('mobile_no', 'LIKE', "%{$searchTerm}%")
+                    // Search in mobile number with country code
+                    ->orWhereRaw("CONCAT(mobile_no_cc, mobile_no) LIKE ?", ["%{$searchTerm}%"])
+                    // Search in company name (bonus)
+                    ->orWhere('company_name', 'LIKE', "%{$searchTerm}%");
             });
         }
-        if(!is_null($category)){            
+        if (!is_null($category)) {
             $query->where('category_id', $category);
         }
 
         // Sort by name (always A-Z)
         $query->orderBy('first_name', 'asc');
-        
+
         // Apply pagination
         $members = $query->offset($offset)->limit($limit)->get();
 
@@ -883,9 +883,9 @@ class CustomerAuthController extends Controller
         $formatted['members'] = $members->map(function ($member) {
             return [
                 'id' => $member->id,
-                'name' => $member->first_name .' '. $member->last_name,
+                'name' => $member->first_name . ' ' . $member->last_name,
                 'company_name' => $member->company_name ?? '',
-                'mobile_no' => $member->mobile_no_cc.'-'.$member->mobile_no,
+                'mobile_no' => $member->mobile_no_cc . '-' . $member->mobile_no,
                 'email' => $member->email,
                 'plan_label' => $this->getPlanLabel($member->plan_type),
                 'added_by' => $member->added_by ?? 'Admin',
@@ -902,9 +902,9 @@ class CustomerAuthController extends Controller
 
     public function getMemberById(Request $request, $memberId)
     {
-        
+
         $user = Auth::guard('customer-api')->user();
-        
+
         $query = Customer::query()->with('membership_plan')->where('id', '!=', $user->id)->where('plan_type', '<=', $user->plan_type);
 
         // Apply pagination
@@ -972,7 +972,7 @@ class CustomerAuthController extends Controller
 
         if (!$user) {
             return response()->json([
-                'status' => 'error', 
+                'status' => 'error',
                 'message' => 'Unauthenticated'
             ], 401);
         }
@@ -1122,16 +1122,16 @@ class CustomerAuthController extends Controller
             Mail::to(env('SALES_EMAIL'))
                 ->cc(['jagdish.gaikwad@vervali.com', 'jay.gupta@vervali.com'])
                 ->send(new ContactAdminMail(
-                    $enquiry->first_name, 
-                    $enquiry->last_name, 
-                    $enquiry->company_name, 
-                    $enquiry->country, 
+                    $enquiry->first_name,
+                    $enquiry->last_name,
+                    $enquiry->company_name,
+                    $enquiry->country,
                     $enquiry->email,
-                    $enquiry->phone, 
-                    $enquiry->message, 
+                    $enquiry->phone,
+                    $enquiry->message,
                     $enquiry->created_at->format('Y-m-d H:i:s')
                 ));
-            
+
             Mail::to($enquiry->email)
                 ->send(new ContactCustomerMail($enquiry->first_name . ' ' . $enquiry->last_name));
 
@@ -1140,10 +1140,9 @@ class CustomerAuthController extends Controller
                 'message' => 'Enquiry submitted successfully',
                 'data' => $enquiry
             ]);
-
         } catch (\Exception $e) {
             \Log::error('Enquiry submission error: ' . $e->getMessage());
-            
+
             return response()->json([
                 'status' => 'error',
                 'message' => 'Failed to submit enquiry. Please try again.'
@@ -1172,10 +1171,10 @@ class CustomerAuthController extends Controller
 
         try {
             // Send emails
-            Mail::to(env('SALES_EMAIL'))        
+            Mail::to(env('SALES_EMAIL'))
                 ->cc(['jagdish.gaikwad@vervali.com', 'jay.gupta@vervali.com'])
                 ->send(new CommunityAdminMail($request->email));
-            
+
             Mail::to($request->email)
                 ->send(new CommunityCustomerMail($request->email));
 
@@ -1183,10 +1182,9 @@ class CustomerAuthController extends Controller
                 'status' => 'success',
                 'message' => 'Request submitted successfully',
             ]);
-
         } catch (\Exception $e) {
             \Log::error('Community submission error: ' . $e->getMessage());
-            
+
             return response()->json([
                 'status' => 'error',
                 'message' => 'Failed to submit request. Please try again.'
@@ -1214,7 +1212,6 @@ class CustomerAuthController extends Controller
             $user->update($validated);
 
             return response()->json(['status' => 'success', 'message' => 'Basic details updated successfully', 'data' => $user], 200);
-       
         } catch (QueryException $e) {
             Log::error('Some Error', [
                 'error' => $e->getMessage(),
@@ -1226,7 +1223,6 @@ class CustomerAuthController extends Controller
                 'status' => 'error',
                 'message' => 'Some error occurred. Please try again.'
             ], 500);
-
         } catch (\Exception $e) {
             Log::error('General Error', ['error' => $e->getMessage()]);
             return response()->json([
@@ -1257,7 +1253,7 @@ class CustomerAuthController extends Controller
             'facebook_link' => 'nullable|url',
             'x_link' => 'nullable|url',
             'youtube_link' => 'nullable|url',
-            
+
             // Updated validation for direct file upload
             'company_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'media_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
@@ -1275,7 +1271,7 @@ class CustomerAuthController extends Controller
 
             // Update basic fields
             $user->company_name = $validated['company_name'];
-            $user->category_id = $validated['category_id']; 
+            $user->category_id = $validated['category_id'];
             $user->company_address = $validated['company_address'];
             $user->trn_no = $validated['trn_no'] ?? null;
             $user->google_map_link = $validated['google_map_link'] ?? null;
@@ -1301,7 +1297,7 @@ class CustomerAuthController extends Controller
             if ($request->hasFile('media_images')) {
                 foreach ($request->file('media_images') as $mediaImage) {
                     $path = $mediaImage->store('media_images', 'public');
-                    
+
                     MediaImage::create([
                         'customer_id' => $user->id,
                         'image' => $path,
@@ -1312,11 +1308,10 @@ class CustomerAuthController extends Controller
             $user->save();
 
             return response()->json([
-                'status' => 'success', 
-                'message' => 'Company details updated successfully', 
+                'status' => 'success',
+                'message' => 'Company details updated successfully',
                 'data' => $user
             ], 200);
-    
         } catch (QueryException $e) {
             Log::error('Database Error', [
                 'error' => $e->getMessage(),
@@ -1328,7 +1323,6 @@ class CustomerAuthController extends Controller
                 'status' => 'error',
                 'message' => 'Database error occurred. Please try again.'
             ], 500);
-
         } catch (\Exception $e) {
             Log::error('General Error', ['error' => $e->getMessage()]);
             return response()->json([
@@ -1342,7 +1336,7 @@ class CustomerAuthController extends Controller
     {
         $user = Auth::guard('customer-api')->user();
         if (!$user) {
-            return response()->json(['status'=>false,'message'=>'Unauthorized'],401);
+            return response()->json(['status' => false, 'message' => 'Unauthorized'], 401);
         }
 
         $validated = $request->validate([
@@ -1377,29 +1371,32 @@ class CustomerAuthController extends Controller
                             $feedback->feedback
                         )
                     );
-                    Log::info('send from mail', [$member->first_name . ' ' . $member->last_name,  // toName (receiver)
-                            $user->first_name . ' ' . $user->last_name,      // fromName (who feedback is about)
-                            $feedback->rating,
-                            $feedback->feedback]);
+                    Log::info('send from mail', [
+                        $member->first_name . ' ' . $member->last_name,  // toName (receiver)
+                        $user->first_name . ' ' . $user->last_name,      // fromName (who feedback is about)
+                        $feedback->rating,
+                        $feedback->feedback
+                    ]);
                 }
 
                 // Send notification mail to feedback receiver (the member)
                 if (!empty($member->email)) {
                     Mail::to($member->email)->send(
                         new FeedbackToMail(
-                        $user->first_name . ' ' . $user->last_name,      // fromName (who gave feedback)
-                        $member->first_name . ' ' . $member->last_name,  // toName (receiver)
-                        $feedback->rating,
-                        $feedback->feedback
-                    )
+                            $user->first_name . ' ' . $user->last_name,      // fromName (who gave feedback)
+                            $member->first_name . ' ' . $member->last_name,  // toName (receiver)
+                            $feedback->rating,
+                            $feedback->feedback
+                        )
                     );
 
-                    Log::info('send to mail', [$member->first_name . ' ' . $member->last_name,  // toName (receiver)
-                            $user->first_name . ' ' . $user->last_name,      // fromName (who feedback is about)
-                            $feedback->rating,
-                            $feedback->feedback]);
+                    Log::info('send to mail', [
+                        $member->first_name . ' ' . $member->last_name,  // toName (receiver)
+                        $user->first_name . ' ' . $user->last_name,      // fromName (who feedback is about)
+                        $feedback->rating,
+                        $feedback->feedback
+                    ]);
                 }
-
             } catch (\Throwable $mailError) {
                 // Don’t break the flow if mail fails
                 Log::warning('Feedback email sending failed', [
@@ -1409,7 +1406,7 @@ class CustomerAuthController extends Controller
                 ]);
             }
 
-            return response()->json(['status' => 'success', 'message' => 'Feedback submitted successfully'], 200);   
+            return response()->json(['status' => 'success', 'message' => 'Feedback submitted successfully'], 200);
         } catch (QueryException $e) {
             DB::rollBack();
             // Log the SQL + bindings for debugging
@@ -1423,7 +1420,6 @@ class CustomerAuthController extends Controller
                 'status' => false,
                 'message' => 'Some error occurred. Please try again.'
             ], 500);
-
         } catch (\Exception $e) {
             DB::rollBack();
             Log::error('General Error', ['error' => $e->getMessage()]);
@@ -1503,7 +1499,7 @@ class CustomerAuthController extends Controller
 
             // FILE VALIDATION
             'file' =>
-                'nullable|file|mimes:pdf,doc,docx,txt,png,jpg,jpeg,xlsx|max:5120',
+            'nullable|file|mimes:pdf,doc,docx,txt,png,jpg,jpeg,xlsx|max:5120',
 
         ]);
 
@@ -1564,13 +1560,10 @@ class CustomerAuthController extends Controller
 
                 'status' => 'success',
                 'message' =>
-                    'Comment submitted successfully!'
+                'Comment submitted successfully!'
 
             ]);
-
-        }
-
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
 
             Log::error('General Error', [
                 'error' => $e->getMessage()
@@ -1580,7 +1573,7 @@ class CustomerAuthController extends Controller
 
                 'status' => 'error',
                 'message' =>
-                    'Something went wrong. Please try again later.'
+                'Something went wrong. Please try again later.'
 
             ], 500);
         }
@@ -1616,7 +1609,7 @@ class CustomerAuthController extends Controller
             return response()->json(['status' => false, 'message' => 'For security, please create a password different from those recently used.'], 422);
         }
 
-        try{
+        try {
             $user->password = Hash::make($validated['password']);
             $user->save();
 
@@ -1632,7 +1625,6 @@ class CustomerAuthController extends Controller
                 'status' => 'error',
                 'message' => 'Some error occurred. Please try again.'
             ], 500);
-
         } catch (\Exception $e) {
             Log::error('General Error', ['error' => $e->getMessage()]);
             return response()->json([
@@ -1689,7 +1681,7 @@ class CustomerAuthController extends Controller
             ], 500);
         }
     } */
-   public function updateProfileImage(Request $request)
+    public function updateProfileImage(Request $request)
     {
         $user = Auth::guard('customer-api')->user();
 
@@ -1709,7 +1701,7 @@ class CustomerAuthController extends Controller
         $validated = $request->validate([
 
             'profile_photo' =>
-                'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'
+            'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'
 
         ]);
 
@@ -1727,8 +1719,10 @@ class CustomerAuthController extends Controller
                 DELETE OLD IMAGE
                 */
 
-                if ($user->profile_photo &&
-                    Storage::exists('public/' . $user->profile_photo)) {
+                if (
+                    $user->profile_photo &&
+                    Storage::exists('public/' . $user->profile_photo)
+                ) {
 
                     Storage::delete(
                         'public/' . $user->profile_photo
@@ -1764,28 +1758,25 @@ class CustomerAuthController extends Controller
                 'status' => 'success',
 
                 'message' =>
-                    'Profile image updated successfully',
+                'Profile image updated successfully',
 
                 'data' => [
 
                     'profile_photo' =>
-                        asset(
-                            'storage/' .
+                    asset(
+                        'storage/' .
                             $user->profile_photo
-                        )
+                    )
 
                 ]
 
             ], 200);
-
-        }
-
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
 
             Log::error('Profile Image Error', [
 
                 'error' =>
-                    $e->getMessage()
+                $e->getMessage()
 
             ]);
 
@@ -1794,7 +1785,7 @@ class CustomerAuthController extends Controller
                 'status' => 'error',
 
                 'message' =>
-                    'Something went wrong. Please try again later.'
+                'Something went wrong. Please try again later.'
 
             ], 500);
         }
@@ -1832,19 +1823,19 @@ class CustomerAuthController extends Controller
 
         $customer = Customer::where('id', $user->id)->first();
         if ($customer) {
-            if($request->type == 'company_logo'){
+            if ($request->type == 'company_logo') {
                 if (Storage::exists('public/' . $customer->company_logo)) {
                     Storage::delete('public/' . $customer->company_logo);
                 }
                 $customer->company_logo = null;
             }
-            if($request->type == 'profile_photo'){
+            if ($request->type == 'profile_photo') {
                 if (Storage::exists('public/' . $customer->profile_photo)) {
                     Storage::delete('public/' . $customer->profile_photo);
                 }
                 $customer->profile_photo = null;
             }
-            if($request->type == 'company_video'){
+            if ($request->type == 'company_video') {
                 if (Storage::exists('public/' . $customer->company_video)) {
                     Storage::delete('public/' . $customer->company_video);
                 }
@@ -1852,28 +1843,27 @@ class CustomerAuthController extends Controller
             }
             $customer->save();
             return response()->json(['status' => 'success', 'message' => 'Image removed successfully'], 200);
-
         }
 
         return response()->json(['status' => 'success', 'message' => 'Image removed successfully'], 200);
     }
-    
+
 
     //video functions
     public function getVideoGallery($categoryId)
     {
         try {
-            $category = GalleryCategory::with(['videos' => function($query) {
+            $category = GalleryCategory::with(['videos' => function ($query) {
                 $query->where('is_active', 1)
                     ->where('is_deleted', 0)
                     ->orderBy('created_at', 'desc');
             }])->findOrFail($categoryId);
 
-            $videos = $category->videos->map(function($video) {
+            $videos = $category->videos->map(function ($video) {
                 // Convert YouTube URL to embed URL
                 $embedUrl = $this->convertToEmbedUrl($video->youtube_url);
                 $thumbnailUrl = $this->getYoutubeThumbnail($video->youtube_url);
-                
+
                 return [
                     'id' => $video->id,
                     'youtube_url' => $video->youtube_url,
@@ -1902,7 +1892,7 @@ class CustomerAuthController extends Controller
     {
         // Handle different YouTube URL formats
         $videoId = null;
-        
+
         if (preg_match('/youtube\.com\/watch\?v=([^&]+)/', $url, $matches)) {
             $videoId = $matches[1];
         } elseif (preg_match('/youtu\.be\/([^?]+)/', $url, $matches)) {
@@ -1910,13 +1900,13 @@ class CustomerAuthController extends Controller
         } elseif (preg_match('/youtube\.com\/embed\/([^?]+)/', $url, $matches)) {
             $videoId = $matches[1];
         }
-        
+
         return $videoId ? "https://www.youtube.com/embed/{$videoId}" : $url;
     }
     private function getYoutubeThumbnail($url)
     {
         $videoId = null;
-        
+
         if (preg_match('/youtube\.com\/watch\?v=([^&]+)/', $url, $matches)) {
             $videoId = $matches[1];
         } elseif (preg_match('/youtu\.be\/([^?]+)/', $url, $matches)) {
@@ -1924,10 +1914,7 @@ class CustomerAuthController extends Controller
         } elseif (preg_match('/youtube\.com\/embed\/([^?]+)/', $url, $matches)) {
             $videoId = $matches[1];
         }
-        
+
         return $videoId ? "https://img.youtube.com/vi/{$videoId}/maxresdefault.jpg" : null;
     }
-
-
 }
-
