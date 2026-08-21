@@ -373,40 +373,131 @@
     </div>
   </section>
 
-  <!--  PARTNERS BAND (gold) — logos, click through to Partners page  -->
-  <section class="partners-band logo-variant">
+ <!-- =========================================================
+     PARTNERS BAND
+     ========================================================= -->
+
+<section class="partners-band logo-variant">
+
     <div class="partners-collage-wash" aria-hidden="true"></div>
+
     <div class="partners-inner">
-      <div class="partners-group">
-        <div class="partners-label">Organised By</div>
-        <div class="partners-logo-list">
-          <a href="{{ url('/deitiesdesignawards/partners') }}" class="partner-logo-item">
-            <span class="partner-logo-link">
-              <img src="{{ asset('dda-assets/images/JNLogo.svg') }}" alt="Jewellery Networking">
-            </span>
-            <span class="partner-logo-name">Jewellery Networking</span>
-          </a>
+
+
+        <!-- =================================================
+             AN INITIATIVE BY
+             ================================================= -->
+
+        <div class="partners-group">
+
+            <div class="partners-label">
+                An Initiative By
+            </div>
+
+            <div class="partners-logo-list">
+
+                <a
+                    href="{{ url('/deitiesdesignawards/partners') }}"
+                    class="partner-logo-item"
+                >
+
+                    <span class="partner-logo-link">
+
+                        <img
+                            src="{{ asset('dda-assets/images/JNLogo.svg') }}"
+                            alt="Jewellery Networking"
+                        >
+
+                    </span>
+
+                    <span class="partner-logo-name">
+                        Jewellery Networking
+                    </span>
+
+                </a>
+
+            </div>
+
         </div>
-      </div>
-      <div class="partners-group">
-        <div class="partners-label">Supported By</div>
-        <div class="partners-logo-list">
-          <a href="{{ url('/deitiesdesignawards/partners') }}" class="partner-logo-item">
-            <span class="partner-logo-link">
-              <img src="{{ asset('dda-assets/images/jab-logo.png') }}" alt="Jewellers Association Bengaluru">
-            </span>
-            <span class="partner-logo-name">Jewellers Association Bengaluru</span>
-          </a>
-          <a href="{{ url('/deitiesdesignawards/partners') }}" class="partner-logo-item">
-            <span class="partner-logo-link">
-              <img src="{{ asset('dda-assets/images/iskcon_logo.svg') }}" alt="ISKCON Chowpatty">
-            </span>
-            <span class="partner-logo-name">ISKCON Chowpatty</span>
-          </a>
+
+
+        <!-- =================================================
+             IN COLLABORATION WITH
+             ================================================= -->
+
+        <div class="partners-group">
+
+            <div class="partners-label">
+                In Collaboration With
+            </div>
+
+            <div class="partners-logo-list">
+
+                <a
+                    href="{{ url('/deitiesdesignawards/partners') }}"
+                    class="partner-logo-item"
+                >
+
+                    <span class="partner-logo-link">
+
+                        <img
+                            src="{{ asset('dda-assets/images/iskcon_logo.svg') }}"
+                            alt="ISKCON Chowpatty"
+                        >
+
+                    </span>
+
+                    <span class="partner-logo-name">
+                        ISKCON Chowpatty
+                    </span>
+
+                </a>
+
+            </div>
+
         </div>
-      </div>
+
+
+        <!-- =================================================
+             EVENT SUPPORTED BY
+             ================================================= -->
+
+        <div class="partners-group">
+
+            <div class="partners-label">
+                Event Supported By
+            </div>
+
+            <div class="partners-logo-list">
+
+                <a
+                    href="{{ url('/deitiesdesignawards/partners') }}"
+                    class="partner-logo-item"
+                >
+
+                    <span class="partner-logo-link">
+
+                        <img
+                            src="{{ asset('dda-assets/images/jab-logo.png') }}"
+                            alt="Jewellers Association Bengaluru"
+                        >
+
+                    </span>
+
+                    <span class="partner-logo-name">
+                        Jewellers Association Bengaluru
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
     </div>
-  </section>
+
+</section>
 
 
   <!--  FOOTER  -->

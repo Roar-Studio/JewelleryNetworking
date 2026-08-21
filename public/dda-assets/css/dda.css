@@ -566,118 +566,648 @@ nav .nav-cta,.btn-primary,.btn-gold,.btn-outline,.btn-cta-gold,.mob-register-btn
   text-shadow:0 2px 8px rgba(42,31,16,0.25);
 }
 
-/* PARTNERS BAND */
-.partners-band{
-  background:var(--gold);
-  padding:56px 48px;
-}
-.partners-inner{
-  max-width:1200px;margin:0 auto;
-  display:flex;flex-direction:column;
-  align-items:center;gap:28px;
-}
-.partners-label{
-  font-family:var(--body);font-size:14px;
-  letter-spacing:0.5em;text-transform:uppercase;
-  color:var(--brown);opacity:0.8;
-  font-weight:600;
-}
-.partners-list{
-  display:flex;align-items:center;flex-wrap:wrap;
-  justify-content:center;gap:0;
-}
-.partner-item{
-  font-family:var(--display);
-  font-size:20px;letter-spacing:0.06em;
-  color:var(--brown);
-  padding:0 44px;
-  position:relative;
-  text-align:center;
-}
-.partner-item+.partner-item::before{
-  content:"";position:absolute;
-  left:0;top:50%;transform:translateY(-50%);
-  width:1px;height:32px;
-  background:var(--brown);opacity:0.35;
+/* =========================================================
+   PARTNERS BAND
+   ========================================================= */
+
+.partners-band {
+  background: var(--gold);
+  padding: 56px 48px;
 }
 
-/* PARTNERS BAND — logo variant, editorial credit-line style */
-.partners-band.logo-variant{
-  padding:100px 48px;
-  position:relative;
-  overflow:hidden;
+.partners-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+
+  /* 2 columns because first item will span both */
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: start;
+  justify-content: center;
+
+  column-gap: 80px;
+  row-gap: 55px;
 }
+
+
+/* =========================================================
+   PARTNERS LABEL
+   ========================================================= */
+
+.partners-label {
+  font-family: var(--body);
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+
+  color: var(--brown);
+  opacity: 0.8;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   OLD PARTNERS LIST
+   ========================================================= */
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+.partner-item {
+  font-family: var(--display);
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  color: var(--brown);
+
+  padding: 0 44px;
+
+  position: relative;
+  text-align: center;
+}
+
+.partner-item + .partner-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 1px;
+  height: 32px;
+
+  background: var(--brown);
+  opacity: 0.35;
+}
+
+
+/* =========================================================
+   PARTNERS BAND — LOGO VARIANT
+   ========================================================= */
+
+.partners-band.logo-variant {
+  padding: 70px 48px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP + BOTTOM BORDER
+   ========================================================= */
+
 .partners-band.logo-variant::before,
-.partners-band.logo-variant::after{
-  content:"";
-  position:absolute;left:0;right:0;
-  height:1px;background:rgba(42,31,16,.14);
-  z-index:3;
+.partners-band.logo-variant::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background: rgba(42, 31, 16, 0.14);
+
+  z-index: 3;
 }
-.partners-band.logo-variant::before{top:0}
-.partners-band.logo-variant::after{bottom:0}
-.partners-band.logo-variant .partners-collage-wash{
-  position:absolute;inset:0;
-  z-index:2;
-  background:url("https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Banner+2.png") center/cover no-repeat;
+
+.partners-band.logo-variant::before {
+  top: 0;
 }
-.partners-band.logo-variant .partners-inner{
-  position:relative;z-index:4;
-  gap:52px;
+
+.partners-band.logo-variant::after {
+  bottom: 0;
 }
-.partners-band.logo-variant .partners-label{
-  font-weight:500;opacity:1;
-  display:inline-flex;align-items:center;gap:20px;
-  font-size:20px;
-  color:var(--brown,#2a1f10);
-  text-shadow:0 1px 2px rgba(255,255,255,0.55);
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.partners-band.logo-variant .partners-collage-wash {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  background:
+    url("https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Banner+2.png")
+    center / cover no-repeat;
 }
+
+
+/* =========================================================
+   PARTNERS INNER
+   TOP: JEWELLERY NETWORKING
+   BOTTOM: TWO PARTNERS
+   ========================================================= */
+
+.partners-band.logo-variant .partners-inner {
+  position: relative;
+
+  z-index: 4;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: start;
+
+  justify-content: center;
+
+  column-gap: 80px;
+
+  row-gap: 55px;
+}
+
+
+/* =========================================================
+   EACH PARTNER GROUP
+   ========================================================= */
+
+.partners-group {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 28px;
+
+  text-align: center;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   FIRST GROUP — AN INITIATIVE BY
+   JEWELLERY NETWORKING
+   ========================================================= */
+
+.partners-band.logo-variant .partners-group:first-child {
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 28px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SECOND GROUP — IN COLLABORATION WITH
+   ========================================================= */
+
+.partners-band.logo-variant .partners-group:nth-child(2) {
+  grid-column: 1;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   THIRD GROUP — EVENT SUPPORTED BY
+   ========================================================= */
+
+.partners-band.logo-variant .partners-group:nth-child(3) {
+  grid-column: 2;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   DIVIDER BETWEEN BOTTOM TWO GROUPS
+   ========================================================= */
+
+.partners-band.logo-variant .partners-group:nth-child(3)::before {
+  content: "";
+
+  position: absolute;
+
+  left: -40px;
+
+  top: 15px;
+
+  width: 1px;
+
+  height: 180px;
+
+  background: rgba(138, 112, 38, 0.35);
+}
+
+
+/* =========================================================
+   PARTNER HEADING
+   ========================================================= */
+
+.partners-band.logo-variant .partners-label {
+  font-family: var(--body);
+
+  font-weight: 500;
+
+  opacity: 1;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  font-size: 20px;
+
+  letter-spacing: 0.35em;
+
+  color: var(--brown, #2a1f10);
+
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.55);
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   LINES BEFORE + AFTER HEADING
+   ========================================================= */
+
 .partners-band.logo-variant .partners-label::before,
-.partners-band.logo-variant .partners-label::after{
-  content:"";width:36px;height:1px;
-  background:var(--gold-deep,#8a7026);opacity:0.7;
+.partners-band.logo-variant .partners-label::after {
+  content: "";
+
+  width: 36px;
+
+  height: 1px;
+
+  background: var(--gold-deep, #8a7026);
+
+  opacity: 0.7;
+
+  flex-shrink: 0;
 }
-.partners-group{
-  display:flex;flex-direction:column;
-  align-items:center;gap:28px;width:100%;
+
+
+/* =========================================================
+   LOGO LIST
+   ========================================================= */
+
+.partners-logo-list {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 0;
+
+  width: 100%;
 }
-.partners-logo-list{
-  display:flex;align-items:stretch;flex-wrap:wrap;
-  justify-content:center;gap:0;
+
+
+/* =========================================================
+   PARTNER ITEM
+   ========================================================= */
+
+.partner-logo-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 20px;
+
+  padding: 0 30px;
+
+  position: relative;
+
+  text-decoration: none;
+
+  width: 100%;
 }
-.partner-logo-item{
-  display:flex;flex-direction:column;align-items:center;
-  gap:20px;
-  padding:0 56px;
-  position:relative;
-  text-decoration:none;
+
+
+/* =========================================================
+   LOGO CIRCLE
+   ========================================================= */
+
+.partner-logo-link {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 150px;
+
+  height: 150px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 8px 24px rgba(42, 31, 16, 0.10);
+
+  padding: 26px;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
-.partner-logo-link{
-  display:flex;align-items:center;justify-content:center;
-  width:130px;height:130px;
-  background:rgba(255,255,255,.95);
-  border-radius:50%;
-  box-shadow:0 8px 24px rgba(42,31,16,.10);
-  padding:26px;
-  transition:transform 0.35s ease,box-shadow 0.35s ease;
+
+
+/* =========================================================
+   LOGO HOVER
+   ========================================================= */
+
+.partner-logo-item:hover .partner-logo-link {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 16px 36px rgba(42, 31, 16, 0.20);
 }
-.partner-logo-item:hover .partner-logo-link{
-  transform:translateY(-6px);
-  box-shadow:0 16px 36px rgba(42,31,16,.2);
+
+
+/* =========================================================
+   LOGO IMAGE
+   ========================================================= */
+
+.partner-logo-link img {
+  max-width: 100%;
+
+  max-height: 100%;
+
+  width: auto;
+
+  height: auto;
+
+  object-fit: contain;
+
+  display: block;
 }
-.partner-logo-link img{
-  max-width:100%;max-height:100%;
-  object-fit:contain;
-  display:block;
+
+
+/* =========================================================
+   PARTNER NAME
+   ========================================================= */
+
+.partner-logo-name {
+  font-family: var(--body);
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  color: #000000;
+
+  opacity: 1;
+
+  max-width: 220px;
+
+  line-height: 1.5;
+
+  transition: opacity 0.3s ease;
 }
-.partner-logo-name{
-  font-family:var(--body);font-size:15px;font-weight:600;
-  letter-spacing:0.1em;text-transform:uppercase;
-  text-align:center;
-  color:#000000;opacity:1;max-width:180px;
-  transition:opacity 0.3s ease;
+
+.partner-logo-item:hover .partner-logo-name {
+  opacity: 1;
 }
-.partner-logo-item:hover .partner-logo-name{opacity:1}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 992px) {
+
+  .partners-band.logo-variant {
+    padding: 60px 25px;
+  }
+
+  .partners-band.logo-variant .partners-inner {
+    max-width: 800px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 50px;
+
+    row-gap: 50px;
+  }
+
+  .partners-band.logo-variant .partners-label {
+    font-size: 16px;
+
+    letter-spacing: 0.25em;
+
+    gap: 12px;
+  }
+
+  .partners-band.logo-variant .partners-label::before,
+  .partners-band.logo-variant .partners-label::after {
+    width: 25px;
+  }
+
+  .partner-logo-link {
+    width: 125px;
+
+    height: 125px;
+
+    padding: 22px;
+  }
+
+  .partner-logo-name {
+    font-size: 13px;
+
+    max-width: 170px;
+  }
+
+  .partner-logo-item {
+    padding: 0 15px;
+  }
+
+  .partners-band.logo-variant .partners-group:nth-child(3)::before {
+    left: -25px;
+
+    height: 160px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .partners-band.logo-variant {
+    padding: 50px 20px;
+  }
+
+  .partners-band.logo-variant .partners-inner {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+
+    row-gap: 55px;
+  }
+
+
+  /* Jewellery Networking — TOP */
+
+  .partners-band.logo-variant .partners-group:first-child {
+    grid-column: 1;
+
+    width: 100%;
+  }
+
+
+  /* ISKCON — SECOND */
+
+  .partners-band.logo-variant .partners-group:nth-child(2) {
+    grid-column: 1;
+
+    width: 100%;
+  }
+
+
+  /* JAB — THIRD */
+
+  .partners-band.logo-variant .partners-group:nth-child(3) {
+    grid-column: 1;
+
+    width: 100%;
+  }
+
+
+  /* Remove divider on mobile */
+
+  .partners-band.logo-variant .partners-group:nth-child(3)::before {
+    display: none;
+  }
+
+  .partners-band.logo-variant .partners-label {
+    font-size: 16px;
+
+    letter-spacing: 0.22em;
+
+    white-space: normal;
+
+    gap: 12px;
+  }
+
+  .partners-band.logo-variant .partners-label::before,
+  .partners-band.logo-variant .partners-label::after {
+    width: 25px;
+  }
+
+  .partner-logo-link {
+    width: 140px;
+
+    height: 140px;
+
+    padding: 24px;
+  }
+
+  .partner-logo-name {
+    font-size: 14px;
+
+    max-width: 220px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .partners-band.logo-variant {
+    padding: 45px 15px;
+  }
+
+  .partners-band.logo-variant .partners-inner {
+    row-gap: 45px;
+  }
+
+  .partners-band.logo-variant .partners-label {
+    font-size: 13px;
+
+    letter-spacing: 0.16em;
+
+    gap: 8px;
+  }
+
+  .partners-band.logo-variant .partners-label::before,
+  .partners-band.logo-variant .partners-label::after {
+    width: 20px;
+  }
+
+  .partner-logo-link {
+    width: 120px;
+
+    height: 120px;
+
+    padding: 20px;
+  }
+
+  .partner-logo-name {
+    font-size: 12px;
+
+    max-width: 180px;
+  }
+
+}
 
 /* INSPIRATION PREVIEW — home page icon row */
 .inspo-icon-grid{
