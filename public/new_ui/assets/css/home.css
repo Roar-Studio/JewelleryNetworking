@@ -409,6 +409,8 @@
         gap: 0px;
     }
 
+}
+
     /* .key-circle img {
         width: 80%;
     }
@@ -427,5 +429,292 @@
         position: relative;
         display: inline-block;
     } */
+
+    /* =========================================================
+   DEITIES DESIGN AWARDS HERO BANNER
+   ========================================================= */
+
+.hero {
+    position: relative;
+    height: calc(100vh + 20px);
+    min-height: 640px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Banner background */
+.hero-media {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            ellipse at 25% 30%,
+            rgba(204, 170, 62, 0.55) 0%,
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 78% 65%,
+            rgba(204, 170, 62, 0.4) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse at 50% 50%,
+            rgba(69, 127, 137, 0.18) 0%,
+            transparent 70%
+        ),
+        linear-gradient(
+            135deg,
+            #e2d7bb 0%,
+            #eed999 35%,
+            #ede4ce 100%
+        );
+    z-index: 1;
+}
+
+.hero-banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 32px 120px;
+}
+
+/* DDA logo */
+.hero-logo-mark {
+    width: 260px;
+    height: auto;
+    margin-bottom: 48px;
+}
+
+/* Main heading */
+.hero-title {
+    font-family: 'Aboreto', serif;
+    font-size: clamp(42px, 5vw, 76px);
+    line-height: 1;
+    letter-spacing: 0.06em;
+    color: #2A1F10;
+    margin-bottom: 28px;
+    white-space: nowrap;
+}
+
+/* Tagline */
+.hero-tagline {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 28px);
+    color: #2A1F10;
+    margin-bottom: 48px;
+    max-width: 580px;
+}
+
+/* CTA row */
+.hero-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Teal button */
+.hero .btn-primary {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #f3ecda;
+    background: #457f89;
+    padding: 18px 36px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid #457f89;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background: #2f5e67;
+    border-color: #2f5e67;
+}
+
+.hero .btn-primary .arrow {
+    font-family: 'Aboreto', serif;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.hero .btn-primary:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Gold button */
+.hero .btn-gold {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #2A1F10;
+    background: #ccaa3e;
+    padding: 18px 36px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid #ccaa3e;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hero .btn-gold:hover {
+    background: #e0c465;
+    border-color: #e0c465;
+    color: #2A1F10;
+}
+
+.hero .btn-gold .arrow {
+    font-family: 'Aboreto', serif;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.hero .btn-gold:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Register Now pulse animation */
+.hero .btn-gold.pulse {
+    z-index: 1;
+}
+
+.hero .btn-gold.pulse::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border: 1px solid #ccaa3e;
+    opacity: 0.882;
+    z-index: -1;
+    animation: heroButtonGlowPulse 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes heroButtonGlowPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.882;
+    }
+
+    100% {
+        transform: scaleX(1.12) scaleY(1.36);
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   HERO RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .hero {
+        height: auto;
+        min-height: 560px;
+        padding: 80px 0;
+    }
+
+    .hero-logo-mark {
+        width: 200px;
+        margin-bottom: 36px;
+    }
+
+    .hero-content {
+        padding: 48px 24px 80px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .hero {
+        min-height: 70svh;
+        padding: 0;
+    }
+
+    .hero-content {
+        padding: 56px 28px;
+    }
+
+    .hero-logo-mark {
+        width: 120px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 8vw, 42px);
+        white-space: normal;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .hero-tagline {
+        font-size: clamp(14px, 4vw, 18px);
+        margin-bottom: 40px;
+    }
+
+    .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-gold {
+        justify-content: center;
+        padding: 13px 24px;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-tagline {
+        font-size: 15px;
+    }
+
+    .hero-logo-mark {
+        width: 120px;
+    }
 
 }

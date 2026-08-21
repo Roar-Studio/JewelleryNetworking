@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" type="text/css" href="{{ asset('new_ui/assets/css/home.css') }}?v={{ time() }}">
 
+
 <style>
 .carousel-control-prev,
 .carousel-control-next {
@@ -33,7 +34,7 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div> -->
-    <div class="carousel-inner">
+    <!-- <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{ asset('new_ui/assets/images/carousel1.png') }}" class="d-block w-100 desktop_view" alt="carousel image">
             <a href="/membership">
@@ -49,7 +50,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -58,6 +59,35 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button> -->
+
+    <!--  HERO FULL BLEED  -->
+  <section class="hero">
+    <div class="hero-media">
+      <img class="hero-banner-img" src="{{ asset('https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/DDA+Web+Images/Homepage.png') }}" alt="" aria-hidden="true">
+    </div>
+
+    <div class="hero-content">
+      <img src="{{ asset('dda-assets/images/Logo_1_horizontal_color.svg') }}" alt="Deities Design Awards" class="hero-logo-mark">
+
+
+      <h1 class="hero-title">JEWELLERY FOR THE SACRED</h1>
+      <p class="hero-tagline">Deities. Design. Devotion.</p>
+
+      <div class="hero-cta-row">
+        <a href="{{ route('dda.login') }}"
+   class="btn-gold pulse"
+   onclick="localStorage.setItem('redirectAfterLogin','{{ route('dda.submit') }}')">
+          <span>Register Now</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="{{ url('/deitiesdesignawards/design-category') }}" class="btn-primary">
+          <span>Discover More</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
     <div class="social-icon-header">
         <a target="_blank" href="https://www.instagram.com/jewellerynetworking/?igsh=ZW41NGx4cm91czA3#">
             {{-- <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +112,7 @@
              {{--<img src="{{ asset('new_ui/assets/images/yt_logo.png') }}" alt="YouTube" width="25" height="25"> --}}
         </a>
     </div>
-</div>
+
 <div class="special-design container kp">
     <hr/>
     <img src="{{ asset('new_ui/assets/images/diamond.webp') }}">
@@ -139,7 +169,6 @@
                     <svg width="49" height="19" viewBox="0 0 49 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="Vector" d="M38.2731 19L48.668 9.5L38.2731 -4.29463e-07L36.4817 1.63271L43.8233 8.34234L-0.000271229 8.34234L-0.000271336 10.658L43.8233 10.658L36.4817 17.3676L38.2731 19Z" fill="black"/>
                     </svg>
-                    <!-- <img src="{{ asset('new_ui/assets/images/right-arrow.svg') }}" /> -->
                 </a>
             </div>
             <img class="bm-right" src="{{ asset('new_ui/assets/images/become-member.webp') }}"/>
