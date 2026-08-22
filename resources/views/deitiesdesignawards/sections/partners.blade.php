@@ -120,7 +120,7 @@
   <section class="section">
     <div class="container">
       <div class="partners-eyebrow" style="text-align:center">
-        <span class="section-eyebrow">Supporting Partners</span>
+        <span class="section-eyebrow">Event Supported By</span>
       </div>
 
       <div class="partner-full">
@@ -136,6 +136,10 @@
           <h4 class="partner-copy-label">Role in DDA</h4>
           <p>Serving as the official industry partner for the Deities Design Awards (DDA), The Jewellers Association Bengaluru is instrumental in driving sectoral involvement and commitment. Utilizing its broad professional network, the association bridges the gap between the awards and prominent jewellers, producers, craftsmen and major industry figures, encouraging cooperative efforts and guaranteeing robust representation across the field.</p>
         </div>
+      </div>
+
+      <div class="partners-eyebrow" style="text-align:center">
+        <span class="section-eyebrow">In Collaboration With</span>
       </div>
 
       <div class="partner-full">
@@ -155,7 +159,7 @@
     </div>
     <div class="container">
       <div class="partners-eyebrow" style="text-align:center">
-        <span class="section-eyebrow">Organised By</span>
+        <span class="section-eyebrow">An Initiative By</span>
       </div>
       <div class="partner-full">
         <div class="partner-full-logo">
