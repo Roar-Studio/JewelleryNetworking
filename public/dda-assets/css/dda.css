@@ -1079,6 +1079,327 @@ nav .nav-cta,.btn-primary,.btn-gold,.btn-outline,.btn-cta-gold,.mob-register-btn
 
 }
 
+/* =========================================================
+   PARTNERS PAGE — MOBILE RESPONSIVE FIX
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* ---------------------------------------------------------
+     SECTION TITLES
+     Event Supported By
+     In Collaboration With
+     An Initiative By
+     --------------------------------------------------------- */
+
+  .partners-eyebrow {
+    width: 100%;
+    text-align: center !important;
+    margin: 2.2rem 0 1.4rem;
+    padding: 0 12px;
+  }
+
+  .partners-eyebrow .section-eyebrow {
+    display: block;
+    width: 100%;
+
+    text-align: center !important;
+
+    font-family: 'Aboreto', serif;
+
+    /* smaller on mobile */
+    font-size: 1.05rem !important;
+
+    line-height: 1.5;
+
+    /* reduce the huge spacing that causes wrapping */
+    letter-spacing: .20em !important;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+
+    margin: 0 auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     PARTNER MAIN CONTAINER
+     --------------------------------------------------------- */
+
+  .partner-full {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto 3rem !important;
+
+    padding: 0 !important;
+
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+
+
+  /* ---------------------------------------------------------
+     PARTNER LOGO
+     --------------------------------------------------------- */
+
+  .partner-full-logo {
+    width: 100% !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 auto !important;
+  }
+
+  .partner-logo-placeholder {
+    width: 125px !important;
+    height: 125px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 auto !important;
+  }
+
+  .partner-logo-img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+
+  /* ---------------------------------------------------------
+     PARTNER CONTENT
+     --------------------------------------------------------- */
+
+  .partner-full-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 0 18px !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* ---------------------------------------------------------
+     PARTNER NAME
+     --------------------------------------------------------- */
+
+  .partner-full-content h3 {
+    width: 100%;
+
+    margin: 0 0 1.4rem !important;
+
+    text-align: center !important;
+
+    font-family: 'Aboreto', serif;
+
+    font-size: 1.6rem !important;
+
+    line-height: 1.35 !important;
+
+    letter-spacing: .04em !important;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT / ROLE LABELS
+     --------------------------------------------------------- */
+
+  .partner-full-content .partner-copy-label {
+    text-align: center !important;
+
+    font-size: .72rem !important;
+
+    line-height: 1.4;
+
+    letter-spacing: .16em !important;
+
+    margin: 1.6rem 0 .65rem !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     PARTNER DESCRIPTION
+     --------------------------------------------------------- */
+
+  .partner-full-content p {
+    text-align: center !important;
+
+    font-size: .88rem !important;
+
+    line-height: 1.75 !important;
+
+    margin: 0 auto 1rem !important;
+
+    max-width: 100%;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+
+  /* ---------------------------------------------------------
+     VISIT JEWELLERY NETWORKING BUTTON/LINK
+     --------------------------------------------------------- */
+
+  .partner-full-content .story-link {
+    display: inline-flex !important;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: .75rem auto 0 !important;
+
+    font-size: .8rem !important;
+
+    text-align: center;
+  }
+
+
+  /* ---------------------------------------------------------
+     SECTION SPACING
+     --------------------------------------------------------- */
+
+  .section {
+    overflow-x: hidden;
+  }
+
+  .section .container {
+    width: 100%;
+    max-width: 100%;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* ---------------------------------------------------------
+     HERO TITLE
+     --------------------------------------------------------- */
+
+  .page-hero-int-title {
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    text-align: center !important;
+
+    font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+
+    line-height: 1.2 !important;
+
+    letter-spacing: .04em !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     CUSTOM EVIL-EYE CURSOR
+     
+     IMPORTANT:
+     Hide it completely on phones/tablets.
+     Touch devices don't need the custom mouse cursor.
+     --------------------------------------------------------- */
+
+  #evil-eye-cursor,
+  .evil-eye-cursor {
+    display: none !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   375px / iPhone SE
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+  .partners-eyebrow {
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .partners-eyebrow .section-eyebrow {
+    font-size: .92rem !important;
+
+    letter-spacing: .16em !important;
+
+    line-height: 1.55 !important;
+  }
+
+
+  .partner-full-content {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+
+  .partner-full-content h3 {
+    font-size: 1.25rem !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: .03em !important;
+
+    margin-bottom: 1.2rem !important;
+  }
+
+
+  .partner-full-content .partner-copy-label {
+    font-size: .68rem !important;
+
+    letter-spacing: .13em !important;
+  }
+
+
+  .partner-full-content p {
+    font-size: .84rem !important;
+
+    line-height: 1.7 !important;
+  }
+
+
+  .partner-logo-placeholder {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .partner-logo-img {
+    max-width: 85px !important;
+    max-height: 85px !important;
+  }
+
+}
 
 /* =========================================================
    MOBILE
@@ -2296,7 +2617,6 @@ body.no-scroll nav .nav-cta {
   text-transform: uppercase;
   color: var(--gold-deep, #8a7026);
   border-bottom: 1px solid rgba(184,146,42,.2);
-  white-space: nowrap;
 }
 .deity-table td {
   padding: .6rem .65rem;
@@ -2422,11 +2742,565 @@ body.no-scroll nav .nav-cta {
 .partner-full-content h3 { font-family:var(--serif); font-size:1.8rem; font-weight:400; margin-bottom:1.25rem; }
 .partner-copy-label { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-deep,#8a7026); margin:1.25rem 0 .35rem; font-weight:600; }
 .partner-full-content p { font-size:.95rem; line-height:1.85; opacity:.8; margin-bottom:.75rem; }
-.sponsor-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:2.5rem; }
-.sponsor-tier-card { flex:1 1 220px; max-width:280px; padding:2.5rem 1.5rem; border:1px solid rgba(184,146,42,.2); display:flex; flex-direction:column; align-items:center; text-align:center; gap:1rem; }
-.tier-label { font-family:var(--serif); font-size:1.5rem; font-weight:600; letter-spacing:.02em; color:var(--brown,#3a2c1a); }
-.sponsor-tier-card h4 { font-size:1.15rem; font-weight:500; margin:0; letter-spacing:.06em; color:var(--gold-deep,#8a7026); }
-.sponsor-hero-title { white-space:nowrap; }
+/* =========================================================
+   SPONSOR SECTION — CARDS, ACTION BUTTONS, READ MORE MODAL
+   Replace your entire previous sponsor-related CSS block
+   (everything from ".sponsor-grid" through the old modal /
+   ".sponsor-card" rules) with this section.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Grid + card (uses the actual class from the Blade file:
+   .sponsor-tier-card — the earlier ".sponsor-card" rules
+   targeted a class that doesn't exist in the markup and
+   have been removed)
+   --------------------------------------------------------- */
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.sponsor-tier-card {
+  flex: 1 1 270px;
+  max-width: 340px;
+  min-height: 260px;
+  padding: 3rem 1.75rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+
+  background: #fff;
+  border: 1px solid rgba(184, 146, 42, .25);
+  box-sizing: border-box;
+}
+
+.tier-label {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--brown, #3a2c1a);
+}
+
+.sponsor-tier-card h4 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: .06em;
+  color: var(--gold-deep, #8a7026);
+}
+
+.sponsor-hero-title {
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Action row: Read More + Enquire, side by side, equal size
+   --------------------------------------------------------- */
+
+.sponsor-card-actions {
+  width: 100%;
+  margin-top: auto;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .65rem;
+
+  box-sizing: border-box;
+}
+
+.sponsor-read-more,
+.sponsor-card-actions .btn-gold {
+  flex: 1 1 0;
+  min-width: 110px;
+  max-width: 170px;
+  height: 50px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: .78rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  transition: background .25s ease, color .25s ease, border-color .25s ease, transform .2s ease;
+}
+
+.sponsor-read-more {
+  background: transparent;
+  border: 1px solid #c6a447;
+  color: #8a7026;
+  letter-spacing: .02em;
+}
+
+.sponsor-read-more:hover,
+.sponsor-read-more:focus-visible {
+  background: #2f6871;
+  border-color: #2f6871;
+  color: #f8f4eb;
+  transform: translateY(-1px);
+}
+
+.sponsor-read-more:focus-visible {
+  outline: 2px solid #2f6871;
+  outline-offset: 3px;
+}
+
+.sponsor-card-actions .btn-gold {
+  background: #d2ad39;
+  border: 1px solid #d2ad39;
+  color: #17120b;
+  letter-spacing: .1em;
+}
+
+.sponsor-card-actions .btn-gold:hover,
+.sponsor-card-actions .btn-gold:focus-visible {
+  background: #2f6871;
+  border-color: #2f6871;
+  color: #f8f4eb;
+  transform: translateY(-1px);
+}
+
+.sponsor-card-actions .btn-gold:focus-visible {
+  outline: 2px solid #2f6871;
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------------
+   Body scroll lock
+   --------------------------------------------------------- */
+
+body.sponsor-modal-open {
+  overflow: hidden;
+}
+
+
+
+/* ---------------------------------------------------------
+   Modal overlay
+   --------------------------------------------------------- */
+
+.sponsor-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+
+  /* Max valid CSS z-index — guarantees the modal sits above
+     any third-party or fixed-position widget on the page,
+     including the evil-eye cursor. */
+  z-index: 500000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+
+  box-sizing: border-box;
+}
+
+#evil-eye-cursor,
+.evil-eye-cursor {
+  pointer-events: none !important;
+}
+
+.sponsor-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ---------------------------------------------------------
+   Modal box
+   --------------------------------------------------------- */
+
+.sponsor-modal {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #f8f4eb;
+  border: 1px solid #c6a447;
+  border-radius: 24px;
+  padding: 3rem 3.5rem 3.5rem;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+
+  transform: translateY(24px) scale(.97);
+  opacity: 0;
+  transition: transform .35s cubic-bezier(.2, .8, .2, 1), opacity .35s ease;
+
+  box-sizing: border-box;
+}
+
+.sponsor-modal-overlay.active .sponsor-modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.sponsor-modal::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sponsor-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sponsor-modal::-webkit-scrollbar-thumb {
+  background: #c6a447;
+  border-radius: 20px;
+}
+
+/* ---------------------------------------------------------
+   Close button
+   --------------------------------------------------------- */
+
+.sponsor-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #574b3d;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  transition: color .2s ease, transform .2s ease;
+}
+
+.sponsor-modal-close:hover,
+.sponsor-modal-close:focus-visible {
+  color: #2f6871;
+  transform: rotate(90deg);
+}
+
+/* ---------------------------------------------------------
+   Header
+   --------------------------------------------------------- */
+
+.sponsor-modal-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding-right: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.sponsor-modal-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.sponsor-modal-type {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #574b3d;
+  opacity: .7;
+}
+
+.sponsor-modal-title {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  letter-spacing: .04em;
+  color: #2b241c;
+  font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.sponsor-modal-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #2f6871;
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  margin: .25rem 0 0;
+}
+
+.sponsor-modal-header-right {
+  display: flex;
+  align-items: flex-start;
+  padding-top: .35rem;
+}
+
+.sponsor-modal-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #8a7026;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   Body: two-column panels
+   --------------------------------------------------------- */
+
+.sponsor-modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.sponsor-modal-panel-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin: 0 0 1.1rem;
+}
+
+.sponsor-modal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.sponsor-modal-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: .92rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.sponsor-modal-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .6;
+}
+
+.sponsor-modal-panel-left {
+  background: #2f6871;
+  border: 2px solid #c6a447;
+  border-radius: 30px;
+  padding: 2rem 2.2rem;
+}
+
+.sponsor-modal-panel-left .sponsor-modal-panel-title {
+  color: #f0dfa3;
+}
+
+.sponsor-modal-panel-left .sponsor-modal-list li {
+  color: #f8f4eb;
+}
+
+.sponsor-modal-panel-right {
+  padding: 2rem 0;
+}
+
+.sponsor-modal-panel-right .sponsor-modal-panel-title {
+  color: #2f6871;
+}
+
+.sponsor-modal-panel-right .sponsor-modal-list li {
+  color: #574b3d;
+}
+
+/* =========================================================
+   TABLET (~1100px)
+   ========================================================= */
+@media (max-width: 1100px) {
+  .sponsor-tier-card {
+    max-width: 310px;
+    min-height: 360px;
+    padding: 2.75rem 1.5rem 2.25rem;
+  }
+
+  .sponsor-modal {
+    max-width: 94vw;
+    padding: 2.5rem 2.25rem 3rem;
+  }
+}
+
+/* =========================================================
+   TABLET (~900px)
+   ========================================================= */
+@media (max-width: 900px) {
+  .sponsor-tier-card {
+    min-height: 340px;
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .sponsor-read-more,
+  .sponsor-card-actions .btn-gold {
+    min-width: 100px;
+    height: 48px;
+    font-size: .74rem;
+  }
+
+  .sponsor-modal {
+    padding: 2.25rem 1.75rem 2.5rem;
+    border-radius: 20px;
+  }
+
+  .sponsor-modal-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  .sponsor-modal-header-right {
+    padding-top: 0;
+  }
+
+  .sponsor-modal-body {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .sponsor-modal-panel-left {
+    padding: 1.75rem 1.75rem;
+  }
+
+  .sponsor-modal-panel-right {
+    padding: 0;
+  }
+}
+
+/* =========================================================
+   MOBILE (~600px)
+   ========================================================= */
+@media (max-width: 600px) {
+  .sponsor-tier-card {
+    flex: 1 1 100%;
+    max-width: 420px;
+    min-height: 0;
+    padding: 2.25rem 1.5rem 2rem;
+  }
+
+  .sponsor-card-actions {
+    gap: .5rem;
+  }
+
+  .sponsor-read-more,
+  .sponsor-card-actions .btn-gold {
+    min-width: 0;
+    max-width: none;
+    height: 48px;
+    padding: 0 10px;
+    font-size: .72rem;
+  }
+
+  .sponsor-modal-overlay {
+    padding: 10px;
+  }
+
+  .sponsor-modal {
+    max-height: calc(100vh - 20px);
+    padding: 2.25rem 1.25rem 2.25rem;
+    border-radius: 16px;
+  }
+
+  .sponsor-modal-close {
+    top: 1rem;
+    right: 1.1rem;
+    font-size: 1.6rem;
+  }
+
+  .sponsor-modal-title {
+    font-size: clamp(1.3rem, 7vw, 1.8rem);
+  }
+
+  .sponsor-modal-price {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+  }
+
+  .sponsor-modal-tagline {
+    font-size: 1rem;
+  }
+
+  .sponsor-modal-panel-left {
+    padding: 1.5rem 1.25rem;
+    border-radius: 22px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES (~380px)
+   ========================================================= */
+@media (max-width: 380px) {
+  .sponsor-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .75rem;
+  }
+
+  .sponsor-read-more,
+  .sponsor-card-actions .btn-gold {
+    width: 100%;
+    height: 54px;
+    padding: 0 20px;
+    font-size: .8rem;
+    letter-spacing: .06em;
+  }
+
+  .sponsor-card-actions .btn-gold {
+    letter-spacing: .1em;
+  }
+
+  .sponsor-modal-panel-left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sponsor-modal-list li {
+    font-size: .82rem;
+  }
+}
 
 /* Submit form extras */
 .submit-success { text-align:center; padding:3rem 2rem; }
@@ -3153,6 +4027,43 @@ p { font-size: 1rem; line-height: 1.85; opacity: 1; }
         margin-top: 20px;
     }
 
+    /* Allow long text to wrap onto multiple lines instead of forcing horizontal scroll */
+.deity-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.deity-table th,
+.deity-table td {
+  white-space: normal !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Give the text-heavy columns more room to wrap, and keep
+   the numeric/short columns compact */
+.deity-table th:nth-child(1),
+.deity-table td:nth-child(1) {
+  width: 18%;
+}
+
+.deity-table th:nth-child(7),
+.deity-table td:nth-child(7) {
+  width: 22%;
+}
+
+.deity-table th:nth-child(2),
+.deity-table th:nth-child(3),
+.deity-table td:nth-child(2),
+.deity-table td:nth-child(3) {
+  width: 7%;
+}
+
+.deity-table th:nth-child(8),
+.deity-table td:nth-child(8) {
+  width: 90px;
+}
+
 
     /* -----------------------------------------
        TURN TABLE INTO VERTICAL CARDS
@@ -3355,5 +4266,4 @@ p { font-size: 1rem; line-height: 1.85; opacity: 1; }
     }
 
     
-
 }
