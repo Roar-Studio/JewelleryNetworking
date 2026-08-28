@@ -2757,11 +2757,10 @@ body.no-scroll nav .nav-cta {
    --------------------------------------------------------- */
 
 .sponsor-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
 }
 
 .sponsor-tier-card {

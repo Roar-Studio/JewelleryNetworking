@@ -111,56 +111,94 @@
 
   <section class="section" style="background:#fff;border-top:1px solid rgba(184,146,42,.12)">
     <div class="container">
-      <div style="text-align:center;margin-bottom:3rem">
-        <p style="max-width:740px;margin:1rem auto 0;font-size:.9rem;opacity:.7;line-height:1.8">DDA offers a unique opportunity to align your brand with devotion, heritage and creative excellence.<br>Our sponsorship packages are designed for brands that understand the power of sacred craft.</p>
-      </div>
-      <div class="sponsor-grid">
-        <div class="sponsor-tier-card">
-          <span class="tier-label">Title Sponsor</span>
-          <h4>INR &#8377;20 Lakhs + GST</h4>
-          <div class="sponsor-card-actions">
-            <button type="button" class="sponsor-read-more" data-sponsor="title-sponsor">Read More</button>
-            <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
-          </div>
+
+        <div style="text-align:center;margin-bottom:3rem">
+            <p style="max-width:740px;margin:1rem auto 0;font-size:.9rem;opacity:.7;line-height:1.8">
+                DDA offers a unique opportunity to align your brand with devotion, heritage and creative excellence.<br>
+                Our sponsorship packages are designed for brands that understand the power of sacred craft.
+            </p>
         </div>
-        <div class="sponsor-tier-card">
-          <span class="tier-label">Powered By</span>
-          <h4>INR &#8377;10 Lakh + GST</h4>
-          <div class="sponsor-card-actions">
-            <button type="button" class="sponsor-read-more" data-sponsor="powered-by">Read More</button>
-            <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
-          </div>
+
+        <!-- ALL 3 CARDS INSIDE THE GRID -->
+        <div class="sponsor-grid">
+
+            <!-- Title Sponsor -->
+            <div class="sponsor-tier-card">
+                <span class="tier-label">Title Sponsor</span>
+
+                <h4>INR &#8377;20 Lakhs + GST</h4>
+
+                <div class="sponsor-card-actions">
+                    <button type="button"
+                        class="sponsor-read-more"
+                        data-sponsor="title-sponsor">
+                        Read More
+                    </button>
+
+                    <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold">
+                        <span>Enquire</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Powered By -->
+            <div class="sponsor-tier-card">
+                <span class="tier-label">Powered By</span>
+
+                <h4>INR &#8377;10 Lakh + GST</h4>
+
+                <div class="sponsor-card-actions">
+                    <button type="button"
+                        class="sponsor-read-more"
+                        data-sponsor="powered-by">
+                        Read More
+                    </button>
+
+                    <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold">
+                        <span>Enquire</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Logistics Partner -->
+            <div class="sponsor-tier-card">
+                <span class="tier-label">Logistics Partner</span>
+
+                <h4>INR &#8377;5 Lakh + GST</h4>
+
+                <div class="sponsor-card-actions">
+                    <button type="button"
+                        class="sponsor-read-more"
+                        data-sponsor="logistics-partner">
+                        Read More
+                    </button>
+
+                    <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold">
+                        <span>Enquire</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="sponsor-grid" style="margin-top:2rem">
-        <div class="sponsor-tier-card">
-          <span class="tier-label">Category Sponsor</span>
-          <h4>INR &#8377;7.50 Lakh + GST</h4>
-          <div class="sponsor-card-actions">
-            <button type="button" class="sponsor-read-more" data-sponsor="category-sponsor">Read More</button>
-            <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
-          </div>
-        </div>
-        <div class="sponsor-tier-card">
-          <span class="tier-label">Media Sponsor</span>
-          <h4>INR &#8377;7.50 Lakh + GST</h4>
-          <div class="sponsor-card-actions">
-            <button type="button" class="sponsor-read-more" data-sponsor="media-sponsor">Read More</button>
-            <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
-          </div>
-        </div>
-        <div class="sponsor-tier-card">
-          <span class="tier-label">Logistics Partner</span>
-          <h4>INR &#8377;5 Lakh + GST</h4>
-          <div class="sponsor-card-actions">
-            <button type="button" class="sponsor-read-more" data-sponsor="logistics-partner">Read More</button>
-            <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
-          </div>
-        </div>
-      </div>
-      <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;opacity:.6">For more details, mail us at <a href="mailto:info@deitiesdesignawards.com" style="color:var(--gold-deep,#8a7026)">info@deitiesdesignawards.com</a> or call <a href="tel:+919819155544" style="color:var(--gold-deep,#8a7026)">+91 98191 55544</a></p>
+
+        <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;opacity:.6">
+            For more details, mail us at
+            <a href="mailto:info@deitiesdesignawards.com"
+               style="color:var(--gold-deep,#8a7026)">
+                info@deitiesdesignawards.com
+            </a>
+            or call
+            <a href="tel:+919819155544"
+               style="color:var(--gold-deep,#8a7026)">
+                +91 98191 55544
+            </a>
+        </p>
+
     </div>
-  </section>
+</section>
 
   <section class="section" style="background:#fff;border-top:1px solid rgba(184,146,42,.12)">
     <div class="container">
@@ -210,14 +248,14 @@
             <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
           </div>
         </div>
-        <div class="sponsor-tier-card">
+        <!-- <div class="sponsor-tier-card">
           <span class="tier-label">Earrings</span>
           <h4>INR &#8377;6 Lakh + GST</h4>
           <div class="sponsor-card-actions">
             <button type="button" class="sponsor-read-more" data-sponsor="earrings">Read More</button>
             <a href="{{ url('/deitiesdesignawards/contact') }}" class="btn-gold"><span>Enquire</span><span class="arrow">→</span></a>
           </div>
-        </div>
+        </div> -->
         <div class="sponsor-tier-card">
           <span class="tier-label">Special Category</span>
           <h4>INR &#8377;5 Lakh + GST</h4>
