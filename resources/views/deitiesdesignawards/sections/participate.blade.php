@@ -226,31 +226,31 @@
             <div class="tl-dot pulse"></div>
             <div class="tl-phase">Phase One</div>
             <div class="tl-title">Registration Opens</div>
-            <div class="tl-date">5th August 2026</div>
+            <div class="tl-date">9th November 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Two</div>
             <div class="tl-title">Closure of Entry Submission</div>
-            <div class="tl-date">25th August 2026</div>
+            <div class="tl-date">28th November 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Three</div>
             <div class="tl-title">Preliminary Jury Evaluation</div>
-            <div class="tl-date">30th August 2026</div>
+            <div class="tl-date">5th December 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Four</div>
             <div class="tl-title">Final Jury Round</div>
-            <div class="tl-date">14th Oct 2026</div>
+            <div class="tl-date">5th January 2026</div>
           </div>
           <div class="tl-step">
             <div class="tl-dot"></div>
             <div class="tl-phase">Phase Five</div>
             <div class="tl-title">Awards<br>Night</div>
-            <div class="tl-date">18th Oct 2026</div>
+            <div class="tl-date">10th January 2026</div>
           </div>
         </div>
       </div>

@@ -487,7 +487,7 @@
         class="gallery-tab-btn deity-tab-btn"
         data-deity="gopinath"
     >
-        Gopinath
+        Gopinath / Krishna
     </button>
 
     <button
@@ -723,10 +723,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ============================================================ */
 
     const CATEGORY_PDFS = {
-        wooden: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Wooden.pdf') }}',
-        carvings: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Carvings.pdf') }}',
-        deities: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Deities.pdf') }}',
-        paintings: '{{ asset('testdda/inspiration%20pdf%20and%20images/Inspiration%20-%20Painting.pdf') }}'
+    wooden: 'https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Inspiration+PDF+-+Wooden.pdf',
+    carvings: 'https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Inspiration+-+Carvings.pdf',
+    deities: 'https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Inspiration+PDF+-+Deities.pdf',
+    paintings: 'https://deities-design-awards-assets.s3.ap-south-1.amazonaws.com/Inspiration+PDF+-+Painting.pdf'
     };
 
     const CATEGORY_LABELS = {
