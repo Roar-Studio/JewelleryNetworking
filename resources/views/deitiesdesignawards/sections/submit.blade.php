@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('dda-assets/css/dda.css') }}">
+    @include('deitiesdesignawards/common/favicon')
+
 </head>
 
 <body>
@@ -320,50 +322,50 @@
                                 </div>
                                 <div class="form-grid">
                                     <div class="form-field full">
-    <label for="f-deity-a">Deity Category <span class="req">*</span></label>
-    <select id="f-deity-a" name="deity_category_a" class="deity-select" required>
-        <option value="">Select deity category</option>
+                                        <label for="f-deity-a">Deity Category <span class="req">*</span></label>
+                                        <select id="f-deity-a" name="deity_category_a" class="deity-select" required>
+                                            <option value="">Select deity category</option>
 
-        <option value="nitai"
-            {{ old('deity_category_a') == 'nitai' ? 'selected' : '' }}>
-            Nitai
-        </option>
+                                            <option value="nitai"
+                                                {{ old('deity_category_a') == 'nitai' ? 'selected' : '' }}>
+                                                Nitai
+                                            </option>
 
-        <option value="gaur"
-            {{ old('deity_category_a') == 'gaur' ? 'selected' : '' }}>
-            Gaur
-        </option>
+                                            <option value="gaur"
+                                                {{ old('deity_category_a') == 'gaur' ? 'selected' : '' }}>
+                                                Gaur
+                                            </option>
 
-        <option value="lalita"
-            {{ old('deity_category_a') == 'lalita' ? 'selected' : '' }}>
-            Lalita Devi
-        </option>
+                                            <option value="lalita"
+                                                {{ old('deity_category_a') == 'lalita' ? 'selected' : '' }}>
+                                                Lalita Devi
+                                            </option>
 
-        <option value="radharani-radha"
-            {{ old('deity_category_a') == 'radharani-radha' ? 'selected' : '' }}>
-            Radha Rani
-        </option>
+                                            <option value="radharani-radha"
+                                                {{ old('deity_category_a') == 'radharani-radha' ? 'selected' : '' }}>
+                                                Radha Rani
+                                            </option>
 
-        <option value="gopinath-krishna"
-            {{ old('deity_category_a') == 'gopinath-krishna' ? 'selected' : '' }}>
-            Gopinath Krishna
-        </option>
+                                            <option value="gopinath-krishna"
+                                                {{ old('deity_category_a') == 'gopinath-krishna' ? 'selected' : '' }}>
+                                                Gopinath Krishna
+                                            </option>
 
-        <option value="vishakhadevi"
-            {{ old('deity_category_a') == 'vishakhadevi' ? 'selected' : '' }}>
-            Vishakhadevi
-        </option>
+                                            <option value="vishakhadevi"
+                                                {{ old('deity_category_a') == 'vishakhadevi' ? 'selected' : '' }}>
+                                                Vishakhadevi
+                                            </option>
 
-        <option value="gopalji"
-            {{ old('deity_category_a') == 'gopalji' ? 'selected' : '' }}>
-            Gopalji
-        </option>
-    </select>
+                                            <option value="gopalji"
+                                                {{ old('deity_category_a') == 'gopalji' ? 'selected' : '' }}>
+                                                Gopalji
+                                            </option>
+                                        </select>
 
-    @error('deity_category_a')
-        <div class="text-danger">{{ $message }}</div>
-    @enderror
-</div>
+                                        @error('deity_category_a')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
                                     <div class="form-field full">
                                         <label for="f-piece-a">Jewellery Piece <span class="req">*</span></label>
                                         <select id="f-piece-a" name="jewellery_piece_a" class="piece-select" required
@@ -446,50 +448,50 @@
                                 </div>
                                 <div class="form-grid">
                                     <div class="form-field full">
-    <label for="f-deity-b">Deity Category <span class="req">*</span></label>
-    <select id="f-deity-b" name="deity_category_b" class="deity-select" required>
-        <option value="">Select deity category</option>
+                                        <label for="f-deity-b">Deity Category <span class="req">*</span></label>
+                                        <select id="f-deity-b" name="deity_category_b" class="deity-select" required>
+                                            <option value="">Select deity category</option>
 
-        <option value="nitai"
-            {{ old('deity_category_b') == 'nitai' ? 'selected' : '' }}>
-            Nitai
-        </option>
+                                            <option value="nitai"
+                                                {{ old('deity_category_b') == 'nitai' ? 'selected' : '' }}>
+                                                Nitai
+                                            </option>
 
-        <option value="gaur"
-            {{ old('deity_category_b') == 'gaur' ? 'selected' : '' }}>
-            Gaur
-        </option>
+                                            <option value="gaur"
+                                                {{ old('deity_category_b') == 'gaur' ? 'selected' : '' }}>
+                                                Gaur
+                                            </option>
 
-        <option value="lalita"
-            {{ old('deity_category_b') == 'lalita' ? 'selected' : '' }}>
-            Lalita Devi
-        </option>
+                                            <option value="lalita"
+                                                {{ old('deity_category_b') == 'lalita' ? 'selected' : '' }}>
+                                                Lalita Devi
+                                            </option>
 
-        <option value="radharani-radha"
-            {{ old('deity_category_b') == 'radharani-radha' ? 'selected' : '' }}>
-            Radha Rani
-        </option>
+                                            <option value="radharani-radha"
+                                                {{ old('deity_category_b') == 'radharani-radha' ? 'selected' : '' }}>
+                                                Radha Rani
+                                            </option>
 
-        <option value="gopinath-krishna"
-            {{ old('deity_category_b') == 'gopinath-krishna' ? 'selected' : '' }}>
-            Gopinath Krishna
-        </option>
+                                            <option value="gopinath-krishna"
+                                                {{ old('deity_category_b') == 'gopinath-krishna' ? 'selected' : '' }}>
+                                                Gopinath Krishna
+                                            </option>
 
-        <option value="vishakhadevi"
-            {{ old('deity_category_b') == 'vishakhadevi' ? 'selected' : '' }}>
-            Vishakhadevi
-        </option>
+                                            <option value="vishakhadevi"
+                                                {{ old('deity_category_b') == 'vishakhadevi' ? 'selected' : '' }}>
+                                                Vishakhadevi
+                                            </option>
 
-        <option value="gopalji"
-            {{ old('deity_category_b') == 'gopalji' ? 'selected' : '' }}>
-            Gopalji
-        </option>
-    </select>
+                                            <option value="gopalji"
+                                                {{ old('deity_category_b') == 'gopalji' ? 'selected' : '' }}>
+                                                Gopalji
+                                            </option>
+                                        </select>
 
-    @error('deity_category_b')
-        <div class="text-danger">{{ $message }}</div>
-    @enderror
-</div>
+                                        @error('deity_category_b')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
                                     <div class="form-field full">
                                         <label for="f-piece-b">Jewellery Piece <span class="req">*</span></label>
                                         <select id="f-piece-b" name="jewellery_piece_b" class="piece-select" required
@@ -780,7 +782,7 @@
         });
 
         // Jewellery pieces available per deity
-        (function () {
+        (function() {
             const jewelleryOptions = {
                 'nitai': [
                     'Accessories (Waistbelt/Kamarbandh, Anklet/Payal)',
@@ -859,7 +861,8 @@
 
                     pieceSelect.innerHTML = '<option value="">Select jewellery piece</option>' +
                         pieces.map(piece => {
-                            const value = piece.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                            const value = piece.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g,
+                                '');
                             const selected = selectedValue && selectedValue === value ? ' selected' : '';
 
                             return `<option value="${value}"${selected}>${piece}</option>`;
