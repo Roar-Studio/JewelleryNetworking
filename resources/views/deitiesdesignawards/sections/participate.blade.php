@@ -302,13 +302,13 @@
                         <div class="tl-dot"></div>
                         <div class="tl-phase">Phase Four</div>
                         <div class="tl-title">Final Jury Round</div>
-                        <div class="tl-date">5th January 2026</div>
+                        <div class="tl-date">5th January 2027</div>
                     </div>
                     <div class="tl-step">
                         <div class="tl-dot"></div>
                         <div class="tl-phase">Phase Five</div>
                         <div class="tl-title">Awards<br>Night</div>
-                        <div class="tl-date">10th January 2026</div>
+                        <div class="tl-date">10th January 2027</div>
                     </div>
                 </div>
             </div>
